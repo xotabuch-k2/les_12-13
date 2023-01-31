@@ -29,7 +29,8 @@ body{
 }
 .first-screenBlock{
     max-width: 1150px;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .header{
     height: 100px;
