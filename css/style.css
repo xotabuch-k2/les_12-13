@@ -24,7 +24,12 @@ body{
     background-size: 100% 850px;
     margin: 0 auto; 
     padding: 50px 10% 0 10%;
+    max-width: 1400px;
+    display: flex;
+}
+.first-screenBlock{
     max-width: 1150px;
+    align-items: center;
 }
 .header{
     height: 100px;
