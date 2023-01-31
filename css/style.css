@@ -862,11 +862,11 @@ input::placeholder {
         padding-left: 15px;
     }
     .Fleft{
-        margin-left: 5px;
+        margin-left: auto;
     }
     .Fright{
         position: relative;
-        left: -86px;
+        margin-right: auto;
         display: block;
         margin-left: 10px;
     }
