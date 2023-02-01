@@ -320,7 +320,7 @@ body{
     grid-template-columns: 1fr 0.5fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     width: 100%;
-    height: 550px;
+    height: 495px;
     padding: 10px;
     gap: 5px;
 }
@@ -361,7 +361,7 @@ body{
     margin: 0;
 }
 .GridIconP{
-    font-size: 20px; 
+    font-size: 16px; 
     font-weight: 400;
 }
 .gridItem4{
@@ -372,6 +372,7 @@ body{
 }
 .miniSec{
     display: flex;
+    margin-top: 110px;
 }
 .miniSecText{
     position: relative;
@@ -551,6 +552,9 @@ input::placeholder {
     color: #0f2c4a;
     font-size: 30px;
 
+}
+.EN_UA{
+    margin-top: 27px;
 }
 .LengHowBlock{
     display: flex;
@@ -804,6 +808,9 @@ input::placeholder {
         max-width: 400px;
         height: 100%;
         margin-bottom: auto;
+    }
+    .EN_UA{
+        margin-top: 27px;
     }
 }
 /* --------media-( width: <= 480px)--------*/
@@ -1066,6 +1073,7 @@ input::placeholder {
         font-weight: 400;
         font-size: 14px;
     }
+   
     .Fleft{
         margin-left: 10px;
         margin-right: auto;
