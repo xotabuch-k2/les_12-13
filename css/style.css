@@ -162,6 +162,10 @@ body{
     font-size: 25px;
     border-radius: 10px;
 }
+.butCallS{
+    font-weight: 600;
+    font-size: 19px;
+}
 .lady{
     position: absolute;
     z-index: 1;
@@ -572,6 +576,32 @@ input::placeholder {
     position: relative;
     display: block;
 }
+.Fright div:first-child{
+    height: 40px;
+    margin-bottom: 20px;
+}
+.Fright div:nth-child(2){
+    margin-bottom: 15px;
+}
+.Fright div:nth-child(3){
+    margin-bottom: 20px;
+}
+.Fright div:nth-child(4){
+    margin-bottom: 10px;
+}
+.Fright div:nth-child(5){
+    height: 40px;
+    margin-bottom: 15px;
+}
+.Fright div:nth-child(6){
+    margin-bottom: 18px;
+}
+.Fright div:nth-child(7){
+    margin-bottom: 12px;
+}
+.Fright div{
+    height: 27px;
+}
 .Fcont{
     font-weight: 600;
     font-size: 34px;
@@ -772,6 +802,30 @@ input::placeholder {
 }
 /* --------media-( width: <= 480px)--------*/
 @media ( width <= 480px) {
+    .imgLogo{
+        width: 30px;
+        height: 34px;
+    }
+    .DR{
+        font-weight: 400;
+        font-size: 16.6926px;
+    }
+    .DR1{
+        font-weight: 400;
+        font-size: 11.5564px;
+    }
+    .tel{
+        font-weight: 400;
+        font-size: 12px;
+    }
+    .h1{
+        font-weight: 700;
+        font-size: 22px;
+    }
+    .H3text{
+        font-weight: 400;
+        font-size: 12px;
+    }
     .secLeng{
         opacity: 0;
     }
@@ -788,40 +842,47 @@ input::placeholder {
     }
     .last7{
         opacity: 0;
+        padding-top: 0px;
     }
     .lady{
-        width: 320px;
+        width: 215px;
         position: absolute;
         z-index: 1;
-        top: 507px;
+        top: 350px;
         left: 10%;
     }
     .first-screen{
         background-image: url(/img/background_1hw.jpg);
         background-repeat: no-repeat;
-        background-size: 100% 830px;
+        background-size: 100% 568px;
         margin: auto;
         height: auto;
         padding: 50px 10% 0 10%;
     }
     .cont{
         display: block;
-        height: 250px;
+        height: 63px;
         width: 100%; 
         align-items: center;    
         text-align: center;
     }
     .butCall{
-        height: 70px;
-        width: 150px;
+        font-weight: 14px;
+        height: 35px;
+        width: 100px;
         background-color: #46b1de;
         color: white;
         font-size: 25px;
         border-radius: 10px;
     }
+    .butCallS{
+        font-weight: 600;
+        font-size: 14px;
+    }
     .butServ{
-        height: 70px;
-        width: 150px;
+        font-weight: 14px;
+        height: 35px;
+        width: 100px;
         color: #46b1de;
         font-size: 25px;
         border-radius: 10px;
@@ -832,12 +893,16 @@ input::placeholder {
         width: auto;
 
     }
+    .but2 a{
+        height: 35px;
+        width: 100px;
+    }
     .buttons{
         opacity: 0;
         width: 10px;
     }
     .header{
-        width: 120%;
+        width: 130%;
     }
     .phone{
         width: 238px;
@@ -857,11 +922,15 @@ input::placeholder {
         margin-top: 100px;
     }
     .WHD{
-        padding-left: 140px;
+        padding-left: 116px;
         color: #0f2c4a;
         position: relative;
-        top: -60px;
+        top: -8px;
         margin: 0;
+    }
+    .WHD p{
+        font-weight: 400;
+        font-size: 14.2648px;
     }
     .footSec{
         justify-content: space-between;
@@ -874,14 +943,23 @@ input::placeholder {
         align-items: center;
         padding-left: 15px;
     }
-    .Fleft{
-        margin-left: auto;
+    .Fright div{
+        height: 25px;
     }
     .Fright{
         position: relative;
-        margin-right: auto;
         display: block;
-        margin-left: 10px;
+        margin-left: 0;
+        margin-right: auto;
+        margin-top: 14px;
+    }
+    .Fcont{
+        font-weight: 600;
+        font-size: 21px;
+    }
+    .Fcont25{
+        font-weight: 400;
+        font-size: 17.1613px;
     }
     .VizSec{
         opacity: 0;
@@ -949,6 +1027,74 @@ input::placeholder {
     }
     .TripePhotoImg{
         margin-bottom: 20px;
+    }
+    .LengHowBlock{
+        margin-top: 14px;
+    }
+    .FimgLogo{
+        height: 57px;
+        width: 55px;
+        flex-basis: 20%;
+    }
+    .FDR{
+        font-weight: 400;
+        font-size: 27px;
+    }
+    .SLeng {
+        width: 60px;
+    }
+    .SLeng a {
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .FButS{
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .Fleft{
+        margin-left: 13px;
+        margin-right: auto;
+    }
+    .FcontTelInstMail{
+        font-weight: 400;
+        font-size: 17.1613px;
+    }
+    .Fright{
+        width: 100vh;
+    }
+    .Fright div:first-child{
+        height: 25px;
+        margin-bottom: 26px;
+    }
+    .Fright div:nth-child(2){
+        margin-bottom: 13px;
+    }
+    .Fright div:nth-child(3){
+        margin-bottom: 25px;
+    }
+    .Fright div:nth-child(4){
+        margin-bottom: 13px;
+    }
+    .Fright div:nth-child(5){
+        opacity: 0;
+        height: 0;
+        margin: 0;
+    }
+    .Fright div:nth-child(6){
+        margin-bottom: 13px;
+    }
+    .Fright div:nth-child(7){
+        margin-bottom: 12px;
+    }
+    .CopySec{
+        margin-bottom: 34px;
+    }
+    .copy{
+        position: relative;
+        left: 165px;
+        color: #fff;
+        font-weight: 400;
+        font-size: 11.1548px;
     }
 }
 /* --------media ( max-width: 992px)---*/
