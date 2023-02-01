@@ -1036,6 +1036,13 @@ input::placeholder {
         width: 55px;
         flex-basis: 20%;
     }
+    .WHDp{
+        margin-bottom: 0;
+    }
+    .WHDpp{
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
     .FDR{
         font-weight: 400;
         font-size: 27px;
@@ -1052,7 +1059,7 @@ input::placeholder {
         font-size: 14px;
     }
     .Fleft{
-        margin-left: 13px;
+        margin-left: 10px;
         margin-right: auto;
     }
     .FcontTelInstMail{
