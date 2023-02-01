@@ -1111,5 +1111,10 @@ input::placeholder {
         font-weight: 400;
         font-size: 11.1548px;
     }
+    .TP{
+        width: 100%;
+        height: 100%;
+        margin-bottom: auto;
+    }
 }
 /* --------media ( max-width: 992px)---*/
