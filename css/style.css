@@ -799,6 +799,12 @@ input::placeholder {
     .TripePhotoImg{
         margin-bottom: 20px;
     }
+    .TP{
+        width: 100%;
+        max-width: 400px;
+        height: 100%;
+        margin-bottom: auto;
+    }
 }
 /* --------media-( width: <= 480px)--------*/
 @media ( width <= 480px) {
@@ -1019,12 +1025,14 @@ input::placeholder {
         margin-bottom: 20px;
         margin-right: auto;
         margin-left: auto;
+        width: 205px;
     }
     .TripePhoto{
         display: block;
         text-align: center;
         margin-top: 100px;
     }
+  
     .TripePhotoImg{
         margin-bottom: 20px;
     }
