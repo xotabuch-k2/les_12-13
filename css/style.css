@@ -10,7 +10,6 @@
     font-family: Roboto;
     src: url(/fonts/Roboto-Light.woff);
 } */
-
 body{
     display: block;
     box-sizing: border-box;
@@ -69,12 +68,15 @@ body{
 .buttons{
     display: flex;
     column-gap: 20px;
+    position: relative;
+    top: -10px;
 }
 .buttA{
     display: grid;
     gap: 10%;
     grid-auto-rows: auto;
     text-decoration: none;
+    width: 140px;
 }
 .but{
     background-color: hsla(198, 100%, 50%, 0);
@@ -84,17 +86,24 @@ body{
     height: 50px; 
     width: 150px;
 }
+.but:hover{
+    color: #46B1DE;
+}
 .phone{
     width: 238px;
+    min-width: 177px;
     display: flex;
+    position: relative;
+    top: -5px;
+    left: 40px;
 }
 
-.phoneImg {
+/* .phoneImg {
     flex-basis: 20%;
     width: 38px;
     height: 20px;
     padding-top: 15px;
-}
+} */
 .tel{
     font-weight: 400;
     font-size: 16px;
@@ -102,10 +111,26 @@ body{
     color: black;
     flex-basis: 80%;
     padding-top: 12px;
+    position: relative;
+}
+.tel::before{
+    content: url(/img/phone.svg);
+    position: absolute;
+    top: 14px;
+    left: -24px;
 }
 .secLeng{
+    width: 90px;
+    min-width: 90px;
+    max-width: 92px;
+    height: auto;
     display: flex;
     padding-top: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    justify-content: space-between;
+    position: relative;
+    top: -10px;
 }
 .cont{
     display: block;
@@ -429,6 +454,11 @@ body{
     display: flex;
     padding-top: 5px;
 }
+.mNe:hover{
+    border: solid 2px #46B1DE;
+    height: 53px;
+    width: 229px;
+}
 .imgManTel{
     padding: 10px 8px 8px 10px;
     width: 25px;
@@ -439,7 +469,7 @@ body{
     font-size: 30px;
 }
 .sec2{
-    padding: 5px 8px 0px 8px;
+    padding: 8px 8px 0px 8px;
 }
 #name{
     font-weight: 600;
@@ -532,15 +562,6 @@ input::placeholder {
     font-weight: 400;
     text-transform: none;
 }
-.Fbut{
-    font-family: 'Sofia Sans';
-    font-weight: 400;
-    font-size: 20px;
-    text-decoration: none;
-    color: #0f2c4a;
-    font-size: 30px;
-
-}
 .FBut{
     font-family: 'Sofia Sans';
     font-weight: 600;
@@ -548,7 +569,31 @@ input::placeholder {
     text-decoration: none;
     color: #0f2c4a;
     font-size: 30px;
+    position: relative;
+    top: -3px;
+}
+.FBut::before{
+    content: url(/img/footer/Line\ 12.svg);
+    position: relative;
+    left: 46px;
+    top: 6px;
 
+}
+.FbutEN{
+    font-family: 'Sofia Sans';
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+    color: #0f2c4a;
+    font-size: 30px;
+}
+.Fbut{
+    font-family: 'Sofia Sans';
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+    color: #0f2c4a;
+    font-size: 30px;
 }
 .EN_UA{
     margin-top: 27px;
@@ -656,9 +701,6 @@ input::placeholder {
     .secLeng{
         opacity: 0;
     }
-    .secLeng{
-        opacity: 0;
-    }
     .last7{
         opacity: 0;
     }
@@ -700,6 +742,21 @@ input::placeholder {
 
         width: 238px;
         display: flex;
+    }
+    .Fbut{
+        position: relative;
+        top: 3px;
+    }
+    .FBut{
+        position: relative;
+        top: 2px;
+    }
+    .FBut::before{
+        content: url(/img/footer/Line\ 12.svg);
+        position: relative;
+        left: 46px;
+        top: 6px;
+    
     }
      .first-screen{
         padding: 40px 10px 0 10px;
@@ -807,8 +864,9 @@ input::placeholder {
         margin-bottom: auto;
     }
     .EN_UA{
-        margin-top: 27px;
+        margin-top: 35px;
     }
+
 }
 /* --------media-( width: <= 480px)--------*/
 @media ( width <= 480px) {
@@ -1066,11 +1124,6 @@ input::placeholder {
         font-weight: 400;
         font-size: 14px;
     }
-    .FButS{
-        font-weight: 400;
-        font-size: 14px;
-    }
-   
     .Fleft{
         margin-left: 10px;
         margin-right: auto;
@@ -1080,6 +1133,7 @@ input::placeholder {
         font-size: 17.1613px;
     }
     .Fright{
+        margin-top: 44px;
         width: 100vh;
     }
     .Fright div:first-child{
@@ -1105,6 +1159,25 @@ input::placeholder {
     }
     .Fright div:nth-child(7){
         margin-bottom: 12px;
+    }
+    .FBut{
+        top: 0px;
+    }
+    .FBut::before{
+        content: "|";
+        position: relative;
+        left: 28px;
+        top: 0px;
+    }
+    .Fbut{
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .Fbut:hover{
+        color: #fff;
+    }
+    .EN_UA{
+        margin-top: 1px;
     }
     .CopySec{
         margin-bottom: 34px;
