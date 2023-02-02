@@ -366,35 +366,44 @@ body{
     margin-bottom: 50px;
 }
 .gridMain{
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 0.5fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px; */
     width: 100%;
     height: 405px;
     padding: 10px;
-    gap: 5px;
+    display: flex;
+    /* -------------------------- */
+    
 }
-.gridItem1{
+.ZubO{
+    width: 302px;
+    height: 302px;
+    border: solid 1px #1B1D1F;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgZubO{
+    width: 180px;
+    height: 162px;
+}
+.gridItem11{
     text-align: end;
 }
-.gridItem2{
-    grid-row-start: span 5;
-}
-.gridItem4{
+.gridItem41{
     position: relative;
     left: -50px;
+    text-align: end;
 }
-.gridItem5{
+.gridItem51{
     position: relative;
     left: 50px;
 }
-.gridItem6{
-    position: relative;
-    left: 50px;
-}
-.gridItem7{
-    position: relative;
-    left: -50px;
+.gridItem61{
+    text-align: end;
 }
 .gridItem2DIV{
     width: auto;
@@ -876,36 +885,35 @@ input::placeholder {
         gap: 5px;
         margin-bottom: 60px;
     }
-    .gridItem1{
-        text-align: center
-    }
-    .gridItem2{
-        grid-row-start: span 5;
+    .ZubO{
         opacity: 0;
-        width: 0px;
-        height: 0px;
+        width: 0;
+        height: 0;
     }
-    .gridItem3{
+    .gridItem11{
         text-align: center
     }
-    .gridItem4{
+    .gridItem31{
+        text-align: center
+    }
+    .gridItem41{
         position: relative;
         left: 0px;
         text-align: center
     }
-    .gridItem5{
+    .gridItem51{
         position: relative;
-        left: 00px;
+        left: 0px;
         text-align: center
     }
-    .gridItem6{
+    .gridItem61{
         position: relative;
-        left: 00px;
+        left: 0px;
         text-align: center
     }
-    .gridItem7{
+    .gridItem71{
         position: relative;
-        left: 00px;
+        left: 0px;
         text-align: center
     }
     .miniSec{
@@ -1125,36 +1133,35 @@ input::placeholder {
         gap: 5px;
         margin-bottom: 60px;
     }
-    .gridItem1{
-        text-align: center
-    }
-    .gridItem2{
-        grid-row-start: span 5;
+    .ZubO{
         opacity: 0;
-        width: 0px;
-        height: 0px;
+        width: 0;
+        height: 0;
     }
-    .gridItem3{
+    .gridItem11{
         text-align: center
     }
-    .gridItem4{
+    .gridItem31{
+        text-align: center
+    }
+    .gridItem41{
         position: relative;
         left: 0px;
         text-align: center
     }
-    .gridItem5{
+    .gridItem51{
         position: relative;
-        left: 00px;
+        left: 0px;
         text-align: center
     }
-    .gridItem6{
+    .gridItem61{
         position: relative;
-        left: 00px;
+        left: 0px;
         text-align: center
     }
-    .gridItem7{
+    .gridItem71{
         position: relative;
-        left: 00px;
+        left: 0px;
         text-align: center
     }
     .miniSec{
