@@ -635,6 +635,9 @@ input::placeholder {
 .Fright div:nth-child(4){
     margin-bottom: 10px;
 }
+.Fright div:nth-child(4)::before{
+    content: url(/img/footer/phone.png);
+}
 .Fright div:nth-child(5){
     height: 40px;
     margin-bottom: 15px;
@@ -642,8 +645,16 @@ input::placeholder {
 .Fright div:nth-child(6){
     margin-bottom: 18px;
 }
+.Fright div:nth-child(6)::before{
+    content: url(/img/footer/instagram.png);
+}
 .Fright div:nth-child(7){
     margin-bottom: 12px;
+    position: relative;
+    left: -4px;
+}
+.Fright div:nth-child(7)::before{
+    content: url(/img/footer/email.png);
 }
 .Fright div{
     height: 27px;
@@ -1178,6 +1189,16 @@ input::placeholder {
     }
     .EN_UA{
         margin-top: 1px;
+    }
+    .Fright div:nth-child(7){
+        margin-bottom: 12px;
+        position: relative;
+        left: -4px;
+    }
+    .Fright div:nth-child(7)::before{
+        content: url(/img/footer/email.png);
+        position: relative;
+        top: 3px;
     }
     .CopySec{
         margin-bottom: 34px;
