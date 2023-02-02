@@ -11,6 +11,7 @@
     src: url(/fonts/Roboto-Light.woff);
 } */
 body{
+    cursor: pointer;
     display: block;
     box-sizing: border-box;
     width: auto;
@@ -130,6 +131,44 @@ body{
     height: 250px;
     width: 500px; 
 }
+.contBut2{
+    position: relative;
+    animation-name: moveUP;
+    animation-duration: 1s;
+}
+@keyframes moveUP{
+    0%{
+        top: 200px;
+        opacity: 0;
+    }
+    100%{
+        top: 0px;
+        opacity: 1;
+    }
+}
+.last7{
+    width: 1150px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    padding-top: 170px;   
+    position: relative;
+    animation-name: moveRIGHT;
+    animation-duration: 2s;
+    transition-delay: 1s;
+    z-index: 2;
+}
+@keyframes moveRIGHT{
+    0%{
+        left: -200px;
+        opacity: 0;
+    }
+    100%{
+        left: 0px;
+        opacity: 1;
+    }
+}
 .h1{
     line-height: 130%;
     letter-spacing: 0.1em;
@@ -137,7 +176,6 @@ body{
     font-size: 40px;
     text-transform: uppercase;
     font-family: 'Roboto';
-
 }
 .h1Span{
     color: #46b1de;
@@ -154,7 +192,9 @@ body{
     width: 550px;
     height: 100px;
     justify-content: space-between;
+    position: relative;
 }
+
 .but2 a{
     height: 60px;
     width: 180px;
@@ -195,14 +235,6 @@ body{
     width: auto;
     display: flex;
     justify-content: center;
-}
-.last7{
-    width: 1150px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    gap: 5%;
-    padding-top: 170px;    
 }
 .icon{
     grid-auto-flow: row;
@@ -736,6 +768,16 @@ input::placeholder {
     .last7{
         opacity: 0;
     }
+    @keyframes moveRIGHT{
+        0%{
+            left: -200px;
+            opacity: 0;
+        }
+        100%{
+            left: 0px;
+            opacity: 0;
+        }
+    }
     .lady{
         width: 320px;
         position: absolute;
@@ -944,12 +986,22 @@ input::placeholder {
         opacity: 0;
         padding-top: 0px;
     }
+    @keyframes moveRIGHT{
+        0%{
+            left: -200px;
+            opacity: 0;
+        }
+        100%{
+            left: 0px;
+            opacity: 0;
+        }
+    }
     .lady{
         width: 215px;
         position: absolute;
         z-index: 1;
         top: 350px;
-        left: 10%;
+        left: 20%;
     }
     .first-screen{
         background-image: url(/img/background_1hw.jpg);
