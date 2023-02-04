@@ -385,11 +385,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.imgZubO{
-    width: 180px;
-    height: 162px;
-    z-index: 1;
+    background: url(/img/ZubO.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
 }
 .Plas{
     position: absolute;
@@ -425,15 +424,33 @@ body{
     position: relative;
 } */
 .ElipsU{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #46B1DE;
+    display: flex;
+    z-index: 5;
+    position: relative;
     animation-name: U;
     animation-duration: 1s;
     transition-delay: 1s;
+
+}
+@keyframes U{
+    0%{
+        left: 0px;
+    }
+    100%{
+
+        top: -151px;
+    }
 }
 .ElipsUR{
     animation-name: UR;
     animation-duration: 1s;
     transition-delay: 1s;
 }
+
 .ElipsR{
     width: 24px;
     height: 24px;
@@ -441,12 +458,19 @@ body{
     background-color: #46B1DE;
     display: flex;
     z-index: 3;
-    position: absolute;
+    position: relative;
     animation-name: R;
     animation-duration: 1s;
     transition-delay: 1s;
-    top: -24p;
-    left: ;
+    
+}
+@keyframes R{
+    0%{
+        left: -50%;
+    }
+    100%{
+        left: -151px;
+    }
 }
 .ElipsRD{
     animation-name: RD;
@@ -990,6 +1014,7 @@ input::placeholder {
         opacity: 0;
         width: 0;
         height: 0;
+        z-index: 1;
     }
     .gridItem11{
         text-align: center
