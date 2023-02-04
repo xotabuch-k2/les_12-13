@@ -391,21 +391,106 @@ body{
     height: 162px;
     z-index: 1;
 }
-.Elips1{
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background-color: #46B1DE;
-    display: flex;
-    z-index: 2;
-    position: absolute;
-}
 .Plas{
     position: absolute;
     top: 2px;
     left: 8px;
     color: #fff;
 }
+.gridLeft{
+    position: relative;
+    animation-name: gridRIGHT;
+    animation-duration: 1s;
+    transition-delay: 1s;
+    z-index: 2;
+}
+@keyframes gridRIGHT{
+    0%{
+        left: -200px;
+        opacity: 0;
+    }
+    100%{
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+/* .ZubO div{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #46B1DE;
+    display: flex;
+    z-index: 3;
+    position: relative;
+} */
+.ElipsU{
+    animation-name: U;
+    animation-duration: 1s;
+    transition-delay: 1s;
+}
+.ElipsUR{
+    animation-name: UR;
+    animation-duration: 1s;
+    transition-delay: 1s;
+}
+.ElipsR{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #46B1DE;
+    display: flex;
+    z-index: 3;
+    position: absolute;
+    animation-name: R;
+    animation-duration: 1s;
+    transition-delay: 1s;
+    top: -24p;
+    left: ;
+}
+.ElipsRD{
+    animation-name: RD;
+    animation-duration: 1s;
+    transition-delay: 1s;
+}
+.ElipsD{
+    animation-name: D;
+    animation-duration: 1s;
+    transition-delay: 1s;
+}
+.ElipsLD{
+    animation-name: LD;
+    animation-duration: 1s;
+    transition-delay: 1s;
+}
+.ElipsL{
+    animation-name: L;
+    animation-duration: 1s;
+    transition-delay: 1s;
+}
+.ElipsLU{
+    animation-name: LU;
+    animation-duration: 1s;
+    transition-delay: 1s;
+}
+.gridRight{
+    position: relative;
+    animation-name: gridLEFT;
+    animation-duration: 1s;
+    transition-delay: 1s;
+    z-index: 2;
+}
+@keyframes gridLEFT{
+    0%{
+        left: 200px;
+        opacity: 0;
+    }
+    100%{
+        left: 0px;
+        opacity: 1;
+    }
+}
+
 .gridItem11{
     text-align: end;
 }
