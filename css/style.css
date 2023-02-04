@@ -413,16 +413,10 @@ body{
         opacity: 1;
     }
 }
-
-/* .ZubO div{
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background-color: #46B1DE;
-    display: flex;
-    z-index: 3;
-    position: relative;
-} */
+.gridCenter{
+    width: 304px;
+    height: 304px;
+}
 .ElipsU{
     width: 24px;
     height: 24px;
@@ -430,7 +424,7 @@ body{
     background-color: #46B1DE;
     display: flex;
     z-index: 5;
-    position: relative;
+    position: absolute;
     animation-name: U;
     animation-duration: 1s;
     transition-delay: 1s;
@@ -438,11 +432,12 @@ body{
 }
 @keyframes U{
     0%{
-        left: 0px;
+        left: -152px;
+        top: -152px;
     }
     100%{
-
-        top: -151px;
+        top: 10%;
+        left: 35px;
     }
 }
 .ElipsUR{
@@ -458,7 +453,7 @@ body{
     background-color: #46B1DE;
     display: flex;
     z-index: 3;
-    position: relative;
+    position: absolute;
     animation-name: R;
     animation-duration: 1s;
     transition-delay: 1s;
@@ -466,10 +461,10 @@ body{
 }
 @keyframes R{
     0%{
-        left: -50%;
+        left: 0px;
     }
     100%{
-        left: -151px;
+        left: -10px;
     }
 }
 .ElipsRD{
