@@ -911,6 +911,8 @@ input::placeholder {
     text-decoration: none;
     color: #0f2c4a;
     font-size: 30px;
+    position: relative;
+    top: -3px;
 }
 .Fbut{
     font-family: 'Sofia Sans';
@@ -919,6 +921,8 @@ input::placeholder {
     text-decoration: none;
     color: #0f2c4a;
     font-size: 30px;
+    position: relative;
+    top: -3px;
 }
 .EN_UA{
     margin-top: 27px;
