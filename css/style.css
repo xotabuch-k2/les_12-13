@@ -1401,7 +1401,7 @@ input::placeholder {
     .Fright{
         position: relative;
         display: block;
-        margin-left: 0;
+        margin-left: 10px;
         margin-right: auto;
         margin-top: 14px;
     }
