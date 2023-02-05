@@ -1580,5 +1580,29 @@ input::placeholder {
         height: 100%;
         margin-bottom: auto;
     }
+    .Fright div:nth-child(4):hover:after{
+        display: block;
+        position: relative;
+        content: "";
+        width: 16%;
+        left: 30px;
+        border: solid 1px white;
+    }
+    .Fright div:nth-child(6):hover:after{
+        display: block;
+        position: relative;
+        content: "";
+        width: 8%;
+        left: 30px;
+        border: solid 1px white;
+    }
+    .Fright div:nth-child(7):hover:after{
+        display: block;
+        position: relative;
+        content: "";
+        width: 18%;
+        left: 30px;
+        border: solid 1px white;
+    }
 }
 /* --------media ( max-width: 992px)---*/
