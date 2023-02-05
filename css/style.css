@@ -26,6 +26,8 @@ body{
     padding: 50px 10% 0 10%;
     /* max-width: 1400px; */
     display: block;
+    z-index: 0;
+    position: static;
 }
 .first-screenBlock{
     max-width: 1150px;
@@ -168,20 +170,20 @@ body{
 }
 /* .menu__box {
     display: block;
-    position: fixed;
+    position: absolute;
     visibility: hidden;
-    top: 0;
-    left: -50%;  
-    width: 200px;
+    top: 150px;
+    left: 100px;  
+    width: auto;
     height: auto;  
     margin: 0;
     padding: 20px 0;  
     list-style: none;
     text-align: center;  
     background-color: #fff;
-    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-} */
-/* .menu__item {
+    box-shadow: 0 0 0 10px rgb(255, 255, 255), 0 5px 5px 15px #D9D9D9;
+}
+.menu__item {
     display: block;
     padding: 12px 24px;  
     color: #333;  
@@ -191,18 +193,24 @@ body{
     text-decoration: none;
 } */
 .menu__item:hover {
-    background-color: #CFD8DC;
+    background-color: #46b1de;
 }
 #menu__toggle:checked ~ .menu__btn > span {
     transform: rotate(45deg);
+    animation-duration: 1s;
+
 }
 #menu__toggle:checked ~ .menu__btn > span::before {
     top: 0;
     transform: rotate(0);
+    animation-duration: 1s;
+
 }
 #menu__toggle:checked ~ .menu__btn > span::after {
     top: 0;
     transform: rotate(90deg);
+    animation-duration: 1s;
+
 }
 #menu__toggle:checked ~ .menu__box {
     visibility: visible;
@@ -1165,7 +1173,7 @@ input::placeholder {
         gap: 5px;
         margin-bottom: 60px;
     }
-    .ZubO{
+    .gridCenter{
         opacity: 0;
         width: 0;
         height: 0;
@@ -1414,7 +1422,7 @@ input::placeholder {
         gap: 5px;
         margin-bottom: 60px;
     }
-    .ZubO{
+    .gridCenter{
         opacity: 0;
         width: 0;
         height: 0;
