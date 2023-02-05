@@ -126,6 +126,94 @@ body{
     position: relative;
     top: -10px;
 }
+/* --------------Hamburger Menu-------------- */
+.hamburgerMenu{
+    z-index: 4;
+    opacity: 1;
+    width: 0;
+    height: 0;
+}
+#menu__toggle {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.menu__btn {
+    display: flex; 
+    align-items: center;  
+    position: absolute;
+    top: 100px;
+    left: 90%;  
+    width: 26px;
+    height: 26px;  
+    cursor: pointer;
+    z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute; 
+    width: 100%;
+    height: 2px;  
+    background-color: #000;
+}
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
+}
+.menu__btn > span::after {
+    content: '';
+    top: 8px;
+}
+/* .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -50%;  
+    width: 200px;
+    height: auto;  
+    margin: 0;
+    padding: 20px 0;  
+    list-style: none;
+    text-align: center;  
+    background-color: #fff;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+} */
+/* .menu__item {
+    display: block;
+    padding: 12px 24px;  
+    color: #333;  
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;  
+    text-decoration: none;
+} */
+.menu__item:hover {
+    background-color: #CFD8DC;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+}
+  @media ( width <= 768px){
+    .hamburgerMenu{
+        opacity: 1;
+    }
+  }
+/* --------------Hamburger Menu-END---------- */
 .cont{
     display: block;
     height: 250px;
@@ -417,7 +505,7 @@ body{
     width: 304px;
     height: 304px;
 }
-.ElipsU{
+.ElipsUL{
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -425,27 +513,71 @@ body{
     display: flex;
     z-index: 5;
     position: absolute;
-    animation-name: U;
+    animation-name: UL;
     animation-duration: 1s;
     transition-delay: 1s;
-
+    left: 49px;
+    top: 17px;
 }
-@keyframes U{
+@keyframes UL{
     0%{
-        left: -152px;
-        top: -152px;
+        left: 50%;
+        top: 50%;
     }
     100%{
-        top: 10%;
-        left: 35px;
+        left: 49px;
+        top: 17px;
     }
 }
-.ElipsUR{
-    animation-name: UR;
+.ElipsL{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #46B1DE;
+    display: flex;
+    z-index: 3;
+    position: absolute;
+    animation-name: L;
     animation-duration: 1s;
     transition-delay: 1s;
+    left: -10px;
+    top: 130px;
+    
 }
-
+@keyframes L{
+    0%{
+        left: 50%;
+        top: 40%;
+    }
+    100%{
+        left: -10px;
+        top: 130px;
+    }
+}
+.ElipsLD{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #46B1DE;
+    display: flex;
+    z-index: 3;
+    position: absolute;
+    animation-name: LD;
+    animation-duration: 1s;
+    transition-delay: 1s;
+    left: 25px;
+    top: 240px;
+}
+@keyframes LD{
+    0%{
+        left: 50%;
+        top: 40%;
+    }
+    100%{
+        left: 25px;
+        top: 240px;
+    }
+}
 .ElipsR{
     width: 24px;
     height: 24px;
@@ -457,40 +589,68 @@ body{
     animation-name: R;
     animation-duration: 1s;
     transition-delay: 1s;
-    
+    left: 290px;
+    top: 130px;
+
 }
 @keyframes R{
     0%{
-        left: 0px;
+        left: 50%;
+        top: 40%;
     }
     100%{
-        left: -10px;
+        left: 290px;
+        top: 130px;
     }
 }
-.ElipsRD{
+.ElipsRD
+{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #46B1DE;
+    display: flex;
+    z-index: 3;
+    position: absolute;
     animation-name: RD;
     animation-duration: 1s;
     transition-delay: 1s;
+    left: 250px;
+    top: 240px;
 }
-.ElipsD{
-    animation-name: D;
+@keyframes RD{
+    0%{
+        left: 50%;
+        top: 40%;
+    }
+    100%{
+        left: 250px;
+        top: 240px;
+    }
+}
+.ElipsUR{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #46B1DE;
+    display: flex;
+    z-index: 3;
+    position: absolute;
+    animation-name: UR;
     animation-duration: 1s;
     transition-delay: 1s;
+    left: 230px;
+    top: 17px;
 }
-.ElipsLD{
-    animation-name: LD;
-    animation-duration: 1s;
-    transition-delay: 1s;
-}
-.ElipsL{
-    animation-name: L;
-    animation-duration: 1s;
-    transition-delay: 1s;
-}
-.ElipsLU{
-    animation-name: LU;
-    animation-duration: 1s;
-    transition-delay: 1s;
+@keyframes UR{
+    0%{
+        left: 50%;
+        top: 40%;
+    }
+    100%{
+        left: 230px;
+        top: 17px;
+    }
 }
 .gridRight{
     position: relative;
