@@ -895,11 +895,14 @@ input::placeholder {
     top: -3px;
 }
 .FBut::before{
-    content: url(/img/footer/Line\ 12.svg);
+    color: #000;
+    content: "|";
     position: relative;
-    left: 46px;
-    top: 6px;
-
+    left: 45px;
+    top: 0px;
+}
+.Fbut:hover{
+    color: #fff;
 }
 .FbutEN{
     font-family: 'Sofia Sans';
@@ -1123,14 +1126,8 @@ input::placeholder {
         top: 2px;
     }
     .FBut::before{
-        color: #000;
-        content: "|";
-        position: relative;
         left: 50px;
         top: 0px;
-    }
-    .Fbut:hover{
-        color: #fff;
     }
      .first-screen{
         padding: 40px 10px 0 10px;
@@ -1547,14 +1544,8 @@ input::placeholder {
         top: 0px;
     }
     .FBut::before{
-        color: #000;
-        content: "|";
-        position: relative;
         left: 28px;
         top: 0px;
-    }
-    .Fbut:hover{
-        color: #fff;
     }
     .Fbut{
         font-weight: 400;
