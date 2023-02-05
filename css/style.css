@@ -598,16 +598,21 @@ input::placeholder {
     top: -3px;
 }
 .FBut::before{
-    content: url(/img/footer/Line\ 12.svg);
+    color: #000;
+    content: "|";
     position: relative;
-    left: 46px;
-    top: 6px;
-
+    left: 50px;
+    top: 0px;
+}
+.Fbut:hover{
+    color: #fff;
 }
 .FbutEN{
     font-family: 'Sofia Sans';
     font-weight: 400;
     font-size: 20px;
+    margin-left: 18px;
+    margin-bottom: 10px;
     text-decoration: none;
     color: #0f2c4a;
     font-size: 30px;
@@ -826,14 +831,8 @@ input::placeholder {
         top: 2px;
     }
     .FBut::before{
-        color: #000;
-        content: "|";
-        position: relative;
         left: 50px;
         top: 0px;
-    }
-    .Fbut:hover{
-        color: #fff;
     }
      .first-screen{
         padding: 40px 10px 0 10px;
@@ -1251,19 +1250,14 @@ input::placeholder {
         top: 0px;
     }
     .FBut::before{
-        color: #000;
-        content: "|";
-        position: relative;
         left: 28px;
         top: 0px;
-    }
+    }   
     .Fbut{
         font-weight: 400;
         font-size: 14px;
     }
-    .Fbut:hover{
-        color: #fff;
-    }
+
     .EN_UA{
         margin-top: 1px;
     }
