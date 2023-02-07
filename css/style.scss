@@ -10,13 +10,26 @@
     font-family: Roboto;
     src: url(/fonts/Roboto-Light.woff);
 } */
+@import url(/css/_template.scss);
+// $aqyaColor: #46b1de;
+
+// %titleRoboto{
+//     font-family:'Roboto';
+// }
+// %titleSofiaSans{
+//     font-family: 'Sofia Sans'
+// }
+// %sectionMargin{
+//     margin-bottom: 90px;
+// }
+
 body{
     cursor: pointer;
     display: block;
     box-sizing: border-box;
     width: auto;
     margin: 0 auto;
-    font-family: 'Roboto';
+    @extend %titleRoboto;
 }
 .first-screen{
     background-image: url(/img/background_1hw.jpg);
@@ -42,55 +55,55 @@ body{
 .logo{
     display: flex;
     width: 261px;
-}
-.imgLogo{
-    height: 79px;
-    width: 79px;
-    flex-basis: 25%;
-}
-.DR{
-    font-family: 'Sofia Sans';
-    font-weight: 400;
-    font-size: 16.6926px;
-    color: #46b1de;
-    width: 250px;
-    font-size: x-large;
-    flex-basis: 75%;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.DR1{
-    font-family: 'Sofia Sans';
-    font-weight: 400;
-    font-size: 11.5564px;
-    color: #46b1de;
-    width: 250px;
-    font-size: x-large;
-    flex-basis: 75%;
-
+    .imgLogo{
+        height: 79px;
+        width: 79px;
+        flex-basis: 25%;
+    }
+    .DR{
+        @extend %titleSofiaSans;
+        font-weight: 400;
+        font-size: 16.6926px;
+        color: $aqyaColor;
+        width: 250px;
+        font-size: x-large;
+        flex-basis: 75%;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .DR1{
+        @extend %titleSofiaSans;
+        font-weight: 400;
+        font-size: 11.5564px;
+        color: $aqyaColor;
+        width: 250px;
+        font-size: x-large;
+        flex-basis: 75%;
+    
+    }
 }
 .buttons{
     display: flex;
     column-gap: 20px;
     position: relative;
     top: -10px;
-}
-.buttA{
-    display: grid;
-    gap: 10%;
-    grid-auto-rows: auto;
-    text-decoration: none;
-    width: 140px;
-}
-.but{
-    background-color: hsla(198, 100%, 50%, 0);
-    border-color: rgba(0, 255, 255, 0);
-    font-weight: 400;
-    font-size: 16px;
-    height: 50px; 
-    width: 150px;
-}
-.but:hover{
-    color: #46B1DE;
+    .buttA {
+        display: grid;
+        gap: 10%;
+        grid-auto-rows: auto;
+        text-decoration: none;
+        width: 140px;
+        .but {
+            background-color: rgba(0, 179, 255, 0);
+            border-color: rgba(0, 255, 255, 0);
+            font-weight: 400;
+            font-size: 16px;
+            height: 50px;
+            width: 150px;
+          }
+          &:hover {
+            color: #46b1de;
+          } 
+      }
 }
 .phone{
     width: 238px;
@@ -99,21 +112,21 @@ body{
     position: relative;
     top: -5px;
     left: 40px;
-}
-.tel{
-    font-weight: 400;
-    font-size: 16px;
-    text-decoration: none;
-    color: black;
-    flex-basis: 80%;
-    padding-top: 12px;
-    position: relative;
-}
-.tel::before{
-    content: url(/img/phone.svg);
-    position: absolute;
-    top: 14px;
-    left: -24px;
+    .tel{
+        font-weight: 400;
+        font-size: 16px;
+        text-decoration: none;
+        color: black;
+        flex-basis: 80%;
+        padding-top: 12px;
+        position: relative;
+    }
+    &::before{
+        content: url(/img/phone.svg);
+        position: absolute;
+        top: 14px;
+        left: -24px;
+    }
 }
 .secLeng{
     width: 90px;
@@ -134,103 +147,122 @@ body{
     opacity: 0;
     width: 0;
     height: 0;
+    #menu__toggle {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .menu__btn {
+        display: flex; 
+        align-items: center;  
+        position: absolute;
+        top: 100px;
+        left: 90%;  
+        width: 26px;
+        height: 26px;  
+        cursor: pointer;
+        z-index: 1;
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        display: block;
+        position: absolute; 
+        width: 100%;
+        height: 2px;  
+        background-color: #000;
+    }
+    .menu__btn > span::before {
+        content: '';
+        top: -8px;
+    }
+    .menu__btn > span::after {
+        content: '';
+        top: 8px;
+    }
+    /* .menu__box {
+        display: block;
+        position: absolute;
+        visibility: hidden;
+        top: 150px;
+        left: 100px;  
+        width: auto;
+        height: auto;  
+        margin: 0;
+        padding: 20px 0;  
+        list-style: none;
+        text-align: center;  
+        background-color: #fff;
+        box-shadow: 0 0 0 10px rgb(255, 255, 255), 0 5px 5px 15px #D9D9D9;
+    }
+    .menu__item {
+        display: block;
+        padding: 12px 24px;  
+        color: #333;  
+        font-family: 'Roboto';
+        font-size: 20px;
+        font-weight: 600;  
+        text-decoration: none;
+    } */
+    .menu__item:hover {
+        background-color: $aqyaColor;
+    }
+    #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+        animation-duration: 1s;
+    
+    }
+    #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+        animation-duration: 1s;
+    
+    }
+    #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+        animation-duration: 1s;
+    
+    }
+    #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+    }
 }
-#menu__toggle {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-.menu__btn {
-    display: flex; 
-    align-items: center;  
-    position: absolute;
-    top: 100px;
-    left: 90%;  
-    width: 26px;
-    height: 26px;  
-    cursor: pointer;
-    z-index: 1;
-}
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-    display: block;
-    position: absolute; 
-    width: 100%;
-    height: 2px;  
-    background-color: #000;
-}
-.menu__btn > span::before {
-    content: '';
-    top: -8px;
-}
-.menu__btn > span::after {
-    content: '';
-    top: 8px;
-}
-/* .menu__box {
-    display: block;
-    position: absolute;
-    visibility: hidden;
-    top: 150px;
-    left: 100px;  
-    width: auto;
-    height: auto;  
-    margin: 0;
-    padding: 20px 0;  
-    list-style: none;
-    text-align: center;  
-    background-color: #fff;
-    box-shadow: 0 0 0 10px rgb(255, 255, 255), 0 5px 5px 15px #D9D9D9;
-}
-.menu__item {
-    display: block;
-    padding: 12px 24px;  
-    color: #333;  
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-weight: 600;  
-    text-decoration: none;
-} */
-.menu__item:hover {
-    background-color: #46b1de;
-}
-#menu__toggle:checked ~ .menu__btn > span {
-    transform: rotate(45deg);
-    animation-duration: 1s;
-
-}
-#menu__toggle:checked ~ .menu__btn > span::before {
-    top: 0;
-    transform: rotate(0);
-    animation-duration: 1s;
-
-}
-#menu__toggle:checked ~ .menu__btn > span::after {
-    top: 0;
-    transform: rotate(90deg);
-    animation-duration: 1s;
-
-}
-#menu__toggle:checked ~ .menu__box {
-    visibility: visible;
-    left: 0;
-}
-  @media ( width <= 768px){
+@media ( width <= 768px){
     .hamburgerMenu{
         opacity: 1;
     }
+    %sectionMargin{
+        margin-bottom: 30px;
+    }
   }
 /* --------------Hamburger Menu-END---------- */
-.cont{
-    display: block;
-    height: 250px;
-    width: 500px; 
-}
+
 .contBut2{
     position: relative;
     animation-name: moveUP;
     animation-duration: 1s;
+    .cont{
+        display: block;
+        height: 250px;
+        width: 500px;
+        .h1{
+            line-height: 130%;
+            letter-spacing: 0.1em;
+            font-weight: 700;
+            font-size: 40px;
+            text-transform: uppercase;
+            @extend %titleRoboto;
+        }
+        .H3text{
+            font-weight: 400;
+            font-size: 20px;
+        }
+    }
+}
+.h1Span{
+    color: $aqyaColor;
 }
 @keyframes moveUP{
     0%{
@@ -265,21 +297,7 @@ body{
         opacity: 1;
     }
 }
-.h1{
-    line-height: 130%;
-    letter-spacing: 0.1em;
-    font-weight: 700;
-    font-size: 40px;
-    text-transform: uppercase;
-    font-family: 'Roboto';
-}
-.h1Span{
-    color: #46b1de;
-}
-.H3text{
-    font-weight: 400;
-    font-size: 20px;
-}
+
 .but2{
     font-weight: 400;
     font-size: 16px;
@@ -289,32 +307,31 @@ body{
     height: 100px;
     justify-content: space-between;
     position: relative;
-}
-
-.but2 a{
-    height: 60px;
-    width: 180px;
-}
-.butCall{
-    font-weight: 600;
-    font-size: 14px;
-    height: 60px;
-    width: 180px;
-    background-color: #46b1de;
-    border: 1px solid #46b1de;
-    color: white;
-    font-size: 25px;
-    border-radius: 10px;
-}
-.butServ{
-    font-weight: 600;
-    font-size: 14px;
-    border: 1px solid white;
-    height: 60px;
-    width: 180px;
-    color: #46b1de;
-    font-size: 25px;
-    border-radius: 10px;
+    & a{
+        height: 60px;
+        width: 180px;
+    }
+    .butCall{
+        font-weight: 600;
+        font-size: 14px;
+        height: 60px;
+        width: 180px;
+        background-color: $aqyaColor;
+        border: 1px solid $aqyaColor;
+        color: white;
+        font-size: 25px;
+        border-radius: 10px;
+    }
+    .butServ{
+        font-weight: 600;
+        font-size: 14px;
+        border: 1px solid white;
+        height: 60px;
+        width: 180px;
+        color: $aqyaColor;
+        font-size: 25px;
+        border-radius: 10px;
+    }
 }
 .butCallS{
     font-weight: 600;
@@ -331,6 +348,7 @@ body{
     width: auto;
     display: flex;
     justify-content: center;
+    @extend %sectionMargin;
 }
 .icon{
     grid-auto-flow: row;
@@ -348,7 +366,7 @@ body{
 .numIcon{
     font-weight: 400;
     font-size: 65px;
-    color: #46b1de;
+    color: $aqyaColor;
     flex-basis: 20%;
     padding: 15px 10px;
 }
@@ -368,6 +386,7 @@ body{
 .cont8{
     display: block;
     text-align: center;
+    @extend %sectionMargin;
 }
 .cont8TEXT{
     margin-top: 90px;
@@ -390,77 +409,80 @@ body{
     justify-items: center;
     height: auto;
     flex-direction: column;
-}
-.grid2x3{
-    border-radius: 12px;
-    width: 89%;
-    min-width: 950px;
-    height: 400px;
-    background-color: #46b1de;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(1, 550px);
-    padding-top: 13px;
-    justify-items: center;
-}
-.double{
-    display: grid; 
-    height: 400px;
-}
-.itemGrid{
-    border-radius: 8px;
-    display: block;
-    background-color: white;
-    width: 300px;
-    height: 176px;
-}
-.gridIcon{
-    display: flex;
-    width: 300px;
-    justify-content: start;
-    align-items: center;
-    text-align: start;
-    margin: 0;
-}
-.numGrigIcon{
-    padding: 10px 10px 10px 10px;
-    font-weight: 400;
-    font-size: 40px;
-    color: #46b1de;
-    flex-basis: 20%;
-}
-.textGridIcon{
-    font-weight: 700;
-    font-size: 18px;
-    color: #46b1de;
-    flex-basis: 80%;
-    margin: 0;
- 
-
-}
-.textGridIcon1{
-    max-width: 280px;
-    font-weight: 400;
-    font-size: 16px;
-    text-align: start;
-    padding-left: 10px;
-    position: relative;
-    top: -20px;
-}
-.textGridIconP{
-    font-weight: 400;
-    font-size: 16px;
+    .grid2x3{
+        border-radius: 12px;
+        width: 89%;
+        min-width: 950px;
+        height: 400px;
+        background-color: $aqyaColor;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(1, 550px);
+        padding-top: 13px;
+        justify-items: center;
+        @extend %sectionMargin;
+        .double{
+            display: grid; 
+            height: 400px;
+            .itemGrid{
+                border-radius: 8px;
+                display: block;
+                background-color: white;
+                width: 300px;
+                height: 176px;
+                .gridIcon{
+                    display: flex;
+                    width: 300px;
+                    justify-content: start;
+                    align-items: center;
+                    text-align: start;
+                    margin: 0;
+                    .numGrigIcon{
+                        padding: 10px 10px 10px 10px;
+                        font-weight: 400;
+                        font-size: 40px;
+                        color: $aqyaColor;
+                        flex-basis: 20%;
+                    }
+                    .textGridIcon{
+                        font-weight: 700;
+                        font-size: 18px;
+                        color: $aqyaColor;
+                        flex-basis: 80%;
+                        margin: 0;
+                     
+                    
+                    }
+                }
+                .textGridIcon1{
+                    max-width: 280px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    text-align: start;
+                    padding-left: 10px;
+                    position: relative;
+                    top: -20px;
+                    .textGridIconP{
+                        font-weight: 400;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
 }
 /* ----SECTION-GRID-BLOX-END---- */
 /* ------------------13HW------------------ */
 .servProve{
     display: block;
     width: 95%;
+    .servProveH3{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    @extend %sectionMargin;
 }
-.servProveH3{
-    text-align: center;
-    margin-bottom: 50px;
-}
+
 .gridMain{
     /* display: grid;
     grid-template-columns: 1fr 0.5fr 1fr;
@@ -470,8 +492,7 @@ body{
     height: 405px;
     padding: 10px;
     display: flex;
-    /* -------------------------- */
-    
+    /* -------------------------- */  
 }
 .ZubO{
     width: 302px;
@@ -517,7 +538,7 @@ body{
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background-color: #46B1DE;
+    background-color: $aqyaColor;
     display: flex;
     z-index: 5;
     position: absolute;
@@ -541,7 +562,7 @@ body{
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background-color: #46B1DE;
+    background-color: $aqyaColor;
     display: flex;
     z-index: 3;
     position: absolute;
@@ -566,7 +587,7 @@ body{
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background-color: #46B1DE;
+    background-color: $aqyaColor;
     display: flex;
     z-index: 3;
     position: absolute;
@@ -590,7 +611,7 @@ body{
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background-color: #46B1DE;
+    background-color: $aqyaColor;
     display: flex;
     z-index: 3;
     position: absolute;
@@ -611,12 +632,11 @@ body{
         top: 130px;
     }
 }
-.ElipsRD
-{
+.ElipsRD{
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background-color: #46B1DE;
+    background-color: $aqyaColor;
     display: flex;
     z-index: 3;
     position: absolute;
@@ -640,7 +660,7 @@ body{
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background-color: #46B1DE;
+    background-color: $aqyaColor;
     display: flex;
     z-index: 3;
     position: absolute;
@@ -701,7 +721,7 @@ body{
 .GridIconN{
     font-weight: 600;
     font-size: 20px;
-    color: #46b1de;
+    color: $aqyaColor;
     margin: 0;
 }
 .GridIconP{
@@ -717,13 +737,14 @@ body{
 .miniSec{
     display: flex;
     margin-top: 59px;
+    @extend %sectionMargin;
 }
 .miniSecText{
     position: relative;
     top: 25px;
     font-weight: 400;
     font-size: 20px;
-    color: #46B1DE;
+    color: $aqyaColor;
     margin-left: 16px;
 }
 /* ----------------13HW-END---------------- */
@@ -741,10 +762,21 @@ body{
     box-shadow: 0 0 0 10px rgb(255, 255, 255), 0 5px 5px 15px #D9D9D9;
     flex-direction: column;
     /* https://ruseller.com/lessons.php?rub=2&id=1301 */
-}
-.maApText{
-    margin-top: 30px;
-    text-align: center;
+    @extend %sectionMargin;
+    .maApText{
+        margin-top: 30px;
+        text-align: center;
+    }
+    .maApNext{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        align-items: center;
+        justify-items: center;
+    }
+    
 }
 .h2MaText{
     font-weight: 500;
@@ -757,15 +789,7 @@ body{
     font-weight: 400;
     font-size: 20px;
 }
-.maApNext{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 40px;
-    margin-top: 20px;
-    align-items: center;
-    justify-items: center;
-}
+
 .mNe{
     height: 57px;
     width: 233px;
@@ -775,11 +799,11 @@ body{
     border-radius: 8px;
     display: flex;
     padding-top: 5px;
-}
-.mNe:hover{
-    border: solid 2px #46B1DE;
-    height: 53px;
-    width: 229px;
+    &:hover{
+        border: solid 2px $aqyaColor;
+        height: 53px;
+        width: 229px;
+    }
 }
 .imgManTel{
     padding: 10px 8px 8px 10px;
@@ -823,8 +847,8 @@ input::placeholder {
     font-size: 19px;
     height: 50px;
     width: 180px;
-    background-color: #46b1de;
-    border: 1px solid #46B1DE;
+    background-color: $aqyaColor;
+    border: 1px solid $aqyaColor;
     color: white;
     font-size: 20px;
     border-radius: 10px;
@@ -870,7 +894,7 @@ input::placeholder {
     flex-basis: 20%;
 }
 .FDR{
-    font-family: 'Sofia Sans';
+    @extend %titleSofiaSans;
     font-weight: 400;
     font-size: 16.6926px;
     font-weight: bold;
@@ -880,12 +904,12 @@ input::placeholder {
     flex-basis: 70%;
 }
 .FDR1{
-    font-family: 'Sofia Sans';
+    @extend %titleSofiaSans;
     font-weight: 400;
     text-transform: none;
 }
 .FBut{
-    font-family: 'Sofia Sans';
+    @extend %titleSofiaSans;
     font-weight: 600;
     font-size: 20px;
     text-decoration: none;
@@ -905,7 +929,7 @@ input::placeholder {
     color: #fff;
 }
 .FbutEN{
-    font-family: 'Sofia Sans';
+    @extend %titleSofiaSans;
     font-weight: 400;
     font-size: 20px;
     text-decoration: none;
@@ -915,7 +939,7 @@ input::placeholder {
     top: -2px;
 }
 .Fbut{
-    font-family: 'Sofia Sans';
+    @extend %titleSofiaSans;
     font-weight: 400;
     font-size: 20px;
     text-decoration: none;
@@ -1059,7 +1083,7 @@ input::placeholder {
         width: 60%;
         min-width: 320px;
         height: auto;
-        background-color:#46b1de;
+        background-color:$aqyaColor;
         display: grid;
         grid-template-columns: repeat(1, auto);
         grid-template-rows: repeat(3, 400px);
@@ -1276,7 +1300,7 @@ input::placeholder {
         width: 60%;
         min-width: 320px;
         height: auto;
-        background-color:#46b1de;
+        background-color:$aqyaColor;
         display: grid;
         grid-template-columns: repeat(1, auto);
         grid-template-rows: repeat(3, 400px);
@@ -1323,7 +1347,7 @@ input::placeholder {
         font-weight: 14px;
         height: 35px;
         width: 100px;
-        background-color: #46b1de;
+        background-color: $aqyaColor;
         color: white;
         font-size: 25px;
         border-radius: 10px;
@@ -1336,7 +1360,7 @@ input::placeholder {
         font-weight: 14px;
         height: 35px;
         width: 100px;
-        color: #46b1de;
+        color: $aqyaColor;
         font-size: 25px;
         border-radius: 10px;
     }
