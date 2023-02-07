@@ -10,8 +10,7 @@
     font-family: Roboto;
     src: url(/fonts/Roboto-Light.woff);
 } */
-@import url(./);
-/* .contBut2 .cont .h1, body {
+.contBut2 .cont .h1, body {
   font-family: "Roboto";
 }
 
@@ -21,7 +20,7 @@
 
 .maAp, .miniSec, .servProve, .sectionGrid .grid2x3, .cont8, .section7les {
   margin-bottom: 90px;
-} */
+}
 
 body {
   cursor: pointer;
@@ -335,6 +334,14 @@ body {
   color: #46b1de;
   font-size: 25px;
   border-radius: 10px;
+}
+
+.triangleDown {
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 200px solid red;
 }
 
 .butCallS {

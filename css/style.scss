@@ -10,18 +10,7 @@
     font-family: Roboto;
     src: url(/fonts/Roboto-Light.woff);
 } */
-@import url(/css/_template.scss);
-// $aqyaColor: #46b1de;
-
-// %titleRoboto{
-//     font-family:'Roboto';
-// }
-// %titleSofiaSans{
-//     font-family: 'Sofia Sans'
-// }
-// %sectionMargin{
-//     margin-bottom: 90px;
-// }
+@import '_template';
 
 body{
     cursor: pointer;
@@ -333,6 +322,18 @@ body{
         border-radius: 10px;
     }
 }
+$Colore: red;
+@mixin triangleDown($width, $colore){
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: $width solid $colore;
+}
+.triangleDown{
+    @include triangleDown (200px, $Colore)
+}
+
 .butCallS{
     font-weight: 600;
     font-size: 19px;
