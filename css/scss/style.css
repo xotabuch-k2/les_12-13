@@ -10,6 +10,7 @@
     font-family: Roboto;
     src: url(/fonts/Roboto-Light.woff);
 } */
+@import url(./);
 /* .contBut2 .cont .h1, body {
   font-family: "Roboto";
 }
