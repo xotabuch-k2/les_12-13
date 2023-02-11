@@ -32,5 +32,4 @@ let hw_2 = hw_1;
 alert(`Your salary is ${hw_1} +1$ is:${hw_2}$`);
 rez = (hw_2>=2000);
 alert(`Will you work next? ${rez}`)
-alert.rez(true)(`Will you work next000000000000000?`);
-alert.rez(false)(`Will you work next11111111111111?`);
+alert(rez && "I\'m ready to work" || !rez && "I\'m out");
