@@ -74,9 +74,10 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 // }
 var data = +prompt("Enter number");
 
-while (data = !_typeof('number')) {
+while (data != _typeof("number")) {
+  console.log(data);
   data = +prompt("Enter number");
 }
 
-var rez = +data * 12;
-alert("Rezalt: ".concat(rez));
+var rez = data * 12;
+alert(rez);

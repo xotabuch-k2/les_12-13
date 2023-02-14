@@ -82,8 +82,9 @@
 
 
 let data = +prompt ("Enter number");
-while (data=!typeof 'number') {
+while (data!=typeof "number") {
+    console.log(data);
     data = +prompt ("Enter number");
 }
-let rez = +data*12;
-alert(`Rezalt: ${rez}`);
+let rez = data*12;
+alert(rez);
