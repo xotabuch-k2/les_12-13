@@ -1,5 +1,7 @@
 "use strict";
 
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
 // console.log('You can ignore single and dooble quots like this: \\ \'\\\' \\" \\" ')
 // console.log(Boolean(alert('5')))   // Boolean логичксуий тип данных. В него можно помещать только  два значение "правда" "лож"
 // console.log(true > false)  // Сравнивать можно исчисляемые типа дынных, а не логичесский объект у которого есть только 2 значения (стр. 4). 
@@ -39,29 +41,42 @@
 //     confirm("Do you have a jobe?")
 // } else (confirm("What are you doing?"))
 /////2HW///////////////////////////////////////////
-var style = prompt(" Enter CSS Display style: \n1-block; \n2-flex; \n3-grid; \n4-inline; \n5-none.");
+// let style = prompt(" Enter CSS Display style: \n1-block; \n2-flex; \n3-grid; \n4-inline; \n5-none.")
+// switch (style) {
+//     case style="block":
+//         alert('Display: block');
+//         break;
+//     case style='flex':
+//         alert('Display: flex');
+//         break;
+//     case style='grid':
+//         alert('Display: grid');
+//         break;
+//     case style='inline':
+//         alert('Display: inline');
+//         break;
+//     case style='none':
+//         alert('Display: none');
+//         break;
+//     default:
+//         alert('Set \'display: inline-block;\'');
+// }
+/////3HW///////////////////////////////////////////
+// let data = prompt ("Enter number");
+// let Mdata=+data;
+// console.log (Mdata===!NaN);
+// if (Mdata===!NaN) {
+//     let rezalt=Mdata*12;
+//     console.log(rezalt);
+//     alert(Rezalt ADD: ${Mdata});
+// } else {
+//     alert(Rezalt: ${Mdata});
+// }
+var data = +prompt("Enter number");
 
-switch (style) {
-  case style = "block":
-    alert('Display: block');
-    break;
+while (data = !_typeof('number')) {
+  data = +prompt("Enter number");
+}
 
-  case style = 'flex':
-    alert('Display: flex');
-    break;
-
-  case style = 'grid':
-    alert('Display: grid');
-    break;
-
-  case style = 'inline':
-    alert('Display: inline');
-    break;
-
-  case style = 'none':
-    alert('Display: none');
-    break;
-
-  default:
-    alert('Set \'display: inline-block;\'');
-} /////3HW///////////////////////////////////////////
+var rez = +data * 12;
+alert("Rezalt: ".concat(rez));

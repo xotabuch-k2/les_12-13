@@ -48,24 +48,42 @@
 //     confirm("Do you have a jobe?")
 // } else (confirm("What are you doing?"))
 /////2HW///////////////////////////////////////////
-let style = prompt(" Enter CSS Display style: \n1-block; \n2-flex; \n3-grid; \n4-inline; \n5-none.")
-switch (style) {
-    case style="block":
-        alert('Display: block');
-        break;
-    case style='flex':
-        alert('Display: flex');
-        break;
-    case style='grid':
-        alert('Display: grid');
-        break;
-    case style='inline':
-        alert('Display: inline');
-        break;
-    case style='none':
-        alert('Display: none');
-        break;
-    default:
-        alert('Set \'display: inline-block;\'');
-}
+// let style = prompt(" Enter CSS Display style: \n1-block; \n2-flex; \n3-grid; \n4-inline; \n5-none.")
+// switch (style) {
+//     case style="block":
+//         alert('Display: block');
+//         break;
+//     case style='flex':
+//         alert('Display: flex');
+//         break;
+//     case style='grid':
+//         alert('Display: grid');
+//         break;
+//     case style='inline':
+//         alert('Display: inline');
+//         break;
+//     case style='none':
+//         alert('Display: none');
+//         break;
+//     default:
+//         alert('Set \'display: inline-block;\'');
+// }
 /////3HW///////////////////////////////////////////
+// let data = prompt ("Enter number");
+// let Mdata=+data;
+// console.log (Mdata===!NaN);
+// if (Mdata===!NaN) {
+//     let rezalt=Mdata*12;
+//     console.log(rezalt);
+//     alert(Rezalt ADD: ${Mdata});
+// } else {
+//     alert(Rezalt: ${Mdata});
+// }
+
+
+let data = +prompt ("Enter number");
+while (data=!typeof 'number') {
+    data = +prompt ("Enter number");
+}
+let rez = +data*12;
+alert(`Rezalt: ${rez}`);
