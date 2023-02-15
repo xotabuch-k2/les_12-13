@@ -75,8 +75,8 @@ let data = +prompt ("Enter number");
 }
 alert(data*12);
 /////4HW///////////////////////////////////////////
-let data = +prompt ("Enter number");
-for (let i = 2; i <= data; i++) {
+let data4 = +prompt ("Enter number");
+for (let i = 2; i <= data4; i++) {
     if (i % 2 == 0) {
       console.log( i );
     }
