@@ -58,11 +58,17 @@
 //         alert('Set \'display: inline-block;\'');
 // }
 /////3HW///////////////////////////////////////////
-// let data = +prompt ("Enter number");
-//  while (typeof data!=='number') {
-//     data = +prompt ("Enter number");
+// let data = prompt ("Enter number");
+// data= Number(data);
+// while (isNaN(data)) {
+//     data = prompt ("Enter number");
 // }
-// alert(data*12);
+// if (data>=0) {
+//     alert(data*12);
+// }
+// while (data<0) {
+//     data = prompt ("Enter number");
+// }
 /////4HW///////////////////////////////////////////
 // let data4 = +prompt ("Enter number");
 // for (let i = 2; i <= data4; i++) {
@@ -70,3 +76,35 @@
 //       console.log( i );
 //     }
 //   }
+///////////////////////////////////////////////////
+/////1HW///////////////////////////////////////////
+// maxNumber(+prompt('Enter A'), +prompt('Enter B'));
+// function maxNumber(a,b) {
+//     if (a>b) {
+//         alert("maxNumber (a>b)");
+//     }
+//     else if (a<b) {
+//         alert("maxNumber (a<b)");
+//     }
+//     else{
+//         alert("maxNumber (a=b)");
+//     }
+// }
+/////2HW///////////////////////////////////////////
+// revers(+prompt('Enter Number'));
+// function revers(c) {
+//     if(c === "0") {
+//         c = c * (1);
+//         alert(`Your revers: ${c}`);
+//       }
+//       c = c * (-1);
+//       alert(`Your revers: ${c}`);
+// }
+/////3HW///////////////////////////////////////////
+three(+prompt('Enter number'), +prompt('Enter count'))
+function three(number, count){
+    let rez = number + 3*count;
+    alert(rez);
+    alert(three(+number,+count));//не совсем понимаю для чего?
+};
+/////4HW///////////////////////////////////////////

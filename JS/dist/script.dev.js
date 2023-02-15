@@ -1,3 +1,5 @@
+"use strict";
+
 // console.log('You can ignore single and dooble quots like this: \\ \'\\\' \\" \\" ')
 // console.log(Boolean(alert('5')))   // Boolean логичксуий тип данных. В него можно помещать только  два значение "правда" "лож"
 // console.log(true > false)  // Сравнивать можно исчисляемые типа дынных, а не логичесский объект у которого есть только 2 значения (стр. 4). 
@@ -58,11 +60,17 @@
 //         alert('Set \'display: inline-block;\'');
 // }
 /////3HW///////////////////////////////////////////
-// let data = +prompt ("Enter number");
-//  while (typeof data!=='number') {
-//     data = +prompt ("Enter number");
+// let data = prompt ("Enter number");
+// data= Number(data);
+// while (isNaN(data)) {
+//     data = prompt ("Enter number");
 // }
-// alert(data*12);
+// if (data>=0) {
+//     alert(data*12);
+// }
+// while (data<0) {
+//     data = prompt ("Enter number");
+// }
 /////4HW///////////////////////////////////////////
 // let data4 = +prompt ("Enter number");
 // for (let i = 2; i <= data4; i++) {
@@ -70,4 +78,37 @@
 //       console.log( i );
 //     }
 //   }
-"use strict";
+///////////////////////////////////////////////////
+/////1HW///////////////////////////////////////////
+// maxNumber(+prompt('Enter A'), +prompt('Enter B'));
+// function maxNumber(a,b) {
+//     if (a>b) {
+//         alert("maxNumber (a>b)");
+//     }
+//     else if (a<b) {
+//         alert("maxNumber (a<b)");
+//     }
+//     else{
+//         alert("maxNumber (a=b)");
+//     }
+// }
+/////2HW///////////////////////////////////////////
+// revers(+prompt('Enter Number'));
+// function revers(c) {
+//     if(c === "0") {
+//         c = c * (1);
+//         alert(`Your revers: ${c}`);
+//       }
+//       c = c * (-1);
+//       alert(`Your revers: ${c}`);
+// }
+/////3HW///////////////////////////////////////////
+three(+prompt('Enter number'), +prompt('Enter count'));
+
+function three(number, count) {
+  var rez = number + 3 * count;
+  alert(rez);
+  alert(three(+number, +count)); //не совсем понимаю для чего?
+}
+
+; /////4HW///////////////////////////////////////////
