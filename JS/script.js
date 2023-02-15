@@ -69,16 +69,16 @@ switch (style) {
         alert('Set \'display: inline-block;\'');
 }
 /////3HW///////////////////////////////////////////
-let data = +prompt ("Enter number");
-if (data>0) {
-    while (typeof (data)!=='number') {
-        data = +prompt ("Enter number");
-    }
+let data = prompt ("Enter number");
+data= Number(data);
+while (isNaN(data)) {
+    data = prompt ("Enter number");
+}
+if (data>=0) {
     alert(data*12);
 }
-else{
-    alert('Число не положительное');
-    data = +prompt ("Enter number");
+while (data<0) {
+    data = prompt ("Enter number");
 }
 /////4HW///////////////////////////////////////////
 let data4 = +prompt ("Enter number");

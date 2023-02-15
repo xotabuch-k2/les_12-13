@@ -69,17 +69,19 @@ switch (style) {
 } /////3HW///////////////////////////////////////////
 
 
-var data = +prompt("Enter number");
+var data = prompt("Enter number");
+data = Number(data);
 
-if (data > 0) {
-  while (typeof data !== 'number') {
-    data = +prompt("Enter number");
-  }
+while (isNaN(data)) {
+  data = prompt("Enter number");
+}
 
+if (data >= 0) {
   alert(data * 12);
-} else {
-  alert('Число не положительное');
-  data = +prompt("Enter number");
+}
+
+while (data < 0) {
+  data = prompt("Enter number");
 } /////4HW///////////////////////////////////////////
 
 
