@@ -39,52 +39,45 @@
 
 
 /////1HW///////////////////////////////////////////
-// let age = prompt(" Enter your age", );
-// if (age<17) {
-//     confirm("Do you stadu at school?")
-// } else if (age>17 && age<25) {
-//     confirm("Do you stadu at university?")
-// } else if (age>=25 && age<60) {
-//     confirm("Do you have a jobe?")
-// } else (confirm("What are you doing?"))
+let age = prompt(" Enter your age", );
+if (age<17) {
+    confirm("Do you stadu at school?")
+} else if (age>17 && age<25) {
+    confirm("Do you stadu at university?")
+} else if (age>=25 && age<60) {
+    confirm("Do you have a jobe?")
+} else (confirm("What are you doing?"))
 /////2HW///////////////////////////////////////////
-// let style = prompt(" Enter CSS Display style: \n1-block; \n2-flex; \n3-grid; \n4-inline; \n5-none.")
-// switch (style) {
-//     case style="block":
-//         alert('Display: block');
-//         break;
-//     case style='flex':
-//         alert('Display: flex');
-//         break;
-//     case style='grid':
-//         alert('Display: grid');
-//         break;
-//     case style='inline':
-//         alert('Display: inline');
-//         break;
-//     case style='none':
-//         alert('Display: none');
-//         break;
-//     default:
-//         alert('Set \'display: inline-block;\'');
-// }
+let style = prompt(" Enter CSS Display style: \n1-block; \n2-flex; \n3-grid; \n4-inline; \n5-none.")
+switch (style) {
+    case style="block":
+        alert('Display: block');
+        break;
+    case style='flex':
+        alert('Display: flex');
+        break;
+    case style='grid':
+        alert('Display: grid');
+        break;
+    case style='inline':
+        alert('Display: inline');
+        break;
+    case style='none':
+        alert('Display: none');
+        break;
+    default:
+        alert('Set \'display: inline-block;\'');
+}
 /////3HW///////////////////////////////////////////
-// let data = prompt ("Enter number");
-// let Mdata=+data;
-// console.log (Mdata===!NaN);
-// if (Mdata===!NaN) {
-//     let rezalt=Mdata*12;
-//     console.log(rezalt);
-//     alert(Rezalt ADD: ${Mdata});
-// } else {
-//     alert(Rezalt: ${Mdata});
-// }
-
-
 let data = +prompt ("Enter number");
-while (data!=typeof "number") {
-    console.log(data);
+ while (typeof data!=='number') {
     data = +prompt ("Enter number");
 }
-let rez = data*12;
-alert(rez);
+alert(data*12);
+/////4HW///////////////////////////////////////////
+let data = +prompt ("Enter number");
+for (let i = 2; i <= data; i++) {
+    if (i % 2 == 0) {
+      console.log( i );
+    }
+  }

@@ -1,7 +1,5 @@
 "use strict";
 
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
 // console.log('You can ignore single and dooble quots like this: \\ \'\\\' \\" \\" ')
 // console.log(Boolean(alert('5')))   // Boolean логичксуий тип данных. В него можно помещать только  два значение "правда" "лож"
 // console.log(true > false)  // Сравнивать можно исчисляемые типа дынных, а не логичесский объект у которого есть только 2 значения (стр. 4). 
@@ -62,22 +60,16 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 //         alert('Set \'display: inline-block;\'');
 // }
 /////3HW///////////////////////////////////////////
-// let data = prompt ("Enter number");
-// let Mdata=+data;
-// console.log (Mdata===!NaN);
-// if (Mdata===!NaN) {
-//     let rezalt=Mdata*12;
-//     console.log(rezalt);
-//     alert(Rezalt ADD: ${Mdata});
-// } else {
-//     alert(Rezalt: ${Mdata});
-// }
 var data = +prompt("Enter number");
 
-while (data != _typeof("number")) {
-  console.log(data);
+while (typeof data !== 'number') {
   data = +prompt("Enter number");
 }
 
-var rez = data * 12;
-alert(rez);
+alert(data * 12); /////4HW///////////////////////////////////////////
+// let data = +prompt ("Enter number");
+// for (let i = 2; i <= data; i++) {
+//     if (i % 2 == 0) {
+//       console.log( i );
+//     }
+//   }
