@@ -1,5 +1,3 @@
-"use strict";
-
 // console.log('You can ignore single and dooble quots like this: \\ \'\\\' \\" \\" ')
 // console.log(Boolean(alert('5')))   // Boolean логичксуий тип данных. В него можно помещать только  два значение "правда" "лож"
 // console.log(true > false)  // Сравнивать можно исчисляемые типа дынных, а не логичесский объект у которого есть только 2 значения (стр. 4). 
@@ -65,16 +63,11 @@
 //     data = +prompt ("Enter number");
 // }
 // alert(data*12);
-var data = prompt("Enter number");
-
-if (isNumeric(data)) {
-  if (data > 0) {
-    alert(data * 12);
-  } else alert('Число не положительное');
-} else data = prompt("Enter number"); /////4HW///////////////////////////////////////////
+/////4HW///////////////////////////////////////////
 // let data4 = +prompt ("Enter number");
 // for (let i = 2; i <= data4; i++) {
 //     if (i % 2 == 0) {
 //       console.log( i );
 //     }
 //   }
+"use strict";
