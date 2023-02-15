@@ -70,10 +70,16 @@ switch (style) {
 }
 /////3HW///////////////////////////////////////////
 let data = +prompt ("Enter number");
- while (typeof data!=='number') {
+if (data>0) {
+    while (typeof (data)!=='number') {
+        data = +prompt ("Enter number");
+    }
+    alert(data*12);
+}
+else{
+    alert('Число не положительное');
     data = +prompt ("Enter number");
 }
-alert(data*12);
 /////4HW///////////////////////////////////////////
 let data4 = +prompt ("Enter number");
 for (let i = 2; i <= data4; i++) {

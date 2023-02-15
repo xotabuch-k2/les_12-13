@@ -71,11 +71,17 @@ switch (style) {
 
 var data = +prompt("Enter number");
 
-while (typeof data !== 'number') {
-  data = +prompt("Enter number");
-}
+if (data > 0) {
+  while (typeof data !== 'number') {
+    data = +prompt("Enter number");
+  }
 
-alert(data * 12); /////4HW///////////////////////////////////////////
+  alert(data * 12);
+} else {
+  alert('Число не положительное');
+  data = +prompt("Enter number");
+} /////4HW///////////////////////////////////////////
+
 
 var data4 = +prompt("Enter number");
 
