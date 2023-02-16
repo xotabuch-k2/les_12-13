@@ -78,36 +78,35 @@
 //   }
 ///////////////////////////////////////////////////
 /////1HW///////////////////////////////////////////
-// maxNumber(+prompt('Enter A'), +prompt('Enter B'));
-// function maxNumber(a,b) {
-//     if (a>b) {
-//         alert("maxNumber (a>b)");
-//     }
-//     else if (a<b) {
-//         alert("maxNumber (a<b)");
-//     }
-//     else{
-//         alert("maxNumber (a=b)");
-//     }
-// }
+maxNumber(+prompt('Enter A'), +prompt('Enter B'));
+function maxNumber(a,b) {
+    if (a>b) {
+        alert("maxNumber (a>b)");
+    }
+    else if (a<b) {
+        alert("maxNumber (a<b)");
+    }
+    else{
+        alert("maxNumber (a=b)");
+    }
+}
 /////2HW///////////////////////////////////////////
-// revers(+prompt('Enter Number'));
-// function revers(c) {
-//     if(c === "0") {
-//         c = c * (1);
-//         alert(`Your revers: ${c}`);
-//       }alert(`Your revers: ${c}`);
-//       c = c * (-1);
-    //   alert(`Your revers: ${c}`);
-// }
+revers(+prompt('Enter Number'));
+function revers(c) {
+    if(c === "0") {
+        c = c * (1);
+        alert(`Your revers: ${c}`);
+      }alert(`Your revers: ${c}`);
+      c = c * (-1);
+      alert(`Your revers: ${c}`);
+}
 /////3HW///////////////////////////////////////////
-// three(+prompt('Enter number'), +prompt('Enter count'))
-// function three(number, count){
-//     let rez = number + 3*count;
-//     return rez;
-// };
+three(+prompt('Enter number'), +prompt('Enter count'))
+function three(number, count){
+    let rez = number + 3*count;
+    return rez;
+};
 /////4HW///////////////////////////////////////////
-
 getMetric(metric=prompt('Metric (m or cm)'), km=prompt('km'),m=0 ,cm=0)
 // alert(`getMetric(${metric},${km},${m},${cm})`);
 function getMetric(metric, km) {
