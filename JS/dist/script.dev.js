@@ -98,17 +98,37 @@
 //     if(c === "0") {
 //         c = c * (1);
 //         alert(`Your revers: ${c}`);
-//       }
+//       }alert(`Your revers: ${c}`);
 //       c = c * (-1);
-//       alert(`Your revers: ${c}`);
+//   alert(`Your revers: ${c}`);
 // }
 /////3HW///////////////////////////////////////////
-three(+prompt('Enter number'), +prompt('Enter count'));
+// three(+prompt('Enter number'), +prompt('Enter count'))
+// function three(number, count){
+//     let rez = number + 3*count;
+//     return rez;
+// };
+/////4HW///////////////////////////////////////////
+getMetric(metric = prompt('Metric (m or cm)'), km = prompt('km'), m = 0, cm = 0); // alert(`getMetric(${metric},${km},${m},${cm})`);
 
-function three(number, count) {
-  var rez = number + 3 * count;
-  alert(rez);
-  alert(three(+number, +count)); //не совсем понимаю для чего?
+function getMetric(metric, km) {
+  if (metric === "cm") {
+    KmToCm(km);
+  } else if (metric === "m") {
+    KmToM(km);
+  } else {
+    alert('Error enter metric');
+  }
 }
 
-; /////4HW///////////////////////////////////////////
+function KmToM(km) {
+  var KmM = +km * 1000;
+  alert("".concat(KmM, "m"));
+  alert("getMetric(".concat(metric, " metric, ").concat(km, "km, ").concat(KmM, "m, ").concat(cm, "cm)"));
+}
+
+function KmToCm(km) {
+  var KmCm = +km * 100000;
+  alert("".concat(KmCm, "cm"));
+  alert("getMetric(".concat(metric, " metric, ").concat(km, "km, ").concat(m, "m, ").concat(KmCm, "cm)"));
+}

@@ -96,15 +96,38 @@
 //     if(c === "0") {
 //         c = c * (1);
 //         alert(`Your revers: ${c}`);
-//       }
+//       }alert(`Your revers: ${c}`);
 //       c = c * (-1);
-//       alert(`Your revers: ${c}`);
+    //   alert(`Your revers: ${c}`);
 // }
 /////3HW///////////////////////////////////////////
-three(+prompt('Enter number'), +prompt('Enter count'))
-function three(number, count){
-    let rez = number + 3*count;
-    alert(rez);
-    alert(three(+number,+count));//не совсем понимаю для чего?
-};
+// three(+prompt('Enter number'), +prompt('Enter count'))
+// function three(number, count){
+//     let rez = number + 3*count;
+//     return rez;
+// };
 /////4HW///////////////////////////////////////////
+
+getMetric(metric=prompt('Metric (m or cm)'), km=prompt('km'),m=0 ,cm=0)
+// alert(`getMetric(${metric},${km},${m},${cm})`);
+function getMetric(metric, km) {
+    if (metric==="cm") {
+        KmToCm(km);
+    } 
+    else if (metric==="m") {
+        KmToM(km);
+    } 
+    else{
+        alert ('Error enter metric');
+    }
+}
+function KmToM(km) {
+    let KmM = +km*1000;
+    alert(`${KmM}m`);
+    alert(`getMetric(${metric} metric, ${km}km, ${KmM}m, ${cm}cm)`);
+}
+function KmToCm(km) {
+    let KmCm= +km*100000;
+    alert(`${KmCm}cm`);
+    alert(`getMetric(${metric} metric, ${km}km, ${m}m, ${KmCm}cm)`);
+}
