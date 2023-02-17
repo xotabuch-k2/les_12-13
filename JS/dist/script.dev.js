@@ -80,43 +80,49 @@
 //   }
 ///////////////////////////////////////////////////
 /////1HW///////////////////////////////////////////
-maxNumber(+prompt('Enter A'), +prompt('Enter B'));
+maxNumber(a = +prompt('Enter A'), b = +prompt('Enter B'));
 
 function maxNumber(a, b) {
   if (a > b) {
-    alert("maxNumber (a>b)");
+    c1 = 'a';
+    return c1;
   } else if (a < b) {
-    alert("maxNumber (a<b)");
+    c1 = 'b';
+    return c1;
   } else {
-    alert("maxNumber (a=b)");
+    c1 = 'a=b';
+    return c1;
   }
-} /////2HW///////////////////////////////////////////
+}
 
+alert("maxNumber(".concat(c1, ")")); /////2HW///////////////////////////////////////////
 
-revers(+prompt('Enter Number'));
+revers(c = +prompt('Enter Number'));
 
 function revers(c) {
   if (c === "0") {
-    c = c * 1;
-    alert("Your revers: ".concat(c));
+    ca = c * 1;
   }
 
-  alert("Your revers: ".concat(c));
-  c = c * -1;
-  alert("Your revers: ".concat(c));
-} /////3HW///////////////////////////////////////////
+  ca = c * -1;
+  return ca;
+}
 
+alert("revers ".concat(ca)); /////3HW///////////////////////////////////////////
 
-three(+prompt('Enter number'), +prompt('Enter count'));
+three(number = +prompt('Enter number'), count = +prompt('Enter count'));
 
 function three(number, count) {
-  var rez = number + 3 * count;
+  rez = +number + 3 * +count;
   return rez;
 }
 
-; /////4HW///////////////////////////////////////////
+;
+alert("three(".concat(number, ", ").concat(count, ", result: ").concat(rez, ")")); /////4HW///////////////////////////////////////////
 
-getMetric(metric = prompt('Metric (m or cm)'), km = prompt('km'), m = 0, cm = 0); // alert(`getMetric(${metric},${km},${m},${cm})`);
+var KmM;
+var KmCm;
+getMetric(metric = prompt('Metric (m or cm)'), km = prompt('km'), m = 0, cm = 0);
 
 function getMetric(metric, km) {
   if (metric === "cm") {
@@ -129,13 +135,29 @@ function getMetric(metric, km) {
 }
 
 function KmToM(km) {
-  var KmM = +km * 1000;
-  alert("".concat(KmM, "m"));
-  alert("getMetric(".concat(metric, " metric, ").concat(km, "km, ").concat(KmM, "m, ").concat(cm, "cm)"));
+  KmM = +km * 1000;
+
+  if (KmM == undefined) {
+    KmM = 0;
+  } else if (KmCm == undefined) {
+    KmCm = 0;
+  }
+
+  console.log(KmM);
+  return KmM;
 }
 
 function KmToCm(km) {
-  var KmCm = +km * 100000;
-  alert("".concat(KmCm, "cm"));
-  alert("getMetric(".concat(metric, " metric, ").concat(km, "km, ").concat(m, "m, ").concat(KmCm, "cm)"));
+  KmCm = +km * 100000;
+
+  if (KmM == undefined) {
+    KmM = 0;
+  } else if (KmCm == undefined) {
+    KmCm = 0;
+  }
+
+  console.log(KmCm);
+  return KmCm;
 }
+
+alert("getMetric( ".concat(metric, " metric, ").concat(km, "km, ").concat(KmM, "m, ").concat(KmCm, "cm)"));

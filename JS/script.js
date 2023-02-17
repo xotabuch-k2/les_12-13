@@ -78,37 +78,43 @@
 //   }
 ///////////////////////////////////////////////////
 /////1HW///////////////////////////////////////////
-maxNumber(+prompt('Enter A'), +prompt('Enter B'));
+maxNumber(a=+prompt('Enter A'),b=+prompt('Enter B'));
 function maxNumber(a,b) {
     if (a>b) {
-        alert("maxNumber (a>b)");
+        c1='a';
+        return c1;
     }
     else if (a<b) {
-        alert("maxNumber (a<b)");
+        c1='b';
+        return c1;
     }
     else{
-        alert("maxNumber (a=b)");
+        c1='a=b';
+        return c1;
     }
 }
+alert(`maxNumber(${c1})`)
 /////2HW///////////////////////////////////////////
-revers(+prompt('Enter Number'));
+revers(c=+prompt('Enter Number'));
 function revers(c) {
     if(c === "0") {
-        c = c * (1);
-        alert(`Your revers: ${c}`);
-      }alert(`Your revers: ${c}`);
-      c = c * (-1);
-      alert(`Your revers: ${c}`);
+        ca = c * (1);
+      }
+      ca = c * (-1);
+      return ca;
 }
+alert(`revers ${ca}`);
 /////3HW///////////////////////////////////////////
-three(+prompt('Enter number'), +prompt('Enter count'))
-function three(number, count){
-    let rez = number + 3*count;
+three(number=+prompt('Enter number'), count=+prompt('Enter count'))
+    function three(number, count){
+    rez = +number + 3*+count;
     return rez;
 };
+alert(`three(${number}, ${count}, result: ${rez})`);
 /////4HW///////////////////////////////////////////
+let KmM;
+let KmCm;
 getMetric(metric=prompt('Metric (m or cm)'), km=prompt('km'),m=0 ,cm=0)
-// alert(`getMetric(${metric},${km},${m},${cm})`);
 function getMetric(metric, km) {
     if (metric==="cm") {
         KmToCm(km);
@@ -120,13 +126,24 @@ function getMetric(metric, km) {
         alert ('Error enter metric');
     }
 }
-function KmToM(km) {
-    let KmM = +km*1000;
-    alert(`${KmM}m`);
-    alert(`getMetric(${metric} metric, ${km}km, ${KmM}m, ${cm}cm)`);
-}
-function KmToCm(km) {
-    let KmCm= +km*100000;
-    alert(`${KmCm}cm`);
-    alert(`getMetric(${metric} metric, ${km}km, ${m}m, ${KmCm}cm)`);
-}
+    function KmToM(km) {
+        KmM = +km*1000;
+        if (KmM==undefined) {
+                KmM = 0;
+            } else if (KmCm==undefined) {
+                KmCm = 0;
+            }
+        console.log(KmM);
+        return KmM;
+    }
+    function KmToCm(km) {
+        KmCm= +km*100000;
+        if (KmM==undefined) {
+            KmM = 0;
+        } else if (KmCm==undefined) {
+            KmCm = 0;
+        }
+        console.log(KmCm);
+        return KmCm;
+    }
+alert(`getMetric( ${metric} metric, ${km}km, ${KmM}m, ${KmCm}cm)`);
