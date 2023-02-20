@@ -80,84 +80,135 @@
 //   }
 ///////////////////////////////////////////////////
 /////1HW///////////////////////////////////////////
-maxNumber(a = +prompt('Enter A'), b = +prompt('Enter B'));
-
-function maxNumber(a, b) {
-  if (a > b) {
-    c1 = 'a';
-    return c1;
-  } else if (a < b) {
-    c1 = 'b';
-    return c1;
-  } else {
-    c1 = 'a=b';
-    return c1;
+// maxNumber(a=+prompt('Enter A'),b=+prompt('Enter B'));
+// function maxNumber(a,b) {
+//     if (a>b) {
+//         c1='a';
+//         return c1;
+//     }
+//     else if (a<b) {
+//         c1='b';
+//         return c1;
+//     }
+//     else{
+//         c1='a=b';
+//         return c1;
+//     }
+// }
+// alert(`maxNumber(${c1})`)
+/////2HW///////////////////////////////////////////
+// revers(c=+prompt('Enter Number'));
+// function revers(c) {
+//     if(c === "0") {
+//         ca = c * (1);
+//       }
+//       ca = c * (-1);
+//       return ca;
+// }
+// alert(`revers ${ca}`);
+/////3HW///////////////////////////////////////////
+// three(number=+prompt('Enter number'), count=+prompt('Enter count'))
+//     function three(number, count){
+//     rez = +number + 3*+count;
+//     return rez;
+// };
+// alert(`three(${number}, ${count}, result: ${rez})`);
+/////4HW///////////////////////////////////////////
+// let KmM;
+// let KmCm;
+// getMetric(metric=prompt('Metric (m or cm)'), km=prompt('km'),m=0 ,cm=0)
+// function getMetric(metric, km) {
+//     if (metric==="cm") {
+//         KmToCm(km);
+//     } 
+//     else if (metric==="m") {
+//         KmToM(km);
+//     } 
+//     else{
+//         alert ('Error enter metric');
+//     }
+// }
+//     function KmToM(km) {
+//         KmM = +km*1000;
+//         if (KmM==undefined) {
+//                 KmM = 0;
+//             } else if (KmCm==undefined) {
+//                 KmCm = 0;
+//             }
+//         console.log(KmM);
+//         return KmM;
+//     }
+//     function KmToCm(km) {
+//         KmCm= +km*100000;
+//         if (KmM==undefined) {
+//             KmM = 0;
+//         } else if (KmCm==undefined) {
+//             KmCm = 0;
+//         }
+//         console.log(KmCm);
+//         return KmCm;
+//     }
+// alert(`getMetric( ${metric} metric, ${km}km, ${KmM}m, ${KmCm}cm)`);
+///////////////////////////////////////////////////
+/////1HW///////////////////////////////////////////
+var car = {
+  model: "model",
+  year: 2006,
+  color: 'black',
+  signal: function signal() {
+    alert('fa! fa!');
   }
-}
+};
+car.color = 'red';
+car.type = 'electric';
+console.log(car);
+console.log(car.signal); /////2HW///////////////////////////////////////////
 
-alert("maxNumber(".concat(c1, ")")); /////2HW///////////////////////////////////////////
+var salaries = {
+  fronted: 12000,
+  backend: 10000,
+  designer: 8000 // buh:12345,
 
-revers(c = +prompt('Enter Number'));
+};
 
-function revers(c) {
-  if (c === "0") {
-    ca = c * 1;
+function total(salaries) {
+  var rez = 0;
+
+  for (var key in salaries) {
+    rez += salaries[key];
   }
 
-  ca = c * -1;
-  return ca;
-}
-
-alert("revers ".concat(ca)); /////3HW///////////////////////////////////////////
-
-three(number = +prompt('Enter number'), count = +prompt('Enter count'));
-
-function three(number, count) {
-  rez = +number + 3 * +count;
   return rez;
 }
 
-;
-alert("three(".concat(number, ", ").concat(count, ", result: ").concat(rez, ")")); /////4HW///////////////////////////////////////////
+console.log(total(salaries)); /////3-4HW///////////////////////////////////////////
 
-var KmM;
-var KmCm;
-getMetric(metric = prompt('Metric (m or cm)'), km = prompt('km'), m = 0, cm = 0);
+function laptop(brand, system, cost) {
+  this.brand = brand, this.system = system, this.cost = cost, this[Symbol.toPrimitive] = function (hint) {
+    switch (hint) {
+      case "string":
+        return this.brand;
 
-function getMetric(metric, km) {
-  if (metric === "cm") {
-    KmToCm(km);
-  } else if (metric === "m") {
-    KmToM(km);
-  } else {
-    alert('Error enter metric');
-  }
+      case "string":
+        return this.system;
+
+      case "number":
+        return this.cost;
+
+      case "default":
+        return this.brand + this.system + this.cost;
+    }
+  };
 }
 
-function KmToM(km) {
-  KmM = +km * 1000;
+var dell = new laptop("Dell ", "windows ", 800);
+var apple = new laptop(" Apple ", "MAC OS ", 1700);
+console.log(dell);
+console.log(apple); /////4HW///////////////////////////////////////////
 
-  if (KmM == undefined) {
-    KmM = 0;
-  } else if (KmCm == undefined) {
-    KmCm = 0;
-  }
-
-  console.log(KmM);
-  return KmM;
-}
-
-function KmToCm(km) {
-  KmCm = +km * 100000;
-
-  if (KmM == undefined) {
-    KmM = 0;
-  } else if (KmCm == undefined) {
-    KmCm = 0;
-  }
-
-  console.log(KmCm);
-  return KmCm;
-}
-
-alert("getMetric( ".concat(metric, " metric, ").concat(km, "km, ").concat(KmM, "m, ").concat(KmCm, "cm)"));
+var group = {};
+group[dell] = dell + "//" + apple;
+console.log(group);
+console.log(String(dell));
+console.log(+apple);
+console.log(dell + " //" + apple + " //");
