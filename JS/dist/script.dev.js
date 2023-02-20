@@ -151,64 +151,63 @@
 // alert(`getMetric( ${metric} metric, ${km}km, ${KmM}m, ${KmCm}cm)`);
 ///////////////////////////////////////////////////
 /////1HW///////////////////////////////////////////
-var car = {
-  model: "model",
-  year: 2006,
-  color: 'black',
-  signal: function signal() {
-    alert('fa! fa!');
-  }
-};
-car.color = 'red';
-car.type = 'electric';
-console.log(car);
-console.log(car.signal); /////2HW///////////////////////////////////////////
-
+// let car={
+//     model:`model`,
+//     year: 2006,
+//     color: 'black',
+//     signal: function () {
+//         alert('fa! fa!')
+//     }
+// }
+// car.color='red';
+// car.type='electric'
+// console.log(car);
+// console.log(car.signal);
+/////2HW///////////////////////////////////////////
 var salaries = {
-  fronted: 12000,
+  frontend: 12000,
   backend: 10000,
-  designer: 8000 // buh:12345,
+  designer: 8000,
+  dayPay: function dayPay() {
+    alert("We must pay salary an Tuesday");
+  },
+  total: function total() {
+    var rez = 0;
 
-};
-
-function total(salaries) {
-  var rez = 0;
-
-  for (var key in salaries) {
-    rez += salaries[key];
-  }
-
-  return rez;
-}
-
-console.log(total(salaries)); /////3-4HW///////////////////////////////////////////
-
-function laptop(brand, system, cost) {
-  this.brand = brand, this.system = system, this.cost = cost, this[Symbol.toPrimitive] = function (hint) {
-    switch (hint) {
-      case "string":
-        return this.brand;
-
-      case "string":
-        return this.system;
-
-      case "number":
-        return this.cost;
-
-      case "default":
-        return this.brand + this.system + this.cost;
+    for (var key in salaries) {
+      if (salaries[key] > 0) {
+        rez += salaries[key];
+      }
     }
-  };
-}
 
-var dell = new laptop("Dell ", "windows ", 800);
-var apple = new laptop(" Apple ", "MAC OS ", 1700);
-console.log(dell);
-console.log(apple); /////4HW///////////////////////////////////////////
-
-var group = {};
-group[dell] = dell + "//" + apple;
-console.log(group);
-console.log(String(dell));
-console.log(+apple);
-console.log(dell + " //" + apple + " //");
+    return console.log(rez);
+  }
+};
+salaries.total(); /////3-4HW///////////////////////////////////////////
+// function laptop(brand,system,cost) {
+//     this.brand = brand,
+//     this.system = system,
+//     this.cost = cost,
+//     this [Symbol.toPrimitive] = function (hint) {
+//         switch (hint) {
+//             case `string`: return this.brand;
+//             case `string`: return this.system;
+//             case `number`: return this.cost;
+//             case `default`: 
+//             return this.brand+this.system+this.cost;
+//         }
+//     }
+// }
+// let dell = new laptop(`Dell `, `windows `, 800);
+// let apple = new laptop(` Apple `, `MAC OS `, 1700);
+// console.log(dell);
+// console.log(apple);
+/////4HW///////////////////////////////////////////
+// let group = {};
+// group[dell] = dell+`//`+apple;
+// console.log(group);
+// console.log(String(dell));
+// console.log(+apple);
+// console.log(dell+` //`+apple+` //`);
+///////////////////////////////////////////////////
+/////1HW///////////////////////////////////////////
