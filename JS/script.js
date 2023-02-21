@@ -149,77 +149,144 @@
 // alert(`getMetric( ${metric} metric, ${km}km, ${KmM}m, ${KmCm}cm)`);
 ///////////////////////////////////////////////////
 /////1HW///////////////////////////////////////////
-let car={
-    model:`model`,
-    year: 2006,
-    color: 'black',
-    signal: function () {
-        alert('fa! fa!')
-    }
-}
-car.color='red';
-car.type='electric'
-console.log(car);
-console.log(car.signal);
+// let car={
+//     model:`model`,
+//     year: 2006,
+//     color: 'black',
+//     signal: function () {
+//         alert('fa! fa!')
+//     }
+// }
+// car.color='red';
+// car.type='electric'
+// console.log(car);
+// console.log(car.signal);
 /////2HW 1 вариант///////////////////////////////////////////
-let salaries1 = {
-    frontend: 12000,
-    backend: 10000,
-    designer: 8000,
-      // buh:12345,
-    dayPay() {
-      alert("We must pay salary an Tuesday");
-    },
-    total() {
-        let rez = 0;
-      for (let key in salaries1) {
-        if (salaries1[key] > 0) {
-            rez += salaries1[key];
-          }
-      }
-      return console.log(rez);
-    },
-  };
-  salaries1.total();
+// let salaries1 = {
+//     frontend: 12000,
+//     backend: 10000,
+//     designer: 8000,
+//       // buh:12345,
+//     dayPay() {
+//       alert("We must pay salary an Tuesday");
+//     },
+//     total() {
+//         let rez = 0;
+//       for (let key in salaries1) {
+//         if (salaries1[key] > 0) {
+//             rez += salaries1[key];
+//           }
+//       }
+//       return console.log(rez);
+//     },
+//   };
+//   salaries1.total();
 /////2HW 2 вариант///////////////////////////////////////////
-  const salaries2 = {
-    fronted: 12000,
-    backend: 10000,
-    designer: 8000,
-    // buh:12345,
-}
-function total(salaries2) {
-    let rez=0;
-        for (const key in salaries2) {
-         rez+=salaries2[key];
-        }
-    return rez;
-}   
-console.log(total(salaries2));
+//   const salaries2 = {
+//     fronted: 12000,
+//     backend: 10000,
+//     designer: 8000,
+//     // buh:12345,
+// }
+// function total(salaries2) {
+//     let rez=0;
+//         for (const key in salaries2) {
+//          rez+=salaries2[key];
+//         }
+//     return rez;
+// }   
+// console.log(total(salaries2));
 /////3-4HW///////////////////////////////////////////
-function laptop(brand,system,cost) {
-    this.brand = brand,
-    this.system = system,
-    this.cost = cost,
-    this [Symbol.toPrimitive] = function (hint) {
-        switch (hint) {
-            case `string`: return this.brand;
-            case `string`: return this.system;
-            case `number`: return this.cost;
-            case `default`: 
-            return this.brand+this.system+this.cost;
-        }
-    }
-}
-let dell = new laptop(`Dell `, `windows `, 800);
-let apple = new laptop(` Apple `, `MAC OS `, 1700);
-console.log(dell);
-console.log(apple);
+// function laptop(brand,system,cost) {
+//     this.brand = brand,
+//     this.system = system,
+//     this.cost = cost,
+//     this [Symbol.toPrimitive] = function (hint) {
+//         switch (hint) {
+//             case `string`: return this.brand;
+//             case `string`: return this.system;
+//             case `number`: return this.cost;
+//             case `default`: 
+//             return this.brand+this.system+this.cost;
+//         }
+//     }
+// }
+// let dell = new laptop(`Dell `, `windows `, 800);
+// let apple = new laptop(` Apple `, `MAC OS `, 1700);
+// console.log(dell);
+// console.log(apple);
 ///4HW///////////////////////////////////////////
-let group = {};
-group[dell] = dell+`//`+apple;
-console.log(group);
-console.log(String(dell));
-console.log(+apple);
-console.log(dell+` //`+apple+` //`);
+// let group = {};
+// group[dell] = dell+`//`+apple;
+// console.log(group);
+// console.log(String(dell));
+// console.log(+apple);
+// console.log(dell+` //`+apple+` //`);
 ///////////////////////////////////////////////////
+/////1HW///////////////////////////////////////////
+let name = [`Mike`,`Nikola`,`Tom`]
+console.log(name);
+name.splice(1,1, `Alex`);
+console.log(name);
+name.length=1;
+console.log(name.length);
+/////2HW///////////////////////////////////////////
+let Amass = [5,3,-4,25,32,-16,6];
+let Bmass = [21,-30,9,5,12,-19,5,25];
+let Asum = Amass.reduce((a,b)=>a+b);
+console.log(Asum);
+let Bsum = Amass.reduce((a,b)=>a+b);
+console.log(Bsum);
+let Arez;
+for (let i = 0; i < Amass.length; i++) {
+    Arez=i;
+    console.log(Arez);
+}
+let Brez;
+for (let i = 0; i < Bmass.length; i++) {
+    Brez=i;
+    console.log(Brez);
+}
+if (Arez>Brez) {
+    console.log(`a>b (index)`);
+}
+else if (Arez<Brez) {
+    console.log(`a<b (index)`);
+}
+else{
+    console.log(`a=b (index)`);
+}
+
+if (Asum>Bsum) {
+    console.log(`a>b (sum elem)`);
+}
+else if (Asum<Bsum) {
+    console.log(`a<b (sum elem)`);
+}
+else{
+    console.log(`a=b (sum elem)`);
+}
+/////3HW///////////////////////////////////////////
+let phrase = `I am learning JavaScript right now`;
+phrase = phrase.split(` `);
+console.log(phrase);
+/////4HW///////////////////////////////////////////
+let A = [5,3,8,5,3,2,1,2];
+let B = [];
+A.forEach(function(element) {
+  if (!B.includes(element)) {
+    B.push(element);
+  }
+});
+console.log(B);
+/////5HW///////////////////////////////////////////
+let users = [
+    {id: 1, age:17,},
+    {id: 2, age:18,},
+    {id: 3, age:19,},
+    {id: 4, age:21,},
+    {id: 5, age:17,},
+    {id: 6, age:20,},
+    {id: 7, age:25,},];
+    users = users.filter(users => 18<users.age || 21<users.age).map(user => user.id);
+    console.log(`id ${users}`);
