@@ -226,94 +226,86 @@
 // console.log(dell+` //`+apple+` //`);
 ///////////////////////////////////////////////////
 /////1HW///////////////////////////////////////////
-var name = ["Mike", "Nikola", "Tom"];
-console.log(name);
-name.splice(1, 1, "Alex");
-console.log(name);
-name.length = 1;
-console.log(name.length); /////2HW///////////////////////////////////////////
+// let name = [`Mike`,`Nikola`,`Tom`]
+// console.log(name);
+// name.splice(1,1, `Alex`);
+// console.log(name);
+// name.length=1;
+// console.log(name.length);
+/////2HW///////////////////////////////////////////
 ///Не имел представление по каким параметрам сравнивать, 
 // по этому сравнил и по числу елементов и по сумме елементов.
+// let Amass = [5,3,-4,25,32,-16,6];
+// let Bmass = [21,-30,9,5,12,-19,5,25];
+// let Asum = Amass.reduce((a,b)=>a+b);
+// console.log(Asum);
+// let Bsum = Bmass.reduce((a,b)=>a+b);
+// console.log(Bsum);
+// let Arez;
+// for (let i = 0; i < Amass.length; i++) {
+//     Arez=i;
+//     console.log(Arez);
+// }
+// let Brez;
+// for (let i = 0; i < Bmass.length; i++) {
+//     Brez=i;
+//     console.log(Brez);
+// }
+// if (Arez>Brez) {
+//     console.log(`a>b (index)`);
+// }
+// else if (Arez<Brez) {
+//     console.log(`a<b (index)`);
+// }
+// else{
+//     console.log(`a=b (index)`);
+// }
+// // 
+// if (Asum>Bsum) {
+//     console.log(`a>b (sum elem)`);
+// }
+// else if (Asum<Bsum) {
+//     console.log(`a<b (sum elem)`);
+// }
+// else{
+//     console.log(`a=b (sum elem)`);
+// }
+/////3HW///////////////////////////////////////////
+// let phrase = `I am learning JavaScript right now`;
+// phrase = phrase.split(` `);
+// console.log(phrase);
+/////4HW///////////////////////////////////////////
+// let A = [5,3,8,5,3,2,1,2];
+// let B = [];
+// A.forEach(function(element) {
+//   if (!B.includes(element)) {
+//     B.push(element);
+//   }
+// });
+// console.log(B);
+/////5HW///////////////////////////////////////////
+// let users = [
+//     {id: 1, age:17,},
+//     {id: 2, age:18,},
+//     {id: 3, age:19,},
+//     {id: 4, age:21,},
+//     {id: 5, age:17,},
+//     {id: 6, age:20,},
+//     {id: 7, age:25,},];
+//     users = users.filter(users => 18<users.age || 21<users.age).map(user => user.id);
+//     console.log(`id ${users}`);
+///////////////////////////////////////////////////
+/////1HW///////////////////////////////////////////
+var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var len = console.log(arr.length);
 
-var Amass = [5, 3, -4, 25, 32, -16, 6];
-var Bmass = [21, -30, 9, 5, 12, -19, 5, 25];
-var Asum = Amass.reduce(function (a, b) {
-  return a + b;
-});
-console.log(Asum);
-var Bsum = Amass.reduce(function (a, b) {
-  return a + b;
-});
-console.log(Bsum);
-var Arez;
-
-for (var i = 0; i < Amass.length; i++) {
-  Arez = i;
-  console.log(Arez);
-}
-
-var Brez;
-
-for (var _i = 0; _i < Bmass.length; _i++) {
-  Brez = _i;
-  console.log(Brez);
-}
-
-if (Arez > Brez) {
-  console.log("a>b (index)");
-} else if (Arez < Brez) {
-  console.log("a<b (index)");
-} else {
-  console.log("a=b (index)");
-}
-
-if (Asum > Bsum) {
-  console.log("a>b (sum elem)");
-} else if (Asum < Bsum) {
-  console.log("a<b (sum elem)");
-} else {
-  console.log("a=b (sum elem)");
-} /////3HW///////////////////////////////////////////
-
-
-var phrase = "I am learning JavaScript right now";
-phrase = phrase.split(" ");
-console.log(phrase); /////4HW///////////////////////////////////////////
-
-var A = [5, 3, 8, 5, 3, 2, 1, 2];
-var B = [];
-A.forEach(function (element) {
-  if (!B.includes(element)) {
-    B.push(element);
+function sumar(num) {
+  if (num === arr.length) {
+    var _num = 0;
+    return _num;
+  } else {
+    return num + (num + 1);
   }
-});
-console.log(B); /////5HW///////////////////////////////////////////
+}
 
-var users = [{
-  id: 1,
-  age: 17
-}, {
-  id: 2,
-  age: 18
-}, {
-  id: 3,
-  age: 19
-}, {
-  id: 4,
-  age: 21
-}, {
-  id: 5,
-  age: 17
-}, {
-  id: 6,
-  age: 20
-}, {
-  id: 7,
-  age: 25
-}];
-users = users.filter(function (users) {
-  return 18 < users.age || 21 < users.age;
-}).map(function (user) {
-  return user.id;
-});
-console.log("id ".concat(users));
+console.log(sun(10));
