@@ -339,7 +339,7 @@ console.log(deepCount(employees));
 function deepCount1(employees) {
     let count=0;
     for (let i = 0; i < employees.length; i++) {
-        (Array.isArray(employees[i])) ? (count++ + deepCount1(employees[i])) : count++;
+        count += Array.isArray(employees[i]) ? 1 + deepCount1(employees[i]) : 1;
     }
     return count;
 }

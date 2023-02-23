@@ -345,7 +345,7 @@ function deepCount1(employees) {
   var count = 0;
 
   for (var i = 0; i < employees.length; i++) {
-    Array.isArray(employees[i]) ? count++ + deepCount1(employees[i]) : count++;
+    count += Array.isArray(employees[i]) ? 1 + deepCount1(employees[i]) : 1;
   }
 
   return count;
