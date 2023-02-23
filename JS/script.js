@@ -290,20 +290,57 @@
 //     console.log(`id ${users}`);
 ///////////////////////////////////////////////////
 /////1HW///////////////////////////////////////////
-let arr = [1,2,3,4,5,6,7,8,9,10];
-function sumArr(arr){
-    if (Array.isArray(arr)) {
-        if (arr.length===0) {
-            return 0;
-        } else if (arr.length===1) {
-            return arr[0];
-        } else{
-            return arr[0]+ sumArr(arr.slice(1));
-        }
-    } else{
-        return `Not Array`;
-    }
-}
-let sumMas = sumArr(arr);
-console.log(sumMas);
+// let arr = [1,2,3,4,5,6,7,8,9,10];
+// function sumArr(arr){
+//     if (Array.isArray(arr)) {
+//         if (arr.length===0) {
+//             return 0;
+//         } else if (arr.length===1) {
+//             return arr[0];
+//         } else{
+//             return arr[0]+ sumArr(arr.slice(1));
+//         }
+//     } else{
+//         return `Not Array`;
+//     }
+// }
+// let sumMas = sumArr(arr);
+// console.log(sumMas);
+//-----------------------------------------------------------------------------
+// const array = [1,2,3,4,5,6,7,8,9,10]
+// function sumArr(array){
+//         if (array.length===1) {
+//             return array[0];
+//         } else{
+//             return array[0]+ sumArr(array.slice(1));
+//         }
+// }
+// function sumArr(array) {
+//     return array.length === 1? array[0] : array[0] + sumArr(array.slice(1))
+// }
+
+// console.log(sumArr(array))
 /////2HW///////////////////////////////////////////
+let employees = [1, 2, [3, 4, [5, [1, 2, [3, 4, [[1, 2, [3, 4, [5, 6]], 7, [8, 9]], 6]], 7, [8, [1, 2, [3, 4, [5, 6]], 7, [8, 9]]]]]], 7, [[[3, 4, [5, 6]], 2, [[1, 2, [3, 4, [5, [1, 2, [3, 4, [5, 6]], 7, [[1, 2, [3, 4, [5, 6]], 7, [8, 9]], 9]]]], 7, [8, 9]], 4, [5, 6]], 7, [8, 9]], 9]];
+function deepCount(employees) {
+    let count=0;
+    for (let i = 0; i < employees.length; i++) {
+        if (Array.isArray(employees[i])) {
+            count++;
+            count+=deepCount(employees[i]);
+        }else{
+            count++;
+        }
+    }
+    return count;
+}
+console.log(deepCount(employees));
+//-----------------------------------------------------------------------------
+function deepCount1(employees) {
+    let count=0;
+    for (let i = 0; i < employees.length; i++) {
+        (Array.isArray(employees[i])) ? (count++ + deepCount1(employees[i])) : count++;
+    }
+    return count;
+}
+console.log(deepCount1(employees));
