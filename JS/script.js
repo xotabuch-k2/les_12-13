@@ -358,8 +358,7 @@ console.log(sumSallary(employees));
 /////4HW///////////////////////////////////////////
 let arr41=[2,15,7,3,];
 let arr42=[9,3,17,12,4,8,];
-let arr43=[6,11,16,15,11]
-// console.log(arr41.slice(0));
+let arr43=[6,11,16,15,11];
 function biggest (Array) {
    return Math.max.apply(null,Array);
 }
