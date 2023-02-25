@@ -292,45 +292,32 @@
 //     console.log(`id ${users}`);
 ///////////////////////////////////////////////////
 /////1HW///////////////////////////////////////////
-// let arr = [1,2,3,4,5,6,7,8,9,10];
-// function sumArr(arr){
-//     if (Array.isArray(arr)) {
-//         if (arr.length===0) {
-//             return 0;
-//         } else if (arr.length===1) {
-//             return arr[0];
-//         } else{
-//             return arr[0]+ sumArr(arr.slice(1));
-//         }
-//     } else{
-//         return `Not Array`;
-//     }
-// }
-// let sumMas = sumArr(arr);
-// console.log(sumMas);
-//-----------------------------------------------------------------------------
-// const array = [1,2,3,4,5,6,7,8,9,10]
-// function sumArr(array){
-//         if (array.length===1) {
-//             return array[0];
-//         } else{
-//             return array[0]+ sumArr(array.slice(1));
-//         }
-// }
-// function sumArr(array) {
-//     return array.length === 1? array[0] : array[0] + sumArr(array.slice(1))
-// }
-// console.log(sumArr(array))
-/////2HW///////////////////////////////////////////
-var employees = [1, 2, [3, 4, [5, [1, 2, [3, 4, [[1, 2, [3, 4, [5, 6]], 7, [8, 9]], 6]], 7, [8, [1, 2, [3, 4, [5, 6]], 7, [8, 9]]]]]], 7, [[[3, 4, [5, 6]], 2, [[1, 2, [3, 4, [5, [1, 2, [3, 4, [5, 6]], 7, [[1, 2, [3, 4, [5, 6]], 7, [8, 9]], 9]]]], 7, [8, 9]], 4, [5, 6]], 7, [8, 9]], 9]];
+var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-function deepCount(employees) {
+function sumArr(array) {
+  if (array.length === 1) {
+    return array[0];
+  } else {
+    return array[0] + sumArr(array.slice(1));
+  }
+}
+
+function sumArr1(array) {
+  return array.length === 1 ? array[0] : array[0] + sumArr1(array.slice(1));
+}
+
+console.log(sumArr(array));
+console.log(sumArr1(array)); /////2HW///////////////////////////////////////////
+
+var employees2 = [1, 2, [3, 4, [5, [1, 2, [3, 4, [[1, 2, [3, 4, [5, 6]], 7, [8, 9]], 6]], 7, [8, [1, 2, [3, 4, [5, 6]], 7, [8, 9]]]]]], 7, [[[3, 4, [5, 6]], 2, [[1, 2, [3, 4, [5, [1, 2, [3, 4, [5, 6]], 7, [[1, 2, [3, 4, [5, 6]], 7, [8, 9]], 9]]]], 7, [8, 9]], 4, [5, 6]], 7, [8, 9]], 9]];
+
+function deepCount(employees2) {
   var count = 0;
 
-  for (var i = 0; i < employees.length; i++) {
-    if (Array.isArray(employees[i])) {
+  for (var i = 0; i < employees2.length; i++) {
+    if (Array.isArray(employees2[i])) {
       count++;
-      count += deepCount(employees[i]);
+      count += deepCount(employees2[i]);
     } else {
       count++;
     }
@@ -339,16 +326,97 @@ function deepCount(employees) {
   return count;
 }
 
-console.log(deepCount(employees)); //-----------------------------------------------------------------------------
+console.log(deepCount(employees2)); //-----------------------------------------------------------------------------
 
-function deepCount1(employees) {
+function deepCount1(employees2) {
   var count = 0;
 
-  for (var i = 0; i < employees.length; i++) {
-    count += Array.isArray(employees[i]) ? 1 + deepCount1(employees[i]) : 1;
+  for (var i = 0; i < employees2.length; i++) {
+    count += deepCount1(employees2[i]) + 1;
   }
 
   return count;
 }
 
-console.log(deepCount1(employees));
+console.log(deepCount1(employees2)); /////3HW///////////////////////////////////////////
+
+var employees = {
+  development: {
+    backend: [{
+      name: 'Mike',
+      salary: 2000
+    }, {
+      name: 'Nikola',
+      salary: 2500
+    }],
+    frontend: [{
+      name: 'Artem',
+      salary: 3000
+    }, {
+      name: 'Alex',
+      salary: 2700
+    }]
+  },
+  sales: {
+    marketing: {
+      internet_marketers: [{
+        name: 'Nina',
+        salary: 1000
+      }, {
+        name: 'Olena',
+        salary: 1300
+      }],
+      promotion: [{
+        name: 'Oleg',
+        salary: 1400
+      }, {
+        name: 'Masha',
+        salary: 1700
+      }]
+    },
+    sellers: [{
+      name: 'Max',
+      salary: 900
+    }, {
+      name: 'Donald',
+      salary: 700
+    }, {
+      name: 'Joe',
+      salary: 1100
+    }]
+  },
+  designer: [{
+    name: 'Kate',
+    salary: 1800
+  }]
+};
+
+function sumSallary(obj) {
+  var sum = 0;
+
+  for (var key in obj) {
+    if (Array.isArray(obj[key])) {
+      obj[key].forEach(function (employee) {
+        return sum += employee.salary;
+      });
+    } else {
+      sum += sumSallary(obj[key]);
+    }
+  }
+
+  return sum;
+}
+
+console.log(sumSallary(employees)); /////4HW///////////////////////////////////////////
+
+var arr41 = [2, 15, 7, 3];
+var arr42 = [9, 3, 17, 12, 4, 8];
+var arr43 = [6, 11, 16, 15, 11]; // console.log(arr41.slice(0));
+
+function biggest(Array) {
+  return Math.max.apply(null, Array);
+}
+
+console.log(biggest(arr41));
+console.log(biggest(arr42));
+console.log(biggest(arr43));
