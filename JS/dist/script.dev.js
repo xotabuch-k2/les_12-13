@@ -300,7 +300,8 @@ function sumArr(array) {
   } else {
     return array[0] + sumArr(array.slice(1));
   }
-}
+} //-----------------------------------------------------------------------------
+
 
 function sumArr1(array) {
   return array.length === 1 ? array[0] : array[0] + sumArr1(array.slice(1));
