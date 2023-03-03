@@ -430,12 +430,12 @@ class User5 {
       if (isAdmin == true) {
         return this.#phone;
       } else {
-        let hiddenPhone = this.#phone.split("-");
-        for (let i = 0; i < hiddenPhone.length; i++) {
-          hiddenPhone[1] = "***";
-          hiddenPhone[2] = "**";
+        let massPhone = this.#phone.split("-");
+        for (let i = 0; i < massPhone.length; i++) {
+            massPhone[1] = "***";
+            massPhone[2] = "**";
         }
-        return hiddenPhone.join("-");
+        return massPhone.join("-");
       }
     }
 }
