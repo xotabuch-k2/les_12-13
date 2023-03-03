@@ -427,14 +427,18 @@ class User5 {
       this.#phone = phone;
     }
     getPhone(isAdmin) {
-      if (isAdmin) {
+      if (isAdmin == true) {
         return this.#phone;
       } else {
-        return this.#phone.replace(/\d{3}-\d{3}/, "***-***");
-
+        let hiddenPhone = this.#phone.split("-");
+        for (let i = 0; i < hiddenPhone.length; i++) {
+          hiddenPhone[1] = "***";
+          hiddenPhone[2] = "**";
         }
+        return hiddenPhone.join("-");
       }
     }
+}
   
   let user51 = new User5("Mike", "067-888-89-88");
   let user52 = new User5("Tom", "099-888-88-99");
