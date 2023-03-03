@@ -1,11 +1,3 @@
-"use strict";
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
 // console.log('You can ignore single and dooble quots like this: \\ \'\\\' \\" \\" ')
 // console.log(Boolean(alert('5')))   // Boolean логичксуий тип данных. В него можно помещать только  два значение "правда" "лож"
 // console.log(true > false)  // Сравнивать можно исчисляемые типа дынных, а не логичесский объект у которого есть только 2 значения (стр. 4). 
@@ -375,54 +367,44 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 // console.log(biggest(arr43));
 ///////////////////////////////////////////////////
 /////1HW///////////////////////////////////////////
-var User =
-/*#__PURE__*/
-function () {
-  function User(name, login, age) {
-    _classCallCheck(this, User);
-
-    this.name = name;
-    this.login = login;
-    this.age = age;
-  }
-
-  _createClass(User, [{
-    key: "getName",
-    value: function getName(isAdmin) {
-      if (isAdmin) {
-        return this.name || this.login;
-      } else {
-        return 'No Access';
-      }
-    }
-  }, {
-    key: "changeName",
-    value: function changeName(name, password) {
-      if (password === 123) {
-        this.name = name;
-        console.log("Name changed");
-      } else {
-        console.log("Permission denied");
-      }
-    }
-  }]);
-
-  return User;
-}();
-
-var user1 = new User('Mike', 'MK_18', 18);
-var user2 = new User('', 'NGR', 22);
-console.log(user1.login);
-console.log(user1.age);
-console.log(user2.login);
-console.log(user2.age); /////2HW///////////////////////////////////////////
-
-console.log(user1.getName(true));
-console.log(user2.getName(true));
-console.log(user2.getName(false)); /////3HW///////////////////////////////////////////
-
-user1.changeName("Bill", 123);
-console.log(user1.name); /////4HW///////////////////////////////////////////
+// class User{
+//     constructor(name,login,age){
+//         this.name=name;
+//         this.login=login;
+//         this.age=age;
+//     }
+//     getName(isAdmin){
+//         if (isAdmin) {
+//             return this.name || this.login;
+//         }
+//         else{
+//             return 'No Access';
+//         }
+//     }
+//     changeName(name, password) {
+//         if (password === 123) {
+//         this.name = name;
+//         console.log("Name changed");
+//         } 
+//         else {
+//         console.log("Permission denied");
+//         }
+//     }
+// }
+// let user1=new User('Mike','MK_18', 18);
+// let user2=new User('','NGR',22);
+// console.log(user1.login);
+// console.log(user1.age);
+// console.log(user2.login);
+// console.log(user2.age);
+/////2HW///////////////////////////////////////////
+// console.log(user1.getName(true));
+// console.log(user2.getName(true));
+// console.log(user2.getName(false));
+/////3HW///////////////////////////////////////////
+// user1.changeName("Bill", 123);
+// console.log(user1.name);
+/////4HW///////////////////////////////////////////
 // class Admin extends User {
 //     #isAdmin = true;
 //     getUserName(user) {
@@ -444,16 +426,24 @@ console.log(user1.name); /////4HW///////////////////////////////////////////
 //       this.#phone = phone;
 //     }
 //     getPhone(isAdmin) {
-//       if (isAdmin) {
+//       if (isAdmin == true) {
 //         return this.#phone;
 //       } else {
-//         return this.#phone.replace(/\d{3}-\d{2}/, "***-**");
+//         let massPhone = this.#phone.split("-");
+//         for (let i = 0; i < massPhone.length; i++) {
+//             massPhone[1] = "***";
+//             massPhone[2] = "**";
 //         }
+//         return massPhone.join("-");
 //       }
 //     }
-//   let user51 = new User5("Mike", "066-888-88-99");
+// }
+//   let user51 = new User5("Mike", "067-888-89-88");
 //   let user52 = new User5("Tom", "099-888-88-99");
 //   console.log(user51.getPhone(false));
 //   console.log(user52.getPhone(false));
 //   console.log(user51.getPhone(true));
 //   console.log(user52.getPhone(true));
+///////////////////////////////////////////////////
+/////1HW///////////////////////////////////////////
+"use strict";

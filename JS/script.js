@@ -368,82 +368,84 @@
 // console.log(biggest(arr43));
 ///////////////////////////////////////////////////
 /////1HW///////////////////////////////////////////
-class User{
-    constructor(name,login,age){
-        this.name=name;
-        this.login=login;
-        this.age=age;
-    }
-    getName(isAdmin){
-        if (isAdmin) {
-            return this.name || this.login;
-        }
-        else{
-            return 'No Access';
-        }
-    }
-    changeName(name, password) {
-        if (password === 123) {
-        this.name = name;
-        console.log("Name changed");
-        } 
-        else {
-        console.log("Permission denied");
-        }
-    }
-}
-let user1=new User('Mike','MK_18', 18);
-let user2=new User('','NGR',22);
-console.log(user1.login);
-console.log(user1.age);
-console.log(user2.login);
-console.log(user2.age);
+// class User{
+//     constructor(name,login,age){
+//         this.name=name;
+//         this.login=login;
+//         this.age=age;
+//     }
+//     getName(isAdmin){
+//         if (isAdmin) {
+//             return this.name || this.login;
+//         }
+//         else{
+//             return 'No Access';
+//         }
+//     }
+//     changeName(name, password) {
+//         if (password === 123) {
+//         this.name = name;
+//         console.log("Name changed");
+//         } 
+//         else {
+//         console.log("Permission denied");
+//         }
+//     }
+// }
+// let user1=new User('Mike','MK_18', 18);
+// let user2=new User('','NGR',22);
+// console.log(user1.login);
+// console.log(user1.age);
+// console.log(user2.login);
+// console.log(user2.age);
 /////2HW///////////////////////////////////////////
-console.log(user1.getName(true));
-console.log(user2.getName(true));
-console.log(user2.getName(false));
+// console.log(user1.getName(true));
+// console.log(user2.getName(true));
+// console.log(user2.getName(false));
 /////3HW///////////////////////////////////////////
-user1.changeName("Bill", 123);
-console.log(user1.name);
+// user1.changeName("Bill", 123);
+// console.log(user1.name);
 /////4HW///////////////////////////////////////////
-class Admin extends User {
-    #isAdmin = true;
-    getUserName(user) {
-        console.log(user.name);
-    }
-}
-const admin1 = new Admin('John', 'JN_23', 25);
-console.log(admin1);
-admin1.getUserName(user1);
+// class Admin extends User {
+//     #isAdmin = true;
+//     getUserName(user) {
+//         console.log(user.name);
+//     }
+// }
+// const admin1 = new Admin('John', 'JN_23', 25);
+// console.log(admin1);
+// admin1.getUserName(user1);
 /////5HW///////////////////////////////////////////
-class User5 {
-    #phone;
-    constructor(name, phone) {
-      this.name = name;
-      const phoneFormat = /^\d{3}-\d{3}-\d{2}-\d{2}$/;
-      if (!phoneFormat.test(phone)) {
-        throw new Error("Invalid phone format");
-      }
-      this.#phone = phone;
-    }
-    getPhone(isAdmin) {
-      if (isAdmin == true) {
-        return this.#phone;
-      } else {
-        let massPhone = this.#phone.split("-");
-        for (let i = 0; i < massPhone.length; i++) {
-            massPhone[1] = "***";
-            massPhone[2] = "**";
-        }
-        return massPhone.join("-");
-      }
-    }
-}
+// class User5 {
+//     #phone;
+//     constructor(name, phone) {
+//       this.name = name;
+//       const phoneFormat = /^\d{3}-\d{3}-\d{2}-\d{2}$/;
+//       if (!phoneFormat.test(phone)) {
+//         throw new Error("Invalid phone format");
+//       }
+//       this.#phone = phone;
+//     }
+//     getPhone(isAdmin) {
+//       if (isAdmin == true) {
+//         return this.#phone;
+//       } else {
+//         let massPhone = this.#phone.split("-");
+//         for (let i = 0; i < massPhone.length; i++) {
+//             massPhone[1] = "***";
+//             massPhone[2] = "**";
+//         }
+//         return massPhone.join("-");
+//       }
+//     }
+// }
   
-  let user51 = new User5("Mike", "067-888-89-88");
-  let user52 = new User5("Tom", "099-888-88-99");
+//   let user51 = new User5("Mike", "067-888-89-88");
+//   let user52 = new User5("Tom", "099-888-88-99");
   
-  console.log(user51.getPhone(false));
-  console.log(user52.getPhone(false));
-  console.log(user51.getPhone(true));
-  console.log(user52.getPhone(true));
+//   console.log(user51.getPhone(false));
+//   console.log(user52.getPhone(false));
+//   console.log(user51.getPhone(true));
+//   console.log(user52.getPhone(true));
+///////////////////////////////////////////////////
+/////1HW///////////////////////////////////////////
