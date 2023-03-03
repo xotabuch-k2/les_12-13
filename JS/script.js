@@ -427,17 +427,16 @@
 //       this.#phone = phone;
 //     }
 //     getPhone(isAdmin) {
-//       if (isAdmin == true) {
-//         return this.#phone;
-//       } else {
-//         let massPhone = this.#phone.split("-");
-//         for (let i = 0; i < massPhone.length; i++) {
-//             massPhone[1] = "***";
-//             massPhone[2] = "**";
+//         if (isAdmin) {
+//           return this.#phone;
+//         } else {
+//           const phoneParts = this.#phone.split('-');
+//           for (let i = 1; i < phoneParts.length - 1; i++) {
+//             phoneParts[i] = '***';
+//           }
+//           return phoneParts.join('-');
 //         }
-//         return massPhone.join("-");
 //       }
-//     }
 // }
   
 //   let user51 = new User5("Mike", "067-888-89-88");
