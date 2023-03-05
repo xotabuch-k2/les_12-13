@@ -1,3 +1,13 @@
+"use strict";
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 // console.log('You can ignore single and dooble quots like this: \\ \'\\\' \\" \\" ')
 // console.log(Boolean(alert('5')))   // Boolean логичксуий тип данных. В него можно помещать только  два значение "правда" "лож"
 // console.log(true > false)  // Сравнивать можно исчисляемые типа дынных, а не логичесский объект у которого есть только 2 значения (стр. 4). 
@@ -445,4 +455,125 @@
 //   console.log(user52.getPhone(true));
 ///////////////////////////////////////////////////
 /////1HW///////////////////////////////////////////
-"use strict";
+var user = {};
+user.name = 'Name';
+user.age = 123;
+Object.defineProperty(user, 'name', {
+  writable: false,
+  enumerable: true,
+  configurable: true
+});
+Object.defineProperty(user, 'age', {
+  writable: false,
+  enumerable: true,
+  configurable: true
+});
+user.id = 'id123';
+Object.defineProperty(user, 'id', {
+  writable: false,
+  enumerable: true,
+  configurable: false
+});
+console.log(Object.getOwnPropertyDescriptor(user, 'name'));
+console.log(Object.getOwnPropertyDescriptor(user, 'age'));
+console.log(Object.getOwnPropertyDescriptor(user, 'id')); /////2HW///////////////////////////////////////////
+
+var dataBase = {
+  dbName: 'user',
+  dbType: 'MySQL'
+};
+var configurateDB = {
+  token: '123',
+  passward: '567',
+  user: 'admin'
+};
+Object.freeze(dataBase);
+Object.seal(configurateDB); /////3HW///////////////////////////////////////////
+
+var salaries = {
+  frontend: 2000,
+  backend: 1500,
+  design: 1000
+};
+Object.defineProperty(salaries, 'sum', {
+  get: function get() {
+    var sum = 0;
+
+    for (var salary in this) {
+      if (typeof this[salary] === 'number') {
+        sum += this[salary];
+      }
+    }
+
+    return sum;
+  },
+  enumerable: false
+});
+Object.defineProperty(salaries, 'setSalaries', {
+  set: function set(salaryList) {
+    var _iteratorNormalCompletion = true;
+    var _didIteratorError = false;
+    var _iteratorError = undefined;
+
+    try {
+      for (var _iterator = salaryList[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+        var item = _step.value;
+
+        var _item$split = item.split(':'),
+            _item$split2 = _slicedToArray(_item$split, 2),
+            position = _item$split2[0],
+            salary = _item$split2[1];
+
+        position = position.trim();
+        salary = parseInt(salary.trim());
+
+        if (isNaN(salary)) {
+          console.log("Invalid salary format for position '".concat(position, "'"));
+        } else {
+          salaries[position] = salary;
+        }
+      }
+    } catch (err) {
+      _didIteratorError = true;
+      _iteratorError = err;
+    } finally {
+      try {
+        if (!_iteratorNormalCompletion && _iterator["return"] != null) {
+          _iterator["return"]();
+        }
+      } finally {
+        if (_didIteratorError) {
+          throw _iteratorError;
+        }
+      }
+    }
+  },
+  enumerable: false
+});
+console.log(salaries.sum); // 4500
+
+salaries.setSalaries = ['hr: 2500', 'manager: 3000'];
+console.log(salaries.hr); // 2500
+
+console.log(salaries.manager); // 3000
+
+console.log(salaries.sum); // 10000
+/////4HW///////////////////////////////////////////
+
+var obj = {
+  name: 'Mike',
+  surname: 'Davis',
+  age: 25
+};
+Object.defineProperty(obj, 'userInfo', {
+  get: function get() {
+    return Object.entries(this).map(function (_ref) {
+      var _ref2 = _slicedToArray(_ref, 2),
+          key = _ref2[0],
+          value = _ref2[1];
+
+      return "".concat(key, ": ").concat(value);
+    }).join('\n');
+  }
+});
+console.log(obj.userInfo);

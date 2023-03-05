@@ -448,3 +448,89 @@
 //   console.log(user52.getPhone(true));
 ///////////////////////////////////////////////////
 /////1HW///////////////////////////////////////////
+const user = {};
+user.name = 'Name';
+user.age = 123;
+Object.defineProperty(user, 'name', {
+    writable: false,
+    enumerable: true,
+    configurable: true
+});
+Object.defineProperty(user, 'age',{
+    writable: false,
+    enumerable: true,
+    configurable: true,
+})
+user.id = 'id123';
+Object.defineProperty(user, 'id',{
+    writable: false,
+    enumerable: true,
+    configurable: false,
+})
+console.log(Object.getOwnPropertyDescriptor(user, 'name'));
+console.log(Object.getOwnPropertyDescriptor(user, 'age'));
+console.log(Object.getOwnPropertyDescriptor(user, 'id'));
+/////2HW///////////////////////////////////////////
+let dataBase={
+    dbName:'user',
+    dbType: 'MySQL'
+}
+let configurateDB={
+    token:'123',
+    passward: '567',
+    user: 'admin'
+}
+Object.freeze(dataBase);
+Object.seal(configurateDB);
+/////3HW///////////////////////////////////////////
+let salaries={
+    frontend: 2000,
+    backend: 1500,
+    design: 1000
+}
+Object.defineProperty(salaries, 'sum', {
+    get() {
+      let sum = 0;
+      for (let salary in this) {
+        if (typeof this[salary] === 'number') {
+          sum += this[salary];
+        }
+      }
+      return sum;
+    },
+    enumerable: false
+});
+Object.defineProperty(salaries, 'setSalaries', {
+    set(salaryList) {
+      for (let item of salaryList) {
+        let [position, salary] = item.split(':');
+        position = position.trim();
+        salary = parseInt(salary.trim());
+        if (isNaN(salary)) {
+          console.log(`Invalid salary format for position '${position}'`);
+        } else {
+          salaries[position] = salary;
+        }
+      }
+    }, enumerable: false
+});
+  console.log(salaries.sum); // 4500
+  salaries.setSalaries = ['hr: 2500', 'manager: 3000'];
+  console.log(salaries.hr); // 2500
+  console.log(salaries.manager); // 3000
+  console.log(salaries.sum); // 10000
+  /////4HW///////////////////////////////////////////
+let obj={
+    name: 'Mike',
+    surname: 'Davis',
+    age: 25,
+}
+Object.defineProperty(obj, 'userInfo', {
+    get() {
+        return Object.entries(this)
+            .map(([key, value]) => `${key}: ${value}`)
+            .join('\n');
+    },
+});
+
+console.log(obj.userInfo);
