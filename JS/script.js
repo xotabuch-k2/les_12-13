@@ -536,3 +536,78 @@
 // console.log(obj.userInfo);
 ///////////////////////////////////////////////////
 /////1HW///////////////////////////////////////////
+let car ={
+  type: `electric`,
+  wheels: 4,
+}
+let sportCar={
+  doors:2
+}
+Object.getPrototypeOf(sportCar,car)
+let passengerCar = Object.create(car);
+passengerCar.doors = 4;
+let toyCar = Object.create(car);
+toyCar.type = "toy";
+/////2HW///////////////////////////////////////////
+let employees = {
+  wallet: {},
+  pay(munth, sum) {
+    this.wallet[munth] = sum;
+  }
+};
+
+let frontedDeveloper = {
+  name: 'Mike',
+  pay(munth, sum) {
+    employees.pay.call(this, munth, sum);
+  }
+};
+
+let backendDeveloper = {
+  name: 'Bob',
+  pay(munth, sum) {
+    employees.pay.call(this, munth, sum);
+  }
+};
+
+backendDeveloper.pay('june', 1500);
+console.log(backendDeveloper.wallet.june); // 1500
+
+frontedDeveloper.pay('june', 1000);
+console.log(frontedDeveloper.wallet.june); // 1000
+/////3HW///////////////////////////////////////////
+function User(name,age){
+  this.name=name,
+  this.age=age
+}
+let user_1=new User(`Mike`, 18);
+let user_2=new User(`Bob`,25);
+/////4HW///////////////////////////////////////////
+// function UserType(name){
+//   for (let i = 0; i < name.length; i++) {
+//     this[i]=name[i];
+//     if (i+1==name.length) {
+//       Object.defineProperty(this, `length`,{
+//         enumerable:true,
+//         writable:false,
+//         configurable:true,
+//         value: i=1
+//       })
+//     }
+//   }
+// }
+//////////////////////////////////////
+function UserType(name) {
+  let arr = new Array(name.length);
+  for (let i = 0; i < name.length; i++) {
+    arr[i] = name[i];
+  }
+  Object.setPrototypeOf(arr, UserType.prototype);
+  return arr;
+}
+
+UserType.prototype = Object.create(Array.prototype);
+UserType.prototype.constructor = UserType;
+
+let admins = new UserType(["Mike", "Bob", "Nikola"]);
+console.log(admins.join(";")); // Mike;Bob;Nikola

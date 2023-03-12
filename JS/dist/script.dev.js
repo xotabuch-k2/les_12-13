@@ -1,3 +1,5 @@
+"use strict";
+
 // console.log('You can ignore single and dooble quots like this: \\ \'\\\' \\" \\" ')
 // console.log(Boolean(alert('5')))   // Boolean логичксуий тип данных. В него можно помещать только  два значение "правда" "лож"
 // console.log(true > false)  // Сравнивать можно исчисляемые типа дынных, а не логичесский объект у которого есть только 2 значения (стр. 4). 
@@ -532,4 +534,77 @@
 // console.log(obj.userInfo);
 ///////////////////////////////////////////////////
 /////1HW///////////////////////////////////////////
-"use strict";
+var car = {
+  type: "electric",
+  wheels: 4
+};
+var sportCar = {
+  doors: 2
+};
+Object.getPrototypeOf(sportCar, car);
+var passengerCar = Object.create(car);
+passengerCar.doors = 4;
+var toyCar = Object.create(car);
+toyCar.type = "toy"; /////2HW///////////////////////////////////////////
+
+var employees = {
+  wallet: {},
+  pay: function pay(munth, sum) {
+    this.wallet[munth] = sum;
+  }
+};
+var frontedDeveloper = {
+  name: 'Mike',
+  pay: function pay(munth, sum) {
+    employees.pay.call(this, munth, sum);
+  }
+};
+var backendDeveloper = {
+  name: 'Bob',
+  pay: function pay(munth, sum) {
+    employees.pay.call(this, munth, sum);
+  }
+};
+backendDeveloper.pay('june', 1500);
+console.log(backendDeveloper.wallet.june); // 1500
+
+frontedDeveloper.pay('june', 1000);
+console.log(frontedDeveloper.wallet.june); // 1000
+/////3HW///////////////////////////////////////////
+
+function User(name, age) {
+  this.name = name, this.age = age;
+}
+
+var user_1 = new User("Mike", 18);
+var user_2 = new User("Bob", 25); /////4HW///////////////////////////////////////////
+// function UserType(name){
+//   for (let i = 0; i < name.length; i++) {
+//     this[i]=name[i];
+//     if (i+1==name.length) {
+//       Object.defineProperty(this, `length`,{
+//         enumerable:true,
+//         writable:false,
+//         configurable:true,
+//         value: i=1
+//       })
+//     }
+//   }
+// }
+//////////////////////////////////////
+
+function UserType(name) {
+  var arr = new Array(name.length);
+
+  for (var i = 0; i < name.length; i++) {
+    arr[i] = name[i];
+  }
+
+  Object.setPrototypeOf(arr, UserType.prototype);
+  return arr;
+}
+
+UserType.prototype = Object.create(Array.prototype);
+UserType.prototype.constructor = UserType;
+var admins = new UserType(["Mike", "Bob", "Nikola"]);
+console.log(admins.join(";")); // Mike;Bob;Nikola
