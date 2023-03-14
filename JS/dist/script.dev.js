@@ -591,148 +591,18 @@
 //   }
 // }
 //////////////////////////////////////
-// function UserType(name) {
-//   let arr = new Array(name.length);
-//   for (let i = 0; i < name.length; i++) {
-//     arr[i] = name[i];
-//   }
-//   Object.setPrototypeOf(arr, UserType.prototype);
-//   return arr;
-// }
-// UserType.prototype = Object.create(Array.prototype);
-// UserType.prototype.constructor = UserType;
-// let admins = new UserType(["Mike", "Bob", "Nikola"]);
-// console.log(admins.join(";")); // Mike;Bob;Nikola
-///////////////////////////////////////////////////
-/////1HW///////////////////////////////////////////
-// function count(expression){
-//   function getValues(expression){
-//       let values=[+expression[0],expression[1],+expression[2]]
-//       //было в строгую прописано [0] и [2]-int значение ячейки
-//       return values;
-//   }
-//       let values = getValues(expression);
-//       switch (values[1]) {
-//           case '+':
-//           return  showResult(sum(values));
-//           case '-':
-//           return  showResult(subtract(values));
-//           case '*':
-//           return  showResult(multiply(values));
-//           case '/':
-//           return showResult(divide(values))
-//       }
-//       function showResult(value){
-//           return value
-//       }
-//   }
-//   function sum(values) {
-//           return values[0] + values[2];
-//       }
-//   function subtract(values) {
-//       return values[0] - values[2];
-//   }
-//   function multiply(values) {
-//       return values[0] * values[2];
-//   }
-//   function divide(values) {
-//       return values[0] / values[2];
-//   }
-/////2HW///////////////////////////////////////////
-//   function count(expression){
-//     function getValues(expression){
-//         let values = [...expression]
-//         return values;
-//     }
-//         let values = getValues(expression);
-//         switch (values[1]) {
-//             case '+':
-//             return  showResult(sum(values));
-//             case '-':
-//             return  showResult(subtract(values));
-//             case '*':
-//             return  showResult(multiply(values));
-//             case '/':
-//                 try {
-//                     return showResult(divide(values));
-//                 } catch (error) {
-//                     console.log(error);
-//                     return 0;
-//                 }
-//         }
-//         function showResult(value){
-//             return value
-//         }
-//     }
-//     function sum(values) {
-//             return +values[0] + +values[2];
-//         }
-//     function subtract(values) {
-//         return values[0] - values[2];
-//     }
-//     function multiply(values) {
-//         return values[0] * values[2];
-//     }
-//     function divide(values) {
-//         if (values[0] === '0'|| values[2] === '0') {
-//             throw new Error("Can't divide by 0");
-//         }
-//         return values[0] / values[2];   
-//     }
-// console.log(count('5+2')); 
-// console.log(count('6/0'));
-// console.log(count('0/6'));
-/////3HW///////////////////////////////////////////
-function sum(values) {
-  return parseInt(values[0]) + parseInt(values[2]);
-}
+function UserType(name) {
+  var arr = new Array(name.length);
 
-function subtract(values) {
-  return parseInt(values[0]) - parseInt(values[2]);
-}
-
-function multiply(values) {
-  return parseInt(values[0]) * parseInt(values[2]);
-}
-
-function divide(values) {
-  return parseInt(values[0]) / parseInt(values[2]);
-}
-
-console.log(count(5 * 2));
-console.log(count("5 * 2")); /////4HW///////////////////////////////////////////
-
-function MakeUsers(name, age) {
-  this.name = name;
-  this.age = age;
-}
-
-var user = new MakeUsers();
-user.name = prompt("Enter your name:");
-user.age = prompt("Enter your age:");
-user.age = +user.age;
-
-function showMovie(user) {
-  try {
-    if (user.age === 0) {
-      throw new Error();
-    }
-
-    if (user.age >= 18) {
-      console.log("You can watch this movie");
-    } else {
-      console.log("Sorry, you are too young");
-    }
-  } catch (error) {
-    var userAge = prompt("Enter your age, please");
-
-    if (userAge !== '0') {
-      user.age = +userAge;
-      showMovie(user);
-    } else {
-      showMovie(user);
-    }
+  for (var i = 0; i < name.length; i++) {
+    arr[i] = name[i];
   }
+
+  Object.setPrototypeOf(arr, UserType.prototype);
+  return arr;
 }
 
-showMovie(user);
+UserType.prototype = Object.create(Array.prototype);
+UserType.prototype.constructor = UserType;
+var admins = new UserType(["Mike", "Bob", "Nikola"]);
+console.log(admins.join(";")); // Mike;Bob;Nikola

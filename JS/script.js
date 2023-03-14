@@ -536,203 +536,78 @@
 // console.log(obj.userInfo);
 ///////////////////////////////////////////////////
 /////1HW///////////////////////////////////////////
-// let car ={
-//   type: `electric`,
-//   wheels: 4,
-// }
-// let sportCar={
-//   doors:2
-// }
-// Object.getPrototypeOf(sportCar,car)
-// let passengerCar = Object.create(car);
-// passengerCar.doors = 4;
-// let toyCar = Object.create(car);
-// toyCar.type = "toy";
+let car ={
+  type: `electric`,
+  wheels: 4,
+}
+let sportCar={
+  doors:2
+}
+Object.getPrototypeOf(sportCar,car)
+let passengerCar = Object.create(car);
+passengerCar.doors = 4;
+let toyCar = Object.create(car);
+toyCar.type = "toy";
 /////2HW///////////////////////////////////////////
-// let employees = {
-//   wallet: {},
-//   pay(munth, sum) {
-//     this.wallet[munth] = sum;
-//   }
-// };
+let employees = {
+  wallet: {},
+  pay(munth, sum) {
+    this.wallet[munth] = sum;
+  }
+};
 
-// let frontedDeveloper = {
-//   name: 'Mike',
-//   pay(munth, sum) {
-//     employees.pay.call(this, munth, sum);
-//   }
-// };
+let frontedDeveloper = {
+  name: 'Mike',
+  pay(munth, sum) {
+    employees.pay.call(this, munth, sum);
+  }
+};
 
-// let backendDeveloper = {
-//   name: 'Bob',
-//   pay(munth, sum) {
-//     employees.pay.call(this, munth, sum);
-//   }
-// };
+let backendDeveloper = {
+  name: 'Bob',
+  pay(munth, sum) {
+    employees.pay.call(this, munth, sum);
+  }
+};
 
-// backendDeveloper.pay('june', 1500);
-// console.log(backendDeveloper.wallet.june); // 1500
+backendDeveloper.pay('june', 1500);
+console.log(backendDeveloper.wallet.june); // 1500
 
-// frontedDeveloper.pay('june', 1000);
-// console.log(frontedDeveloper.wallet.june); // 1000
-/////3HW///////////////////////////////////////////
-// function User(name,age){
-//   this.name=name,
-//   this.age=age
-// }
-// let user_1=new User(`Mike`, 18);
-// let user_2=new User(`Bob`,25);
+frontedDeveloper.pay('june', 1000);
+console.log(frontedDeveloper.wallet.june); // 1000
+///3HW///////////////////////////////////////////
+function User(name,age){
+  this.name=name,
+  this.age=age
+}
+let user_1=new User(`Mike`, 18);
+let user_2=new User(`Bob`,25);
 /////4HW///////////////////////////////////////////
-// function UserType(name){
-//   for (let i = 0; i < name.length; i++) {
-//     this[i]=name[i];
-//     if (i+1==name.length) {
-//       Object.defineProperty(this, `length`,{
-//         enumerable:true,
-//         writable:false,
-//         configurable:true,
-//         value: i=1
-//       })
-//     }
-//   }
-// }
+function UserType(name){
+  for (let i = 0; i < name.length; i++) {
+    this[i]=name[i];
+    if (i+1==name.length) {
+      Object.defineProperty(this, `length`,{
+        enumerable:true,
+        writable:false,
+        configurable:true,
+        value: i=1
+      })
+    }
+  }
+}
 //////////////////////////////////////
-// function UserType(name) {
-//   let arr = new Array(name.length);
-//   for (let i = 0; i < name.length; i++) {
-//     arr[i] = name[i];
-//   }
-//   Object.setPrototypeOf(arr, UserType.prototype);
-//   return arr;
-// }
-
-// UserType.prototype = Object.create(Array.prototype);
-// UserType.prototype.constructor = UserType;
-
-// let admins = new UserType(["Mike", "Bob", "Nikola"]);
-// console.log(admins.join(";")); // Mike;Bob;Nikola
-///////////////////////////////////////////////////
-/////1HW///////////////////////////////////////////
-function count(expression){
-  function getValues(expression){
-      let values=[+expression[0],expression[1],+expression[2]]
-      return values;
+function UserType(name) {
+  let arr = new Array(name.length);
+  for (let i = 0; i < name.length; i++) {
+    arr[i] = name[i];
   }
-      let values = getValues(expression);
-      switch (values[1]) {
-          case '+':
-          return  showResult(sum(values));
-          case '-':
-          return  showResult(subtract(values));
-          case '*':
-          return  showResult(multiply(values));
-          case '/':
-          return showResult(divide(values))
-      }
-      function showResult(value){
-          return value
-      }
-  }
-  function sum(values) {
-          return values[0] + values[2];
-      }
-  function subtract(values) {
-      return values[0] - values[2];
-  }
-  function multiply(values) {
-      return values[0] * values[2];
-  }
-  function divide(values) {
-      return values[0] / values[2];
-  }
-  /////2HW///////////////////////////////////////////
-  function count(expression){
-    function getValues(expression){
-        let values = [...expression]
-        return values;
-    }
-        let values = getValues(expression);
-        switch (values[1]) {
-            case '+':
-            return  showResult(sum(values));
-            case '-':
-            return  showResult(subtract(values));
-            case '*':
-            return  showResult(multiply(values));
-            case '/':
-                try {
-                    return showResult(divide(values));
-                } catch (error) {
-                    console.log(error);
-                    return 0;
-                }
-        }
-        function showResult(value){
-            return value
-        }
-    }
-    function sum(values) {
-            return +values[0] + +values[2];
-        }
-    function subtract(values) {
-        return values[0] - values[2];
-    }
-    function multiply(values) {
-        return values[0] * values[2];
-    }
-    function divide(values) {
-        if (values[0] === '0'|| values[2] === '0') {
-            throw new Error("Can't divide by 0");
-        }
-        return values[0] / values[2];   
-    }
-
-console.log(count('5+2')); 
-console.log(count('6/0'));
-console.log(count('0/6'));
-/////3HW///////////////////////////////////////////
-function sum(values) {
-  return parseInt(values[0]) + parseInt(values[2]);
-}
-function subtract(values) {
-  return parseInt(values[0]) - parseInt(values[2]);
-}
-function multiply(values) {
-  return parseInt(values[0]) * parseInt(values[2]);
-}
-function divide(values) {
-  return parseInt(values[0]) / parseInt(values[2]);
+  Object.setPrototypeOf(arr, UserType.prototype);
+  return arr;
 }
 
-console.log(count(5 * 2));
-console.log(count("5 * 2"));
-/////4HW///////////////////////////////////////////
-function MakeUsers(name, age) {
-  this.name = name;
-  this.age = age;
-}
-let user = new MakeUsers();
-user.name = prompt("Enter your name:");
-user.age = prompt("Enter your age:");
-user.age = +user.age;
-function showMovie(user) {
-  try {
-    if (user.age === 0) {
-      throw new Error();
-    }
-    if (user.age >= 18) {
-      console.log("You can watch this movie");
-    } else {
-      console.log("Sorry, you are too young");
-    }
-  } catch (error) {
-    let userAge = prompt("Enter your age, please");
-    if (userAge !== '0') {
-      user.age = +userAge;
-      showMovie(user);
-    } else {
-      showMovie(user);
-    }
-  }
-}
-showMovie(user);
+UserType.prototype = Object.create(Array.prototype);
+UserType.prototype.constructor = UserType;
+
+let admins = new UserType(["Mike", "Bob", "Nikola"]);
+console.log(admins.join(";")); // Mike;Bob;Nikola
