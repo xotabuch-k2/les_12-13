@@ -613,126 +613,146 @@
 // console.log(admins.join(";")); // Mike;Bob;Nikola
 ///////////////////////////////////////////////////
 /////1HW///////////////////////////////////////////
-function count(expression){
-  function getValues(expression){
-      let values=[+expression[0],expression[1],+expression[2]]
-      return values;
-  }
-      let values = getValues(expression);
-      switch (values[1]) {
-          case '+':
-          return  showResult(sum(values));
-          case '-':
-          return  showResult(subtract(values));
-          case '*':
-          return  showResult(multiply(values));
-          case '/':
-          return showResult(divide(values))
-      }
-      function showResult(value){
-          return value
-      }
-  }
-  function sum(values) {
-          return values[0] + values[2];
-      }
-  function subtract(values) {
-      return values[0] - values[2];
-  }
-  function multiply(values) {
-      return values[0] * values[2];
-  }
-  function divide(values) {
-      return values[0] / values[2];
-  }
+// function count(expression){
+//   function getValues(expression){
+//       let values=[+expression[0],expression[1],+expression[2]]
+//       return values;
+//   }
+//       let values = getValues(expression);
+//       switch (values[1]) {
+//           case '+':
+//           return  showResult(sum(values));
+//           case '-':
+//           return  showResult(subtract(values));
+//           case '*':
+//           return  showResult(multiply(values));
+//           case '/':
+//           return showResult(divide(values))
+//       }
+//       function showResult(value){
+//           return value
+//       }
+//   }
+//   function sum(values) {
+//           return values[0] + values[2];
+//       }
+//   function subtract(values) {
+//       return values[0] - values[2];
+//   }
+//   function multiply(values) {
+//       return values[0] * values[2];
+//   }
+//   function divide(values) {
+//       return values[0] / values[2];
+//   }
   /////2HW///////////////////////////////////////////
-  function count(expression){
-    function getValues(expression){
-        let values = [...expression]
-        return values;
-    }
-        let values = getValues(expression);
-        switch (values[1]) {
-            case '+':
-            return  showResult(sum(values));
-            case '-':
-            return  showResult(subtract(values));
-            case '*':
-            return  showResult(multiply(values));
-            case '/':
-                try {
-                    return showResult(divide(values));
-                } catch (error) {
-                    console.log(error);
-                    return 0;
-                }
-        }
-        function showResult(value){
-            return value
-        }
-    }
-    function sum(values) {
-            return +values[0] + +values[2];
-        }
-    function subtract(values) {
-        return values[0] - values[2];
-    }
-    function multiply(values) {
-        return values[0] * values[2];
-    }
-    function divide(values) {
-        if (values[0] === '0'|| values[2] === '0') {
-            throw new Error("Can't divide by 0");
-        }
-        return values[0] / values[2];   
-    }
+//   function count(expression){
+//     function getValues(expression){
+//         let values = [...expression]
+//         return values;
+//     }
+//         let values = getValues(expression);
+//         switch (values[1]) {
+//             case '+':
+//             return  showResult(sum(values));
+//             case '-':
+//             return  showResult(subtract(values));
+//             case '*':
+//             return  showResult(multiply(values));
+//             case '/':
+//                 try {
+//                     return showResult(divide(values));
+//                 } catch (error) {
+//                     console.log(error);
+//                     return 0;
+//                 }
+//         }
+//         function showResult(value){
+//             return value
+//         }
+//     }
+//     function sum(values) {
+//             return +values[0] + +values[2];
+//         }
+//     function subtract(values) {
+//         return values[0] - values[2];
+//     }
+//     function multiply(values) {
+//         return values[0] * values[2];
+//     }
+//     function divide(values) {
+//         if (values[0] === '0'|| values[2] === '0') {
+//             throw new Error("Can't divide by 0");
+//         }
+//         return values[0] / values[2];   
+//     }
 
-console.log(count('5+2')); 
-console.log(count('6/0'));
-console.log(count('0/6'));
+// console.log(count('5+2')); 
+// console.log(count('6/0'));
+// console.log(count('0/6'));
 /////3HW///////////////////////////////////////////
-function sum(values) {
-  return parseInt(values[0]) + parseInt(values[2]);
-}
-function subtract(values) {
-  return parseInt(values[0]) - parseInt(values[2]);
-}
-function multiply(values) {
-  return parseInt(values[0]) * parseInt(values[2]);
-}
-function divide(values) {
-  return parseInt(values[0]) / parseInt(values[2]);
-}
+// function sum(values) {
+//   return parseInt(values[0]) + parseInt(values[2]);
+// }
+// function subtract(values) {
+//   return parseInt(values[0]) - parseInt(values[2]);
+// }
+// function multiply(values) {
+//   return parseInt(values[0]) * parseInt(values[2]);
+// }
+// function divide(values) {
+//   return parseInt(values[0]) / parseInt(values[2]);
+// }
 
-console.log(count(5 * 2));
-console.log(count("5 * 2"));
+// console.log(count(5 * 2));
+// console.log(count("5 * 2"));
 /////4HW///////////////////////////////////////////
-function MakeUsers(name, age) {
-  this.name = name;
-  this.age = age;
-}
-let user = new MakeUsers();
-user.name = prompt("Enter your name:");
-user.age = prompt("Enter your age:");
-user.age = +user.age;
-function showMovie(user) {
-  try {
-    if (user.age === 0) {
-      throw new Error();
-    }
-    if (user.age >= 18) {
-      console.log("You can watch this movie");
-    } else {
-      console.log("Sorry, you are too young");
-    }
-  } catch (error) {
-    let userAge = prompt("Enter your age, please");
-    if (userAge !== '0') {
-      user.age = +userAge;
-      showMovie(user);
-    } else {
-      showMovie(user);
-    }
-  }
-}
-showMovie(user);
+// function MakeUsers(name, age) {
+//   this.name = name;
+//   this.age = age;
+// }
+// let user = new MakeUsers();
+// user.name = prompt("Enter your name:");
+// user.age = prompt("Enter your age:");
+// user.age = +user.age;
+// function showMovie(user) {
+//   try {
+//     if (user.age === 0) {
+//       throw new Error();
+//     }
+//     if (user.age >= 18) {
+//       console.log("You can watch this movie");
+//     } else {
+//       console.log("Sorry, you are too young");
+//     }
+//   } catch (error) {
+//     let userAge = prompt("Enter your age, please");
+//     if (userAge !== '0') {
+//       user.age = +userAge;
+//       showMovie(user);
+//     } else {
+//       showMovie(user);
+//     }
+//   }
+// }
+// showMovie(user);
+///////////////////////////////////////////////////
+/////1HW///////////////////////////////////////////
+const domH2 = document.querySelector('.dom h2'); 
+domH2.textContent = "Dom method description"; 
+/////2HW///////////////////////////////////////////
+const ukrLinks = document.querySelectorAll('a[href*="/ua/"]');
+//або
+const ukrLinks1 = document.querySelectorAll('a[href^="site.ua/ua/"]');
+/////3HW///////////////////////////////////////////
+const ul = document.getElementById("ul");
+const newElements = `
+  <li id="null">0</li>
+  <li id="second">2</li>
+  <li id="fourth">4</li>
+`;
+ul.insertAdjacentHTML("beforebegin", newElements);
+/////4HW///////////////////////////////////////////
+const link = document.getElementById('link');
+const h1 = document.querySelector('h1');
+link.appendChild(h1);
