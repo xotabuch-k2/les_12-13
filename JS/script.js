@@ -759,29 +759,37 @@
 ///////////////////////////////////////////////////
 /////1HW///////////////////////////////////////////
 const url = 'https://jsonplaceholder.typicode.com/todos/';
-  const filterByTitle = (data) => {
-    return data.filter(item => item.title.startsWith('a'));
-  }
-  const fetchData = (url) => {
-    return new Promise((resolve, reject) => {
-      const xhr = new XMLHttpRequest();
-      xhr.open('GET', url);
-      xhr.onload = () => {
-        if (xhr.status === 200) {
-          resolve(JSON.parse(xhr.responseText));
-        } else {
-          reject(new Error('Ошибка получения данных'));
-        }
-      };
-      xhr.onerror = () => {
-        reject(new Error('Ошибка получения данных'));
-      };
-      xhr.send();
-    });
-  }
 
-  fetchData(url)
-    .then(data => filterByTitle(data))
-    .then(filteredData => console.log(filteredData))
-    .catch(error => console.error(error));
+function filterByTitle(data) {
+  return data.filter(function(item) {
+    return item.title.startsWith('a');
+  });
+}
+function fetchData(url) {
+  return new Promise(function(resolve, reject) {
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', url);
+    xhr.onload = function() {
+      if (xhr.status === 200) {
+        resolve(JSON.parse(xhr.responseText));
+      } else {
+        reject(new Error('Ошибка получения данных'));
+      }
+    };
+    xhr.onerror = function() {
+      reject(new Error('Ошибка получения данных'));
+    };
+    xhr.send();
+  });
+}
+fetchData(url)
+  .then(function(data) {
+    return filterByTitle(data);
+  })
+  .then(function(filteredData) {
+    console.log(filteredData);
+  })
+  .catch(function(error) {
+    console.error(error);
+  });
 /////2HW///////////////////////////////////////////

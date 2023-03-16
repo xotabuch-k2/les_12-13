@@ -750,13 +750,13 @@
 /////1HW///////////////////////////////////////////
 var url = 'https://jsonplaceholder.typicode.com/todos/';
 
-var filterByTitle = function filterByTitle(data) {
+function filterByTitle(data) {
   return data.filter(function (item) {
     return item.title.startsWith('a');
   });
-};
+}
 
-var fetchData = function fetchData(url) {
+function fetchData(url) {
   return new Promise(function (resolve, reject) {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url);
@@ -775,12 +775,12 @@ var fetchData = function fetchData(url) {
 
     xhr.send();
   });
-};
+}
 
 fetchData(url).then(function (data) {
   return filterByTitle(data);
 }).then(function (filteredData) {
-  return console.log(filteredData);
+  console.log(filteredData);
 })["catch"](function (error) {
-  return console.error(error);
+  console.error(error);
 }); /////2HW///////////////////////////////////////////
