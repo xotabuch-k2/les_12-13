@@ -738,21 +738,23 @@
 // showMovie(user);
 ///////////////////////////////////////////////////
 /////1HW///////////////////////////////////////////
-const domH2 = document.querySelector('.dom h2'); 
-domH2.textContent = "Dom method description"; 
+// const domH2 = document.querySelector('.dom h2'); 
+// domH2.textContent = "Dom method description"; 
 /////2HW///////////////////////////////////////////
-const ukrLinks = document.querySelectorAll('a[href*="/ua/"]');
-//або
-const ukrLinks1 = document.querySelectorAll('a[href^="site.ua/ua/"]');
+// const ukrLinks = document.querySelectorAll('a[href*="/ua/"]');
+// //або
+// const ukrLinks1 = document.querySelectorAll('a[href^="site.ua/ua/"]');
 /////3HW///////////////////////////////////////////
-const ul = document.getElementById("ul");
-const newElements = `
-  <li id="null">0</li>
-  <li id="second">2</li>
-  <li id="fourth">4</li>
-`;
-ul.insertAdjacentHTML("beforebegin", newElements);
+// const ul = document.getElementById("ul");
+// const newElements = `
+//   <li id="null">0</li>
+//   <li id="second">2</li>
+//   <li id="fourth">4</li>
+// `;
+// ul.insertAdjacentHTML("beforebegin", newElements);
 /////4HW///////////////////////////////////////////
-const link = document.getElementById('link');
-const h1 = document.querySelector('h1');
-link.appendChild(h1);
+// const link = document.getElementById('link');
+// const h1 = document.querySelector('h1');
+// link.appendChild(h1);
+///////////////////////////////////////////////////
+/////1HW///////////////////////////////////////////
