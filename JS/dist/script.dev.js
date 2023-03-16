@@ -1,3 +1,5 @@
+"use strict";
+
 // console.log('You can ignore single and dooble quots like this: \\ \'\\\' \\" \\" ')
 // console.log(Boolean(alert('5')))   // Boolean логичксуий тип данных. В него можно помещать только  два значение "правда" "лож"
 // console.log(true > false)  // Сравнивать можно исчисляемые типа дынных, а не логичесский объект у которого есть только 2 значения (стр. 4). 
@@ -746,4 +748,39 @@
 // link.appendChild(h1);
 ///////////////////////////////////////////////////
 /////1HW///////////////////////////////////////////
-"use strict";
+var url = 'https://jsonplaceholder.typicode.com/todos/';
+
+var filterByTitle = function filterByTitle(data) {
+  return data.filter(function (item) {
+    return item.title.startsWith('a');
+  });
+};
+
+var fetchData = function fetchData(url) {
+  return new Promise(function (resolve, reject) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url);
+
+    xhr.onload = function () {
+      if (xhr.status === 200) {
+        resolve(JSON.parse(xhr.responseText));
+      } else {
+        reject(new Error('Ошибка получения данных'));
+      }
+    };
+
+    xhr.onerror = function () {
+      reject(new Error('Ошибка получения данных'));
+    };
+
+    xhr.send();
+  });
+};
+
+fetchData(url).then(function (data) {
+  return filterByTitle(data);
+}).then(function (filteredData) {
+  return console.log(filteredData);
+})["catch"](function (error) {
+  return console.error(error);
+}); /////2HW///////////////////////////////////////////

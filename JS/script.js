@@ -758,3 +758,30 @@
 // link.appendChild(h1);
 ///////////////////////////////////////////////////
 /////1HW///////////////////////////////////////////
+const url = 'https://jsonplaceholder.typicode.com/todos/';
+  const filterByTitle = (data) => {
+    return data.filter(item => item.title.startsWith('a'));
+  }
+  const fetchData = (url) => {
+    return new Promise((resolve, reject) => {
+      const xhr = new XMLHttpRequest();
+      xhr.open('GET', url);
+      xhr.onload = () => {
+        if (xhr.status === 200) {
+          resolve(JSON.parse(xhr.responseText));
+        } else {
+          reject(new Error('Ошибка получения данных'));
+        }
+      };
+      xhr.onerror = () => {
+        reject(new Error('Ошибка получения данных'));
+      };
+      xhr.send();
+    });
+  }
+
+  fetchData(url)
+    .then(data => filterByTitle(data))
+    .then(filteredData => console.log(filteredData))
+    .catch(error => console.error(error));
+/////2HW///////////////////////////////////////////
