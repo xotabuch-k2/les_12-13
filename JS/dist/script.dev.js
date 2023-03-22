@@ -820,6 +820,71 @@ function getData(url) {
       }
     }
   }, null, null, [[0, 11]]);
-}
+} /////3HW///////////////////////////////////////////
 
-getData('https://jsonplaceholder.typicode.com/todos');
+
+adocument.addEventListener('DOMContentLoaded', function _callee() {
+  var displayData, result, data, filteredDataA, filteredDataAB, userDivA, userDivAB, buttonA, buttonAB, buttonAll;
+  return regeneratorRuntime.async(function _callee$(_context2) {
+    while (1) {
+      switch (_context2.prev = _context2.next) {
+        case 0:
+          _context2.prev = 0;
+
+          displayData = function displayData(filteredData, element) {
+            var myJson = filteredData.map(function (item) {
+              return JSON.stringify(item);
+            }).join('<br>');
+            element.innerHTML = myJson;
+          };
+
+          _context2.next = 4;
+          return regeneratorRuntime.awrap(fetch('https://jsonplaceholder.typicode.com/todos'));
+
+        case 4:
+          result = _context2.sent;
+          _context2.next = 7;
+          return regeneratorRuntime.awrap(result.json());
+
+        case 7:
+          data = _context2.sent;
+          filteredDataA = data.filter(function (item) {
+            return item.title.startsWith('a');
+          });
+          filteredDataAB = data.filter(function (item) {
+            return item.title.startsWith('ab');
+          });
+          userDivA = document.querySelector('.user-a');
+          userDivAB = document.querySelector('.user-ab');
+          buttonA = document.querySelector('.add-a');
+          buttonAB = document.querySelector('.add-ab');
+          buttonAll = document.querySelector('.add-all');
+          buttonA.addEventListener('click', function (event) {
+            userDivAB.innerHTML = '';
+            displayData(filteredDataA, userDivA);
+          });
+          buttonAB.addEventListener('click', function (event) {
+            userDivA.innerHTML = '';
+            displayData(filteredDataAB, userDivAB);
+          });
+          buttonAll.addEventListener('click', function (event) {
+            userDivA.innerHTML = '';
+            userDivAB.innerHTML = '';
+            displayData(filteredDataA, userDivA);
+            displayData(filteredDataAB, userDivAB);
+          });
+          _context2.next = 23;
+          break;
+
+        case 20:
+          _context2.prev = 20;
+          _context2.t0 = _context2["catch"](0);
+          console.error(_context2.t0);
+
+        case 23:
+        case "end":
+          return _context2.stop();
+      }
+    }
+  }, null, null, [[0, 20]]);
+});
