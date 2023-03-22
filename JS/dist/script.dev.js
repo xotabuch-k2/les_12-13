@@ -784,3 +784,42 @@ fetchData(url).then(function (data) {
 })["catch"](function (error) {
   console.error(error);
 }); /////2HW///////////////////////////////////////////
+
+function getData(url) {
+  var result, data, filteredData;
+  return regeneratorRuntime.async(function getData$(_context) {
+    while (1) {
+      switch (_context.prev = _context.next) {
+        case 0:
+          _context.prev = 0;
+          _context.next = 3;
+          return regeneratorRuntime.awrap(fetch(url));
+
+        case 3:
+          result = _context.sent;
+          _context.next = 6;
+          return regeneratorRuntime.awrap(result.json());
+
+        case 6:
+          data = _context.sent;
+          filteredData = data.filter(function (item) {
+            return item.title.startsWith('a');
+          });
+          console.log(filteredData);
+          _context.next = 14;
+          break;
+
+        case 11:
+          _context.prev = 11;
+          _context.t0 = _context["catch"](0);
+          console.error(_context.t0);
+
+        case 14:
+        case "end":
+          return _context.stop();
+      }
+    }
+  }, null, null, [[0, 11]]);
+}
+
+getData('https://jsonplaceholder.typicode.com/todos');
