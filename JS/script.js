@@ -804,7 +804,7 @@ async function getData(url) {
     console.error(error);
   }
 }
-/////3HW///////////////////////////////////////////
+/////3-4HW///////////////////////////////////////////
 adocument.addEventListener('DOMContentLoaded', async function() {
   try {
     const result = await fetch('https://jsonplaceholder.typicode.com/todos');
