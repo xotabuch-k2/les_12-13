@@ -758,90 +758,186 @@
 // link.appendChild(h1);
 ///////////////////////////////////////////////////
 /////1HW///////////////////////////////////////////
-const url = 'https://jsonplaceholder.typicode.com/todos/';
+// const url = 'https://jsonplaceholder.typicode.com/todos/';
 
-function filterByTitle(data) {
-  return data.filter(function(item) {
-    return item.title.startsWith('a');
-  });
-}
-function fetchData(url) {
-  return new Promise(function(resolve, reject) {
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', url);
-    xhr.onload = function() {
-      if (xhr.status === 200) {
-        resolve(JSON.parse(xhr.responseText));
-      } else {
-        reject(new Error('Ошибка получения данных'));
-      }
-    };
-    xhr.onerror = function() {
-      reject(new Error('Ошибка получения данных'));
-    };
-    xhr.send();
-  });
-}
-fetchData(url)
-  .then(function(data) {
-    return filterByTitle(data);
-  })
-  .then(function(filteredData) {
-    console.log(filteredData);
-  })
-  .catch(function(error) {
-    console.error(error);
-  });
+// function filterByTitle(data) {
+//   return data.filter(function(item) {
+//     return item.title.startsWith('a');
+//   });
+// }
+// function fetchData(url) {
+//   return new Promise(function(resolve, reject) {
+//     const xhr = new XMLHttpRequest();
+//     xhr.open('GET', url);
+//     xhr.onload = function() {
+//       if (xhr.status === 200) {
+//         resolve(JSON.parse(xhr.responseText));
+//       } else {
+//         reject(new Error('Ошибка получения данных'));
+//       }
+//     };
+//     xhr.onerror = function() {
+//       reject(new Error('Ошибка получения данных'));
+//     };
+//     xhr.send();
+//   });
+// }
+// fetchData(url)
+//   .then(function(data) {
+//     return filterByTitle(data);
+//   })
+//   .then(function(filteredData) {
+//     console.log(filteredData);
+//   })
+//   .catch(function(error) {
+//     console.error(error);
+//   });
 /////2HW///////////////////////////////////////////
-async function getData(url) {
-  try {
-    let result  = await fetch(url);
-    let data = await result.json();
-    const filteredData = data.filter(item => item.title.startsWith('a'));
-    console.log(filteredData);
-  } 
-  catch (error) {
-    console.error(error);
+// async function getData(url) {
+//   try {
+//     let result  = await fetch(url);
+//     let data = await result.json();
+//     const filteredData = data.filter(item => item.title.startsWith('a'));
+//     console.log(filteredData);
+//   } 
+//   catch (error) {
+//     console.error(error);
+//   }
+// }
+/////3-4HW///////////////////////////////////////////
+// adocument.addEventListener('DOMContentLoaded', async function() {
+//   try {
+//     const result = await fetch('https://jsonplaceholder.typicode.com/todos');
+//     const data = await result.json();
+
+//     const filteredDataA = data.filter(item => item.title.startsWith('a'));
+//     const filteredDataAB = data.filter(item => item.title.startsWith('ab'));
+
+//     let userDivA = document.querySelector('.user-a');
+//     let userDivAB = document.querySelector('.user-ab');
+//     let buttonA = document.querySelector('.add-a');
+//     let buttonAB = document.querySelector('.add-ab');
+//     let buttonAll = document.querySelector('.add-all');
+
+//     function displayData(filteredData, element) {
+//       let myJson = filteredData.map(item => JSON.stringify(item)).join('<br>');
+//       element.innerHTML = myJson;
+//     }
+
+//     buttonA.addEventListener('click', function(event) {
+//       userDivAB.innerHTML = '';
+//       displayData(filteredDataA, userDivA);
+//     });
+
+//     buttonAB.addEventListener('click', function(event) {
+//       userDivA.innerHTML = '';
+//       displayData(filteredDataAB, userDivAB);
+//     });
+
+//     buttonAll.addEventListener('click', function(event) {
+//       userDivA.innerHTML = '';
+//       userDivAB.innerHTML = '';
+//       displayData(filteredDataA, userDivA);
+//       displayData(filteredDataAB, userDivAB);
+//     });
+    
+//   } catch (error) {
+//     console.error(error);
+//   }
+// });
+///////////////////////////////////////////////////
+/////1HW///////////////////////////////////////////
+class Cola{
+  constructor(brand, price){
+    this.brand = brand;
+    this.price = price;
+  }
+  
+  calculatePriceWithTax() {
+    return this.price+this.price*0.2;
   }
 }
-/////3-4HW///////////////////////////////////////////
-adocument.addEventListener('DOMContentLoaded', async function() {
-  try {
-    const result = await fetch('https://jsonplaceholder.typicode.com/todos');
-    const data = await result.json();
 
-    const filteredDataA = data.filter(item => item.title.startsWith('a'));
-    const filteredDataAB = data.filter(item => item.title.startsWith('ab'));
-
-    let userDivA = document.querySelector('.user-a');
-    let userDivAB = document.querySelector('.user-ab');
-    let buttonA = document.querySelector('.add-a');
-    let buttonAB = document.querySelector('.add-ab');
-    let buttonAll = document.querySelector('.add-all');
-
-    function displayData(filteredData, element) {
-      let myJson = filteredData.map(item => JSON.stringify(item)).join('<br>');
-      element.innerHTML = myJson;
-    }
-
-    buttonA.addEventListener('click', function(event) {
-      userDivAB.innerHTML = '';
-      displayData(filteredDataA, userDivA);
-    });
-
-    buttonAB.addEventListener('click', function(event) {
-      userDivA.innerHTML = '';
-      displayData(filteredDataAB, userDivAB);
-    });
-
-    buttonAll.addEventListener('click', function(event) {
-      userDivA.innerHTML = '';
-      userDivAB.innerHTML = '';
-      displayData(filteredDataA, userDivA);
-      displayData(filteredDataAB, userDivAB);
-    });
-    
-  } catch (error) {
-    console.error(error);
+class Whiskey{
+  constructor(brand, price){
+    this.brand - brand;
+    this.price = price;
   }
-});
+  
+  calculatePriceWithTax() {
+    return (this.price+this.price*0.3)+10;
+  }
+}
+
+class Ice{
+  constructor(price) {
+    this.price = price;
+  }
+  
+  calculatePriceWithTax() {
+    return this.price + 1;
+  }
+}
+let cola = new Cola('Coca-Cola', 10);
+let whiskey = new Whiskey('Jack Daniel\'s', 100);
+let ice = new Ice(2);
+
+console.log(cola.calculatePriceWithTax());
+console.log(whiskey.calculatePriceWithTax());
+console.log(ice.calculatePriceWithTax());
+/////2HW///////////////////////////////////////////
+function uniqueString(str) {
+  const words = str.split(";").map(w => w.trim()); 
+  const uniqueWords = new Set(words);
+  return Array.from(uniqueWords); 
+}
+console.log(uniqueString("cherry; orange; cherry; banana; banana"));
+/////3HW///////////////////////////////////////////
+function getUniquePhoneNames() {
+  const phoneList = document.querySelectorAll('.shop-list li');
+  const phoneNames = Array.from(phoneList).map(phone => phone.textContent);
+  const uniqueNames = [...new Set(phoneNames)];
+  console.log(uniqueNames);
+}
+getUniquePhoneNames();
+/////4HW///////////////////////////////////////////
+let mike = {name:`Mike`, age: 18}
+let bob = {name:`Bob`, age: 25}
+let nikola = {name:`Nikola`, age: 25}
+
+let visits = {};
+
+
+function mikeVisits(user) {
+  if (!visits[user.name]) {
+    visits[user.name] = 0;
+  }
+  visits[user.name]++;
+  return visits[user.name]-1;
+}
+
+function bobVisits(user) {
+  if (!visits[user.name]) {
+    visits[user.name] = 0;
+  }
+  visits[user.name]++;
+  return visits[user.name]-1;
+}
+
+function nikolaVisits(user) {
+  if (!visits[user.name]) {
+    visits[user.name] = 0;
+  }
+  visits[user.name]++;
+  return visits[user.name]-1;
+}
+mikeVisits(mike);
+mikeVisits(mike);
+mikeVisits(mike);
+nikolaVisits(nikola);
+bobVisits(bob);
+nikolaVisits(nikola);
+
+console.log(mikeVisits(mike));//3
+console.log(bobVisits(bob));//1
+console.log(nikolaVisits(nikola));//2

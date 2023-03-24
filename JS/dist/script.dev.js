@@ -1,5 +1,19 @@
 "use strict";
 
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
 // console.log('You can ignore single and dooble quots like this: \\ \'\\\' \\" \\" ')
 // console.log(Boolean(alert('5')))   // Boolean логичксуий тип данных. В него можно помещать только  два значение "правда" "лож"
 // console.log(true > false)  // Сравнивать можно исчисляемые типа дынных, а не логичесский объект у которого есть только 2 значения (стр. 4). 
@@ -748,143 +762,225 @@
 // link.appendChild(h1);
 ///////////////////////////////////////////////////
 /////1HW///////////////////////////////////////////
-var url = 'https://jsonplaceholder.typicode.com/todos/';
+// const url = 'https://jsonplaceholder.typicode.com/todos/';
+// function filterByTitle(data) {
+//   return data.filter(function(item) {
+//     return item.title.startsWith('a');
+//   });
+// }
+// function fetchData(url) {
+//   return new Promise(function(resolve, reject) {
+//     const xhr = new XMLHttpRequest();
+//     xhr.open('GET', url);
+//     xhr.onload = function() {
+//       if (xhr.status === 200) {
+//         resolve(JSON.parse(xhr.responseText));
+//       } else {
+//         reject(new Error('Ошибка получения данных'));
+//       }
+//     };
+//     xhr.onerror = function() {
+//       reject(new Error('Ошибка получения данных'));
+//     };
+//     xhr.send();
+//   });
+// }
+// fetchData(url)
+//   .then(function(data) {
+//     return filterByTitle(data);
+//   })
+//   .then(function(filteredData) {
+//     console.log(filteredData);
+//   })
+//   .catch(function(error) {
+//     console.error(error);
+//   });
+/////2HW///////////////////////////////////////////
+// async function getData(url) {
+//   try {
+//     let result  = await fetch(url);
+//     let data = await result.json();
+//     const filteredData = data.filter(item => item.title.startsWith('a'));
+//     console.log(filteredData);
+//   } 
+//   catch (error) {
+//     console.error(error);
+//   }
+// }
+/////3-4HW///////////////////////////////////////////
+// adocument.addEventListener('DOMContentLoaded', async function() {
+//   try {
+//     const result = await fetch('https://jsonplaceholder.typicode.com/todos');
+//     const data = await result.json();
+//     const filteredDataA = data.filter(item => item.title.startsWith('a'));
+//     const filteredDataAB = data.filter(item => item.title.startsWith('ab'));
+//     let userDivA = document.querySelector('.user-a');
+//     let userDivAB = document.querySelector('.user-ab');
+//     let buttonA = document.querySelector('.add-a');
+//     let buttonAB = document.querySelector('.add-ab');
+//     let buttonAll = document.querySelector('.add-all');
+//     function displayData(filteredData, element) {
+//       let myJson = filteredData.map(item => JSON.stringify(item)).join('<br>');
+//       element.innerHTML = myJson;
+//     }
+//     buttonA.addEventListener('click', function(event) {
+//       userDivAB.innerHTML = '';
+//       displayData(filteredDataA, userDivA);
+//     });
+//     buttonAB.addEventListener('click', function(event) {
+//       userDivA.innerHTML = '';
+//       displayData(filteredDataAB, userDivAB);
+//     });
+//     buttonAll.addEventListener('click', function(event) {
+//       userDivA.innerHTML = '';
+//       userDivAB.innerHTML = '';
+//       displayData(filteredDataA, userDivA);
+//       displayData(filteredDataAB, userDivAB);
+//     });
+//   } catch (error) {
+//     console.error(error);
+//   }
+// });
+///////////////////////////////////////////////////
+/////1HW///////////////////////////////////////////
+var Cola =
+/*#__PURE__*/
+function () {
+  function Cola(brand, price) {
+    _classCallCheck(this, Cola);
 
-function filterByTitle(data) {
-  return data.filter(function (item) {
-    return item.title.startsWith('a');
+    this.brand = brand;
+    this.price = price;
+  }
+
+  _createClass(Cola, [{
+    key: "calculatePriceWithTax",
+    value: function calculatePriceWithTax() {
+      return this.price + this.price * 0.2;
+    }
+  }]);
+
+  return Cola;
+}();
+
+var Whiskey =
+/*#__PURE__*/
+function () {
+  function Whiskey(brand, price) {
+    _classCallCheck(this, Whiskey);
+
+    this.brand - brand;
+    this.price = price;
+  }
+
+  _createClass(Whiskey, [{
+    key: "calculatePriceWithTax",
+    value: function calculatePriceWithTax() {
+      return this.price + this.price * 0.3 + 10;
+    }
+  }]);
+
+  return Whiskey;
+}();
+
+var Ice =
+/*#__PURE__*/
+function () {
+  function Ice(price) {
+    _classCallCheck(this, Ice);
+
+    this.price = price;
+  }
+
+  _createClass(Ice, [{
+    key: "calculatePriceWithTax",
+    value: function calculatePriceWithTax() {
+      return this.price + 1;
+    }
+  }]);
+
+  return Ice;
+}();
+
+var cola = new Cola('Coca-Cola', 10);
+var whiskey = new Whiskey('Jack Daniel\'s', 100);
+var ice = new Ice(2);
+console.log(cola.calculatePriceWithTax());
+console.log(whiskey.calculatePriceWithTax());
+console.log(ice.calculatePriceWithTax()); /////2HW///////////////////////////////////////////
+
+function uniqueString(str) {
+  var words = str.split(";").map(function (w) {
+    return w.trim();
   });
+  var uniqueWords = new Set(words);
+  return Array.from(uniqueWords);
 }
 
-function fetchData(url) {
-  return new Promise(function (resolve, reject) {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', url);
+console.log(uniqueString("cherry; orange; cherry; banana; banana")); /////3HW///////////////////////////////////////////
 
-    xhr.onload = function () {
-      if (xhr.status === 200) {
-        resolve(JSON.parse(xhr.responseText));
-      } else {
-        reject(new Error('Ошибка получения данных'));
-      }
-    };
-
-    xhr.onerror = function () {
-      reject(new Error('Ошибка получения данных'));
-    };
-
-    xhr.send();
+function getUniquePhoneNames() {
+  var phoneList = document.querySelectorAll('.shop-list li');
+  var phoneNames = Array.from(phoneList).map(function (phone) {
+    return phone.textContent;
   });
+
+  var uniqueNames = _toConsumableArray(new Set(phoneNames));
+
+  console.log(uniqueNames);
 }
 
-fetchData(url).then(function (data) {
-  return filterByTitle(data);
-}).then(function (filteredData) {
-  console.log(filteredData);
-})["catch"](function (error) {
-  console.error(error);
-}); /////2HW///////////////////////////////////////////
+getUniquePhoneNames(); /////4HW///////////////////////////////////////////
 
-function getData(url) {
-  var result, data, filteredData;
-  return regeneratorRuntime.async(function getData$(_context) {
-    while (1) {
-      switch (_context.prev = _context.next) {
-        case 0:
-          _context.prev = 0;
-          _context.next = 3;
-          return regeneratorRuntime.awrap(fetch(url));
+var mike = {
+  name: "Mike",
+  age: 18
+};
+var bob = {
+  name: "Bob",
+  age: 25
+};
+var nikola = {
+  name: "Nikola",
+  age: 25
+};
+var visits = {};
 
-        case 3:
-          result = _context.sent;
-          _context.next = 6;
-          return regeneratorRuntime.awrap(result.json());
+function mikeVisits(user) {
+  if (!visits[user.name]) {
+    visits[user.name] = 0;
+  }
 
-        case 6:
-          data = _context.sent;
-          filteredData = data.filter(function (item) {
-            return item.title.startsWith('a');
-          });
-          console.log(filteredData);
-          _context.next = 14;
-          break;
+  visits[user.name]++;
+  return visits[user.name] - 1;
+}
 
-        case 11:
-          _context.prev = 11;
-          _context.t0 = _context["catch"](0);
-          console.error(_context.t0);
+function bobVisits(user) {
+  if (!visits[user.name]) {
+    visits[user.name] = 0;
+  }
 
-        case 14:
-        case "end":
-          return _context.stop();
-      }
-    }
-  }, null, null, [[0, 11]]);
-} /////3-4HW///////////////////////////////////////////
+  visits[user.name]++;
+  return visits[user.name] - 1;
+}
 
+function nikolaVisits(user) {
+  if (!visits[user.name]) {
+    visits[user.name] = 0;
+  }
 
-adocument.addEventListener('DOMContentLoaded', function _callee() {
-  var displayData, result, data, filteredDataA, filteredDataAB, userDivA, userDivAB, buttonA, buttonAB, buttonAll;
-  return regeneratorRuntime.async(function _callee$(_context2) {
-    while (1) {
-      switch (_context2.prev = _context2.next) {
-        case 0:
-          _context2.prev = 0;
+  visits[user.name]++;
+  return visits[user.name] - 1;
+}
 
-          displayData = function displayData(filteredData, element) {
-            var myJson = filteredData.map(function (item) {
-              return JSON.stringify(item);
-            }).join('<br>');
-            element.innerHTML = myJson;
-          };
+mikeVisits(mike);
+mikeVisits(mike);
+mikeVisits(mike);
+nikolaVisits(nikola);
+bobVisits(bob);
+nikolaVisits(nikola);
+console.log(mikeVisits(mike)); //3
 
-          _context2.next = 4;
-          return regeneratorRuntime.awrap(fetch('https://jsonplaceholder.typicode.com/todos'));
+console.log(bobVisits(bob)); //1
 
-        case 4:
-          result = _context2.sent;
-          _context2.next = 7;
-          return regeneratorRuntime.awrap(result.json());
-
-        case 7:
-          data = _context2.sent;
-          filteredDataA = data.filter(function (item) {
-            return item.title.startsWith('a');
-          });
-          filteredDataAB = data.filter(function (item) {
-            return item.title.startsWith('ab');
-          });
-          userDivA = document.querySelector('.user-a');
-          userDivAB = document.querySelector('.user-ab');
-          buttonA = document.querySelector('.add-a');
-          buttonAB = document.querySelector('.add-ab');
-          buttonAll = document.querySelector('.add-all');
-          buttonA.addEventListener('click', function (event) {
-            userDivAB.innerHTML = '';
-            displayData(filteredDataA, userDivA);
-          });
-          buttonAB.addEventListener('click', function (event) {
-            userDivA.innerHTML = '';
-            displayData(filteredDataAB, userDivAB);
-          });
-          buttonAll.addEventListener('click', function (event) {
-            userDivA.innerHTML = '';
-            userDivAB.innerHTML = '';
-            displayData(filteredDataA, userDivA);
-            displayData(filteredDataAB, userDivAB);
-          });
-          _context2.next = 23;
-          break;
-
-        case 20:
-          _context2.prev = 20;
-          _context2.t0 = _context2["catch"](0);
-          console.error(_context2.t0);
-
-        case 23:
-        case "end":
-          return _context2.stop();
-      }
-    }
-  }, null, null, [[0, 20]]);
-});
+console.log(nikolaVisits(nikola)); //2
