@@ -758,90 +758,92 @@
 // link.appendChild(h1);
 ///////////////////////////////////////////////////
 /////1HW///////////////////////////////////////////
-const url = 'https://jsonplaceholder.typicode.com/todos/';
+// const url = 'https://jsonplaceholder.typicode.com/todos/';
 
-function filterByTitle(data) {
-  return data.filter(function(item) {
-    return item.title.startsWith('a');
-  });
-}
-function fetchData(url) {
-  return new Promise(function(resolve, reject) {
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', url);
-    xhr.onload = function() {
-      if (xhr.status === 200) {
-        resolve(JSON.parse(xhr.responseText));
-      } else {
-        reject(new Error('Ошибка получения данных'));
-      }
-    };
-    xhr.onerror = function() {
-      reject(new Error('Ошибка получения данных'));
-    };
-    xhr.send();
-  });
-}
-fetchData(url)
-  .then(function(data) {
-    return filterByTitle(data);
-  })
-  .then(function(filteredData) {
-    console.log(filteredData);
-  })
-  .catch(function(error) {
-    console.error(error);
-  });
+// function filterByTitle(data) {
+//   return data.filter(function(item) {
+//     return item.title.startsWith('a');
+//   });
+// }
+// function fetchData(url) {
+//   return new Promise(function(resolve, reject) {
+//     const xhr = new XMLHttpRequest();
+//     xhr.open('GET', url);
+//     xhr.onload = function() {
+//       if (xhr.status === 200) {
+//         resolve(JSON.parse(xhr.responseText));
+//       } else {
+//         reject(new Error('Ошибка получения данных'));
+//       }
+//     };
+//     xhr.onerror = function() {
+//       reject(new Error('Ошибка получения данных'));
+//     };
+//     xhr.send();
+//   });
+// }
+// fetchData(url)
+//   .then(function(data) {
+//     return filterByTitle(data);
+//   })
+//   .then(function(filteredData) {
+//     console.log(filteredData);
+//   })
+//   .catch(function(error) {
+//     console.error(error);
+//   });
 /////2HW///////////////////////////////////////////
-async function getData(url) {
-  try {
-    let result  = await fetch(url);
-    let data = await result.json();
-    const filteredData = data.filter(item => item.title.startsWith('a'));
-    console.log(filteredData);
-  } 
-  catch (error) {
-    console.error(error);
-  }
-}
+// async function getData(url) {
+//   try {
+//     let result  = await fetch(url);
+//     let data = await result.json();
+//     const filteredData = data.filter(item => item.title.startsWith('a'));
+//     console.log(filteredData);
+//   } 
+//   catch (error) {
+//     console.error(error);
+//   }
+// }
 /////3-4HW///////////////////////////////////////////
-adocument.addEventListener('DOMContentLoaded', async function() {
-  try {
-    const result = await fetch('https://jsonplaceholder.typicode.com/todos');
-    const data = await result.json();
+// adocument.addEventListener('DOMContentLoaded', async function() {
+//   try {
+//     const result = await fetch('https://jsonplaceholder.typicode.com/todos');
+//     const data = await result.json();
 
-    const filteredDataA = data.filter(item => item.title.startsWith('a'));
-    const filteredDataAB = data.filter(item => item.title.startsWith('ab'));
+//     const filteredDataA = data.filter(item => item.title.startsWith('a'));
+//     const filteredDataAB = data.filter(item => item.title.startsWith('ab'));
 
-    let userDivA = document.querySelector('.user-a');
-    let userDivAB = document.querySelector('.user-ab');
-    let buttonA = document.querySelector('.add-a');
-    let buttonAB = document.querySelector('.add-ab');
-    let buttonAll = document.querySelector('.add-all');
+//     let userDivA = document.querySelector('.user-a');
+//     let userDivAB = document.querySelector('.user-ab');
+//     let buttonA = document.querySelector('.add-a');
+//     let buttonAB = document.querySelector('.add-ab');
+//     let buttonAll = document.querySelector('.add-all');
 
-    function displayData(filteredData, element) {
-      let myJson = filteredData.map(item => JSON.stringify(item)).join('<br>');
-      element.innerHTML = myJson;
-    }
+//     function displayData(filteredData, element) {
+//       let myJson = filteredData.map(item => JSON.stringify(item)).join('<br>');
+//       element.innerHTML = myJson;
+//     }
 
-    buttonA.addEventListener('click', function(event) {
-      userDivAB.innerHTML = '';
-      displayData(filteredDataA, userDivA);
-    });
+//     buttonA.addEventListener('click', function(event) {
+//       userDivAB.innerHTML = '';
+//       displayData(filteredDataA, userDivA);
+//     });
 
-    buttonAB.addEventListener('click', function(event) {
-      userDivA.innerHTML = '';
-      displayData(filteredDataAB, userDivAB);
-    });
+//     buttonAB.addEventListener('click', function(event) {
+//       userDivA.innerHTML = '';
+//       displayData(filteredDataAB, userDivAB);
+//     });
 
-    buttonAll.addEventListener('click', function(event) {
-      userDivA.innerHTML = '';
-      userDivAB.innerHTML = '';
-      displayData(filteredDataA, userDivA);
-      displayData(filteredDataAB, userDivAB);
-    });
+//     buttonAll.addEventListener('click', function(event) {
+//       userDivA.innerHTML = '';
+//       userDivAB.innerHTML = '';
+//       displayData(filteredDataA, userDivA);
+//       displayData(filteredDataAB, userDivAB);
+//     });
     
-  } catch (error) {
-    console.error(error);
-  }
-});
+//   } catch (error) {
+//     console.error(error);
+//   }
+// });
+///////////////////////////////////////////////////
+/////1HW///////////////////////////////////////////
