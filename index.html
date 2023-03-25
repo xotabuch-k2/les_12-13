@@ -7,58 +7,25 @@
     <link rel="stylesheet" href="css\scss\style.css">
     <link rel="shotcut icon" href="/img/logo.png">
     <title>DR Nikola Tesla</title>
-    <!-- ------FONTS--------- -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap" rel="stylesheet">
-    <!-- Roboto -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <!-- ------FONTS--------- -->
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
 </head>
 <body>
-   <div class="dom">
-    <h1 id="dom">Lesson about DOM</h1>
-    <p class="dom">
-        <a href="#dom"></a>
-        <h2>DOM</h2>
-        <h2>Dom method</h2>
-        <span>Document Object Model</span>
-    </p>
-   </div>
-   <a href="site.ua/ua/page_1"></a>
-   <a href="site.ua/ua/page_2"></a>
-   <a href="site.ua/en/page_1"></a>
-   <a href="site.ua/en/page_2"></a>
-   <!-- ----- -->
-   <p><span><a href="site.ua/ua/page_3"></a></span></p>
-   <div><a href="site.ua/en/page_3"></a></div>
-    <!-- ----- -->
-    <ul id="ul">
-        <li id="first">1</li>
-        <li id="third">3</li>
-    </ul>
-     <!-- ----- -->
-     <h1>Document Object Model <span>DOM</span></h1>
+    <div id="mocha"></div>
 
-     <a id="link" href="https://dom.spec.whatwg.org">
-        <h1>Document Object Model <span>DOM</span></h1>
-     </a>
      <script src="/JS/script.js">
     </script>
-
-    <h2>Title start from A</h2>
-    <div class="user-a"></div>
-
-    <h2>Title start from AB</h2>
-    <div class="user-ab"></div>
+     <script src="https://unpkg.com/chai/chai.js"></script>
+     <script src="https://unpkg.com/mocha/mocha.js"></script>
+     <script class="mocha-init">
+        mocha.setup('bdd');
+        mocha.checkLeaks();
+      </script>
+      <script src="test.array.js"></script>
+      <script src="test.object.js"></script>
+      <script src="test.xhr.js"></script>
+      <script class="mocha-exec">
+        mocha.run();
+      </script>
 </body>
 </html>
