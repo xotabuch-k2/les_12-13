@@ -847,59 +847,61 @@
 // });
 ///////////////////////////////////////////////////
 /////1-2-3-4HW///////////////////////////////////////////
-describe('validateWmail', function() {
-  describe('valid string', function() {
-    it('not an empty string', function() {
-      assert.equal(validateEmail(``), false);
-    });
-    it('typeof string', function() {
-      assert.equal(validateEmail(222), false, `number error`);
-      assert.equal(validateEmail(true), false, `boolean error`);
-      assert.equal(validateEmail({}), false, `obgect error`);
-    });
-    it('not an empty string', function() {
-      assert.equal(validateEmail(`       `), false);
-    });
-  });
-  describe('valid data', function() {
-    it('Don\`t have the @ or @ the first character', function() {
-      assert.isFalse(validateEmail(`emailgmail.com`), 'Don\`t have the @');
-      assert.isFalse(validateEmail(`@emailgmail.com`), '@ the first character')
-     });
-     it('string with multiple "@" symbols', function() {
-      assert.equal(validateEmail('email@@gmail.com'), false);
-      assert.equal(validateEmail('email@.gmail.com'), false);
-      assert.equal(validateEmail('email@gmail..com'), false);
-      });
-      it('string with "." directly before or after "@" symbol', function() {
-      assert.equal(validateEmail('email.@gmail.com'), false);
-      assert.equal(validateEmail('email@gmail.com.'), false);
-      assert.equal(validateEmail('.email@gmail.com'), false);
-      assert.equal(validateEmail('emailgmail.com.'), false);
-      });
-  });
-});
-function validateEmail(email) {
-  if (email === '') {
-    return false;
-  }
-  if (typeof email !== 'string') {
-    return false;
-  }
-  if (email.length < 5) {
-    return false;
-  }
-  if (email.split('@').length !== 2) {
-    return false;
-    }
-  if (!email.includes('@') || email.indexOf('@') === 0) {
-    return false;
-  }
-  if (email.indexOf('@') === -1 || email.indexOf('@') !== email.lastIndexOf('@') || email.indexOf('@') === 0) {
-    return false;
-    }
-  if (email.indexOf('.') !== -1 && (email.indexOf('.') <= email.indexOf('@') || email.indexOf('.') === email.indexOf('@') + 1 || email.endsWith('.'))) {
-    return false;
-    }
-  return true;
-}
+// describe('validateWmail', function() {
+//   describe('valid string', function() {
+//     it('not an empty string', function() {
+//       assert.equal(validateEmail(``), false);
+//     });
+//     it('typeof string', function() {
+//       assert.equal(validateEmail(222), false, `number error`);
+//       assert.equal(validateEmail(true), false, `boolean error`);
+//       assert.equal(validateEmail({}), false, `obgect error`);
+//     });
+//     it('not an empty string', function() {
+//       assert.equal(validateEmail(`       `), false);
+//     });
+//   });
+//   describe('valid data', function() {
+//     it('Don\`t have the @ or @ the first character', function() {
+//       assert.isFalse(validateEmail(`emailgmail.com`), 'Don\`t have the @');
+//       assert.isFalse(validateEmail(`@emailgmail.com`), '@ the first character')
+//      });
+//      it('string with multiple "@" symbols', function() {
+//       assert.equal(validateEmail('email@@gmail.com'), false);
+//       assert.equal(validateEmail('email@.gmail.com'), false);
+//       assert.equal(validateEmail('email@gmail..com'), false);
+//       });
+//       it('string with "." directly before or after "@" symbol', function() {
+//       assert.equal(validateEmail('email.@gmail.com'), false);
+//       assert.equal(validateEmail('email@gmail.com.'), false);
+//       assert.equal(validateEmail('.email@gmail.com'), false);
+//       assert.equal(validateEmail('emailgmail.com.'), false);
+//       });
+//   });
+// });
+// function validateEmail(email) {
+//   if (email === '') {
+//     return false;
+//   }
+//   if (typeof email !== 'string') {
+//     return false;
+//   }
+//   if (email.length < 5) {
+//     return false;
+//   }
+//   if (email.split('@').length !== 2) {
+//     return false;
+//     }
+//   if (!email.includes('@') || email.indexOf('@') === 0) {
+//     return false;
+//   }
+//   if (email.indexOf('@') === -1 || email.indexOf('@') !== email.lastIndexOf('@') || email.indexOf('@') === 0) {
+//     return false;
+//     }
+//   if (email.indexOf('.') !== -1 && (email.indexOf('.') <= email.indexOf('@') || email.indexOf('.') === email.indexOf('@') + 1 || email.endsWith('.'))) {
+//     return false;
+//     }
+//   return true;
+// }
+///////////////////////////////////////////////////
+/////1HW///////////////////////////////////////////
