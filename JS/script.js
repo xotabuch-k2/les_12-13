@@ -905,3 +905,78 @@
 // }
 ///////////////////////////////////////////////////
 /////1HW///////////////////////////////////////////
+fetch('http://127.0.0.1:5500/JSON/hw35.json')
+  .then(response => response.json())
+    .then(data => {
+      const adminNames = Object.keys(data).filter(key => data[key].isAdmin).map(key => data[key].name);
+      adminNames.forEach(name => showAdminName(name));
+    })
+    .catch(error => console.error(error));
+function showAdminName(name) {
+  console.log(name);
+}
+/////2HW///////////////////////////////////////////
+let nikola = {firstName: 'Nikola', lastName: 'Tesla'}
+let bob = {firstName: 'Bob'}
+let mike = {lastName: 'Smith'}
+let michael = {}
+
+let getFullName = new Proxy(function() {}, {
+  apply: function(target, thisArg, args) {
+    let user = args[0];
+    if ('firstName' in user && 'lastName' in user) {
+      return `${user.firstName} ${user.lastName}`;
+    } else if ('firstName' in user) {
+      return user.firstName;
+    } else if ('lastName' in user) {
+      return user.lastName;
+    } else {
+      return 'noName';
+    }
+  }
+});
+
+console.log(getFullName(nikola));
+console.log(getFullName(bob));
+console.log(getFullName(mike));
+console.log(getFullName(michael));
+/////3HW///////////////////////////////////////////
+let users = [
+  { name: "Nikola", age: 18, id: 1 },
+  { name: "Bob", age: 25, id: 2 },
+  { name: "Mike", age: 32, id: 3 },
+];
+
+let usersJson = JSON.stringify(users);
+
+localStorage.setItem("users", usersJson);
+
+function sayHelloToUser(id) {
+  let usersJson = localStorage.getItem("users");
+  let usersStorage = JSON.parse(usersJson);
+
+  let user;
+  for (let i = 0; i < usersStorage.length; i++) {
+    if (usersStorage[i].id === id) {
+      user = usersStorage[i];
+      break;
+    }
+  }
+
+  if (user) {
+    console.log(`Hello: ${user.name}`);
+  } else {
+    console.log(`User with id ${id} not found.`);
+  }
+}
+
+sayHelloToUser(3);
+/////4HW///////////////////////////////////////////
+const myInput = document.querySelector("input");
+myInput.addEventListener("input", () => {
+  localStorage.setItem("myInputValue", myInput.value);
+});
+const savedInputValue = localStorage.getItem("myInputValue");
+if (savedInputValue) {
+  myInput.value = savedInputValue;
+}

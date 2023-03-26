@@ -1,3 +1,5 @@
+"use strict";
+
 // console.log('You can ignore single and dooble quots like this: \\ \'\\\' \\" \\" ')
 // console.log(Boolean(alert('5')))   // Boolean логичксуий тип данных. В него можно помещать только  два значение "правда" "лож"
 // console.log(true > false)  // Сравнивать можно исчисляемые типа дынных, а не логичесский объект у которого есть только 2 значения (стр. 4). 
@@ -885,4 +887,100 @@
 // }
 ///////////////////////////////////////////////////
 /////1HW///////////////////////////////////////////
-"use strict";
+fetch('http://127.0.0.1:5500/JSON/hw35.json').then(function (response) {
+  return response.json();
+}).then(function (data) {
+  var adminNames = Object.keys(data).filter(function (key) {
+    return data[key].isAdmin;
+  }).map(function (key) {
+    return data[key].name;
+  });
+  adminNames.forEach(function (name) {
+    return showAdminName(name);
+  });
+})["catch"](function (error) {
+  return console.error(error);
+});
+
+function showAdminName(name) {
+  console.log(name);
+} /////2HW///////////////////////////////////////////
+
+
+var nikola = {
+  firstName: 'Nikola',
+  lastName: 'Tesla'
+};
+var bob = {
+  firstName: 'Bob'
+};
+var mike = {
+  lastName: 'Smith'
+};
+var michael = {};
+var getFullName = new Proxy(function () {}, {
+  apply: function apply(target, thisArg, args) {
+    var user = args[0];
+
+    if ('firstName' in user && 'lastName' in user) {
+      return "".concat(user.firstName, " ").concat(user.lastName);
+    } else if ('firstName' in user) {
+      return user.firstName;
+    } else if ('lastName' in user) {
+      return user.lastName;
+    } else {
+      return 'noName';
+    }
+  }
+});
+console.log(getFullName(nikola));
+console.log(getFullName(bob));
+console.log(getFullName(mike));
+console.log(getFullName(michael)); /////3HW///////////////////////////////////////////
+
+var users = [{
+  name: "Nikola",
+  age: 18,
+  id: 1
+}, {
+  name: "Bob",
+  age: 25,
+  id: 2
+}, {
+  name: "Mike",
+  age: 32,
+  id: 3
+}];
+var usersJson = JSON.stringify(users);
+localStorage.setItem("users", usersJson);
+
+function sayHelloToUser(id) {
+  var usersJson = localStorage.getItem("users");
+  var usersStorage = JSON.parse(usersJson);
+  var user;
+
+  for (var i = 0; i < usersStorage.length; i++) {
+    if (usersStorage[i].id === id) {
+      user = usersStorage[i];
+      break;
+    }
+  }
+
+  if (user) {
+    console.log("Hello: ".concat(user.name));
+  } else {
+    console.log("User with id ".concat(id, " not found."));
+  }
+}
+
+sayHelloToUser(3); /////4HW///////////////////////////////////////////
+
+var myInput = document.querySelector("input");
+myInput.addEventListener("input", function () {
+  localStorage.setItem("myInputValue", myInput.value);
+});
+var savedInputValue = localStorage.getItem("myInputValue");
+
+if (savedInputValue) {
+  myInput.value = savedInputValue;
+}
