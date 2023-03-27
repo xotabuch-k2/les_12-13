@@ -10,3 +10,6 @@ export let ArrEmp = [
     {name:`Harry`, department: 'sales', salary: 1800},
     {name:`Jacob`, department: `sales`, salary: 1200}
 ]
+let ArrEmp2 = [];
+ArrEmp=ArrEmp2;
+export default ArrEmp2;

@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.ArrEmp = void 0;
+exports["default"] = exports.ArrEmp = void 0;
 var ArrEmp = [{
   name: "Mike",
   department: 'frontend',
@@ -46,3 +46,7 @@ var ArrEmp = [{
   salary: 1200
 }];
 exports.ArrEmp = ArrEmp;
+var ArrEmp2 = [];
+exports.ArrEmp = ArrEmp = ArrEmp2;
+var _default = ArrEmp2;
+exports["default"] = _default;
