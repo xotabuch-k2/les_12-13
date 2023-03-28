@@ -21,17 +21,14 @@ console.log(departmentsQuantity(ArrEmp));
 //---------------------------------------------
 export function departmentsSalary(arr) {
     const departments = {};
-  
     for (let emp of arr) {
       const { department, salary } = emp;
-  
       if (departments[department]) {
         departments[department] += salary;
       } else {
         departments[department] = salary;
       }
     }
-  
     return departments;
 }
 console.log(departmentsSalary(ArrEmp));
