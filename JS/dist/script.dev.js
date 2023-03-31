@@ -1,3 +1,13 @@
+"use strict";
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 // console.log('You can ignore single and dooble quots like this: \\ \'\\\' \\" \\" ')
 // console.log(Boolean(alert('5')))   // Boolean логичксуий тип данных. В него можно помещать только  два значение "правда" "лож"
 // console.log(true > false)  // Сравнивать можно исчисляемые типа дынных, а не логичесский объект у которого есть только 2 значения (стр. 4). 
@@ -954,4 +964,48 @@
 // }
 ///////////////////////////////////////////////////
 /////1HW///////////////////////////////////////////
-"use strict";
+var userName = ["Mike", "Bob", "Nikola"];
+var users = {};
+
+for (var _i = 0, _userName = userName; _i < _userName.length; _i++) {
+  var name = _userName[_i];
+  users[name.toLowerCase()] = name;
+}
+
+console.log(users); /////2HW///////////////////////////////////////////
+
+var salaries = {
+  "Mike": 1500,
+  "Bob": 1800,
+  "Nikola": 1700
+};
+
+function maxSalary(salaries) {
+  var maxSalary = 0;
+  var maxSalaryName = '';
+
+  for (var _i2 = 0, _Object$entries = Object.entries(salaries); _i2 < _Object$entries.length; _i2++) {
+    var _Object$entries$_i = _slicedToArray(_Object$entries[_i2], 2),
+        name = _Object$entries$_i[0],
+        salary = _Object$entries$_i[1];
+
+    if (salary > maxSalary) {
+      maxSalary = salary;
+      maxSalaryName = name;
+    }
+  }
+
+  return maxSalaryName;
+}
+
+console.log(maxSalary(salaries)); /////3HW///////////////////////////////////////////
+
+var userMike = users.mike,
+    userBob = users.bob,
+    userNikola = users.nikola;
+console.log(userMike); // "Mike"
+
+console.log(userBob); // "Bob"
+
+console.log(userNikola); // "Nikola"
+/////4HW///////////////////////////////////////////

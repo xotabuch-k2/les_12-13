@@ -982,3 +982,35 @@
 // }
 ///////////////////////////////////////////////////
 /////1HW///////////////////////////////////////////
+let userName = [`Mike`, `Bob`,`Nikola`];
+let users = {};
+for (let name of userName) {
+  users[name.toLowerCase()] = name;
+}
+console.log(users);
+/////2HW///////////////////////////////////////////
+let salaries = {
+  "Mike": 1500,
+  "Bob": 1800,
+  "Nikola": 1700
+}
+function maxSalary(salaries) {
+  let maxSalary = 0;
+  let maxSalaryName = '';
+
+  for (let [name, salary] of Object.entries(salaries)) {
+    if (salary > maxSalary) {
+      maxSalary = salary;
+      maxSalaryName = name;
+    }
+  }
+
+  return maxSalaryName;
+}
+console.log(maxSalary(salaries));
+/////3HW///////////////////////////////////////////
+const { mike: userMike, bob: userBob, nikola: userNikola } = users;
+console.log(userMike); // "Mike"
+console.log(userBob); // "Bob"
+console.log(userNikola); // "Nikola"
+/////4HW///////////////////////////////////////////
