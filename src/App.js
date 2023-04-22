@@ -43,9 +43,8 @@ function App() {
   const addProduct = () => {isValid
     if (isValid.name && isValid.price) {
       let key = Math.random();
-      setNewProduct((prev) => ({ ...prev, id: key }));
-      setProducts((prev) => [...prev, newProduct]);
       setNewProduct({ name: "", price: "", id: 3 });
+      setProducts((prev) => [...prev, newProduct]);
     }
   };
 
