@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Product from "./components/Product";
+import AddComp from "./components/NewComponent";
 
 function App() {
   const productsList = [
@@ -39,7 +40,7 @@ function App() {
     validateInput(e.target.value, "price");
   };
 
-  const addProduct = () => {
+  const addProduct = () => {isValid
     if (isValid.name && isValid.price) {
       let key = Math.random();
       setNewProduct((prev) => ({ ...prev, id: key }));
@@ -55,27 +56,14 @@ function App() {
 
   return (
     <div className="wrapper">
-      <div className="add">
-        <label>Product name</label>
-        <input
-          onBlur={(e) => validateInput(e.target.value, "name")}
-          onChange={changeName}
-          type="text"
-          value={newProduct.name}
-        />
-        {!isValid.name && <span>Please enter a valid name</span>}
-        <label>Product price</label>
-        <input
-          onBlur={(e) => validateInput(e.target.value, "price")}
-          onChange={changePrice}
-          type="number"
-          value={newProduct.price}
-        />
-        {!isValid.price && <span>Please enter a valid price</span>}
-        <button onClick={addProduct} type="button">
-          Add
-        </button>
-      </div>
+      <AddComp
+      validateInput ={validateInput}
+      changeName = {changeName}
+      newProduct = {newProduct}
+      isValid = {isValid}
+      changePrice = {changePrice}
+      addProduct = {addProduct}
+      />
       <div className="list">
         {products.map((product) => (
           <Product
