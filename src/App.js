@@ -12,9 +12,6 @@ import React, { useState } from "react";
   const [AgeValid, setAgeValid] = useState(true);
   const [EmailValid, setEmailValid] = useState(true);
 
-
-
-
   const submit = (e) => {
     e.preventDefault();
     console.log(Name, Login, Age, Email);
