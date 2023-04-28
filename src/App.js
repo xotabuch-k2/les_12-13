@@ -1,43 +1,69 @@
-import React, {useState} from "react";
-import Add from "./components/Add";
-import Product from "./components/Product";
-import Pstyle from "../src/scss/style.scss";
+import React, { useState } from "react";
+
+  function App () {
+
+  const [Name, setName] = useState('');
+  const [Login, setLogin] = useState('');
+  const [Age, setAge] = useState('');
+  const [Email, setEmail] = useState('');
+
+  const [NameValid, setNameValid] = useState(true);
+  const [LoginlValid, setLoginValid] = useState(true);
+  const [AgeValid, setAgeValid] = useState(true);
+  const [EmailValid, setEmailValid] = useState(true);
 
 
-function App () {
 
-  const productsList = [
-    {name: 'Iphone', price: 800, id: 1, image: "iphone"},
-    {name: 'Watch', price: 100, id: 2, image: "Watch"},
-    ];
 
-const [products, setProducts] = useState(productsList)
+  const submit = (e) => {
+    e.preventDefault();
+    console.log(Name, Login, Age, Email);
+  }
 
-const addProducts = (setNewProducts, newProducts, isValidateName, isValidatePrice) => {
-  if(newProducts.name == '' ||  newProducts.price == '') {
-    return
+  const nameChange = e => {
+    setName(e.target.value);
+    setNameValid( /^[a-zA-Z]+$/.test(e.target.value) || e.target.value.length>=1)
+
+  }
+  const loginChange = e => {
+    setLogin(e.target.value);
+    setLoginValid(e.target.value.length >= 5);
+
   } 
-  if (isValidateName && isValidatePrice){
-    let key = Math.random();
-    setNewProducts((prev)=>({...prev, id: key}));
-    setProducts((prev) => ([...prev, newProducts]));
-    setNewProducts((prev)=>({...prev, name: '', price: ''}));
-  }
-}
+  const ageChange = e => {
+    setAge(e.target.value);
+    setAgeValid(e.target.value>=18);
+  } 
+  const emailChange = e => {
+    setEmail(e.target.value);
+    setEmailValid(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(e.target.value));
+    
+  } 
 
-  const removeProduct = (id) => {
-    const newList =  products.filter(product => product.id !== id);
-    setProducts(newList);
-  }
+  return (
+  <div className="wrapper">
+  <form onSubmit={submit}>
+    <label >Name</label>
+    <input className={NameValid ? '' : "invalid"} onChange={nameChange} />
+    {!NameValid && <p>Enter correct Name</p>}
 
-return (
-<div className={Pstyle.wrapper}>
-  <Add onAddProduct={addProducts} />
-  <div className={Pstyle.list}>
-    {products.map(product => <Product onRemove={removeProduct} key={product.id} id={product.id} name={product.name} price={`${product.price} $`} image={product.image}/>)}
+    <label>Login</label>
+    <input className={LoginlValid ? '' : "invalid"} onChange={loginChange} />
+    {!LoginlValid && <p>Enter correct Login</p>}
+
+    <label>Age</label>
+    <input className={AgeValid ? '' : "invalid"} onChange={ageChange} />
+    {!AgeValid && <p>Enter correct Age</p>}
+
+    <label>Email</label>
+    <input  className={EmailValid ? '' : "invalid"} onChange={emailChange} />
+    {!EmailValid && <p>Enter correct Email</p>}
+
+
+    <button type="submit">Sign in</button>
+  </form>
   </div>
-</div> 
-);
+  )
 }
 
 export default App;
