@@ -1,31 +1,19 @@
-import './App.css';
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
-import { Link } from 'react-router-dom';
-import Main from './components/Main';
-import Posts from './components/Posts';
-import Login from './components/Login';
-import SingleNews from './components/SingleNews';
+import React from "react";
+import LogIn from "./components/LogIn";
+import Products from "./components/Products";
+import SaveList from "./components/SaveList";
 
-function App() {
-  return (
-    <BrowserRouter>
-      <div className="wrapper">
-        <nav className="menu">
-          <Link to="/Main">Main</Link>
-          <Link to="/Posts">Posts</Link>
-          <Link to="/SingleNews/:id">SingleNews</Link>
-          <Link to="/Login">Login</Link>
-        </nav>
+  function App () {
 
-        <Routes>
-          <Route path="/Main" element={<Main />} />
-          <Route path="/Posts" element={<Posts />} />
-          <Route path="/SingleNews/:id" element={<SingleNews />} />
-          <Route path="/Login" element={<Login />} />
-        </Routes>
-      </div>
-    </BrowserRouter>
-
+return (
+  <div className="wrapper">
+    <div className="list">
+      <h1>Product list</h1>
+      <Products />
+      <SaveList />
+    </div>
+    <LogIn />
+  </div> 
   );
 }
 
