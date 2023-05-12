@@ -1,6 +1,19 @@
 <div class="body">
-    <h2></h2>
-    <div class="post-text"></div>
-    <p>This post contains 0 characters</p>
-</div>
+  <div class="body-flex">
+    <div class="picture">
+      <img [src]="img" />
+    </div>
 
+    <div class="post">
+      <h2>{{ name }}</h2>
+      <p>{{ status }}</p>
+    </div>
+
+    <div class="post-text"></div>
+  </div>
+
+  <div class="post-button">
+    <button type="button" (click)="onRemoveUser()">Remove User</button>
+  </div>
+</div>
+<!-- файл post.component.html -->

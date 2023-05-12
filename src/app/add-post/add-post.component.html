@@ -1,5 +1,12 @@
 <div class="body">
-<input type="text" placeholder="Title">
-<textarea type="text" placeholder="Text"></textarea>
-<button type="button">Add post</button>
+  <input type="text" placeholder="Name" [(ngModel)]="name" />
+  <textarea
+    type="text"
+    placeholder="Status"
+    [(ngModel)]="status"
+    maxlength="50"
+  ></textarea>
+  <input type="text" placeholder="Avatar URL" [(ngModel)]="avatar" />
+  <button type="button" (click)="addUserClicked()">Add User</button>
 </div>
+<!--файл add-post.component.html -->
