@@ -1,20 +1,26 @@
 <div class="wrapper">
-  <div class="body">
-    <div class="picture">
-      <img src="{{ url }}" alt="User Foto" />
-      <p *ngIf="!isShowStatus" class="ofline">Ofline</p>
-      <p *ngIf="isShowStatus" class="online">Online</p>
+    <div class="body">
+        <div class="picture">
+            <img [src]="img" alt="">
+        </div>
+        <div class="user-data">
+            <div class="user-data-item">
+                <h2>{{name}}</h2>
+                <div class="edit-body">
+                    <input type="text" placeholder="Write new name" #newNameInput>
+                    <button class="network" (click)="editName(newNameInput.value); newNameInput.value = ''">Edit</button>
+                </div>
+            </div>
+            <div class="user-data-item">
+                <div class="status-text">{{status}}</div>
+                <div class="edit-body">
+                    <input type="text" placeholder="Write new status" #newStatusInput>
+                    <button class="network" (click)="editStatus(newStatusInput.value); newStatusInput.value = ''">Edit</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="user-data">
-      <h2>{{ name }}</h2>
-      <div class="post-text">{{ status }}</div>
-    </div>
-  </div>
-  <button
-    (click)="isShowStatus = !isShowStatus"
-    [ngClass]="{ online: isShowStatus }"
-    class="network"
-  >
-    {{ isShowStatus ? "Ofline" : "Online" }}
-  </button>
+<div class="group">
+    <p><b>Group Name:</b><span> {{ userGroupService.getGroupName() }}</span></p>
+</div>
 </div>
