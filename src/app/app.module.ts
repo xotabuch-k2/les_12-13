@@ -1,17 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { PostComponent } from './post/post.component';
-import { AddPostComponent } from './add-post/add-post.component';
+import { UserComponent } from './user/user.component';
+import { FilterPipe } from './pipes/filter.pipe';
 
 @NgModule({
-  declarations: [AppComponent, PostComponent, AddPostComponent],
-
-  imports: [BrowserModule, FormsModule, ReactiveFormsModule],
+  declarations: [
+    AppComponent,
+    UserComponent,
+    FilterPipe,
+  ],
+  imports: [
+    BrowserModule 
+  ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
-export class AppModule {}
-//файл app.module.ts
+export class AppModule { }
+// файл app.module.ts
+

@@ -1,0 +1,20 @@
+<div class="wrapper">
+  <div class="body">
+    <div class="picture">
+      <img src="{{ url }}" alt="User Foto" />
+      <p *ngIf="!isShowStatus" class="ofline">Ofline</p>
+      <p *ngIf="isShowStatus" class="online">Online</p>
+    </div>
+    <div class="user-data">
+      <h2>{{ name }}</h2>
+      <div class="post-text">{{ status }}</div>
+    </div>
+  </div>
+  <button
+    (click)="isShowStatus = !isShowStatus"
+    [ngClass]="{ online: isShowStatus }"
+    class="network"
+  >
+    {{ isShowStatus ? "Ofline" : "Online" }}
+  </button>
+</div>
