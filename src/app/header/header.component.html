@@ -1,7 +1,0 @@
-<div class="body">
-    <h1><b>User group:</b> <span>{{ userGroupService.getGroupName() }}</span></h1>
-    <div class="edit-body">
-        <input type="text" placeholder="Write new group name" #newGroupNameInput>
-        <button class="network" (click)="editGroupName(newGroupNameInput.value); newGroupNameInput.value = ''">Edit</button>
-    </div>
-</div>

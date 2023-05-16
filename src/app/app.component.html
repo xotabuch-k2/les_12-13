@@ -1,15 +1,33 @@
 <div class="wrapper">
-    <header>
-        <app-header></app-header>
-    </header>
-    <main>
-        <app-user 
-        *ngFor="let user of usersService.getUsers()"
-        [name]="user.name"
-        [status]="user.status"
-        [img]="user.url"
-        ></app-user>
-        <button class="popup" (click)="showPopUp()">Show details</button>
-    </main>
-    <ng-template #popUp></ng-template>
+  <form>
+      <div class="form-item">
+          <label for="login">Login</label>
+          <input id="login" placeholder="Your Login..." name="login" ngModel #login="ngModel"
+          required minlength="1" pattern="[a-zA-Z0-9]+"
+          >
+            <p *ngIf="login.invalid && login.touched && login.errors?.['required']">The field must not be empty</p>
+            <p *ngIf="login.invalid && login.touched && login.errors?.['minlength']">
+The name must contain more than {{login.errors?.['minlength']['requiredLength']}} characters.
+</p>
+            <p *ngIf="login.invalid && login.touched && login.errors?.['pattern']">Only latin letters are allowed</p>
+      </div>
+
+      <div class="form-item">
+          <label for="email">Email</label>
+          <input id="email" placeholder="Your email..." name="email" ngModel
+          #email="ngModel" required email
+          >
+          <p *ngIf="email.invalid && email.touched">Enter correct email</p>
+      </div>
+
+      <div class="form-item">
+        <label for="passward">Passward</label>
+        <input id="passward" placeholder="Your passward..." name="passward" ngModel
+        required minlength="7" pattern="[a-zA-Z0-9]+"
+        >
+        
+    </div>
+
+      <button type="submit">Submit</button>
+  </form>
 </div>
