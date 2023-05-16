@@ -24,7 +24,6 @@
         <label for="password">Password</label>
         <input id="password" placeholder="Your password..." name="password" ngModel #passwordInput="ngModel"
                required minlength="7" pattern="[a-zA-Z0-9]+">
-      
         <div *ngIf="passwordInput.invalid && (passwordInput.dirty || passwordInput.touched)">
           <p *ngIf="passwordInput.errors?.required">Password is required.</p>
           <p *ngIf="passwordInput.errors?.minlength">
@@ -34,6 +33,7 @@
           <p *ngIf="passwordInput.errors?.pattern">Password should contain only letters and numbers.</p>
         </div>
       </div>
+      
       <button type="submit">Submit</button>
   </form>
 </div>
