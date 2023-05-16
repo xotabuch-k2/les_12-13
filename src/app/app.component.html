@@ -7,7 +7,7 @@
           >
             <p *ngIf="login.invalid && login.touched && login.errors?.['required']">The field must not be empty</p>
             <p *ngIf="login.invalid && login.touched && login.errors?.['minlength']">
-The name must contain more than {{login.errors?.['minlength']['requiredLength']}} characters.
+  The name must contain more than {{login.errors?.['minlength']['requiredLength']}} characters.
 </p>
             <p *ngIf="login.invalid && login.touched && login.errors?.['pattern']">Only latin letters are allowed</p>
       </div>
@@ -17,17 +17,23 @@ The name must contain more than {{login.errors?.['minlength']['requiredLength']}
           <input id="email" placeholder="Your email..." name="email" ngModel
           #email="ngModel" required email
           >
-          <p *ngIf="email.invalid && email.touched">Enter correct email</p>
+            <p *ngIf="email.invalid && email.touched">Enter correct email</p>
       </div>
 
       <div class="form-item">
-        <label for="passward">Passward</label>
-        <input id="passward" placeholder="Your passward..." name="passward" ngModel
-        required minlength="7" pattern="[a-zA-Z0-9]+"
-        >
-        
-    </div>
-
+        <label for="password">Password</label>
+        <input id="password" placeholder="Your password..." name="password" ngModel #passwordInput="ngModel"
+               required minlength="7" pattern="[a-zA-Z0-9]+">
+      
+        <div *ngIf="passwordInput.invalid && (passwordInput.dirty || passwordInput.touched)">
+          <p *ngIf="passwordInput.errors?.required">Password is required.</p>
+          <p *ngIf="passwordInput.errors?.minlength">
+            Password should be at least {{ passwordInput.errors?.minlength?.requiredLength }} characters long.
+            You entered {{ passwordInput.errors?.minlength?.actualLength }} characters.
+          </p>
+          <p *ngIf="passwordInput.errors?.pattern">Password should contain only letters and numbers.</p>
+        </div>
+      </div>
       <button type="submit">Submit</button>
   </form>
 </div>
