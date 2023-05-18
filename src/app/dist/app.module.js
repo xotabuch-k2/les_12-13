@@ -20,8 +20,7 @@ var AppModule = /** @class */ (function () {
                 app_component_1.AppComponent
             ],
             imports: [
-                platform_browser_1.BrowserModule,
-                forms_1.FormsModule
+                platform_browser_1.BrowserModule, forms_1.ReactiveFormsModule
             ],
             providers: [],
             bootstrap: [app_component_1.AppComponent]
