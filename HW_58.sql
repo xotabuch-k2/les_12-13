@@ -3,9 +3,9 @@
 
  MySQL  localhost:33060+ ssl  DB_hw_57  SQL > INSERT INTO DB_hw_57(Product, price, rating, category, brand) VALUES('MacBook Air,','1300','4.72','laptops', 'Apple');
 Query OK, 1 row affected (0.0077 sec)
- MySQL  localhost:33060+ ssl  DB_hw_57  SQL > INSERT INTO DB_hw_57(Product, price, rating, category, brand) VALUES('iPhone 14','1549','4.69','smsrtphones', 'Apple');
+ MySQL  localhost:33060+ ssl  DB_hw_57  SQL > INSERT INTO DB_hw_57(Product, price, rating, category, brand) VALUES('iPhone 14','1549','4.69','smartphones', 'Apple');
 Query OK, 1 row affected (0.0077 sec)
- MySQL  localhost:33060+ ssl  DB_hw_57  SQL > INSERT INTO DB_hw_57(Product, price, rating, category, brand) VALUES('iPhone 13,','1349','4.69','smsrtphones', 'Apple');
+ MySQL  localhost:33060+ ssl  DB_hw_57  SQL > INSERT INTO DB_hw_57(Product, price, rating, category, brand) VALUES('iPhone 13,','1349','4.69','smartphones', 'Apple');
 Query OK, 1 row affected (0.0090 sec)
  MySQL  localhost:33060+ ssl  DB_hw_57  SQL > INSERT INTO DB_hw_57(Product, price, rating, category, brand) VALUES('MacBook','950','4.69','laptops', 'Apple');
 Query OK, 1 row affected (0.0082 sec)
@@ -49,8 +49,8 @@ MySQL  localhost:33060+ ssl  DB_hw_57  SQL > SELECT category, COUNT(Product) FRO
 +-------------+----------------+
 | category    | COUNT(Product) |
 +-------------+----------------+
-| smsrtphones |              9 |
-| leptops     |              6 |
+| smartphones |              9 |
+| laptops     |              6 |
 +-------------+----------------+
 2 rows in set (0.0011 sec)
 
@@ -61,8 +61,8 @@ MySQL  localhost:33060+ ssl  DB_hw_57  SQL > SELECT category, COUNT(Product) FRO
 +-------------+---------------+
 | category    | unique_brands |
 +-------------+---------------+
-| leptops     |             5 |
-| smsrtphones |             4 |
+| laptops     |             5 |
+| smartphones |             4 |
 +-------------+---------------+
 2 rows in set (0.0083 sec)
 
@@ -99,12 +99,12 @@ MySQL  localhost:33060+ ssl  DB_hw_57  SQL > SELECT category, COUNT(Product) FRO
 +-------------+----------------------------+-------+
 | category    | Product                    | price |
 +-------------+----------------------------+-------+
-| leptops     | Microsoft Surface Laptop 4 |  1499 |
-| leptops     | Infinix INBOOK             |  1099 |
-| leptops     | Infinix INBOOK             |  1099 |
-| smsrtphones | iPhone 13,                 |  1349 |
-| smsrtphones | Samsyng Universe 9         |  1249 |
-| smsrtphones | iPhone 12                  |  1100 |
-| smsrtphones | Huawei P30                 |   499 |
+| laptops     | Microsoft Surface Laptop 4 |  1499 |
+| laptops     | Infinix INBOOK             |  1099 |
+| laptops     | Infinix INBOOK             |  1099 |
+| smartphones | iPhone 13,                 |  1349 |
+| smartphones | Samsung Universe 9         |  1249 |
+| smartphones | iPhone 12                  |  1100 |
+| smartphones | Huawei P30                 |   499 |
 +-------------+----------------------------+-------+
 7 rows in set (0.0016 sec)
