@@ -32,16 +32,16 @@ mysql> ALTER TABLE DB_hw_57 ADD INDEX(Product(20));
 mysql> ALTER TABLE DB_hw_57 ADD INDEX(Price(3));
 mysql> ALTER TABLE DB_hw_57 ADD INDEX(category(6));
 mysql> ALTER TABLE DB_hw_57 ADD INDEX(brand(7));
-mysql> SELECT Product, price FROM DB_hw_57 WHERE brand="Apple";
+mysql> SELECT Product, Price FROM DB_hw_57 WHERE brand="Apple";
 +-------------+-------+
-| Product     | price |
+| Product     | Price |
 +-------------+-------+
 | iPhone 9    |   549 |
 | iPhone X    |   899 |
 | MacBook Pro |  1149 |
 +-------------+-------+
 3 rows in set (0.00 sec)
-mysql> SELECT Product FROM DB_hw_57 WHERE price<"1000";
+mysql> SELECT Product FROM DB_hw_57 WHERE Price<"1000";
 +------------+
 | Product    |
 +------------+
@@ -52,7 +52,7 @@ mysql> SELECT Product FROM DB_hw_57 WHERE price<"1000";
 +------------+
 4 rows in set (0.00 sec)
 
-mysql> SELECT Product FROM DB_hw_57 WHERE price BETWEEN "500" AND "1500";
+mysql> SELECT Product FROM DB_hw_57 WHERE Price BETWEEN "500" AND "1500";
 +----------------------------+
 | Product                    |
 +----------------------------+
@@ -67,9 +67,9 @@ mysql> SELECT Product FROM DB_hw_57 WHERE price BETWEEN "500" AND "1500";
 +----------------------------+
 8 rows in set (0.00 sec)
 
-mysql> SELECT Product, price,rating FROM DB_hw_57 WHERE brand IN ("Apple", "Samsung", "Huawei");
+mysql> SELECT Product, Price,rating FROM DB_hw_57 WHERE brand IN ("Apple", "Samsung", "Huawei");
 +---------------------+-------+--------+
-| Product             | price | rating |
+| Product             | Price | rating |
 +---------------------+-------+--------+
 | iPhone 9            |   549 |   4.69 |
 | iPhone X            |   899 |   4.44 |
