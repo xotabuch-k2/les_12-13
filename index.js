@@ -15,7 +15,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(require('./swagger.json'))
 app.set('view engine', 'pug');
 
 app.get('/', (req, res)=>{
-    res.sendFile(path.join(__dirname + '/content/index.html'));
+    res.sendFile(path.join(__dirname + '/views/index.html'));
 })
 
 app.get('/product', (req, res)=>{
