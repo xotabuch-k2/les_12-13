@@ -1,0 +1,56 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Express API",
+      "version": "1.0.0",
+      "description": "A sample API for learning Express"
+    },
+    "servers": [
+      {
+        "url": "http://localhost:8000",
+        "description": "Local development server"
+      }
+    ],
+    "paths": {
+      "/": {
+        "get": {
+          "summary": "Returns the home page",
+          "responses": {
+            "200": {
+              "description": "The home page",
+              "content": {
+                "text/html": {
+                  "schema": {
+                    "type": "string"}}}}}}},
+
+                    "/product": {
+                        "get": {
+                          "summary": "Returns product name with price",
+                          "parameters": [
+                            {
+                              "name": "title",
+                              "in": "query",
+                              "description": "Product name",
+                              "required": false,
+                              "schema": {
+                                "type": "string"}},
+                            {
+                              "name": "price",
+                              "in": "query",
+                              "description": "The price of the product",
+                              "required": false,
+                              "schema": {"type": "number"}}],
+                          "responses": {
+                            "200": {
+                              "description": "Product name with price listed",
+                              "content": {
+                                "application/json": {
+                                  "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                      "product_title": {
+                                        "type": "string",
+                                        "description": "Product name"},
+                                      "product_price": {
+                                        "type": "number",
+                                        "description": "The price of the product"}}}}}}}}}}}
