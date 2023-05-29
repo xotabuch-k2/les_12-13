@@ -8,6 +8,16 @@
   max-width: 1272px;
 }
 
+.first {
+  background-color: aqua;
+}
+.first .sec {
+  background-color: green;
+}
+.first .sec .firSec {
+  background-color: purple;
+}
+
 .card {
   padding: 2em;
 }

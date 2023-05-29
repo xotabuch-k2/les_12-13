@@ -6,8 +6,18 @@ function App() {
 
   return (
     <>
-      <h1>Рот + Эбал</h1>
-      <h2>РотЭбал этого проекта</h2>
+    <div className='first'>
+    <h1>Рот + Эбал</h1>
+      <div className='sec'>
+        <h2>РотЭбал этого проекта</h2>
+        <div className='firSec'>
+          <h2>Test Ebest</h2>
+        </div>
+      </div>
+      
+
+    </div>
+    
       
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>

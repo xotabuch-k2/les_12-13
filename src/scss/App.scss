@@ -1,4 +1,5 @@
 @import 'normalize.css'; 
+@import 'Templates.scss';
 #root {
   margin: 0 auto;
   box-sizing: border-box;
@@ -8,7 +9,15 @@
   max-width: 1272px;
 
 }
-
+.first{
+  background-color: aqua;
+  .sec{
+    background-color: green;
+    .firSec{
+      background-color: $primCol;
+    }
+  }
+}
 .card {
   padding: 2em;
 }
