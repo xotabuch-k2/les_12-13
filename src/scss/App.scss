@@ -16,6 +16,17 @@
     .firSec{
       background-color: $primCol;
     }
+    .Bt1{
+      @extend %BtAll;
+    }
+    .Bt2{
+      @extend %BtAll;
+      color: aqua
+    }
+    .Bt3{
+      @extend %BtAll;
+      background-color: aquamarine;
+    }
   }
 }
 .card {

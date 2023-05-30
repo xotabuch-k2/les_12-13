@@ -1,4 +1,10 @@
 @import 'normalize.css';
+.first .sec .Bt3, .first .sec .Bt2, .first .sec .Bt1 {
+  width: 100px;
+  height: 50px;
+  border-radius: 20px;
+}
+
 #root {
   margin: 0 auto;
   box-sizing: border-box;
@@ -16,6 +22,12 @@
 }
 .first .sec .firSec {
   background-color: purple;
+}
+.first .sec .Bt2 {
+  color: aqua;
+}
+.first .sec .Bt3 {
+  background-color: aquamarine;
 }
 
 .card {

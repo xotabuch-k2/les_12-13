@@ -12,6 +12,9 @@ function App() {
         <h2>РотЭбал этого проекта</h2>
         <div className='firSec'>
           <h2>Test Ebest</h2>
+          <button className='Bt1'>Bt1</button>
+          <button className='Bt2'>Bt1</button>
+          <button className='Bt3'>Bt1</button>
         </div>
       </div>
       
