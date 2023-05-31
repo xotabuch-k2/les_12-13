@@ -3,32 +3,160 @@
 #root {
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 2rem;
   text-align: center;
-  background-color: bisque;
   max-width: 1272px;
-
+  height: 102px;
 }
-.first{
-  background-color: aqua;
-  .sec{
-    background-color: green;
-    .firSec{
-      background-color: $primCol;
+.header{
+  margin-top: 55px;
+  height: 102px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .logoImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .lodoUP{
+      margin-right: 15px;
+      position: relative;
+      top: 9px;
     }
-    .Bt1{
-      @extend %BtAll;
+  }
+  .navigation{
+      width: 387px;
+      display: flex;
+      justify-content: space-between;
+      a{
+        color: #FFFFFF;
+        outline: none;
+        text-decoration: none;
+        @extend %Montserrat_Bold_700;
+        font-size: 12px;
+        line-height: 15px;
+      }
+  }
+  .divButton{
+    width: 347px;
+    display: flex;
+    justify-content: space-between;
+    .C_button{
+      width: 155px;
+      height: 48px;
+      @extend %hedButton, %Montserrat_Bold_700;
+      border: 2px solid #FFFFFF;
+      background-color: $mainCol;
+      color: #FFFFFF;
     }
-    .Bt2{
-      @extend %BtAll;
-      color: aqua
-    }
-    .Bt3{
-      @extend %BtAll;
-      background-color: aquamarine;
+    .J_button{
+      width: 155px;
+      height: 48px;
+      @extend %hedButton, %Montserrat_Bold_700;
+      background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+      color: $mainCol;
     }
   }
 }
-.card {
-  padding: 2em;
+.section1{
+  display: flex;
+  justify-content: space-between;
+  .textSection1{
+    margin-top: 146px;
+    .textSection1_h1{
+      margin: 0;
+      text-align: left;
+      @extend %Montserrat_Bold_700;
+      font-size: 40px;
+      line-height: 49px;
+      color: #FFFFFF;
+      .textSection1_h1_s1{
+        font-size: 46px;
+        line-height: 56px;
+        background: linear-gradient(91.57deg, #C0B7E8 -1.02%, #8176AF 36.25%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        } 
+      .textSection1_h1_s2{
+        font-size: 46px;
+        line-height: 56px;
+        background: linear-gradient(269deg, #C0B7E8 -3.72%, #8176AF 82.17%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+    }
+    .textSection1_h2{
+      margin-bottom: 0;
+      margin-top: 36px;
+      text-align: left;
+      @extend %Montserrat_Regular_400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #FFFFFF;
+
+    }
+    .imgButt{
+      margin-top: 40px;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      width: 325px;
+      .imgButtA{
+        width: 214px;
+        height: 48px;
+        @extend %TipicalButton;
+        text-align: center;
+        align-items: center;
+        text-decoration: none;
+      }
+    }
+  }
+  .imgSectionR{
+    position: relative;
+    width: 816px;
+    left: -558px;
+    top: -195px;
+    .Mask_girl_background{
+      @extend %Mask_girl_background;
+    }
+    .Mask_girl{
+      @extend %Mask_girl;
+    }
+    .Vector1{
+      @extend %Vector1;
+    }
+    .Vector2{
+      @extend %Vector2;
+    }
+    .Vector3{
+      @extend %Vector3;
+    }
+    .Vector4{
+      @extend %Vector4;
+    }
+  }
+}
+.secInfo{
+  width: 1272px;
+  height: 167px;
+  background: radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
+  box-shadow: 0px 4px 4px rgba(192, 183, 232, 0.01);
+  border-radius: 90px;
+  margin-top: 103px;
+  position: relative;
+  display: flex;
+  align-items: center;
+.secInfoL{
+  display: flex;
+}
+
+
+
+
+  .secInfoLine{
+    width: 0px;
+    height: 116.5px;
+    border: 1px solid rgba(192, 183, 232, 0.33);
+  }
 }

@@ -1,6 +1,85 @@
-$primCol: purple;
-%BtAll{
-    width: 100px;
-    height: 50px;
-    border-radius: 20px;
+//--------COLORS--------
+$mainCol: #343045;
+
+
+//-------COLORS-END------
+//-----------------------
+
+//-------FONTS-----------
+%Montserrat_Bold_700{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+}
+%Montserrat_Regular_400{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+}
+%Montserrat_Regular_300{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+}
+//-------FONTS-END-------
+//-----------------------
+
+//---------CSS-----------
+%hedButton{
+    border-radius: 40px;
+    border: none;
+    outline: none; 
+    font-size: 12px;
+    line-height: 15px;
+}
+%TipicalButton{
+    @extend %hedButton, %Montserrat_Bold_700;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    color: $mainCol;
+}
+%Mask_girl_background{
+    position: absolute;
+    z-index: 1;
+    width: 524px;
+    height: 455px;
+    left: 832px;
+    top: 256px;
+    background: rgba(0, 0, 0, 0.13);
+    border-radius: 100px 100px 100px 240px;
+}
+%Mask_girl{
+    position: absolute;
+    width: 490px;
+    height: 426px;
+    left: 848px;
+    top: 270px;
+    z-index: 2;
+}
+%Vector1{
+    position: absolute;
+    width: 414px;
+    height: 669px;
+    left: 1023px;
+    top: 170px;
+}
+%Vector2{
+    position: absolute;
+    width: 377px;
+    height: 845px;
+    left: 929px;
+    top: 0px;
+}
+%Vector3{
+    position: absolute;
+    width: 735.03px;
+    height: 419.32px;
+    left: 707.47px;
+    top: 419.18px;
+}
+%Vector4{
+    position: absolute;
+    width: 238.07px;
+    height: 561px;
+    left: 2.5px;
+    top: 274px;
 }

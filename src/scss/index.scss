@@ -1,9 +1,10 @@
 @import 'normalize.css'; 
 @import 'Templates.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
 :root {
   margin: 0 auto;
   box-sizing: border-box;
-  background-color: #343045;
-
+  background-color: $mainCol;
 }
 

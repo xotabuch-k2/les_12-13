@@ -1,35 +1,211 @@
 @import 'normalize.css';
-.first .sec .Bt3, .first .sec .Bt2, .first .sec .Bt1 {
-  width: 100px;
-  height: 50px;
-  border-radius: 20px;
+.section1 .textSection1 .textSection1_h1, .header .divButton .J_button, .header .divButton .C_button, .header .navigation a, .section1 .textSection1 .imgButt .imgButtA {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+}
+
+.section1 .textSection1 .textSection1_h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.header .divButton .J_button, .header .divButton .C_button, .section1 .textSection1 .imgButt .imgButtA {
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.section1 .textSection1 .imgButt .imgButtA {
+  background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+  color: #343045;
+}
+
+.section1 .imgSectionR .Mask_girl_background {
+  position: absolute;
+  z-index: 1;
+  width: 524px;
+  height: 455px;
+  left: 832px;
+  top: 256px;
+  background: rgba(0, 0, 0, 0.13);
+  border-radius: 100px 100px 100px 240px;
+}
+
+.section1 .imgSectionR .Mask_girl {
+  position: absolute;
+  width: 490px;
+  height: 426px;
+  left: 848px;
+  top: 270px;
+  z-index: 2;
+}
+
+.section1 .imgSectionR .Vector1 {
+  position: absolute;
+  width: 414px;
+  height: 669px;
+  left: 1023px;
+  top: 170px;
+}
+
+.section1 .imgSectionR .Vector2 {
+  position: absolute;
+  width: 377px;
+  height: 845px;
+  left: 929px;
+  top: 0px;
+}
+
+.section1 .imgSectionR .Vector3 {
+  position: absolute;
+  width: 735.03px;
+  height: 419.32px;
+  left: 707.47px;
+  top: 419.18px;
+}
+
+.section1 .imgSectionR .Vector4 {
+  position: absolute;
+  width: 238.07px;
+  height: 561px;
+  left: 2.5px;
+  top: 274px;
 }
 
 #root {
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 2rem;
   text-align: center;
-  background-color: bisque;
   max-width: 1272px;
+  height: 102px;
 }
 
-.first {
-  background-color: aqua;
+.header {
+  margin-top: 55px;
+  height: 102px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.first .sec {
-  background-color: green;
+.header .logoImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.first .sec .firSec {
-  background-color: purple;
+.header .logoImg .lodoUP {
+  margin-right: 15px;
+  position: relative;
+  top: 9px;
 }
-.first .sec .Bt2 {
-  color: aqua;
+.header .navigation {
+  width: 387px;
+  display: flex;
+  justify-content: space-between;
 }
-.first .sec .Bt3 {
-  background-color: aquamarine;
+.header .navigation a {
+  color: #FFFFFF;
+  outline: none;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 15px;
+}
+.header .divButton {
+  width: 347px;
+  display: flex;
+  justify-content: space-between;
+}
+.header .divButton .C_button {
+  width: 155px;
+  height: 48px;
+  border: 2px solid #FFFFFF;
+  background-color: #343045;
+  color: #FFFFFF;
+}
+.header .divButton .J_button {
+  width: 155px;
+  height: 48px;
+  background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+  color: #343045;
 }
 
-.card {
-  padding: 2em;
+.section1 {
+  display: flex;
+  justify-content: space-between;
+}
+.section1 .textSection1 {
+  margin-top: 146px;
+}
+.section1 .textSection1 .textSection1_h1 {
+  margin: 0;
+  text-align: left;
+  font-size: 40px;
+  line-height: 49px;
+  color: #FFFFFF;
+}
+.section1 .textSection1 .textSection1_h1 .textSection1_h1_s1 {
+  font-size: 46px;
+  line-height: 56px;
+  background: linear-gradient(91.57deg, #C0B7E8 -1.02%, #8176AF 36.25%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.section1 .textSection1 .textSection1_h1 .textSection1_h1_s2 {
+  font-size: 46px;
+  line-height: 56px;
+  background: linear-gradient(269deg, #C0B7E8 -3.72%, #8176AF 82.17%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.section1 .textSection1 .textSection1_h2 {
+  margin-bottom: 0;
+  margin-top: 36px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+.section1 .textSection1 .imgButt {
+  margin-top: 40px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 325px;
+}
+.section1 .textSection1 .imgButt .imgButtA {
+  width: 214px;
+  height: 48px;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+}
+.section1 .imgSectionR {
+  position: relative;
+  width: 816px;
+  left: -558px;
+  top: -195px;
+}
+.secInfo {
+  width: 1272px;
+  height: 167px;
+  background: radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
+  box-shadow: 0px 4px 4px rgba(192, 183, 232, 0.01);
+  border-radius: 90px;
+  margin-top: 103px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.secInfo .secInfoL {
+  display: flex;
+}
+.secInfo .secInfoLine {
+  width: 0px;
+  height: 116.5px;
+  border: 1px solid rgba(192, 183, 232, 0.33);
 }
