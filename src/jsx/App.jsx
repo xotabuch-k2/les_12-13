@@ -10,7 +10,7 @@ function App() {
           <img src="/public/img/1 block/HYDRA.svg" alt="" />
       </div>
       <nav className='navigation'>
-          <a href="#">ABOUT</a>
+          <a  href="#">ABOUT</a>
           <a href="#">SERVICES</a>
           <a href="#">TECHNOLOGIES</a>
           <a href="#">HOW TO</a>
@@ -91,7 +91,30 @@ lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus v
           </p>
         </div>
       </section>
-      <section></section>
+      <section className='section2'>
+        <div className='imgBack'>
+          <img src="/public/img/2 block/Mask man.svg" alt="" />
+          <img src="/public/img/2 block/Vector 7.svg" alt="" />
+          <img src="/public/img/2 block/Vector 8.svg" alt="" />
+        </div>
+        <div className='textSec2'>
+          <h2>ABOUT <br />
+          <span>HYDRA VR</span>
+          </h2>
+          <h3>
+Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus 
+urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices gravida 
+dictum fusce ut placerat orci. Aenean et tortor at risus viverra adipiscing at in. 
+Mattis aliquam faucibus purus in massa. Est placerat in egestas erat imperdiet 
+sed. Consequat semper viverra nam libero justo laoreet sit amet. Aliquam 
+etiam erat velit scelerisque in dictum non consectetur a. Laoreet sit amet 
+cursus sit amet. Vel eros donec ac odio tempor orci dapibus. Sem nulla pha
+retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudi
+n tempor.
+          </h3>
+          <button>LET’S GET IN TOUCH</button>
+        </div>
+      </section>
       <section></section>
       <section></section>      
     </main>
