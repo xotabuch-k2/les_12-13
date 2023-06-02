@@ -83,3 +83,28 @@ $mainCol: #343045;
     left: 2.5px;
     top: 274px;
 }
+%Line1Block{
+    width: 0px;
+    height: 116.5px;
+    border: 1px solid rgba(192, 183, 232, 0.33);
+}
+%secInfo_X_text{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+%secInfo_X_textU{
+    @extend %Montserrat_Bold_700;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0;
+    color: #FFFFFF;
+}
+%secInfo_X_textD{
+    @extend %Montserrat_Regular_400;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0;
+    color: #FFFFFF;
+}

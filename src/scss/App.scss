@@ -2,6 +2,7 @@
 @import 'Templates.scss';
 #root {
   margin: 0 auto;
+  padding: 0;
   box-sizing: border-box;
   text-align: center;
   max-width: 1272px;
@@ -149,14 +150,110 @@
   align-items: center;
 .secInfoL{
   display: flex;
+  margin: 0 42.5px 0 39px;
+  .secInfoLimg{
+    width: 70px;
+    height: 70px;
+    img{
+      width: 70px;
+      height: 70px;
+    }
+  }
+  .secInfoLtext{
+    @extend %secInfo_X_text;
+    .secInfoLtextU{
+      @extend %secInfo_X_textU;
+    }
+    .secInfoLtextD{
+      @extend %secInfo_X_textD;
+      padding-top: 10px;
+    }
+  }
 }
+  .secInfoLine1{
+  @extend %Line1Block;
+  }
+  .secInfoC{
+    display: flex;
+    margin: 0 66px 0 47.5px;
+    .secInfoCimg{
+      width: 59px;
+      height: 59px;
+      margin-right: 29px;
+      img{
+        width: 59px;
+        height: 59px;
+      }
+    }
+    .secInfoCtext{
+      @extend %secInfo_X_text;
+      .secInfoCtextU{
+        @extend %secInfo_X_textU;
+      }
+      .secInfoCtextD{
+        @extend %secInfo_X_textD;
+        padding-top: 9px;
+      }
+    }
+  }
+  .secInfoLine2{
+    @extend %Line1Block;
+  }
+  .secInfoR{
+    display: flex;
+    margin-left: 50px;
+    .secInfoRimg{
+      width: 65px;
+      height: 65px;
+      img{
+        width: 65px;
+        height: 65px;
+      }
+    }
+    .secInfoRtext{
+      @extend %secInfo_X_text;
+      margin-left: 23px;
+      .secInfoRtextU{
+        @extend %secInfo_X_textU;
+      }
+      .secInfoRtextD{
+        @extend %secInfo_X_textD;
+        padding-top: 9px;
+      }
+    }
+
+  }
 
 
-
-
-  .secInfoLine{
-    width: 0px;
-    height: 116.5px;
-    border: 1px solid rgba(192, 183, 232, 0.33);
+}
+.introText{
+  display: flex;
+  margin-top: 85px;
+  .intro{
+    h2{
+      margin: 0;
+      @extend %Montserrat_Bold_700;
+      color: #FFFFFF;
+    }
+    h3{
+      margin: 10px 0 0 0;
+      @extend %Montserrat_Regular_300;
+      color: #FFFFFF;
+    }
+  }
+  img{
+    width: 228px;
+    height: 100px;
+  }
+  .text{
+    width: 650px;
+    height: 98px;
+    margin-left: auto;
+    p{
+      @extend %Montserrat_Regular_400;
+      color: #FFFFFF;
+      text-align: left;
+      margin: 0;
+    }
   }
 }

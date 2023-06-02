@@ -1,14 +1,20 @@
 @import 'normalize.css';
-.section1 .textSection1 .textSection1_h1, .header .divButton .J_button, .header .divButton .C_button, .header .navigation a, .section1 .textSection1 .imgButt .imgButtA {
+.introText .intro h2, .section1 .textSection1 .textSection1_h1, .header .divButton .J_button, .header .divButton .C_button, .header .navigation a, .secInfo .secInfoR .secInfoRtext .secInfoRtextU, .secInfo .secInfoC .secInfoCtext .secInfoCtextU, .secInfo .secInfoL .secInfoLtext .secInfoLtextU, .section1 .textSection1 .imgButt .imgButtA {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
 }
 
-.section1 .textSection1 .textSection1_h2 {
+.introText .text p, .section1 .textSection1 .textSection1_h2, .secInfo .secInfoR .secInfoRtext .secInfoRtextD, .secInfo .secInfoC .secInfoCtext .secInfoCtextD, .secInfo .secInfoL .secInfoLtext .secInfoLtextD {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
+}
+
+.introText .intro h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
 }
 
 .header .divButton .J_button, .header .divButton .C_button, .section1 .textSection1 .imgButt .imgButtA {
@@ -76,8 +82,36 @@
   top: 274px;
 }
 
+.secInfo .secInfoLine2, .secInfo .secInfoLine1 {
+  width: 0px;
+  height: 116.5px;
+  border: 1px solid rgba(192, 183, 232, 0.33);
+}
+
+.secInfo .secInfoR .secInfoRtext, .secInfo .secInfoC .secInfoCtext, .secInfo .secInfoL .secInfoLtext {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.secInfo .secInfoR .secInfoRtext .secInfoRtextU, .secInfo .secInfoC .secInfoCtext .secInfoCtextU, .secInfo .secInfoL .secInfoLtext .secInfoLtextU {
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0;
+  color: #FFFFFF;
+}
+
+.secInfo .secInfoR .secInfoRtext .secInfoRtextD, .secInfo .secInfoC .secInfoCtext .secInfoCtextD, .secInfo .secInfoL .secInfoLtext .secInfoLtextD {
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0;
+  color: #FFFFFF;
+}
+
 #root {
   margin: 0 auto;
+  padding: 0;
   box-sizing: border-box;
   text-align: center;
   max-width: 1272px;
@@ -203,9 +237,77 @@
 }
 .secInfo .secInfoL {
   display: flex;
+  margin: 0 42.5px 0 39px;
 }
-.secInfo .secInfoLine {
-  width: 0px;
-  height: 116.5px;
-  border: 1px solid rgba(192, 183, 232, 0.33);
+.secInfo .secInfoL .secInfoLimg {
+  width: 70px;
+  height: 70px;
+}
+.secInfo .secInfoL .secInfoLimg img {
+  width: 70px;
+  height: 70px;
+}
+.secInfo .secInfoL .secInfoLtext .secInfoLtextD {
+  padding-top: 10px;
+}
+.secInfo .secInfoC {
+  display: flex;
+  margin: 0 66px 0 47.5px;
+}
+.secInfo .secInfoC .secInfoCimg {
+  width: 59px;
+  height: 59px;
+  margin-right: 29px;
+}
+.secInfo .secInfoC .secInfoCimg img {
+  width: 59px;
+  height: 59px;
+}
+.secInfo .secInfoC .secInfoCtext .secInfoCtextD {
+  padding-top: 9px;
+}
+.secInfo .secInfoR {
+  display: flex;
+  margin-left: 50px;
+}
+.secInfo .secInfoR .secInfoRimg {
+  width: 65px;
+  height: 65px;
+}
+.secInfo .secInfoR .secInfoRimg img {
+  width: 65px;
+  height: 65px;
+}
+.secInfo .secInfoR .secInfoRtext {
+  margin-left: 23px;
+}
+.secInfo .secInfoR .secInfoRtext .secInfoRtextD {
+  padding-top: 9px;
+}
+
+.introText {
+  display: flex;
+  margin-top: 85px;
+}
+.introText .intro h2 {
+  margin: 0;
+  color: #FFFFFF;
+}
+.introText .intro h3 {
+  margin: 10px 0 0 0;
+  color: #FFFFFF;
+}
+.introText img {
+  width: 228px;
+  height: 100px;
+}
+.introText .text {
+  width: 650px;
+  height: 98px;
+  margin-left: auto;
+}
+.introText .text p {
+  color: #FFFFFF;
+  text-align: left;
+  margin: 0;
 }
