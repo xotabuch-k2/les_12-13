@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Product = void 0;
+exports.productSchema = exports.Product = void 0;
 
 var _mongoose = _interopRequireDefault(require("mongoose"));
 
@@ -22,6 +22,7 @@ var productSchema = new Schema({
     extended: String
   }
 });
+exports.productSchema = productSchema;
 
 var Product = _mongoose["default"].model('product', productSchema);
 

@@ -6,6 +6,9 @@
     "mysql2": "^3.3.3",
     "sequelize": "^6.31.1"
   },
+  "scripts": {
+    "start": "nodemon index.js"
+  },
   "devDependencies": {
     "nodemon": "^2.0.22"
   }
