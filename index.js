@@ -1,10 +1,14 @@
-// import mongoose from 'mongoose';
-import express from 'express';
-import {Product, productSchem} from './model/product.js'
+//import mongoose from 'mongoose';
+const mongoose = require('mongoose');
+// import express from 'express';
+const express = require('express');
+// import {Product, productSchema} from './model/product.js'
+const { Product, productSchema } = require('./model/product.js');
+
 
 
 const url = 'mongodb+srv://xotabuch-k2:Nfhenbyj68@learn.7mjqj3b.mongodb.net/shop';
-const app = express();
+// const app = express();
 
 mongoose.connect(url)
         .then(()=> {
@@ -14,6 +18,7 @@ mongoose.connect(url)
             })
         })
         .catch((err)=> {console.log(`DB connection error: ${err}`)});
+
 app.get('/', (req, res) => {
     Product.find()
         .then(products => {
@@ -32,12 +37,10 @@ padding: 0 10px">
         .catch(error => {
         console.error(error);
         });
-    });
+});
 
 const connection = mongoose.createConnection(url, {maxPoolSize: 10})
-
-const Product = connection.model('product', productSchema);
-
+const Product1 = connection.model('product', productSchema);
 connection.on('open', () => {
     console.log('Connected to the database!');
     app.listen(PORT, ()=> {

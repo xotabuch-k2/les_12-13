@@ -1,15 +1,9 @@
 "use strict";
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.productSchema = exports.Product = void 0;
+// import mongoose from 'mongoose';
+var mongoose = require('mongoose');
 
-var _mongoose = _interopRequireDefault(require("mongoose"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-var Schema = _mongoose["default"].Schema;
+var Schema = mongoose.Schema;
 var productSchema = new Schema({
   title: String,
   price: Number,
@@ -22,8 +16,13 @@ var productSchema = new Schema({
     extended: String
   }
 });
-exports.productSchema = productSchema;
+var Product1 = mongoose.model('product', productSchema); // export {Product, productSchema};
 
-var Product = _mongoose["default"].model('product', productSchema);
+var Product = require('./model/product.js');
 
-exports.Product = Product;
+var productSchema1 = require('./model/product.js');
+
+module.exports = {
+  Product: Product,
+  productSchema: productSchema
+};
