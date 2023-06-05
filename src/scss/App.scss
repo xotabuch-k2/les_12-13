@@ -227,6 +227,7 @@
 
 }
 .introText{
+
   display: flex;
   margin-top: 85px;
   .intro{
@@ -239,16 +240,21 @@
     }
     h3{
       margin: 10px 0 0 0;
+      padding-right: 30px;
       @extend %Montserrat_Regular_300;
       color: #FFFFFF;
       font-size: 36px;
       line-height: 44px;
+      width: 251px;
     }
   }
   img{
     width: 228px;
     height: 100px;
-    padding-top: 20px
+    padding-top: 20px;
+    position: relative;
+    left: -16px;
+
   }
   .text{
     width: 650px;
@@ -263,8 +269,9 @@
   }
 }
 .section2{
-  margin-top: 79px;
+  margin-top: 69px;
   display: flex;
+  height: 557px;
   .imgBack{
     position: relative;
     img:first-child {
@@ -317,7 +324,7 @@
       width: 630px;
       height: 228px;
       color: #FFFFFF;
-      margin: 50px 0 28px 0;
+      margin: 42px 0 28px 0;
     }
     button{
       position: relative;
@@ -325,6 +332,47 @@
       width: 214px;
       height: 48px;
       @extend %TipicalButton;
+      
     }
   }
+}
+.introText1{
+
+  display: flex;
+  margin-top: 85px;
+  .intro{
+    width: 259px;
+    margin-right: 16px;
+    h2{
+      margin: 0;
+      @extend %Montserrat_Bold_700;
+      color: #FFFFFF;
+      font-size: 36px;
+      line-height: 44px;
+    }
+    h3{
+      margin: 10px 0 0 0;
+      @extend %Montserrat_Regular_300;
+      color: #FFFFFF;
+      font-size: 36px;
+      line-height: 44px;
+    }
+  }
+  img{
+    width: 228px;
+    height: 100px;
+    padding-top: 20px
+  }
+  .text{
+    width: 650px;
+    height: 98px;
+    margin-left: auto;
+    p{
+      @extend %Montserrat_Regular_400;
+      color: #FFFFFF;
+      text-align: left;
+      margin: 0;
+    }
+  }
+
 }

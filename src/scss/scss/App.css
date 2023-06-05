@@ -1,17 +1,17 @@
 @import 'normalize.css';
-.section2 .textSec2 h2, .introText .intro h2, .section1 .textSection1 .textSection1_h1, .header .divButton .J_button, .header .divButton .C_button, .header .navigation a, .secInfo .secInfoR .secInfoRtext .secInfoRtextU, .secInfo .secInfoC .secInfoCtext .secInfoCtextU, .secInfo .secInfoL .secInfoLtext .secInfoLtextU, .section2 .textSec2 button, .section1 .textSection1 .imgButt .imgButtA {
+.introText1 .intro h2, .section2 .textSec2 h2, .introText .intro h2, .section1 .textSection1 .textSection1_h1, .header .divButton .J_button, .header .divButton .C_button, .header .navigation a, .secInfo .secInfoR .secInfoRtext .secInfoRtextU, .secInfo .secInfoC .secInfoCtext .secInfoCtextU, .secInfo .secInfoL .secInfoLtext .secInfoLtextU, .section2 .textSec2 button, .section1 .textSection1 .imgButt .imgButtA {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
 }
 
-.section2 .textSec2 h3, .introText .text p, .section1 .textSection1 .textSection1_h2, .secInfo .secInfoR .secInfoRtext .secInfoRtextD, .secInfo .secInfoC .secInfoCtext .secInfoCtextD, .secInfo .secInfoL .secInfoLtext .secInfoLtextD {
+.introText1 .text p, .section2 .textSec2 h3, .introText .text p, .section1 .textSection1 .textSection1_h2, .secInfo .secInfoR .secInfoRtext .secInfoRtextD, .secInfo .secInfoC .secInfoCtext .secInfoCtextD, .secInfo .secInfoL .secInfoLtext .secInfoLtextD {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
 }
 
-.section2 .textSec2 h2 span, .introText .intro h3 {
+.introText1 .intro h3, .section2 .textSec2 h2 span, .introText .intro h3 {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
@@ -296,14 +296,18 @@
 }
 .introText .intro h3 {
   margin: 10px 0 0 0;
+  padding-right: 30px;
   color: #FFFFFF;
   font-size: 36px;
   line-height: 44px;
+  width: 251px;
 }
 .introText img {
   width: 228px;
   height: 100px;
   padding-top: 20px;
+  position: relative;
+  left: -16px;
 }
 .introText .text {
   width: 650px;
@@ -317,8 +321,9 @@
 }
 
 .section2 {
-  margin-top: 79px;
+  margin-top: 69px;
   display: flex;
+  height: 557px;
 }
 .section2 .imgBack {
   position: relative;
@@ -369,11 +374,47 @@
   width: 630px;
   height: 228px;
   color: #FFFFFF;
-  margin: 50px 0 28px 0;
+  margin: 42px 0 28px 0;
 }
 .section2 .textSec2 button {
   position: relative;
   left: -726px;
   width: 214px;
   height: 48px;
+}
+
+.introText1 {
+  display: flex;
+  margin-top: 85px;
+}
+.introText1 .intro {
+  width: 259px;
+  margin-right: 16px;
+}
+.introText1 .intro h2 {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 36px;
+  line-height: 44px;
+}
+.introText1 .intro h3 {
+  margin: 10px 0 0 0;
+  color: #FFFFFF;
+  font-size: 36px;
+  line-height: 44px;
+}
+.introText1 img {
+  width: 228px;
+  height: 100px;
+  padding-top: 20px;
+}
+.introText1 .text {
+  width: 650px;
+  height: 98px;
+  margin-left: auto;
+}
+.introText1 .text p {
+  color: #FFFFFF;
+  text-align: left;
+  margin: 0;
 }

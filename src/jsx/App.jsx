@@ -115,7 +115,21 @@ n tempor.
           <button>LET’S GET IN TOUCH</button>
         </div>
       </section>
-      <section></section>
+      <section className='introText1'>
+      <div className='intro'>
+          <h2>WHY BUILD</h2>
+          <h3>WITH HYDRA?</h3>
+        </div>
+        <img src="/public/img/2 block/arrow-small-right.svg" alt="" />
+        <div className='text'>
+          <p>
+Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
+nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
+quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
+lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
+          </p>
+        </div>
+      </section>
       <section></section>      
     </main>
     <footer>
