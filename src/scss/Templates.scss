@@ -36,6 +36,7 @@ $mainCol: #343045;
     @extend %hedButton, %Montserrat_Bold_700;
     background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
     color: $mainCol;
+    cursor: pointer;
 }
 %Mask_girl_background{
     position: absolute;
@@ -107,4 +108,86 @@ $mainCol: #343045;
     line-height: 17px;
     margin: 0;
     color: #FFFFFF;
+}
+%vertSlider{      
+    margin-top: 102px;
+    height: 511px;
+    width: 310px;
+    background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
+    border-radius: 40px;
+    .img1{
+      position: relative;
+      margin-top: 23px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 219px;
+      height: 219px;
+      background-color: rgba(14, 14, 14, 0.32);
+      border-radius: 50%;
+      img{
+        width: 190.92px;
+        height: 190.92px;
+      }
+    }
+    .mianText{
+      margin-left: auto;
+      margin-right: auto;
+      width: 160px;
+      margin-top: 21px;
+      h2{
+        margin: 0;
+        height: 29px;
+        @extend %Montserrat_Bold_700;
+        font-size: 24px;
+        line-height: 29px;
+        color: #FFFFFF
+      }
+    }
+    .zeroDiv{
+      margin-left: auto;
+      margin-right: auto;
+      width: 154px;
+      height: 0px;
+      border: 1px solid rgba(192, 183, 232, 0.33);
+      margin-top: 17.5px;
+    }
+    .text{
+      margin-left: auto;
+      margin-right: auto;
+      width: 249px;
+      height: 57px;
+      margin-top: 21.5px;
+      p{
+        margin: 0;
+        width: 249px;
+        height: 57px;
+        font-size: 12px;
+        line-height: 15px;
+        @extend %Montserrat_Regular_400;
+        color: #FFFFFF;
+        text-align: left;
+      }
+    }
+    div{
+        display: block;
+        justify-content: center;
+        text-align: center;
+        button{
+            margin-top: 35px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 154px;
+            height: 48px;
+            @extend %TipicalButton;
+            &:hover {
+              transition-duration: 1s;
+              zoom: 1.1;
+              background: linear-gradient(180deg, #C0B7E8 0%, #8176AF 100%);
+            }
+          }
+    }
+
 }

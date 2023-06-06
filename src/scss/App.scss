@@ -18,10 +18,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     .lodoUP{
       margin-right: 15px;
-      position: relative;
       top: 9px;
+      &:hover{
+        zoom: 1.1;
+        text-align: center;
+        animation: 3s linear infinite rotate;
+        @keyframes rotate {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+      }
     }
   }
   .navigation{
@@ -35,6 +48,13 @@
         @extend %Montserrat_Bold_700;
         font-size: 12px;
         line-height: 15px;
+        cursor: pointer;
+        &:hover {
+          transition: 0.4s;
+          color: #A3A3A3;
+          text-shadow: 0px 4px 4px #8176AF;
+          zoom: 1.4;
+        }
       }
   }
   .divButton{
@@ -48,6 +68,13 @@
       border: 2px solid #FFFFFF;
       background-color: $mainCol;
       color: #FFFFFF;
+      &:hover {
+        transition: 0.5s;
+        zoom: 1.1;
+        border: 2px solid #343045;
+        background-color: #FFFFFF;
+        color:#343045;
+      }
     }
     .J_button{
       width: 155px;
@@ -55,6 +82,12 @@
       @extend %hedButton, %Montserrat_Bold_700;
       background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
       color: $mainCol;
+      cursor: pointer;
+      &:hover {
+        transition-duration: 1s;
+        zoom: 1.2;
+        background: linear-gradient(180deg, #C0B7E8 0%, #8176AF 100%);
+      }
     }
   }
 }
@@ -110,6 +143,11 @@
         text-align: center;
         align-items: center;
         text-decoration: none;
+        &:hover {
+          transition-duration: 1s;
+          zoom: 1.2;
+          background: linear-gradient(180deg, #C0B7E8 0%, #8176AF 100%);
+       }
       }
     }
   }
@@ -332,6 +370,7 @@
       width: 214px;
       height: 48px;
       @extend %TipicalButton;
+
       
     }
   }
@@ -375,4 +414,28 @@
     }
   }
 
+}
+.pseudoSlider{
+
+  .sliger{
+    width: 1278px;
+    height: 511px;
+    display: flex;
+    justify-content: space-between;
+    .vertSlider{
+      @extend %vertSlider;
+    }
+    .vertSlider1{
+      @extend %vertSlider;
+    }
+    .vertSlider2{
+      @extend %vertSlider;
+    }
+    .vertSlider3{
+      @extend %vertSlider;
+    }
+  }
+  .lineBack{
+
+  }
 }

@@ -1,11 +1,11 @@
 @import 'normalize.css';
-.introText1 .intro h2, .section2 .textSec2 h2, .introText .intro h2, .section1 .textSection1 .textSection1_h1, .header .divButton .J_button, .header .divButton .C_button, .header .navigation a, .secInfo .secInfoR .secInfoRtext .secInfoRtextU, .secInfo .secInfoC .secInfoCtext .secInfoCtextU, .secInfo .secInfoL .secInfoLtext .secInfoLtextU, .section2 .textSec2 button, .section1 .textSection1 .imgButt .imgButtA {
+.introText1 .intro h2, .section2 .textSec2 h2, .introText .intro h2, .section1 .textSection1 .textSection1_h1, .header .divButton .J_button, .header .divButton .C_button, .header .navigation a, .pseudoSlider .sliger .vertSlider3 .mianText h2, .pseudoSlider .sliger .vertSlider2 .mianText h2, .pseudoSlider .sliger .vertSlider1 .mianText h2, .pseudoSlider .sliger .vertSlider .mianText h2, .secInfo .secInfoR .secInfoRtext .secInfoRtextU, .secInfo .secInfoC .secInfoCtext .secInfoCtextU, .secInfo .secInfoL .secInfoLtext .secInfoLtextU, .section2 .textSec2 button, .section1 .textSection1 .imgButt .imgButtA, .pseudoSlider .sliger .vertSlider3 div button, .pseudoSlider .sliger .vertSlider2 div button, .pseudoSlider .sliger .vertSlider1 div button, .pseudoSlider .sliger .vertSlider div button {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
 }
 
-.introText1 .text p, .section2 .textSec2 h3, .introText .text p, .section1 .textSection1 .textSection1_h2, .secInfo .secInfoR .secInfoRtext .secInfoRtextD, .secInfo .secInfoC .secInfoCtext .secInfoCtextD, .secInfo .secInfoL .secInfoLtext .secInfoLtextD {
+.introText1 .text p, .section2 .textSec2 h3, .introText .text p, .section1 .textSection1 .textSection1_h2, .pseudoSlider .sliger .vertSlider3 .text p, .pseudoSlider .sliger .vertSlider2 .text p, .pseudoSlider .sliger .vertSlider1 .text p, .pseudoSlider .sliger .vertSlider .text p, .secInfo .secInfoR .secInfoRtext .secInfoRtextD, .secInfo .secInfoC .secInfoCtext .secInfoCtextD, .secInfo .secInfoL .secInfoLtext .secInfoLtextD {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -17,7 +17,7 @@
   font-weight: 300;
 }
 
-.header .divButton .J_button, .header .divButton .C_button, .section2 .textSec2 button, .section1 .textSection1 .imgButt .imgButtA {
+.header .divButton .J_button, .header .divButton .C_button, .section2 .textSec2 button, .section1 .textSection1 .imgButt .imgButtA, .pseudoSlider .sliger .vertSlider3 div button, .pseudoSlider .sliger .vertSlider2 div button, .pseudoSlider .sliger .vertSlider1 div button, .pseudoSlider .sliger .vertSlider div button {
   border-radius: 40px;
   border: none;
   outline: none;
@@ -25,9 +25,10 @@
   line-height: 15px;
 }
 
-.section2 .textSec2 button, .section1 .textSection1 .imgButt .imgButtA {
+.section2 .textSec2 button, .section1 .textSection1 .imgButt .imgButtA, .pseudoSlider .sliger .vertSlider3 div button, .pseudoSlider .sliger .vertSlider2 div button, .pseudoSlider .sliger .vertSlider1 div button, .pseudoSlider .sliger .vertSlider div button {
   background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
   color: #343045;
+  cursor: pointer;
 }
 
 .section1 .imgSectionR .Mask_girl_background {
@@ -109,6 +110,85 @@
   color: #FFFFFF;
 }
 
+.pseudoSlider .sliger .vertSlider3, .pseudoSlider .sliger .vertSlider2, .pseudoSlider .sliger .vertSlider1, .pseudoSlider .sliger .vertSlider {
+  margin-top: 102px;
+  height: 511px;
+  width: 310px;
+  background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
+  border-radius: 40px;
+}
+.pseudoSlider .sliger .vertSlider3 .img1, .pseudoSlider .sliger .vertSlider2 .img1, .pseudoSlider .sliger .vertSlider1 .img1, .pseudoSlider .sliger .vertSlider .img1 {
+  position: relative;
+  margin-top: 23px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 219px;
+  height: 219px;
+  background-color: rgba(14, 14, 14, 0.32);
+  border-radius: 50%;
+}
+.pseudoSlider .sliger .vertSlider3 .img1 img, .pseudoSlider .sliger .vertSlider2 .img1 img, .pseudoSlider .sliger .vertSlider1 .img1 img, .pseudoSlider .sliger .vertSlider .img1 img {
+  width: 190.92px;
+  height: 190.92px;
+}
+.pseudoSlider .sliger .vertSlider3 .mianText, .pseudoSlider .sliger .vertSlider2 .mianText, .pseudoSlider .sliger .vertSlider1 .mianText, .pseudoSlider .sliger .vertSlider .mianText {
+  margin-left: auto;
+  margin-right: auto;
+  width: 160px;
+  margin-top: 21px;
+}
+.pseudoSlider .sliger .vertSlider3 .mianText h2, .pseudoSlider .sliger .vertSlider2 .mianText h2, .pseudoSlider .sliger .vertSlider1 .mianText h2, .pseudoSlider .sliger .vertSlider .mianText h2 {
+  margin: 0;
+  height: 29px;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+.pseudoSlider .sliger .vertSlider3 .zeroDiv, .pseudoSlider .sliger .vertSlider2 .zeroDiv, .pseudoSlider .sliger .vertSlider1 .zeroDiv, .pseudoSlider .sliger .vertSlider .zeroDiv {
+  margin-left: auto;
+  margin-right: auto;
+  width: 154px;
+  height: 0px;
+  border: 1px solid rgba(192, 183, 232, 0.33);
+  margin-top: 17.5px;
+}
+.pseudoSlider .sliger .vertSlider3 .text, .pseudoSlider .sliger .vertSlider2 .text, .pseudoSlider .sliger .vertSlider1 .text, .pseudoSlider .sliger .vertSlider .text {
+  margin-left: auto;
+  margin-right: auto;
+  width: 249px;
+  height: 57px;
+  margin-top: 21.5px;
+}
+.pseudoSlider .sliger .vertSlider3 .text p, .pseudoSlider .sliger .vertSlider2 .text p, .pseudoSlider .sliger .vertSlider1 .text p, .pseudoSlider .sliger .vertSlider .text p {
+  margin: 0;
+  width: 249px;
+  height: 57px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  text-align: left;
+}
+.pseudoSlider .sliger .vertSlider3 div, .pseudoSlider .sliger .vertSlider2 div, .pseudoSlider .sliger .vertSlider1 div, .pseudoSlider .sliger .vertSlider div {
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+.pseudoSlider .sliger .vertSlider3 div button, .pseudoSlider .sliger .vertSlider2 div button, .pseudoSlider .sliger .vertSlider1 div button, .pseudoSlider .sliger .vertSlider div button {
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 154px;
+  height: 48px;
+}
+.pseudoSlider .sliger .vertSlider3 div button:hover, .pseudoSlider .sliger .vertSlider2 div button:hover, .pseudoSlider .sliger .vertSlider1 div button:hover, .pseudoSlider .sliger .vertSlider div button:hover {
+  transition-duration: 1s;
+  zoom: 1.1;
+  background: linear-gradient(180deg, #C0B7E8 0%, #8176AF 100%);
+}
+
 #root {
   margin: 0 auto;
   padding: 0;
@@ -128,11 +208,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .header .logoImg .lodoUP {
   margin-right: 15px;
-  position: relative;
   top: 9px;
+}
+.header .logoImg .lodoUP:hover {
+  zoom: 1.1;
+  text-align: center;
+  animation: 3s linear infinite rotate;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .header .navigation {
   width: 387px;
@@ -145,6 +238,13 @@
   text-decoration: none;
   font-size: 12px;
   line-height: 15px;
+  cursor: pointer;
+}
+.header .navigation a:hover {
+  transition: 0.4s;
+  color: #A3A3A3;
+  text-shadow: 0px 4px 4px #8176AF;
+  zoom: 1.4;
 }
 .header .divButton {
   width: 347px;
@@ -158,11 +258,24 @@
   background-color: #343045;
   color: #FFFFFF;
 }
+.header .divButton .C_button:hover {
+  transition: 0.5s;
+  zoom: 1.1;
+  border: 2px solid #343045;
+  background-color: #FFFFFF;
+  color: #343045;
+}
 .header .divButton .J_button {
   width: 155px;
   height: 48px;
   background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
   color: #343045;
+  cursor: pointer;
+}
+.header .divButton .J_button:hover {
+  transition-duration: 1s;
+  zoom: 1.2;
+  background: linear-gradient(180deg, #C0B7E8 0%, #8176AF 100%);
 }
 
 .section1 {
@@ -216,6 +329,11 @@
   text-align: center;
   align-items: center;
   text-decoration: none;
+}
+.section1 .textSection1 .imgButt .imgButtA:hover {
+  transition-duration: 1s;
+  zoom: 1.2;
+  background: linear-gradient(180deg, #C0B7E8 0%, #8176AF 100%);
 }
 .section1 .imgSectionR {
   position: relative;
@@ -417,4 +535,11 @@
   color: #FFFFFF;
   text-align: left;
   margin: 0;
+}
+
+.pseudoSlider .sliger {
+  width: 1278px;
+  height: 511px;
+  display: flex;
+  justify-content: space-between;
 }

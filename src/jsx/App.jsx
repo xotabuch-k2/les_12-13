@@ -10,7 +10,7 @@ function App() {
           <img src="/public/img/1 block/HYDRA.svg" alt="" />
       </div>
       <nav className='navigation'>
-          <a  href="#">ABOUT</a>
+          <a href="#">ABOUT</a>
           <a href="#">SERVICES</a>
           <a href="#">TECHNOLOGIES</a>
           <a href="#">HOW TO</a>
@@ -130,7 +130,94 @@ lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus v
           </p>
         </div>
       </section>
-      <section></section>      
+      <section className='pseudoSlider'>
+        <div className='sliger'>
+
+
+
+
+          <div className='vertSlider'>
+            <div className='img1'>
+            <img src="/public/img/3 block/SIMULATION.svg" alt="" />
+            </div>
+            <div className='mianText'>
+              <h2>SIMULATION</h2>
+            </div>
+            <div className='zeroDiv'></div>
+            <div className='text'>
+              <p>
+Vitae sapien pellentesque habitantmorbi
+nunc. Viverra aliquet  porttitor rhoncus 
+libero justo laoreet sit amet vitae.
+              </p>
+            </div >
+            <div>
+            <button>TRY IT NOW</button>
+            </div>
+          </div>
+          <div className='vertSlider1'>
+            <div className='img1'>
+             <img src="/public/img/3 block/EDUCATION.svg" alt="" />
+            </div>
+            <div className='mianText'>
+              <h2>EDUCATION</h2>
+            </div>
+            <div className='zeroDiv'></div>
+            <div className='text'>
+              <p>
+1Vitae sapien pellentesque habitantmorbi
+nunc. Viverra aliquet  porttitor rhoncus 
+libero justo laoreet sit amet vitae.
+              </p>
+            </div >
+              <div>
+              <button>TRY IT NOW</button>
+              </div>
+          </div>
+          <div className='vertSlider2'>
+          <div className='img1'>
+             <img src="/public/img/3 block/SELF-CARE.svg" alt="" />
+            </div>
+            <div className='mianText'>
+              <h2>SELF-CARE</h2>
+            </div>
+            <div className='zeroDiv'></div>
+            <div className='text'>
+              <p>
+1Vitae sapien pellentesque habitantmorbi
+nunc. Viverra aliquet  porttitor rhoncus 
+libero justo laoreet sit amet vitae.
+              </p>
+            </div >
+              <div>
+              <button>TRY IT NOW</button>
+              </div>
+          </div>
+          <div className='vertSlider3'>
+          <div className='img1'>
+             <img src="/public/img/3 block/OUTDOOR.svg" alt="" />
+            </div>
+            <div className='mianText'>
+              <h2>OUTDOOR</h2>
+            </div>
+            <div className='zeroDiv'></div>
+            <div className='text'>
+              <p>
+1Vitae sapien pellentesque habitantmorbi
+nunc. Viverra aliquet  porttitor rhoncus 
+libero justo laoreet sit amet vitae.
+              </p>
+            </div >
+              <div>
+              <button>TRY IT NOW</button>
+              </div>
+          </div>
+        </div>
+        <div className='lineBack'>
+
+        </div>
+        
+        </section>      
     </main>
     <footer>
       <nav>
