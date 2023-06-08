@@ -110,7 +110,6 @@ $mainCol: #343045;
     color: #FFFFFF;
 }
 %vertSlider{      
-    margin-top: 102px;
     height: 511px;
     width: 310px;
     background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
@@ -186,8 +185,48 @@ $mainCol: #343045;
               transition-duration: 1s;
               zoom: 1.1;
               background: linear-gradient(180deg, #C0B7E8 0%, #8176AF 100%);
-            }
-          }
-    }
+            }}}}
+%b01-04{
+    display: block;
+    position: relative;
+    .INradius{
+      display: flex;
+      margin: 0 auto;
+      width: 198px;
+      height: 198px;
+      background: rgba(13, 13, 13, 0.32);
+      border-radius: 50%;
+      .radius{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 159px;
+        height: 159px;
+        background: linear-gradient(251.27deg, #C0B7E8 12.87%, #8176AF 89.33%);
+        border-radius: 50%;
+        h2{
+            margin: 0;
+            font-size: 64px;
+            line-height: 78px;
+            @extend %Montserrat_Bold_700;
+          }}}
+    .INcont{
+      width: 254px;
 
+      display: flex;
+      img{
+        width: 67px;
+        height: 67px;
+      }
+      h2{
+        width: 187px;
+        height: 64px;
+        font-size: 24px;
+        line-height: 29px;
+        @extend %Montserrat_Bold_700;
+        color: #FFFFFF;
+      }
+
+    }
 }

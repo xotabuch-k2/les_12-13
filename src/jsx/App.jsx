@@ -20,8 +20,8 @@ function App() {
         <button className='J_button'>JOIN HYDRA</button>
       </div>
     </header>
-    <main>
-      <section className='section1'>
+<main>
+  <section className='section1'>
         <div className='textSection1'>
           <h1 className='textSection1_h1'> <span className='textSection1_h1_s1'>Dive</span>  Into The Depths <br /> Of <span className='textSection1_h1_s2'>Virtual Reality</span></h1>
           <p className='textSection1_h2'>
@@ -43,15 +43,17 @@ nisl tincidunt eget. Lectus mauris eros in vitae.
           <img className='Vector3' src="/public/img/1 block/Vector 3.svg" alt="" />
           <img className='Vector4' src="/public/img/1 block/Vector 4.svg" alt="" />
         </div>
-      </section>
-      <section className='secInfo'>
+  </section>
+  <section  className='secInfo'>
         <div className='secInfoL'>
           <div className='secInfoLimg'>
             <img src="/public/img/1 block/location.svg" alt="" />
           </div>
           <div className='secInfoLtext'>
             <h3 className='secInfoLtextU'>Pay Us a Visit</h3>
-            <h4 className='secInfoLtextD'>Union St, Seattle, WA 98101, United States</h4>
+            <div className='link'>
+              <a className='secInfoLtextD' href="https://www.google.com/maps/place/Union+St,+Seattle,+WA+98101,+США/@47.6099139,-122.3363054,17z/data=!3m1!4b1!4m6!3m5!1s0x54906ab465f9a32d:0x2b0d2afe1e719e15!8m2!3d47.6099139!4d-122.3341167!16s%2Fg%2F1vcq795y?entry=ttu">Union St, Seattle, WA 98101, United States</a>
+            </div>
           </div>
         </div>
         <div className='secInfoLine1'></div>
@@ -61,7 +63,10 @@ nisl tincidunt eget. Lectus mauris eros in vitae.
           </div>
           <div className='secInfoCtext'>
             <h3 className='secInfoCtextU'>Give Us a Call</h3>
-            <h4 className='secInfoCtextD'>(110) 1111-1010</h4>
+            <div className='link'>
+              <a className='secInfoLtextD' href="tel:
+              +11011111010">(110) 1111-1010</a>
+           </div>
           </div>
         </div>
         <div className='secInfoLine2'></div>
@@ -72,11 +77,14 @@ nisl tincidunt eget. Lectus mauris eros in vitae.
           </div>
           <div className='secInfoRtext'>
             <h3 className='secInfoRtextU'>Send Us a Message</h3>
-            <h4 className='secInfoRtextD'>Contact@HydraVTech.com</h4>
+            <div className='link'>
+              <a className='secInfoLtextD' href="mailto:
+              Contact@HydraVTech.com">Contact@HydraVTech.com</a>
+            </div>
           </div>
         </div>
-      </section>
-      <section className='introText'>
+  </section>
+  <section className='introText'>
         <div className='intro'>
           <h2>INTRODUCTION</h2>
           <h3>TO HYDRA VR</h3>
@@ -90,8 +98,8 @@ quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornar
 lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
           </p>
         </div>
-      </section>
-      <section className='section2'>
+  </section>
+  <section className='section2'>
         <div className='imgBack'>
           <img src="/public/img/2 block/Mask man.svg" alt="" />
           <img src="/public/img/2 block/Vector 7.svg" alt="" />
@@ -114,9 +122,9 @@ n tempor.
           </h3>
           <button>LET’S GET IN TOUCH</button>
         </div>
-      </section>
-      <section className='introText1'>
-      <div className='intro'>
+  </section>
+  <section className='introText1'>
+        <div className='intro'>
           <h2>WHY BUILD</h2>
           <h3>WITH HYDRA?</h3>
         </div>
@@ -129,13 +137,9 @@ quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornar
 lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
           </p>
         </div>
-      </section>
-      <section className='pseudoSlider'>
+  </section>
+  <section className='pseudoSlider'>
         <div className='sliger'>
-
-
-
-
           <div className='vertSlider'>
             <div className='img1'>
             <img src="/public/img/3 block/SIMULATION.svg" alt="" />
@@ -165,7 +169,7 @@ libero justo laoreet sit amet vitae.
             <div className='zeroDiv'></div>
             <div className='text'>
               <p>
-1Vitae sapien pellentesque habitantmorbi
+Vitae sapien pellentesque habitantmorbi
 nunc. Viverra aliquet  porttitor rhoncus 
 libero justo laoreet sit amet vitae.
               </p>
@@ -184,7 +188,7 @@ libero justo laoreet sit amet vitae.
             <div className='zeroDiv'></div>
             <div className='text'>
               <p>
-1Vitae sapien pellentesque habitantmorbi
+Vitae sapien pellentesque habitantmorbi
 nunc. Viverra aliquet  porttitor rhoncus 
 libero justo laoreet sit amet vitae.
               </p>
@@ -203,7 +207,7 @@ libero justo laoreet sit amet vitae.
             <div className='zeroDiv'></div>
             <div className='text'>
               <p>
-1Vitae sapien pellentesque habitantmorbi
+Vitae sapien pellentesque habitantmorbi
 nunc. Viverra aliquet  porttitor rhoncus 
 libero justo laoreet sit amet vitae.
               </p>
@@ -211,14 +215,107 @@ libero justo laoreet sit amet vitae.
               <div>
               <button>TRY IT NOW</button>
               </div>
+            </div>
+          </div>
+          <div className='lineBack'>
+          <img src="/public/img/3 block/Vector 14.svg" alt="" />
+        </div>
+  </section>
+  <section className='techno'>
+          <div>
+            <h2 >TECHNOLOGIES & HARDWARE</h2>
+            <h3>SED BY HYDRA VR.</h3>
+          </div>
+          <div>
+            <button>ᐯ</button>
+          </div>
+  </section>
+  <section className='technoImg'>
+            <img src="/public/img/5 block/Hydra-Tech1 1.svg" alt="" />
+            <img src="/public/img/5 block/Hydra-Tech3 1.svg" alt="" />
+            <img src="/public/img/5 block/Hydra-Tech2 1.svg" alt="" />
+            <img src="/public/img/5 block/Hydra-Tech4 1.svg" alt="" />
+  </section>
+  <section className='introText2'>
+        <div className='intro'>
+          <h2>HOW WE BUILD</h2>
+          <h3>WITH HYDRA VR?</h3>
+        </div>
+        <img src="/public/img/2 block/arrow-small-right.svg" alt="" />
+        <div className='text'>
+          <p>
+Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
+nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
+quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
+lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
+          </p>
+        </div>
+  </section>
+  <section className='numbers'>
+        <div className='backG'>
+          <div className='b01'>
+            <div className='INradius'>
+              <div className='radius'>
+                <h2>01</h2>
+              </div>
+            </div>
+            <div className='INcont'>
+            <img src="/public/img/6 block/arrow-small-right.svg" alt="" />
+              <h2>
+              3D Conception & Design
+              </h2>
+            </div>
+          </div>
+          <div className='b02'>
+          <div className='INradius'>
+              <div className='radius'>
+                <h2>01</h2>
+              </div>
+            </div>
+            <div className='INcont'>
+            <img src="/public/img/6 block/arrow-small-right.svg" alt="" />
+              <h2>
+              3D Conception & Design
+              </h2>
+            </div>
+          </div>
+          <div className='b03'>
+          <div className='INradius'>
+              <div className='radius'>
+                <h2>01</h2>
+              </div>
+            </div>
+            <div className='INcont'>
+            <img src="/public/img/6 block/arrow-small-right.svg" alt="" />
+              <h2>
+              3D Conception & Design
+              </h2>
+            </div>
+          </div>
+          <div className='b04'>
+          <div className='INradius'>
+              <div className='radius'>
+                <h2>01</h2>
+              </div>
+            </div>
+            <div className='INcont'>
+            <img src="/public/img/6 block/arrow-small-right.svg" alt="" />
+              <h2>
+              3D Conception & Design
+              </h2>
+            </div>
           </div>
         </div>
-        <div className='lineBack'>
 
-        </div>
-        
-        </section>      
-    </main>
+  </section>
+
+
+
+
+
+
+
+</main>
     <footer>
       <nav>
 

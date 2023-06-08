@@ -22,8 +22,9 @@
     .lodoUP{
       margin-right: 15px;
       top: 9px;
+      position: relative;
+      z-index: 1;
       &:hover{
-        zoom: 1.1;
         text-align: center;
         animation: 3s linear infinite rotate;
         @keyframes rotate {
@@ -32,15 +33,13 @@
           }
           to {
             transform: rotate(360deg);
-          }
-        }
-      }
-    }
-  }
+          }}}}}
   .navigation{
       width: 387px;
       display: flex;
       justify-content: space-between;
+      position: relative;
+      z-index: 1;
       a{
         color: #FFFFFF;
         outline: none;
@@ -51,12 +50,10 @@
         cursor: pointer;
         &:hover {
           transition: 0.4s;
-          color: #A3A3A3;
-          text-shadow: 0px 4px 4px #8176AF;
-          zoom: 1.4;
-        }
-      }
-  }
+          color: #8176AF;
+          text-shadow: 0px 4px 4px #211E2E;
+          zoom: 1.8;
+        }}}
   .divButton{
     width: 347px;
     display: flex;
@@ -68,14 +65,15 @@
       border: 2px solid #FFFFFF;
       background-color: $mainCol;
       color: #FFFFFF;
+      position: relative;
+      z-index: 1;
       &:hover {
         transition: 0.5s;
         zoom: 1.1;
         border: 2px solid #343045;
         background-color: #FFFFFF;
         color:#343045;
-      }
-    }
+      }}
     .J_button{
       width: 155px;
       height: 48px;
@@ -87,10 +85,7 @@
         transition-duration: 1s;
         zoom: 1.2;
         background: linear-gradient(180deg, #C0B7E8 0%, #8176AF 100%);
-      }
-    }
-  }
-}
+      }}}}
 .section1{
   display: flex;
   justify-content: space-between;
@@ -118,8 +113,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-      }
-    }
+      }}
     .textSection1_h2{
       margin-bottom: 0;
       margin-top: 36px;
@@ -128,8 +122,7 @@
       font-size: 16px;
       line-height: 20px;
       color: #FFFFFF;
-
-    }
+}
     .imgButt{
       margin-top: 40px;
       align-items: center;
@@ -137,6 +130,8 @@
       justify-content: space-between;
       width: 325px;
       .imgButtA{
+        position: relative;
+        z-index: 1;
         width: 214px;
         height: 48px;
         @extend %TipicalButton;
@@ -147,10 +142,7 @@
           transition-duration: 1s;
           zoom: 1.2;
           background: linear-gradient(180deg, #C0B7E8 0%, #8176AF 100%);
-       }
-      }
-    }
-  }
+       }}}}
   .imgSectionR{
     position: relative;
     width: 816px;
@@ -173,8 +165,7 @@
     }
     .Vector4{
       @extend %Vector4;
-    }
-  }
+    }}
 }
 .secInfo{
   width: 1272px;
@@ -195,19 +186,23 @@
     img{
       width: 70px;
       height: 70px;
-    }
-  }
+    }}
   .secInfoLtext{
     @extend %secInfo_X_text;
     .secInfoLtextU{
       @extend %secInfo_X_textU;
     }
-    .secInfoLtextD{
-      @extend %secInfo_X_textD;
+    .link{
       padding-top: 10px;
-    }
-  }
-}
+      .secInfoLtextD{
+        @extend %secInfo_X_textD;
+        text-decoration: none;
+        &:hover {
+          transition-duration: 0.1s;
+          box-shadow: 0px 0px 20px 5px #8176AF;
+          background-color: #8176afaf ;
+          color: #ffff;
+        }}}}}
   .secInfoLine1{
   @extend %Line1Block;
   }
@@ -221,19 +216,23 @@
       img{
         width: 59px;
         height: 59px;
-      }
-    }
+      }}
     .secInfoCtext{
       @extend %secInfo_X_text;
       .secInfoCtextU{
         @extend %secInfo_X_textU;
       }
-      .secInfoCtextD{
-        @extend %secInfo_X_textD;
+      .link{
         padding-top: 9px;
-      }
-    }
-  }
+        .secInfoLtextD{
+          @extend %secInfo_X_textD;
+          text-decoration: none;
+          &:hover {
+            transition-duration: 0.1s;
+            box-shadow: 0px 0px 20px 10px #8176AF;
+            background-color: #8176AF;
+            color: #ffff;
+          }}}}}
   .secInfoLine2{
     @extend %Line1Block;
   }
@@ -254,18 +253,19 @@
       .secInfoRtextU{
         @extend %secInfo_X_textU;
       }
-      .secInfoRtextD{
-        @extend %secInfo_X_textD;
+      .link{
         padding-top: 9px;
-      }
-    }
-
-  }
-
-
+        .secInfoLtextD{
+          @extend %secInfo_X_textD;
+          text-decoration: none;
+          &:hover {
+            transition-duration: 0.1s;
+            box-shadow: 0px 0px 20px 10px #8176AF;
+            background-color: #8176AF;
+            color: #ffff;
+          }}}}}
 }
 .introText{
-
   display: flex;
   margin-top: 85px;
   .intro{
@@ -284,8 +284,7 @@
       font-size: 36px;
       line-height: 44px;
       width: 251px;
-    }
-  }
+    }}
   img{
     width: 228px;
     height: 100px;
@@ -303,9 +302,7 @@
       color: #FFFFFF;
       text-align: left;
       margin: 0;
-    }
-  }
-}
+    }}}
 .section2{
   margin-top: 69px;
   display: flex;
@@ -332,11 +329,10 @@
       position: relative;
       left: -4.5px;
       z-index: 1;
-
-    }
-  }
+    }}
   .textSec2{
     position: relative;
+    z-index: 1;
     h2{
       margin: 42px 0;
       position: relative;
@@ -350,8 +346,7 @@
         @extend %Montserrat_Regular_300;
         font-size: 36px;
         line-height: 44px;
-      }
-    }
+      }}
     h3{
       position: relative;
       left: -726px;
@@ -366,17 +361,17 @@
     }
     button{
       position: relative;
+      z-index: 2;
       left: -726px;
       width: 214px;
       height: 48px;
       @extend %TipicalButton;
-
-      
-    }
-  }
-}
+      &:hover {
+        transition-duration: 0.2s;
+        background: linear-gradient(180deg, #C0B7E8 0%, #8176AF 100%);
+        box-shadow: 0px 0px 20px 10px #8176AF;
+      }}}}
 .introText1{
-
   display: flex;
   margin-top: 85px;
   .intro{
@@ -395,8 +390,7 @@
       color: #FFFFFF;
       font-size: 36px;
       line-height: 44px;
-    }
-  }
+    }}
   img{
     width: 228px;
     height: 100px;
@@ -411,12 +405,11 @@
       color: #FFFFFF;
       text-align: left;
       margin: 0;
-    }
-  }
-
-}
+      font-size: 16px;
+      line-height: 20px;
+    }}}
 .pseudoSlider{
-
+  margin-top: 102px;
   .sliger{
     width: 1278px;
     height: 511px;
@@ -433,9 +426,147 @@
     }
     .vertSlider3{
       @extend %vertSlider;
+    }}
+  .lineBack{
+    width: 0px;
+    height: 0px;
+    position: relative;
+    z-index: -1;
+    top: -454px;
+    left: -83px;
+  }}
+.techno{
+  margin-top: 114px;
+  width: 1278px;
+  height: 303px;
+  background:url("/public/img/4 block/pexels-rodnae-productions-8097332 1.svg");
+  border-radius: 151.5PX;
+  div:nth-child(1){
+    padding-top: 108px;
+    margin: 0 auto;
+    width: 578px;
+    h2{
+      margin: 0;
+      font-size: 36px;
+      line-height: 44px;
+      color: #FFFFFF;
+      @extend %Montserrat_Bold_700;
+      text-align: center;
+    }
+    h3{
+      margin-top: 11px;
+      font-size: 36px;
+      line-height: 44px;
+      color: #FFFFFF;
+      @extend %Montserrat_Regular_300;
+      text-align: center;
+    }}
+  div:nth-child(2){
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin: 46px auto 0 auto;
+    background: rgba(14, 14, 14, 0.32);
+    border-radius: 50%;
+    button{
+      cursor: pointer;
+      margin: auto;
+      @extend %TipicalButton;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      font-size: 26px;
+      color: #433D60;
+      &:hover {
+        background: linear-gradient(180deg, #C0B7E8 0%, #8176AF 100%);
+        zoom: 1.3;
+      }}}}
+.technoImg{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0 0 0;
+  padding: 0;
+  height: 282px;
+  img:nth-child(1){
+    margin: auto;
+    width: 174px;
+    height: 174px;
+  }
+  img:nth-child(2){
+    margin: auto;
+    width: 252px;
+    height: 252px;
+  }
+  img:nth-child(3){
+    margin: auto;
+    width: 263px;
+    height: 263px;
+  }
+  img:nth-child(4){
+    margin: auto;
+    width: 282px;
+    height: 282px;
+    }}
+.introText2{
+  display: flex;
+  margin-top: 64px;
+  .intro{
+    width: 321px;
+    margin-right: 16px;
+    h2{
+      margin: 0;
+      @extend %Montserrat_Bold_700;
+      color: #FFFFFF;
+      font-size: 36px;
+      line-height: 44px;
+    }
+    h3{
+      margin: 10px 0 0 0;
+      @extend %Montserrat_Regular_300;
+      color: #FFFFFF;
+      font-size: 36px;
+      line-height: 44px;
+    }}
+  img{
+    width: 228px;
+    height: 100px;
+    padding-top: 20px
+  }
+  .text{
+    width: 650px;
+    height: 98px;
+    margin-left: auto;
+    p{
+      @extend %Montserrat_Regular_400;
+      color: #FFFFFF;
+      text-align: left;
+      margin: 0;
+      font-size: 16px;
+      line-height: 20px;
     }
   }
-  .lineBack{
-
-  }
+}
+.numbers{
+  background: url("/public/img/5 block/Vector 15.svg");
+  background-repeat: no-repeat;
+  .backG{
+    display: flex;
+    justify-content: space-around;
+    .b01{
+      @extend %b01-04;
+    }
+    .b02{
+      @extend %b01-04;
+    }
+    .b03{
+      @extend %b01-04;
+    }
+    .b04{
+      @extend %b01-04;
+    }
+      }
+        
+        
+        
 }
