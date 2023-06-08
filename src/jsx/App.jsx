@@ -269,7 +269,7 @@ lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus v
           <div className='b02'>
           <div className='INradius'>
               <div className='radius'>
-                <h2>01</h2>
+                <h2>02</h2>
               </div>
             </div>
             <div className='INcont'>
@@ -282,7 +282,7 @@ lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus v
           <div className='b03'>
           <div className='INradius'>
               <div className='radius'>
-                <h2>01</h2>
+                <h2>03</h2>
               </div>
             </div>
             <div className='INcont'>
@@ -295,7 +295,7 @@ lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus v
           <div className='b04'>
           <div className='INradius'>
               <div className='radius'>
-                <h2>01</h2>
+                <h2>04</h2>
               </div>
             </div>
             <div className='INcont'>
@@ -306,8 +306,12 @@ lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus v
             </div>
           </div>
         </div>
+  </section>
+  <section className='validation'>
+    
 
   </section>
+
 
 
 

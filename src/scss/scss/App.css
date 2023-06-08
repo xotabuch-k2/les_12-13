@@ -318,6 +318,8 @@
   background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
   color: #343045;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
 .header .divButton .J_button:hover {
   transition-duration: 1s;

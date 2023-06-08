@@ -81,6 +81,8 @@
       background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
       color: $mainCol;
       cursor: pointer;
+      position: relative;
+      z-index: 1;
       &:hover {
         transition-duration: 1s;
         zoom: 1.2;
@@ -544,9 +546,7 @@
       margin: 0;
       font-size: 16px;
       line-height: 20px;
-    }
-  }
-}
+    }}}
 .numbers{
   background: url("/public/img/5 block/Vector 15.svg");
   background-repeat: no-repeat;
@@ -564,9 +564,4 @@
     }
     .b04{
       @extend %b01-04;
-    }
-      }
-        
-        
-        
-}
+    }}}
