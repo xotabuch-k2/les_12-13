@@ -4,7 +4,7 @@ import { User } from './model/user.js';
 
 const PORT = 3000;
 
-const url = 'mongodb+srv://sDuma:people2000@atlascluster.omtb4fw.mongodb.net/users';
+const url = 'mongodb+srv://xotabuch-k2:Nfhenbyj68@learn.7mjqj3b.mongodb.net/';
 
 const app = express();
 
