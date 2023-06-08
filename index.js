@@ -1,12 +1,16 @@
-import express from 'express'
+import express from 'express';
 import mongoose from 'mongoose';
-import 'dotenv/config'
-import { Product } from './model/product.js';
+import { User } from './model/user.js';
 
 const PORT = 3000;
-const url = 'mongodb+srv://xotabuch-k2:Nfhenbyj68@learn.7mjqj3b.mongodb.net/';
+
+const url = 'mongodb+srv://sDuma:people2000@atlascluster.omtb4fw.mongodb.net/users';
+
 const app = express();
+
 app.use(express.static('css'));
+app.use(express.urlencoded({extended: true}));
+
 app.set('view engine', 'pug');
 
 mongoose.connect(url)
@@ -18,23 +22,48 @@ mongoose.connect(url)
         })
         .catch((err)=> {console.log(`DB connection error: ${err}`)});
 
-        app.get('/', (req, res) => {
-            Product.find()
-                .then(products => {
-                const productsHtml = products.map(product => `
-        <div style="border: 1px solid #000; 
-        width: fit-content; 
-        margin: 0 0 20px 0; 
-        padding: 0 10px">
-          <h2>${product.title}</h2>
-          <p>Price: ${product.price}</p>
-        </div>
-                `);
-                const html = `<h1>Products:</h1> ${productsHtml.join('')}`;
-                res.send(html);
-                })
-                .catch(error => {
-                console.error(error);
-                });
-            });
-        
+app.get('/', async (req, res) => {
+    try {
+        const users = await User.find();
+        res.render('index', {users});
+    } catch (err){
+        console.log(err);
+    }
+});
+
+app.post('/add', async (req, res) => {
+    try{
+        const user = new User(req.body);
+        await user.save();
+        res.redirect('/');
+    } catch(err){
+        console.log(err);
+    }
+});
+
+app.get('/edit/:id', async (req, res)=> {
+    try{
+        const user = await User.findById(req.params.id)
+        res.render('edit', {user});
+    } catch(err){
+        console.log(err);
+    }
+});
+
+app.post('/change-user/:id', async (req, res)=> {
+    try{
+        await User.findByIdAndUpdate(req.params.id, req.body);
+        res.redirect('/');
+    } catch(err){
+        console.log(err);
+    }
+});
+
+app.delete('/remove/:id', async (req, res)=> {
+    try{
+        await User.deleteOne({_id: req.params.id})
+        res.status(200).json({ message: 'User deleted' });
+    } catch(err){
+        console.log(err);
+    }
+});
