@@ -21,6 +21,9 @@ form label {
   color: #000;
   font-size: 20px;
 }
+form label::placeholder {
+  color: #2f393d;
+}
 form input {
   display: block;
   margin-bottom: 10px;
