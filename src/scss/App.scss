@@ -565,3 +565,53 @@
     .b04{
       @extend %b01-04;
     }}}
+.validation{
+  position: absolute;
+  margin-top: 112px;
+  width: 1275px;
+  height: 1008px;
+  background: radial-gradient(50% 50% at 50% 50%, #403A5F 0%, #211E2E 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  .textHead{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    width: 542px;
+    .h2{
+      width: auto;
+      h2{
+        @extend %Montserrat_Bold_700;
+        font-size: 36px;
+        line-height: 44px;
+        color: #FFFFFF;
+        margin: 0;
+        text-align: center;
+      }}
+    .img{
+      width: 414px;
+      margin: 30px auto 21px auto;
+    }
+    .h3{
+      h3{
+        @extend %Montserrat_Regular_300;
+        font-size: 36px;
+        line-height: 44px;
+        color: #FFFFFF;
+        margin: 0;
+        width: auto;
+        text-align: center;
+      }}}
+  .forms{
+    margin: 65px auto 0px auto;
+    width: 1058px;
+    height: auto;
+    label{
+      width: 524px;
+      height: 72px;
+      border: 2px solid #FFFFFF;
+      border-radius: 40px;
+
+    }
+  }
+}

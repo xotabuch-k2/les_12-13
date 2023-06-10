@@ -1,5 +1,5 @@
 @import 'normalize.css';
-.introText2 .intro h2, .techno div:nth-child(1) h2, .introText1 .intro h2, .section2 .textSec2 h2, .introText .intro h2, .section1 .textSection1 .textSection1_h1, .header .divButton .J_button, .header .divButton .C_button, .header .navigation a, .numbers .backG .b04 .INcont h2, .numbers .backG .b03 .INcont h2, .numbers .backG .b02 .INcont h2, .numbers .backG .b01 .INcont h2, .numbers .backG .b04 .INradius .radius h2, .numbers .backG .b03 .INradius .radius h2, .numbers .backG .b02 .INradius .radius h2, .numbers .backG .b01 .INradius .radius h2, .pseudoSlider .sliger .vertSlider3 .mianText h2, .pseudoSlider .sliger .vertSlider2 .mianText h2, .pseudoSlider .sliger .vertSlider1 .mianText h2, .pseudoSlider .sliger .vertSlider .mianText h2, .secInfo .secInfoR .secInfoRtext .secInfoRtextU, .secInfo .secInfoC .secInfoCtext .secInfoCtextU, .secInfo .secInfoL .secInfoLtext .secInfoLtextU, .techno div:nth-child(2) button, .section2 .textSec2 button, .section1 .textSection1 .imgButt .imgButtA, .pseudoSlider .sliger .vertSlider3 div button, .pseudoSlider .sliger .vertSlider2 div button, .pseudoSlider .sliger .vertSlider1 div button, .pseudoSlider .sliger .vertSlider div button {
+.validation .textHead .h2 h2, .introText2 .intro h2, .techno div:nth-child(1) h2, .introText1 .intro h2, .section2 .textSec2 h2, .introText .intro h2, .section1 .textSection1 .textSection1_h1, .header .divButton .J_button, .header .divButton .C_button, .header .navigation a, .numbers .backG .b04 .INcont h2, .numbers .backG .b03 .INcont h2, .numbers .backG .b02 .INcont h2, .numbers .backG .b01 .INcont h2, .numbers .backG .b04 .INradius .radius h2, .numbers .backG .b03 .INradius .radius h2, .numbers .backG .b02 .INradius .radius h2, .numbers .backG .b01 .INradius .radius h2, .pseudoSlider .sliger .vertSlider3 .mianText h2, .pseudoSlider .sliger .vertSlider2 .mianText h2, .pseudoSlider .sliger .vertSlider1 .mianText h2, .pseudoSlider .sliger .vertSlider .mianText h2, .secInfo .secInfoR .secInfoRtext .secInfoRtextU, .secInfo .secInfoC .secInfoCtext .secInfoCtextU, .secInfo .secInfoL .secInfoLtext .secInfoLtextU, .techno div:nth-child(2) button, .section2 .textSec2 button, .section1 .textSection1 .imgButt .imgButtA, .pseudoSlider .sliger .vertSlider3 div button, .pseudoSlider .sliger .vertSlider2 div button, .pseudoSlider .sliger .vertSlider1 div button, .pseudoSlider .sliger .vertSlider div button {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -11,7 +11,7 @@
   font-weight: 400;
 }
 
-.introText2 .intro h3, .techno div:nth-child(1) h3, .introText1 .intro h3, .section2 .textSec2 h2 span, .introText .intro h3 {
+.validation .textHead .h3 h3, .introText2 .intro h3, .techno div:nth-child(1) h3, .introText1 .intro h3, .section2 .textSec2 h2 span, .introText .intro h3 {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
@@ -764,4 +764,52 @@
 .numbers .backG {
   display: flex;
   justify-content: space-around;
+}
+.validation {
+  position: absolute;
+  margin-top: 112px;
+  width: 1275px;
+  height: 1008px;
+  background: radial-gradient(50% 50% at 50% 50%, #403A5F 0%, #211E2E 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+}
+.validation .textHead {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 90px;
+  width: 542px;
+}
+.validation .textHead .h2 {
+  width: auto;
+}
+.validation .textHead .h2 h2 {
+  font-size: 36px;
+  line-height: 44px;
+  color: #FFFFFF;
+  margin: 0;
+  text-align: center;
+}
+.validation .textHead .img {
+  width: 414px;
+  margin: 30px auto 21px auto;
+}
+.validation .textHead .h3 h3 {
+  font-size: 36px;
+  line-height: 44px;
+  color: #FFFFFF;
+  margin: 0;
+  width: auto;
+  text-align: center;
+}
+.validation .forms {
+  margin: 65px auto 0px auto;
+  width: 1058px;
+  height: auto;
+}
+.validation .forms label {
+  width: 524px;
+  height: 72px;
+  border: 2px solid #FFFFFF;
+  border-radius: 40px;
 }

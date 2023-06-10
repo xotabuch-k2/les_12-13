@@ -1,6 +1,43 @@
 import '../scss/App.scss'
+import {Formik, Form, Field} from 'formik';
+
 
 function App() {
+  const initialValues = {
+    name: "",
+    Lname: "",
+    email: "",
+    phone: "",
+    subject:"",
+    TuS:""
+  };
+  const validate = (values) => {
+    const errors = {};
+
+    if (!/^[a-zA-Z]+$/.test(values.name) || values.name.length < 1) {
+      errors.name = "Enter correct Name";
+    }
+    if (!/^[a-zA-Z]+$/.test(values.Lname) || values.Lname.length < 1) {
+      errors.Lname = "Enter correct Last Name";
+    }
+    if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
+      errors.email = "Enter correct Email";
+    }
+    if (!/^[+][0-9]{3} [0-9]{2} [0-9]{3} [0-9]{4}$$/i.test(values.phone))  {
+      errors.phone = "Enter correct Phone";
+    }
+    if (!/^[a-zA-Z0-9._%+-]+$/.test(values.subject) || values.Lname.length < 10) {
+      errors.subject = "Enter correct Subject";
+    }
+    if (!/^[a-zA-Z0-9._%+-]+$/.test(values.TuS) || values.Lname.TuS > 20) {
+      errors.subject = "Enter correct Subject";
+    }
+    return errors;
+  };
+  const handleSubmit = (values) => {
+    console.log(values);
+  };
+
 
   return (
     <>
@@ -25,9 +62,9 @@ function App() {
         <div className='textSection1'>
           <h1 className='textSection1_h1'> <span className='textSection1_h1_s1'>Dive</span>  Into The Depths <br /> Of <span className='textSection1_h1_s2'>Virtual Reality</span></h1>
           <p className='textSection1_h2'>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />
-sed do eiusmod tempor incididunt ut labore et dolore <br />
-nisl tincidunt eget. Lectus mauris eros in vitae.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />
+            sed do eiusmod tempor incididunt ut labore et dolore <br />
+            nisl tincidunt eget. Lectus mauris eros in vitae.
           </p>
           <div className='imgButt'>
           <button className='imgButtA' href="#"> BUILD YOUR WORLD</button>
@@ -110,15 +147,15 @@ lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus v
           <span>HYDRA VR</span>
           </h2>
           <h3>
-Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus 
-urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices gravida 
-dictum fusce ut placerat orci. Aenean et tortor at risus viverra adipiscing at in. 
-Mattis aliquam faucibus purus in massa. Est placerat in egestas erat imperdiet 
-sed. Consequat semper viverra nam libero justo laoreet sit amet. Aliquam 
-etiam erat velit scelerisque in dictum non consectetur a. Laoreet sit amet 
-cursus sit amet. Vel eros donec ac odio tempor orci dapibus. Sem nulla pha
-retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudi
-n tempor.
+            Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus 
+            urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices gravida 
+            dictum fusce ut placerat orci. Aenean et tortor at risus viverra adipiscing at in. 
+            Mattis aliquam faucibus purus in massa. Est placerat in egestas erat imperdiet 
+            sed. Consequat semper viverra nam libero justo laoreet sit amet. Aliquam 
+            etiam erat velit scelerisque in dictum non consectetur a. Laoreet sit amet 
+            cursus sit amet. Vel eros donec ac odio tempor orci dapibus. Sem nulla pha
+            retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudi
+            n tempor.
           </h3>
           <button>LET’S GET IN TOUCH</button>
         </div>
@@ -131,10 +168,10 @@ n tempor.
         <img src="/public/img/2 block/arrow-small-right.svg" alt="" />
         <div className='text'>
           <p>
-Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
-nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
-quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
-lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
+            Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
+            nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
+            quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
+            lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
           </p>
         </div>
   </section>
@@ -150,9 +187,9 @@ lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus v
             <div className='zeroDiv'></div>
             <div className='text'>
               <p>
-Vitae sapien pellentesque habitantmorbi
-nunc. Viverra aliquet  porttitor rhoncus 
-libero justo laoreet sit amet vitae.
+                Vitae sapien pellentesque habitantmorbi
+                nunc. Viverra aliquet  porttitor rhoncus 
+                libero justo laoreet sit amet vitae.
               </p>
             </div >
             <div>
@@ -169,9 +206,9 @@ libero justo laoreet sit amet vitae.
             <div className='zeroDiv'></div>
             <div className='text'>
               <p>
-Vitae sapien pellentesque habitantmorbi
-nunc. Viverra aliquet  porttitor rhoncus 
-libero justo laoreet sit amet vitae.
+                Vitae sapien pellentesque habitantmorbi
+                nunc. Viverra aliquet  porttitor rhoncus 
+                libero justo laoreet sit amet vitae.
               </p>
             </div >
               <div>
@@ -188,9 +225,9 @@ libero justo laoreet sit amet vitae.
             <div className='zeroDiv'></div>
             <div className='text'>
               <p>
-Vitae sapien pellentesque habitantmorbi
-nunc. Viverra aliquet  porttitor rhoncus 
-libero justo laoreet sit amet vitae.
+                Vitae sapien pellentesque habitantmorbi
+                nunc. Viverra aliquet  porttitor rhoncus 
+                libero justo laoreet sit amet vitae.
               </p>
             </div >
               <div>
@@ -207,9 +244,9 @@ libero justo laoreet sit amet vitae.
             <div className='zeroDiv'></div>
             <div className='text'>
               <p>
-Vitae sapien pellentesque habitantmorbi
-nunc. Viverra aliquet  porttitor rhoncus 
-libero justo laoreet sit amet vitae.
+                Vitae sapien pellentesque habitantmorbi
+                nunc. Viverra aliquet  porttitor rhoncus 
+                libero justo laoreet sit amet vitae.
               </p>
             </div >
               <div>
@@ -308,9 +345,40 @@ lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus v
         </div>
   </section>
   <section className='validation'>
-    
+    <div className='textHead'>
+      <div className='h2'>
+        <h2>JOIN HYDRA</h2>
+      </div>
 
-  </section>
+      <div className='img'>
+        <img src="/public/img/7 block/Vector 16.png" alt="" />
+      </div>
+
+      <div className='h3'>
+      <h3>Let’s Build Your VR Experience</h3>
+      </div>
+
+    </div>
+    <div className='forms'>
+      <Formik initialValues={initialValues} onSubmit={handleSubmit} validate={validate}>
+      {({values, errors, touched, handleChange, handleBlur, handleSubmit}) => (
+        <Form onSubmit={handleSubmit}>
+
+
+
+
+
+
+
+
+        </Form>
+      )}
+      </Formik>
+
+    </div>
+
+
+    </section>
 
 
 
