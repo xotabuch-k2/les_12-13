@@ -5,7 +5,7 @@
   font-weight: 700;
 }
 
-.introText2 .text p, .introText1 .text p, .section2 .textSec2 h3, .introText .text p, .section1 .textSection1 .textSection1_h2, .pseudoSlider .sliger .vertSlider3 .text p, .pseudoSlider .sliger .vertSlider2 .text p, .pseudoSlider .sliger .vertSlider1 .text p, .pseudoSlider .sliger .vertSlider .text p, .secInfo .secInfoR .secInfoRtext .link .secInfoLtextD, .secInfo .secInfoC .secInfoCtext .link .secInfoLtextD, .secInfo .secInfoL .secInfoLtext .link .secInfoLtextD {
+.validation .forms form .Tblock input::placeholder, .validation .forms form .Tblock input, .validation .forms form .Eblock input::placeholder, .validation .forms form .Eblock input, .validation .forms form .Wblock input::placeholder, .validation .forms form .Wblock input, .validation .forms form .Qblock input::placeholder, .validation .forms form .Qblock input, .introText2 .text p, .introText1 .text p, .section2 .textSec2 h3, .introText .text p, .section1 .textSection1 .textSection1_h2, .pseudoSlider .sliger .vertSlider3 .text p, .pseudoSlider .sliger .vertSlider2 .text p, .pseudoSlider .sliger .vertSlider1 .text p, .pseudoSlider .sliger .vertSlider .text p, .secInfo .secInfoR .secInfoRtext .link .secInfoLtextD, .secInfo .secInfoC .secInfoCtext .link .secInfoLtextD, .secInfo .secInfoL .secInfoLtext .link .secInfoLtextD {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -804,12 +804,178 @@
 }
 .validation .forms {
   margin: 65px auto 0px auto;
-  width: 1058px;
+  width: 1069px;
   height: auto;
+  display: flex;
 }
-.validation .forms label {
-  width: 524px;
+.validation .forms form {
+  width: 1069px;
+  display: block;
+}
+.validation .forms form .Qblock {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 39px;
+}
+.validation .forms form .Qblock input {
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 518px;
   height: 72px;
   border: 2px solid #FFFFFF;
   border-radius: 40px;
+  background-color: #ffffff00;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+.validation .forms form .Qblock input::placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  padding-left: 43px;
+  color: #FFFFFF;
+}
+.validation .forms form .Qblock input.invalid {
+  background-color: #920000;
+  color: #FFFFFF;
+}
+.validation .forms form .Qblock p {
+  position: relative;
+  top: -10px;
+  color: #851b1b;
+  font-weight: 600;
+  opacity: 0;
+  width: 0px;
+  height: 0px;
+  margin: 0;
+  padding: 0;
+}
+.validation .forms form .Wblock {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 33px;
+}
+.validation .forms form .Wblock input {
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 518px;
+  height: 72px;
+  border: 2px solid #FFFFFF;
+  border-radius: 40px;
+  background-color: #ffffff00;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+.validation .forms form .Wblock input::placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  padding-left: 43px;
+  color: #FFFFFF;
+}
+.validation .forms form .Wblock input.invalid {
+  background-color: #920000;
+  color: #FFFFFF;
+}
+.validation .forms form .Wblock p {
+  position: relative;
+  top: -10px;
+  color: #851b1b;
+  font-weight: 600;
+  opacity: 0;
+  width: 0px;
+  height: 0px;
+  margin: 0;
+  padding: 0;
+}
+.validation .forms form .Eblock {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 33px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.validation .forms form .Eblock input {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  width: 1058px;
+  height: 72px;
+  border: 2px solid #FFFFFF;
+  border-radius: 40px;
+  background-color: #ffffff00;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+.validation .forms form .Eblock input::placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  padding-left: 43px;
+  color: #FFFFFF;
+}
+.validation .forms form .Eblock input.invalid {
+  background-color: #920000;
+  color: #FFFFFF;
+}
+.validation .forms form .Eblock p {
+  position: relative;
+  top: -10px;
+  color: #851b1b;
+  font-weight: 600;
+  opacity: 0;
+  width: 0px;
+  height: 0px;
+  margin: 0;
+  padding: 0;
+}
+.validation .forms form .Tblock {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 33px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.validation .forms form .Tblock input {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  width: 1058px;
+  height: 210px;
+  border: 2px solid #FFFFFF;
+  border-radius: 40px;
+  background-color: #ffffff00;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  position: relative;
+}
+.validation .forms form .Tblock input::placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  padding-top: 27px;
+  padding-left: 43px;
+  color: #FFFFFF;
+  position: absolute;
+}
+.validation .forms form .Tblock input.invalid {
+  background-color: #920000;
+  color: #FFFFFF;
+}
+.validation .forms form .Tblock p {
+  position: relative;
+  top: -10px;
+  color: #851b1b;
+  font-weight: 600;
+  opacity: 0;
+  width: 0px;
+  height: 0px;
+  margin: 0;
+  padding: 0;
 }

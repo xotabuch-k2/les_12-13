@@ -14,22 +14,28 @@ function App() {
   const validate = (values) => {
     const errors = {};
 
-    if (!/^[a-zA-Z]+$/.test(values.name) || values.name.length < 1) {
+    if (!/^[a-zA-Z]+$/.test(values.name) || values.name.length < 2) 
+    {
       errors.name = "Enter correct Name";
     }
-    if (!/^[a-zA-Z]+$/.test(values.Lname) || values.Lname.length < 1) {
+    if (!/^[a-zA-Z]+$/.test(values.Lname) || values.Lname.length < 2) 
+    {
       errors.Lname = "Enter correct Last Name";
     }
-    if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
+    if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) 
+    {
       errors.email = "Enter correct Email";
     }
-    if (!/^[+][0-9]{3} [0-9]{2} [0-9]{3} [0-9]{4}$$/i.test(values.phone))  {
+    if (!/^[+][0-9]$/i.test(values.phone) || values.phone.length > 13 || values.phone.length < 13)  
+    {
       errors.phone = "Enter correct Phone";
     }
-    if (!/^[a-zA-Z0-9._%+-]+$/.test(values.subject) || values.Lname.length < 10) {
+    if (!/^[a-zA-Z0-9._%+-]+$/.test(values.subject) || values.Lname.length < 10) 
+    {
       errors.subject = "Enter correct Subject";
     }
-    if (!/^[a-zA-Z0-9._%+-]+$/.test(values.TuS) || values.Lname.TuS > 20) {
+    if (!/^[a-zA-Z0-9._%+-]+$/.test(values.TuS) || values.Lname.TuS > 20) 
+    {
       errors.subject = "Enter correct Subject";
     }
     return errors;
@@ -37,7 +43,6 @@ function App() {
   const handleSubmit = (values) => {
     console.log(values);
   };
-
 
   return (
     <>
@@ -349,11 +354,9 @@ lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus v
       <div className='h2'>
         <h2>JOIN HYDRA</h2>
       </div>
-
       <div className='img'>
         <img src="/public/img/7 block/Vector 16.png" alt="" />
       </div>
-
       <div className='h3'>
       <h3>Let’s Build Your VR Experience</h3>
       </div>
@@ -361,8 +364,54 @@ lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus v
     </div>
     <div className='forms'>
       <Formik initialValues={initialValues} onSubmit={handleSubmit} validate={validate}>
-      {({values, errors, touched, handleChange, handleBlur, handleSubmit}) => (
-        <Form onSubmit={handleSubmit}>
+        {({ errors, touched, handleChange, handleBlur, handleSubmit }) => (
+          <Form onSubmit={handleSubmit}>
+        <div className='Qblock'>
+          <Field placeholder='First Name'
+              className={touched.name && errors.name ? "invalid" : ""}
+              name="name"
+              onChange={handleChange}
+              onBlur={handleBlur}
+            />
+            <Field  placeholder='Last Name'
+              className={touched.Lname && errors.Lname ? "invalid" : ""}
+              name="Lname"
+              onChange={handleChange}
+              onBlur={handleBlur}
+            />
+        </div>
+
+        <div className='Wblock'>
+            <Field placeholder='Email'
+              className={touched.email && errors.email ? "invalid" : ""}
+              name="email"
+              onChange={handleChange}
+              onBlur={handleBlur}
+            />
+            <Field placeholder='Phone Number'
+              className={touched.phone && errors.phone ? "invalid" : ""}
+              name="phone"
+              onChange={handleChange}
+              onBlur={handleBlur}
+            />
+        </div>
+        <div className='Eblock'>
+            <Field placeholder='Subject'
+              className={touched.subject && errors.subject ? "invalid" : ""}
+              name="subject"
+              onChange={handleChange}
+              onBlur={handleBlur}
+            />
+        </div>
+        <div className='Tblock'>
+
+            <Field placeholder='Tell Us Something...'
+              className={touched.tellUs && errors.tellUs ? "invalid" : ""}
+              name="tellUs"
+              onChange={handleChange}
+              onBlur={handleBlur}
+            />
+        </div>
 
 
 
@@ -371,9 +420,15 @@ lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus v
 
 
 
-        </Form>
-      )}
+
+
+
+
+            <button type="submit">Sign in</button>
+          </Form>
+        )}
       </Formik>
+
 
     </div>
 
