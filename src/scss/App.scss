@@ -602,9 +602,6 @@
         width: auto;
         text-align: center;
       }}}
-
-
-
   .forms{
     margin: 65px auto 0px auto;
     width: 1069px;
@@ -622,7 +619,7 @@
         margin: 0;
         display: flex;
         justify-content: space-around;
-        width: 518px;
+        width: 518px - 43px;
         height: 72px;
         border: 2px solid #FFFFFF;
         border-radius: 40px;
@@ -631,28 +628,17 @@
         font-size: 14px;
         line-height: 17px;
         color: #FFFFFF;
+        padding-left: 43px;
         &::placeholder{
           @extend %Montserrat_Regular_400;
           font-size: 14px;
           line-height: 17px;
-          padding-left: 43px;
           color: #FFFFFF;
         }
       }
       input.invalid{
           background-color: #920000;
           color: #FFFFFF;
-      }
-      p{
-          position: relative;
-          top: -10px;
-          color: #851b1b;
-          font-weight: 600;
-          opacity: 0;
-          width: 0px;
-          height: 0px;
-          margin: 0;
-          padding: 0;
       }
     }
     .Wblock{
@@ -664,7 +650,7 @@
         margin: 0;
         display: flex;
         justify-content: space-around;
-        width: 518px;
+        width: 518px - 43px;
         height: 72px;
         border: 2px solid #FFFFFF;
         border-radius: 40px;
@@ -673,11 +659,11 @@
         font-size: 14px;
         line-height: 17px;
         color: #FFFFFF;
+        padding-left: 43px;
         &::placeholder{
           @extend %Montserrat_Regular_400;
           font-size: 14px;
           line-height: 17px;
-          padding-left: 43px;
           color: #FFFFFF;
         }
       }
@@ -685,17 +671,6 @@
           background-color: #920000;
           color: #FFFFFF;
       }
-      p{
-          position: relative;
-          top: -10px;
-          color: #851b1b;
-          font-weight: 600;
-          opacity: 0;
-          width: 0px;
-          height: 0px;
-          margin: 0;
-          padding: 0;
-        }
       }
     .Eblock{
       width: auto;
@@ -717,11 +692,11 @@
         font-size: 14px;
         line-height: 17px;
         color: #FFFFFF;
+        line-height: 17px;
+        padding-left: 43px;
         &::placeholder{
           @extend %Montserrat_Regular_400;
           font-size: 14px;
-          line-height: 17px;
-          padding-left: 43px;
           color: #FFFFFF;
         }
       }
@@ -729,31 +704,21 @@
           background-color: #920000;
           color: #FFFFFF;
       }
-      p{
-          position: relative;
-          top: -10px;
-          color: #851b1b;
-          font-weight: 600;
-          opacity: 0;
-          width: 0px;
-          height: 0px;
-          margin: 0;
-          padding: 0;
-        }
     }
     .Tblock{
       width: auto;
       display: flex;
       justify-content: space-between;
-      margin-bottom: 33px;
+      margin-bottom: 51px;
       margin-left: auto;
       margin-right: auto;
-      input{
+      textarea{
         margin: 0;
         display: flex;
         justify-content: center;
-        width: 1058px;
-        height: 210px;
+        padding-left: 43px;
+        width: calc(1058px - 43px);
+        height: calc(210px - 27px);
         border: 2px solid #FFFFFF;
         border-radius: 40px;
         background-color: #ffffff00;
@@ -762,31 +727,40 @@
         line-height: 17px;
         color: #FFFFFF;
         position: relative;
+        resize: none; 
+        padding-left: 43px;
+        padding-top: 27px;
         &::placeholder{
           @extend %Montserrat_Regular_400;
           font-size: 14px;
           line-height: 17px;
-          padding-top: 27px;
-          padding-left: 43px;
           color: #FFFFFF;
           position: absolute;
         }
+        &[type = text]{
+          margin-top: 50px;
+          padding-left: 43px;
+          padding-top: 27px;
+        }
+
       }
       input.invalid{
           background-color: #920000;
           color: #FFFFFF;
       }
-      p{
-          position: relative;
-          top: -10px;
-          color: #851b1b;
-          font-weight: 600;
-          opacity: 0;
-          width: 0px;
-          height: 0px;
-          margin: 0;
-          padding: 0;
-        }
+    }
+    .button{
+      width: 1069px;
+      height: 48px;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      button{
+        @extend %TipicalButton;
+        width: 214px;
+        height: 48px;
+        padding: 0;
+      }
     }
   }
   

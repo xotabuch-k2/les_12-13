@@ -30,13 +30,13 @@ function App() {
     {
       errors.phone = "Enter correct Phone";
     }
-    if (!/^[a-zA-Z0-9._%+-]+$/.test(values.subject) || values.Lname.length < 10) 
+    if (!/^[a-zA-Z0-9._%+-]+$/.test(values.subject) || values.subject.length < 10) 
     {
       errors.subject = "Enter correct Subject";
     }
-    if (!/^[a-zA-Z0-9._%+-]+$/.test(values.TuS) || values.Lname.TuS > 20) 
+    if (!/^[a-zA-Z0-9._%+-]+$/.test(values.TuS) || values.TuS.length > 20) 
     {
-      errors.subject = "Enter correct Subject";
+      errors.TuS = "Enter correct Subject";
     }
     return errors;
   };
@@ -360,35 +360,41 @@ lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus v
       <div className='h3'>
       <h3>Let’s Build Your VR Experience</h3>
       </div>
-
     </div>
     <div className='forms'>
       <Formik initialValues={initialValues} onSubmit={handleSubmit} validate={validate}>
         {({ errors, touched, handleChange, handleBlur, handleSubmit }) => (
           <Form onSubmit={handleSubmit}>
         <div className='Qblock'>
-          <Field placeholder='First Name'
+          <Field 
+              as="input"
+              placeholder='First Name'
               className={touched.name && errors.name ? "invalid" : ""}
               name="name"
               onChange={handleChange}
               onBlur={handleBlur}
             />
-            <Field  placeholder='Last Name'
+            <Field
+              as="input" 
+              placeholder='Last Name'
               className={touched.Lname && errors.Lname ? "invalid" : ""}
               name="Lname"
               onChange={handleChange}
               onBlur={handleBlur}
             />
         </div>
-
         <div className='Wblock'>
-            <Field placeholder='Email'
+            <Field 
+              as="input"
+              placeholder='Email'
               className={touched.email && errors.email ? "invalid" : ""}
               name="email"
               onChange={handleChange}
               onBlur={handleBlur}
             />
-            <Field placeholder='Phone Number'
+            <Field
+              as="input"
+              placeholder='Phone Number'
               className={touched.phone && errors.phone ? "invalid" : ""}
               name="phone"
               onChange={handleChange}
@@ -396,7 +402,9 @@ lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus v
             />
         </div>
         <div className='Eblock'>
-            <Field placeholder='Subject'
+            <Field
+              as="input" 
+              placeholder='Subject'
               className={touched.subject && errors.subject ? "invalid" : ""}
               name="subject"
               onChange={handleChange}
@@ -404,27 +412,19 @@ lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus v
             />
         </div>
         <div className='Tblock'>
-
-            <Field placeholder='Tell Us Something...'
-              className={touched.tellUs && errors.tellUs ? "invalid" : ""}
-              name="tellUs"
+            <Field
+              as="textarea"
+              placeholder="Tell Us Something..."
+              className={touched.TuS && errors.TuS ? "invalid" : ""}
+              name="TuS"
               onChange={handleChange}
               onBlur={handleBlur}
             />
         </div>
+        <div className='button'>
+          <button type="submit">SEND TO HYDRA</button>
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-            <button type="submit">Sign in</button>
           </Form>
         )}
       </Formik>
@@ -433,7 +433,8 @@ lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus v
     </div>
 
 
-    </section>
+  </section>
+  
 
 
 

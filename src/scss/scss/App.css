@@ -1,11 +1,11 @@
 @import 'normalize.css';
-.validation .textHead .h2 h2, .introText2 .intro h2, .techno div:nth-child(1) h2, .introText1 .intro h2, .section2 .textSec2 h2, .introText .intro h2, .section1 .textSection1 .textSection1_h1, .header .divButton .J_button, .header .divButton .C_button, .header .navigation a, .numbers .backG .b04 .INcont h2, .numbers .backG .b03 .INcont h2, .numbers .backG .b02 .INcont h2, .numbers .backG .b01 .INcont h2, .numbers .backG .b04 .INradius .radius h2, .numbers .backG .b03 .INradius .radius h2, .numbers .backG .b02 .INradius .radius h2, .numbers .backG .b01 .INradius .radius h2, .pseudoSlider .sliger .vertSlider3 .mianText h2, .pseudoSlider .sliger .vertSlider2 .mianText h2, .pseudoSlider .sliger .vertSlider1 .mianText h2, .pseudoSlider .sliger .vertSlider .mianText h2, .secInfo .secInfoR .secInfoRtext .secInfoRtextU, .secInfo .secInfoC .secInfoCtext .secInfoCtextU, .secInfo .secInfoL .secInfoLtext .secInfoLtextU, .techno div:nth-child(2) button, .section2 .textSec2 button, .section1 .textSection1 .imgButt .imgButtA, .pseudoSlider .sliger .vertSlider3 div button, .pseudoSlider .sliger .vertSlider2 div button, .pseudoSlider .sliger .vertSlider1 div button, .pseudoSlider .sliger .vertSlider div button {
+.validation .textHead .h2 h2, .introText2 .intro h2, .techno div:nth-child(1) h2, .introText1 .intro h2, .section2 .textSec2 h2, .introText .intro h2, .section1 .textSection1 .textSection1_h1, .header .divButton .J_button, .header .divButton .C_button, .header .navigation a, .numbers .backG .b04 .INcont h2, .numbers .backG .b03 .INcont h2, .numbers .backG .b02 .INcont h2, .numbers .backG .b01 .INcont h2, .numbers .backG .b04 .INradius .radius h2, .numbers .backG .b03 .INradius .radius h2, .numbers .backG .b02 .INradius .radius h2, .numbers .backG .b01 .INradius .radius h2, .pseudoSlider .sliger .vertSlider3 .mianText h2, .pseudoSlider .sliger .vertSlider2 .mianText h2, .pseudoSlider .sliger .vertSlider1 .mianText h2, .pseudoSlider .sliger .vertSlider .mianText h2, .secInfo .secInfoR .secInfoRtext .secInfoRtextU, .secInfo .secInfoC .secInfoCtext .secInfoCtextU, .secInfo .secInfoL .secInfoLtext .secInfoLtextU, .validation .forms form .button button, .techno div:nth-child(2) button, .section2 .textSec2 button, .section1 .textSection1 .imgButt .imgButtA, .pseudoSlider .sliger .vertSlider3 div button, .pseudoSlider .sliger .vertSlider2 div button, .pseudoSlider .sliger .vertSlider1 div button, .pseudoSlider .sliger .vertSlider div button {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
 }
 
-.validation .forms form .Tblock input::placeholder, .validation .forms form .Tblock input, .validation .forms form .Eblock input::placeholder, .validation .forms form .Eblock input, .validation .forms form .Wblock input::placeholder, .validation .forms form .Wblock input, .validation .forms form .Qblock input::placeholder, .validation .forms form .Qblock input, .introText2 .text p, .introText1 .text p, .section2 .textSec2 h3, .introText .text p, .section1 .textSection1 .textSection1_h2, .pseudoSlider .sliger .vertSlider3 .text p, .pseudoSlider .sliger .vertSlider2 .text p, .pseudoSlider .sliger .vertSlider1 .text p, .pseudoSlider .sliger .vertSlider .text p, .secInfo .secInfoR .secInfoRtext .link .secInfoLtextD, .secInfo .secInfoC .secInfoCtext .link .secInfoLtextD, .secInfo .secInfoL .secInfoLtext .link .secInfoLtextD {
+.validation .forms form .Tblock textarea::placeholder, .validation .forms form .Tblock textarea, .validation .forms form .Eblock input::placeholder, .validation .forms form .Eblock input, .validation .forms form .Wblock input::placeholder, .validation .forms form .Wblock input, .validation .forms form .Qblock input::placeholder, .validation .forms form .Qblock input, .introText2 .text p, .introText1 .text p, .section2 .textSec2 h3, .introText .text p, .section1 .textSection1 .textSection1_h2, .pseudoSlider .sliger .vertSlider3 .text p, .pseudoSlider .sliger .vertSlider2 .text p, .pseudoSlider .sliger .vertSlider1 .text p, .pseudoSlider .sliger .vertSlider .text p, .secInfo .secInfoR .secInfoRtext .link .secInfoLtextD, .secInfo .secInfoC .secInfoCtext .link .secInfoLtextD, .secInfo .secInfoL .secInfoLtext .link .secInfoLtextD {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -17,7 +17,7 @@
   font-weight: 300;
 }
 
-.header .divButton .J_button, .header .divButton .C_button, .techno div:nth-child(2) button, .section2 .textSec2 button, .section1 .textSection1 .imgButt .imgButtA, .pseudoSlider .sliger .vertSlider3 div button, .pseudoSlider .sliger .vertSlider2 div button, .pseudoSlider .sliger .vertSlider1 div button, .pseudoSlider .sliger .vertSlider div button {
+.header .divButton .J_button, .header .divButton .C_button, .validation .forms form .button button, .techno div:nth-child(2) button, .section2 .textSec2 button, .section1 .textSection1 .imgButt .imgButtA, .pseudoSlider .sliger .vertSlider3 div button, .pseudoSlider .sliger .vertSlider2 div button, .pseudoSlider .sliger .vertSlider1 div button, .pseudoSlider .sliger .vertSlider div button {
   border-radius: 40px;
   border: none;
   outline: none;
@@ -25,7 +25,7 @@
   line-height: 15px;
 }
 
-.techno div:nth-child(2) button, .section2 .textSec2 button, .section1 .textSection1 .imgButt .imgButtA, .pseudoSlider .sliger .vertSlider3 div button, .pseudoSlider .sliger .vertSlider2 div button, .pseudoSlider .sliger .vertSlider1 div button, .pseudoSlider .sliger .vertSlider div button {
+.validation .forms form .button button, .techno div:nth-child(2) button, .section2 .textSec2 button, .section1 .textSection1 .imgButt .imgButtA, .pseudoSlider .sliger .vertSlider3 div button, .pseudoSlider .sliger .vertSlider2 div button, .pseudoSlider .sliger .vertSlider1 div button, .pseudoSlider .sliger .vertSlider div button {
   background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
   color: #343045;
   cursor: pointer;
@@ -822,7 +822,7 @@
   margin: 0;
   display: flex;
   justify-content: space-around;
-  width: 518px;
+  width: 475px;
   height: 72px;
   border: 2px solid #FFFFFF;
   border-radius: 40px;
@@ -830,27 +830,16 @@
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
+  padding-left: 43px;
 }
 .validation .forms form .Qblock input::placeholder {
   font-size: 14px;
   line-height: 17px;
-  padding-left: 43px;
   color: #FFFFFF;
 }
 .validation .forms form .Qblock input.invalid {
   background-color: #920000;
   color: #FFFFFF;
-}
-.validation .forms form .Qblock p {
-  position: relative;
-  top: -10px;
-  color: #851b1b;
-  font-weight: 600;
-  opacity: 0;
-  width: 0px;
-  height: 0px;
-  margin: 0;
-  padding: 0;
 }
 .validation .forms form .Wblock {
   width: auto;
@@ -862,7 +851,7 @@
   margin: 0;
   display: flex;
   justify-content: space-around;
-  width: 518px;
+  width: 475px;
   height: 72px;
   border: 2px solid #FFFFFF;
   border-radius: 40px;
@@ -870,27 +859,16 @@
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
+  padding-left: 43px;
 }
 .validation .forms form .Wblock input::placeholder {
   font-size: 14px;
   line-height: 17px;
-  padding-left: 43px;
   color: #FFFFFF;
 }
 .validation .forms form .Wblock input.invalid {
   background-color: #920000;
   color: #FFFFFF;
-}
-.validation .forms form .Wblock p {
-  position: relative;
-  top: -10px;
-  color: #851b1b;
-  font-weight: 600;
-  opacity: 0;
-  width: 0px;
-  height: 0px;
-  margin: 0;
-  padding: 0;
 }
 .validation .forms form .Eblock {
   width: auto;
@@ -912,42 +890,32 @@
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
+  line-height: 17px;
+  padding-left: 43px;
 }
 .validation .forms form .Eblock input::placeholder {
   font-size: 14px;
-  line-height: 17px;
-  padding-left: 43px;
   color: #FFFFFF;
 }
 .validation .forms form .Eblock input.invalid {
   background-color: #920000;
   color: #FFFFFF;
 }
-.validation .forms form .Eblock p {
-  position: relative;
-  top: -10px;
-  color: #851b1b;
-  font-weight: 600;
-  opacity: 0;
-  width: 0px;
-  height: 0px;
-  margin: 0;
-  padding: 0;
-}
 .validation .forms form .Tblock {
   width: auto;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 33px;
+  margin-bottom: 51px;
   margin-left: auto;
   margin-right: auto;
 }
-.validation .forms form .Tblock input {
+.validation .forms form .Tblock textarea {
   margin: 0;
   display: flex;
   justify-content: center;
-  width: 1058px;
-  height: 210px;
+  padding-left: 43px;
+  width: calc(1058px - 43px);
+  height: calc(210px - 27px);
   border: 2px solid #FFFFFF;
   border-radius: 40px;
   background-color: #ffffff00;
@@ -955,27 +923,34 @@
   line-height: 17px;
   color: #FFFFFF;
   position: relative;
+  resize: none;
+  padding-left: 43px;
+  padding-top: 27px;
 }
-.validation .forms form .Tblock input::placeholder {
+.validation .forms form .Tblock textarea::placeholder {
   font-size: 14px;
   line-height: 17px;
-  padding-top: 27px;
-  padding-left: 43px;
   color: #FFFFFF;
   position: absolute;
+}
+.validation .forms form .Tblock textarea[type=text] {
+  margin-top: 50px;
+  padding-left: 43px;
+  padding-top: 27px;
 }
 .validation .forms form .Tblock input.invalid {
   background-color: #920000;
   color: #FFFFFF;
 }
-.validation .forms form .Tblock p {
-  position: relative;
-  top: -10px;
-  color: #851b1b;
-  font-weight: 600;
-  opacity: 0;
-  width: 0px;
-  height: 0px;
-  margin: 0;
+.validation .forms form .button {
+  width: 1069px;
+  height: 48px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.validation .forms form .button button {
+  width: 214px;
+  height: 48px;
   padding: 0;
 }
