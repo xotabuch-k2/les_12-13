@@ -9,6 +9,7 @@ html(lang="en")
     body
         h1 Edit #{user.name}
         form(action=`/change-user/${user._id}` class="add" method="POST")
+            input(type='hidden', name='_csrf', value=csrfToken)
             label(for="name") Name:
             input(id="name" name="name" value=`${user.name}`)
             label(for="age") Age:

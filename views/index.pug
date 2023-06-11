@@ -5,10 +5,15 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel='stylesheet', href='/style.css')
-    title Users
+    title Clients
   body
+  
+    h1 #{title.text}
+      a(href=`${title.link}`) #{title.linkMessage}
+    if isAdmin
     h2 Add User
     form(action="/add" class="add" method="POST")
+      input(type='hidden', name='_csrf', value=csrfToken)
       label(for="name") Name:
       input(id="name" name="name" placeholder="Enter your name")
       label(for="age") Age:
@@ -22,15 +27,17 @@ html(lang="en")
   #users
     if users.length
       each user in users
-        .users
+        .course
           .img
             img(src=`${user.avatar}`, alt="")
-          .name #{user.name}
-          .age Age #{user.age}
-          .edit-btn
-            a(href=`/edit/${user._id}`) 
-              button Edit
-            button(type="button" onclick=`removeUser('${user._id}')`) Delete
+          .title #{user.name}
+          .price Age #{user.age}
+          
+          if isAdmin
+            .course-btn
+              a(href=`/edit/${user._id}`) 
+                button Edit
+              button(type="button" onclick=`removeUser('${user._id}')`) Delete
     else 
       h3 Empty
     script.
@@ -46,3 +53,4 @@ html(lang="en")
           console.error('There was an error!', error);
         });
       }
+    

@@ -9,5 +9,7 @@ const userSchema = new Schema ({
     avatar: String,
 }
 )
+
 const User = mongoose.model('user', userSchema);
+
 export {User};
