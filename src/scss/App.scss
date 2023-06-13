@@ -566,17 +566,16 @@
       @extend %b01-04;
     }}}
 .validation{
-  position: absolute;
+  padding-top: 90px;
   margin-top: 112px;
   width: 1275px;
-  height: 1008px;
+  height: 1008px - 90px;
   background: radial-gradient(50% 50% at 50% 50%, #403A5F 0%, #211E2E 100%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 100px;
   .textHead{
     margin-left: auto;
     margin-right: auto;
-    margin-top: 90px;
     width: 542px;
     .h2{
       width: auto;
@@ -692,7 +691,6 @@
         font-size: 14px;
         line-height: 17px;
         color: #FFFFFF;
-        line-height: 17px;
         padding-left: 43px;
         &::placeholder{
           @extend %Montserrat_Regular_400;
@@ -760,9 +758,175 @@
         width: 214px;
         height: 48px;
         padding: 0;
+        &:hover {
+          transition: 0.5s;
+          zoom: 1.1;
+          border: 2px solid #343045;
+          background-color: #FFFFFF;
+          color:#343045;
+        }
+      }}}}}
+
+
+
+
+
+.linksInfo{
+  margin-top: 122.5px;
+  .block1{
+    display: flex;
+    .imgLogo{
+      width: 185px;
+      height: 187px;
+      &:hover{
+        text-align: center;
+        animation: 3s linear infinite rotate;
+        @keyframes rotate {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }}}
+    }
+    .imgL{
+      margin-left: 100px;
+      margin-right: 81px;
+      width: 0px;
+      height: 196px;
+    }
+    nav{
+      width: 134px;
+      height: 192px;
+      li{
+        list-style-type: none;
+        a{
+          margin: 0;
+          @extend %Montserrat_Bold_700;
+          color: #FFFFFF;
+          text-decoration: none;
+          &:hover {
+            transition: 0.4s;
+            color: #8176AF;
+            text-shadow: 0px 4px 4px #211E2E;
+            zoom: 1.05;
+          }
+        } 
+      }
+      li:nth-child(2n){
+        margin: 25px 0;
+      }
+
+    }
+    div:nth-child(4){
+      margin-left: 104px;
+      margin-right: 107px;
+      width: 0px;
+      height: 196px;
+    }
+    div:nth-child(6){
+      width: 0px;
+      height: 196px;
+      margin-left: 69px;
+      margin-right: 71px;
+    }
+    .information{
+      .SOCIALIZE{
+        width: 292px;
+        height: 20px;
+        h4{
+          margin: 0;
+          font-size: 16px;
+          line-height: 20px;
+          color: #FFFFFF;
+          @extend%Montserrat_Bold_700;
+          &:hover {
+            zoom: 1.05;
+            transition: 0.4s;
+            color: #8176AF;
+            text-shadow: 0px 4px 4px #211E2E;
+          }
+        }
+      }
+      .fotoLink{
+        width: 292px;
+        height: 40px;
+        ul{
+          padding: 0;
+          margin: 40px 0 0 0;
+          display: flex;
+          li{
+            margin: 0 20px 0 0;
+            list-style-type: none;
+            cursor: pointer;
+            &:hover {
+              zoom: 1.1;
+            }
+          }
+          li:nth-child(6){
+            margin: 0 0 0 0;
+            list-style-type: none;
+          }
+        }
+      }
+      .buttonLink{
+        margin-top: 50px;
+        button{
+          padding: 0;
+          @extend %TipicalButton;
+          width: 214px;
+          cursor: pointer;
+          height: 48px;
+          span{
+            font-size: 12px;
+            line-height: 15px;
+          }
+          &:hover {
+            transition: 0.5s;
+            zoom: 1.1;
+            border: 2px solid #343045;
+            background-color: #FFFFFF;
+            color:#343045;
+          }
+        }
       }
     }
   }
-  
+  .block2{
+    position: relative;
+    z-index: -1;
+    top: 7px;
+    width: 0;
+    height: 0;
+    .img1{
+      position: absolute;
+      top: -532px;
+      left: -58px;
+    }
+    .img2{
+      position: absolute;
+      top: -251px;
+      left: -66px;
+    }
   }
+  .downVector{
+    margin-top: 43px;
+  }
+  .lastText{
+    margin: 49px auto 59px auto;
+    height: 17px;
+    width: 693px;
+    .h3Text{
+      height: 17px;
+      left: 375px;
+      margin: 0 auto;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.13em;
+      color: #FFFFFF;
+      @extend %Montserrat_Bold_700;
+      margin: 0;
+    }
+  }
+
 }

@@ -26,7 +26,7 @@ function App() {
     {
       errors.email = "Enter correct Email";
     }
-    if (!/^[+][0-9]$/i.test(values.phone) || values.phone.length > 13 || values.phone.length < 13)  
+    if (!/^[+][+0-9]$/i.test(values.phone) || values.phone.length > 13 || values.phone.length < 13)  
     {
       errors.phone = "Enter correct Phone";
     }
@@ -431,24 +431,83 @@ lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus v
 
 
     </div>
-
-
   </section>
-  
-
-
-
-
-
-
-
-
 </main>
-    <footer>
-      <nav>
-
-      </nav>
-    </footer>
+<footer className='linksInfo'>
+  <div className='block1'>
+    <div className='`imgLogo`'>
+      <img src="/public/img/7 block/Frame_Logo.svg" alt="" />
+    </div>
+    <div className='imgL'>
+      <img src="/public/img/7 block/L_Vector 20.svg" alt="" />
+    </div>
+    <nav>
+      <li><a href="">ABOUT</a></li>
+      <li><a href="">SERVICES</a></li>
+      <li><a href="">TECHNOLOGIES</a></li>
+      <li><a href="">HOW TO</a></li>
+      <li><a href="">JOIN HYDRA</a></li>
+    </nav>
+    <div>
+      <img src="/public/img/7 block/L_Vector 20.svg" alt="" />
+    </div>
+    <nav>
+      <li><a href="">F.A.Q</a></li>
+      <li><a href="">SITEMAP</a></li>
+      <li><a href="">CONDITIONS</a></li>
+      <li><a href="">LICENSES</a></li>
+    </nav>
+    <div>
+      <img src="/public/img/7 block/L_Vector 20.svg" alt="" />
+    </div>
+    <section className='information'>
+      <div className='SOCIALIZE'>
+        <h4>SOCIALIZE WITH HYDRA</h4>
+      </div>
+      <div className='fotoLink'>
+        <ul>
+          <li>
+            <a href=""><img src="/public/img/7 block/SOCIALIZE_WITH_HYDRA/1.svg" alt="" /></a>
+            </li>
+          <li>
+            <a href=""><img src="/public/img/7 block/SOCIALIZE_WITH_HYDRA/2.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="/public/img/7 block/SOCIALIZE_WITH_HYDRA/3.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="/public/img/7 block/SOCIALIZE_WITH_HYDRA/4.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="/public/img/7 block/SOCIALIZE_WITH_HYDRA/5.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="/public/img/7 block/SOCIALIZE_WITH_HYDRA/6.svg" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+      <div className='buttonLink'>
+        <button><span>BUILD YOUR WORLD</span></button>
+      </div>
+    </section>
+  </div>
+  <div className='block2'>
+    <div className='img1'>
+    <img src="/public/img/7 block/Vector 19.svg" alt="" />
+    </div>
+    <div className='img2'>
+    <img src="/public/img/7 block/Vector 18.svg" alt="" />
+    </div>
+  </div>
+  <div className='downVector'>
+    <img src="/public/img/7 block/Down_Vector 17.svg" alt="" />
+  </div>
+  <div className='lastText'>
+    <h3 className='h3Text'>
+    2023 © HYDRA LANDING PAGE - BY ZINE. E. FALOUTI - ALL RIGHTS RESERVED 
+    </h3>
+  </div>
+</footer>
     </>
   )
 }
