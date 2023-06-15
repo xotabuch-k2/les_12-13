@@ -1,53 +1,57 @@
-import express from 'express';
-import http from 'http';
-import { Server } from 'socket.io';
+///task 1
+
 import fs from 'fs';
+import path from 'path'
+import { fileURLToPath } from 'url';
 
-const app = express();
-const server = http.createServer(app);
-const io = new Server(server);
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const book = 'The Wind in the Willows (introductory fragment).txt'
 
-const PORT = 3000;
+const readStream = fs.createReadStream(path.join(__dirname, '/files', book), { highWaterMark: 1024 })
+console.log(readStream.readableHighWaterMark);
 
-app.use(express.static('public'));
-app.use(express.urlencoded({ extended: true }));
+readStream.on('data', (chunk)=>{
+    console.log('-Introductory fragmrnt, copying is prohibited!-');
+    console.log(chunk.toString());
+})
 
-app.set('view engine', 'pug');
+process.stdin.on("data", data => {
+    data = data.toString().toUpperCase()
+    process.stdout.write(data + "\n")
+})
 
-app.get('/', (req, res) => {
-  res.render('index');
-});
-
-server.listen(PORT, () => {
-  console.log(`Server started on http://localhost:${PORT}`);
-});
-
-io.on('connection', (socket) => {
-  console.log(`System user is connected`);
-
-  socket.on('login', (name) => {
-    socket.username = name;
-  });
-
-  socket.on('disconnect', (reason) => {
-    console.log(`System user ${socket.username} is disconnected, reason: ${reason}`);
-  });
-
-  socket.on('send_msg', (data) => {
-    io.emit('new_msg', { name: data.name, msg: data.msg });
-
-    // Save message to a text file
-    const message = `${data.name}: ${data.msg}\n`;
-    const writeStream = fs.createWriteStream('message.txt', { flags: 'a' });
-    writeStream.write(message);
-    writeStream.end();
-    
-    writeStream.on('finish', () => {
-      console.log('Message saved successfully.');
+///task 2-3
+const ask = (question) => {
+    return new Promise((resolve, reject) => {
+      process.stdout.write(question);
+  
+      process.stdin.once('data', (data) => {
+        const answer = data.toString().trim().toLowerCase();
+        if (['y', 'yes'].includes(answer)) {
+          resolve('YES');
+        } else if (['n', 'no'].includes(answer)) {
+          resolve('NO');
+        } else {
+          reject(new Error('Invalid answer. Please enter Y/y/yes or N/n/no.'));
+        }
+      });
     });
+  };
+  
+  (async () => {
+    try {
+      const useScss = await ask('Do you want to use SCSS? ');
+      const useEslint = await ask('Do you want to use ESLint? ');
+  
+      console.log('Use SCSS:', useScss);
+      console.log('Use ESLint:', useEslint);
+  
+      process.exit();
+    } catch (error) {
+      process.stderr.write(error.message);
+      process.exit(1);
+    }
+  })();
 
-    writeStream.on('error', (err) => {
-      console.error('Error saving message:', err);
-    });
-  });
-});
+
