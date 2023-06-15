@@ -962,15 +962,17 @@
 
 .linksInfo {
   margin-top: 122.5px;
+  margin-bottom: 59px;
 }
 .linksInfo .block1 {
   display: flex;
+  z-index: 2;
 }
 .linksInfo .block1 .imgLogo {
   width: 185px;
   height: 187px;
 }
-.linksInfo .block1 .imgLogo:hover {
+.linksInfo .block1 .imgLogo .Logo:hover {
   text-align: center;
   animation: 3s linear infinite rotate;
 }

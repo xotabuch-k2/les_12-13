@@ -435,8 +435,8 @@ lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus v
 </main>
 <footer className='linksInfo'>
   <div className='block1'>
-    <div className='`imgLogo`'>
-      <img src="/public/img/7 block/Frame_Logo.svg" alt="" />
+    <div className='imgLogo'>
+      <img className='Logo' src="/public/img/7 block/Frame_Logo.svg" alt="" />
     </div>
     <div className='imgL'>
       <img src="/public/img/7 block/L_Vector 20.svg" alt="" />
