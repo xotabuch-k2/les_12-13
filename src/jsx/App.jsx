@@ -1,19 +1,8 @@
 import '../scss/App.scss'
 import {Formik, Form, Field} from 'formik';
-import { useMediaQuery } from 'react-responsive'
 
 
 function App() {
-
-    const isDesktop = useMediaQuery({
-      query:'min-width: 1278px'
-    })
-    const isTablet = useMediaQuery({
-      query:'min-width: 390px'
-    })
-    const isPhone = useMediaQuery({
-      query:'max-width: 390px'
-    })
   const initialValues = {
     name: "",
     Lname: "",
@@ -297,10 +286,10 @@ function App() {
         <img src="/public/img/2 block/arrow-small-right.svg" alt="" />
         <div className='text'>
           <p>
-Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
-nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
-quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
-lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
+            Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
+            nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
+            quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
+            lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
           </p>
         </div>
   </section>
@@ -518,5 +507,13 @@ lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus v
 </footer>
     </>
   )
+
+
+
+
+
+
+
+
 }
 export default App
