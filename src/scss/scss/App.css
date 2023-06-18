@@ -1,11 +1,11 @@
 @import 'normalize.css';
-.linksInfo .lastText .h3Text, .linksInfo .block1 .information .SOCIALIZE h4, .linksInfo .block1 nav li a, .validation .textHead .h2 h2, .introText2 .intro h2, .techno div:nth-child(1) h2, .introText1 .intro h2, .section2 .textSec2 h2, .introText .intro h2, .section1 .textSection1 .textSection1_h1, .header .divButton .J_button, .header .divButton .C_button, .header .navigation a, .numbers .backG .b04 .INcont h2, .numbers .backG .b03 .INcont h2, .numbers .backG .b02 .INcont h2, .numbers .backG .b01 .INcont h2, .numbers .backG .b04 .INradius .radius h2, .numbers .backG .b03 .INradius .radius h2, .numbers .backG .b02 .INradius .radius h2, .numbers .backG .b01 .INradius .radius h2, .pseudoSlider .sliger .vertSlider3 .mianText h2, .pseudoSlider .sliger .vertSlider2 .mianText h2, .pseudoSlider .sliger .vertSlider1 .mianText h2, .pseudoSlider .sliger .vertSlider .mianText h2, .secInfo .secInfoR .secInfoRtext .secInfoRtextU, .secInfo .secInfoC .secInfoCtext .secInfoCtextU, .secInfo .secInfoL .secInfoLtext .secInfoLtextU, .linksInfo .block1 .information .buttonLink button, .validation .forms form .button button, .techno div:nth-child(2) button, .section2 .textSec2 button, .section1 .textSection1 .imgButt .imgButtA, .pseudoSlider .sliger .vertSlider3 div button, .pseudoSlider .sliger .vertSlider2 div button, .pseudoSlider .sliger .vertSlider1 div button, .pseudoSlider .sliger .vertSlider div button {
+.linksInfo .lastText .h3Text, .linksInfo .block1 .information .SOCIALIZE h4, .linksInfo .block1 nav li a, .validation .textHead .h2 h2, .introText2 .intro h2, .techno div:nth-child(1) h2, .introText1 .intro h2, .section2 .textSec2 h2, .introText .intro h2, .section1 .textSection1 .textSection1_h1, .header .divButton .J_button, .header .divButton .C_button, .header .navigation a, .numbers .backG .b04 .INcont h2, .numbers .backG .b03 .INcont h2, .numbers .backG .b02 .INcont h2, .numbers .backG .b01 .INcont h2, .numbers .backG .b04 .INradius .radius h2, .numbers .backG .b03 .INradius .radius h2, .numbers .backG .b02 .INradius .radius h2, .numbers .backG .b01 .INradius .radius h2, .pseudoSlider .sliger .vertSlider3 .mianText h2, .pseudoSlider .sliger .vertSlider2 .mianText h2, .pseudoSlider .sliger .vertSlider1 .mianText h2, .pseudoSlider .sliger .vertSlider .mianText h2, .secInfo .secInfoR .secInfoRtext .secInfoRtextU, .secInfo .secInfoC .secInfoCtext .secInfoCtextU, .secInfo .secInfoL .sectInfoLtext .secInfoLtextU, .linksInfo .block1 .information .buttonLink button, .validation .forms form .button .InButt, .techno div:nth-child(2) button, .section2 .textSec2 button, .section1 .textSection1 .imgButt .imgButtA, .pseudoSlider .sliger .vertSlider3 div button, .pseudoSlider .sliger .vertSlider2 div button, .pseudoSlider .sliger .vertSlider1 div button, .pseudoSlider .sliger .vertSlider div button {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
 }
 
-.validation .forms form .Tblock textarea::placeholder, .validation .forms form .Tblock textarea, .validation .forms form .Eblock input::placeholder, .validation .forms form .Eblock input, .validation .forms form .Wblock input::placeholder, .validation .forms form .Wblock input, .validation .forms form .Qblock input::placeholder, .validation .forms form .Qblock input, .introText2 .text p, .introText1 .text p, .section2 .textSec2 h3, .introText .text p, .section1 .textSection1 .textSection1_h2, .pseudoSlider .sliger .vertSlider3 .text p, .pseudoSlider .sliger .vertSlider2 .text p, .pseudoSlider .sliger .vertSlider1 .text p, .pseudoSlider .sliger .vertSlider .text p, .secInfo .secInfoR .secInfoRtext .link .secInfoLtextD, .secInfo .secInfoC .secInfoCtext .link .secInfoLtextD, .secInfo .secInfoL .secInfoLtext .link .secInfoLtextD {
+.validation .forms form .Tblock textarea::placeholder, .validation .forms form .Tblock textarea, .validation .forms form .Eblock input::placeholder, .validation .forms form .Eblock input, .validation .forms form .Wblock input::placeholder, .validation .forms form .Wblock input, .validation .forms form .Qblock input::placeholder, .validation .forms form .Qblock input, .introText2 .text p, .introText1 .text p, .section2 .textSec2 p, .introText .text p, .section1 .textSection1 .textSection1_h2, .pseudoSlider .sliger .vertSlider3 .text p, .pseudoSlider .sliger .vertSlider2 .text p, .pseudoSlider .sliger .vertSlider1 .text p, .pseudoSlider .sliger .vertSlider .text p, .secInfo .secInfoR .secInfoRtext .link .secInfoLtextD, .secInfo .secInfoC .secInfoCtext .link .secInfoLtextD, .secInfo .secInfoL .sectInfoLtext .link .secInfoLtextD {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -17,7 +17,7 @@
   font-weight: 300;
 }
 
-.header .divButton .J_button, .header .divButton .C_button, .linksInfo .block1 .information .buttonLink button, .validation .forms form .button button, .techno div:nth-child(2) button, .section2 .textSec2 button, .section1 .textSection1 .imgButt .imgButtA, .pseudoSlider .sliger .vertSlider3 div button, .pseudoSlider .sliger .vertSlider2 div button, .pseudoSlider .sliger .vertSlider1 div button, .pseudoSlider .sliger .vertSlider div button {
+.header .divButton .J_button, .header .divButton .C_button, .linksInfo .block1 .information .buttonLink button, .validation .forms form .button .InButt, .techno div:nth-child(2) button, .section2 .textSec2 button, .section1 .textSection1 .imgButt .imgButtA, .pseudoSlider .sliger .vertSlider3 div button, .pseudoSlider .sliger .vertSlider2 div button, .pseudoSlider .sliger .vertSlider1 div button, .pseudoSlider .sliger .vertSlider div button {
   border-radius: 40px;
   border: none;
   outline: none;
@@ -25,7 +25,7 @@
   line-height: 15px;
 }
 
-.linksInfo .block1 .information .buttonLink button, .validation .forms form .button button, .techno div:nth-child(2) button, .section2 .textSec2 button, .section1 .textSection1 .imgButt .imgButtA, .pseudoSlider .sliger .vertSlider3 div button, .pseudoSlider .sliger .vertSlider2 div button, .pseudoSlider .sliger .vertSlider1 div button, .pseudoSlider .sliger .vertSlider div button {
+.linksInfo .block1 .information .buttonLink button, .validation .forms form .button .InButt, .techno div:nth-child(2) button, .section2 .textSec2 button, .section1 .textSection1 .imgButt .imgButtA, .pseudoSlider .sliger .vertSlider3 div button, .pseudoSlider .sliger .vertSlider2 div button, .pseudoSlider .sliger .vertSlider1 div button, .pseudoSlider .sliger .vertSlider div button {
   background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
   color: #343045;
   cursor: pointer;
@@ -89,21 +89,21 @@
   border: 1px solid rgba(192, 183, 232, 0.33);
 }
 
-.secInfo .secInfoR .secInfoRtext, .secInfo .secInfoC .secInfoCtext, .secInfo .secInfoL .secInfoLtext {
+.secInfo .secInfoR .secInfoRtext, .secInfo .secInfoC .secInfoCtext, .secInfo .secInfoL .sectInfoLtext {
   display: block;
   align-items: center;
   justify-content: center;
   text-align: left;
 }
 
-.secInfo .secInfoR .secInfoRtext .secInfoRtextU, .secInfo .secInfoC .secInfoCtext .secInfoCtextU, .secInfo .secInfoL .secInfoLtext .secInfoLtextU {
+.secInfo .secInfoR .secInfoRtext .secInfoRtextU, .secInfo .secInfoC .secInfoCtext .secInfoCtextU, .secInfo .secInfoL .sectInfoLtext .secInfoLtextU {
   font-size: 24px;
   line-height: 29px;
   margin: 0;
   color: #FFFFFF;
 }
 
-.secInfo .secInfoR .secInfoRtext .link .secInfoLtextD, .secInfo .secInfoC .secInfoCtext .link .secInfoLtextD, .secInfo .secInfoL .secInfoLtext .link .secInfoLtextD {
+.secInfo .secInfoR .secInfoRtext .link .secInfoLtextD, .secInfo .secInfoC .secInfoCtext .link .secInfoLtextD, .secInfo .secInfoL .sectInfoLtext .link .secInfoLtextD {
   font-size: 14px;
   line-height: 17px;
   margin: 0;
@@ -235,8 +235,7 @@
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-  max-width: 1272px;
-  height: 102px;
+  max-width: 1278px;
 }
 
 .header {
@@ -415,13 +414,13 @@
   width: 70px;
   height: 70px;
 }
-.secInfo .secInfoL .secInfoLtext .link {
+.secInfo .secInfoL .sectInfoLtext .link {
   padding-top: 10px;
 }
-.secInfo .secInfoL .secInfoLtext .link .secInfoLtextD {
+.secInfo .secInfoL .sectInfoLtext .link .secInfoLtextD {
   text-decoration: none;
 }
-.secInfo .secInfoL .secInfoLtext .link .secInfoLtextD:hover {
+.secInfo .secInfoL .sectInfoLtext .link .secInfoLtextD:hover {
   transition-duration: 0.1s;
   box-shadow: 0px 0px 20px 5px #8176AF;
   background-color: #8176afaf;
@@ -562,7 +561,7 @@
   font-size: 36px;
   line-height: 44px;
 }
-.section2 .textSec2 h3 {
+.section2 .textSec2 p {
   position: relative;
   left: -726px;
   z-index: 3;
@@ -947,12 +946,12 @@
   display: flex;
   align-items: center;
 }
-.validation .forms form .button button {
+.validation .forms form .button .InButt {
   width: 214px;
   height: 48px;
   padding: 0;
 }
-.validation .forms form .button button:hover {
+.validation .forms form .button .InButt:hover {
   transition: 0.5s;
   zoom: 1.1;
   border: 2px solid #343045;
@@ -1054,7 +1053,9 @@
   cursor: pointer;
 }
 .linksInfo .block1 .information .fotoLink ul li:hover {
-  zoom: 1.1;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #C0B7E8 0%, #8176af7c 100%);
+  box-shadow: 0px 0px 10px 5px #8176AF;
 }
 .linksInfo .block1 .information .fotoLink ul li:nth-child(6) {
   margin: 0 0 0 0;
@@ -1069,13 +1070,17 @@
   cursor: pointer;
   height: 48px;
 }
+.linksInfo .block1 .information .buttonLink button:hover {
+  transition-duration: 0.2s;
+  background: linear-gradient(180deg, #C0B7E8 0%, #8176AF 100%);
+  box-shadow: 0px 0px 20px 10px #8176AF;
+}
 .linksInfo .block1 .information .buttonLink button span {
   font-size: 12px;
   line-height: 15px;
 }
 .linksInfo .block1 .information .buttonLink button:hover {
   transition: 0.5s;
-  zoom: 1.1;
   border: 2px solid #343045;
   background-color: #FFFFFF;
   color: #343045;

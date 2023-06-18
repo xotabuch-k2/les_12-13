@@ -4,9 +4,7 @@
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-
-  max-width: 1272px;
-  height: 102px;
+  max-width: 1278px;
 }
 .header{
   margin-top: 55px;
@@ -189,7 +187,7 @@
       width: 70px;
       height: 70px;
     }}
-  .secInfoLtext{
+  .sectInfoLtext{
     @extend %secInfo_X_text;
     .secInfoLtextU{
       @extend %secInfo_X_textU;
@@ -349,7 +347,7 @@
         font-size: 36px;
         line-height: 44px;
       }}
-    h3{
+    p{
       position: relative;
       left: -726px;
       z-index: 3;
@@ -753,7 +751,7 @@
       justify-content: center;
       display: flex;
       align-items: center;
-      button{
+      .InButt{
         @extend %TipicalButton;
         width: 214px;
         height: 48px;
@@ -765,6 +763,12 @@
           background-color: #FFFFFF;
           color:#343045;
         }
+        // &:disabled{
+        //   background-color: #920000;
+        // }
+        // &:enabled{
+        //   @extend %TipicalButton;
+        // }
       }}}}}
 .linksInfo{
   margin-top: 122.5px;
@@ -858,7 +862,9 @@
             list-style-type: none;
             cursor: pointer;
             &:hover {
-              zoom: 1.1;
+              border-radius: 50%;
+              background: linear-gradient(180deg, #C0B7E8 0%, #8176af7c 100%);
+              box-shadow: 0px 0px 10px 5px #8176AF;
             }
           }
           li:nth-child(6){
@@ -875,13 +881,18 @@
           width: 214px;
           cursor: pointer;
           height: 48px;
+          &:hover {
+            transition-duration: 0.2s;
+            background: linear-gradient(180deg, #C0B7E8 0%, #8176AF 100%);
+            box-shadow: 0px 0px 20px 10px #8176AF;
+          }
+
           span{
             font-size: 12px;
             line-height: 15px;
           }
           &:hover {
             transition: 0.5s;
-            zoom: 1.1;
             border: 2px solid #343045;
             background-color: #FFFFFF;
             color:#343045;
@@ -926,5 +937,4 @@
       margin: 0;
     }
   }
-
 }

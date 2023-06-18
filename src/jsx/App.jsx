@@ -1,8 +1,19 @@
 import '../scss/App.scss'
 import {Formik, Form, Field} from 'formik';
+import { useMediaQuery } from 'react-responsive'
 
 
 function App() {
+
+    const isDesktop = useMediaQuery({
+      query:'min-width: 1278px'
+    })
+    const isTablet = useMediaQuery({
+      query:'min-width: 390px'
+    })
+    const isPhone = useMediaQuery({
+      query:'max-width: 390px'
+    })
   const initialValues = {
     name: "",
     Lname: "",
@@ -26,15 +37,15 @@ function App() {
     {
       errors.email = "Enter correct Email";
     }
-    if (!/^[+][+0-9]$/i.test(values.phone) || values.phone.length > 13 || values.phone.length < 13)  
+    if (!/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/i.test(values.phone) || values.phone.length < 13)  
     {
       errors.phone = "Enter correct Phone";
     }
-    if (!/^[a-zA-Z0-9._%+-]+$/.test(values.subject) || values.subject.length < 10) 
+    if (!/^[a-zA-Z0-9._%+-]+$/.test(values.subject)) 
     {
       errors.subject = "Enter correct Subject";
     }
-    if (!/^[a-zA-Z0-9._%+-]+$/.test(values.TuS) || values.TuS.length > 20) 
+    if (!/^[a-zA-Z0-9._%+-]+$/.test(values.TuS)) 
     {
       errors.TuS = "Enter correct Subject";
     }
@@ -46,7 +57,7 @@ function App() {
 
   return (
     <>
-     <header className='header'>
+<header className='header'>
       <div className='logoImg'>
           <img className='lodoUP' src="/public/img/1 block/logoUp.svg" alt="" />
           <img src="/public/img/1 block/HYDRA.svg" alt="" />
@@ -61,7 +72,7 @@ function App() {
         <button className='C_button'>CONTACT US</button>
         <button className='J_button'>JOIN HYDRA</button>
       </div>
-    </header>
+</header>
 <main>
   <section className='section1'>
         <div className='textSection1'>
@@ -91,7 +102,7 @@ function App() {
           <div className='secInfoLimg'>
             <img src="/public/img/1 block/location.svg" alt="" />
           </div>
-          <div className='secInfoLtext'>
+          <div className='sectInfoLtext'>
             <h3 className='secInfoLtextU'>Pay Us a Visit</h3>
             <div className='link'>
               <a className='secInfoLtextD' href="https://www.google.com/maps/place/Union+St,+Seattle,+WA+98101,+США/@47.6099139,-122.3363054,17z/data=!3m1!4b1!4m6!3m5!1s0x54906ab465f9a32d:0x2b0d2afe1e719e15!8m2!3d47.6099139!4d-122.3341167!16s%2Fg%2F1vcq795y?entry=ttu">Union St, Seattle, WA 98101, United States</a>
@@ -134,10 +145,10 @@ function App() {
         <img src="/public/img/2 block/arrow-small-right.svg" alt="" />
         <div className='text'>
           <p>
-Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
-nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
-quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
-lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
+          Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
+          nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
+          quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
+          lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
           </p>
         </div>
   </section>
@@ -151,7 +162,7 @@ lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus v
           <h2>ABOUT <br />
           <span>HYDRA VR</span>
           </h2>
-          <h3>
+            <p>
             Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus 
             urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices gravida 
             dictum fusce ut placerat orci. Aenean et tortor at risus viverra adipiscing at in. 
@@ -161,7 +172,7 @@ lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus v
             cursus sit amet. Vel eros donec ac odio tempor orci dapibus. Sem nulla pha
             retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudi
             n tempor.
-          </h3>
+            </p>
           <button>LET’S GET IN TOUCH</button>
         </div>
   </section>
@@ -422,14 +433,11 @@ lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus v
             />
         </div>
         <div className='button'>
-          <button type="submit">SEND TO HYDRA</button>
+          <button className='InButt' disabled={!errors} type="submit">SEND TO HYDRA</button>
         </div>
-
           </Form>
         )}
       </Formik>
-
-
     </div>
   </section>
 </main>
