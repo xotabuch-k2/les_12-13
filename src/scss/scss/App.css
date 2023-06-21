@@ -1,23 +1,23 @@
 @import 'normalize.css';
-.linksInfo .lastText .h3Text, .linksInfo .block1 .information .SOCIALIZE h4, .linksInfo .block1 nav li a, .validation .textHead .h2 h2, .introText2 .intro h2, .techno div:nth-child(1) h2, .introText1 .intro h2, .section2 .textSec2 h2, .introText .intro h2, .section1 .textSection1 .textSection1_h1, .header .divButton .J_button, .header .divButton .C_button, .header .navigation a, .numbers .backG .b04 .INcont h2, .numbers .backG .b03 .INcont h2, .numbers .backG .b02 .INcont h2, .numbers .backG .b01 .INcont h2, .numbers .backG .b04 .INradius .radius h2, .numbers .backG .b03 .INradius .radius h2, .numbers .backG .b02 .INradius .radius h2, .numbers .backG .b01 .INradius .radius h2, .pseudoSlider .sliger .vertSlider3 .mianText h2, .pseudoSlider .sliger .vertSlider2 .mianText h2, .pseudoSlider .sliger .vertSlider1 .mianText h2, .pseudoSlider .sliger .vertSlider .mianText h2, .secInfo .secInfoR .secInfoRtext .secInfoRtextU, .secInfo .secInfoC .secInfoCtext .secInfoCtextU, .secInfo .secInfoL .sectInfoLtext .secInfoLtextU, .linksInfo .block1 .information .buttonLink button, .validation .forms form .button .InButt, .techno div:nth-child(2) button, .section2 .textSec2 button, .section1 .textSection1 .imgButt .imgButtA, .pseudoSlider .sliger .vertSlider3 div button, .pseudoSlider .sliger .vertSlider2 div button, .pseudoSlider .sliger .vertSlider1 div button, .pseudoSlider .sliger .vertSlider div button {
+.verPhone .introText .intro h2, .verPhone .section1 .textSection1 .textSection1_h1, .verPC .linksInfo .lastText .h3Text, .verPC .linksInfo .block1 .information .SOCIALIZE h4, .verPC .linksInfo .block1 nav li a, .verPC .validation .textHead .h2 h2, .verPC .introText2 .intro h2, .verPC .techno div:nth-child(1) h2, .verPC .introText1 .intro h2, .verPC .section2 .textSec2 h2, .verPC .introText .intro h2, .verPC .section1 .textSection1 .textSection1_h1, .verPC .header .divButton .J_button, .verPC .header .divButton .C_button, .verPC .header .navigation li a, .verPC .numbers .backG .b04 .INcont h2, .verPC .numbers .backG .b03 .INcont h2, .verPC .numbers .backG .b02 .INcont h2, .verPC .numbers .backG .b01 .INcont h2, .verPC .numbers .backG .b04 .INradius .radius h2, .verPC .numbers .backG .b03 .INradius .radius h2, .verPC .numbers .backG .b02 .INradius .radius h2, .verPC .numbers .backG .b01 .INradius .radius h2, .verPC .pseudoSlider .sliger .vertSlider3 .mianText h2, .verPC .pseudoSlider .sliger .vertSlider2 .mianText h2, .verPC .pseudoSlider .sliger .vertSlider1 .mianText h2, .verPC .pseudoSlider .sliger .vertSlider .mianText h2, .verPhone .secInfo .secInfoR .secInfoRtext .secInfoRtextU, .verPhone .secInfo .secInfoC .secInfoCtext .secInfoCtextU, .verPhone .secInfo .secInfoL .sectInfoLtext .secInfoLtextU, .verPC .secInfo .secInfoR .secInfoRtext .secInfoRtextU, .verPC .secInfo .secInfoC .secInfoCtext .secInfoCtextU, .verPC .secInfo .secInfoL .sectInfoLtext .secInfoLtextU, .verPhone .section1 .butt2 button, .verPC .linksInfo .block1 .information .buttonLink button, .verPC .validation .forms form .button .InButt, .verPC .techno div:nth-child(2) button, .verPC .section2 .textSec2 button, .verPC .section1 .textSection1 .imgButt .imgButtA, .verPC .pseudoSlider .sliger .vertSlider3 div button, .verPC .pseudoSlider .sliger .vertSlider2 div button, .verPC .pseudoSlider .sliger .vertSlider1 div button, .verPC .pseudoSlider .sliger .vertSlider div button {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
 }
 
-.validation .forms form .Tblock textarea::placeholder, .validation .forms form .Tblock textarea, .validation .forms form .Eblock input::placeholder, .validation .forms form .Eblock input, .validation .forms form .Wblock input::placeholder, .validation .forms form .Wblock input, .validation .forms form .Qblock input::placeholder, .validation .forms form .Qblock input, .introText2 .text p, .introText1 .text p, .section2 .textSec2 p, .introText .text p, .section1 .textSection1 .textSection1_h2, .pseudoSlider .sliger .vertSlider3 .text p, .pseudoSlider .sliger .vertSlider2 .text p, .pseudoSlider .sliger .vertSlider1 .text p, .pseudoSlider .sliger .vertSlider .text p, .secInfo .secInfoR .secInfoRtext .link .secInfoLtextD, .secInfo .secInfoC .secInfoCtext .link .secInfoLtextD, .secInfo .secInfoL .sectInfoLtext .link .secInfoLtextD {
+.verPhone .introText .text p, .verPC .validation .forms form .Tblock textarea::placeholder, .verPC .validation .forms form .Tblock textarea, .verPC .validation .forms form .Eblock input::placeholder, .verPC .validation .forms form .Eblock input, .verPC .validation .forms form .Wblock input::placeholder, .verPC .validation .forms form .Wblock input, .verPC .validation .forms form .Qblock input::placeholder, .verPC .validation .forms form .Qblock input, .verPC .introText2 .text p, .verPC .introText1 .text p, .verPC .section2 .textSec2 p, .verPC .introText .text p, .verPC .section1 .textSection1 .textSection1_h2, .verPC .pseudoSlider .sliger .vertSlider3 .text p, .verPC .pseudoSlider .sliger .vertSlider2 .text p, .verPC .pseudoSlider .sliger .vertSlider1 .text p, .verPC .pseudoSlider .sliger .vertSlider .text p, .verPhone .secInfo .secInfoR .secInfoRtext .link .secInfoLtextD, .verPhone .secInfo .secInfoC .secInfoCtext .link .secInfoLtextD, .verPhone .secInfo .secInfoL .sectInfoLtext .link .secInfoLtextD, .verPC .secInfo .secInfoR .secInfoRtext .link .secInfoLtextD, .verPC .secInfo .secInfoC .secInfoCtext .link .secInfoLtextD, .verPC .secInfo .secInfoL .sectInfoLtext .link .secInfoLtextD {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
 }
 
-.validation .textHead .h3 h3, .introText2 .intro h3, .techno div:nth-child(1) h3, .introText1 .intro h3, .section2 .textSec2 h2 span, .introText .intro h3 {
+.verPhone .introText .intro h3, .verPhone .header1 .navigation1 .menu-item, .verPC .validation .textHead .h3 h3, .verPC .introText2 .intro h3, .verPC .techno div:nth-child(1) h3, .verPC .introText1 .intro h3, .verPC .section2 .textSec2 h2 span, .verPC .introText .intro h3 {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
 }
 
-.header .divButton .J_button, .header .divButton .C_button, .linksInfo .block1 .information .buttonLink button, .validation .forms form .button .InButt, .techno div:nth-child(2) button, .section2 .textSec2 button, .section1 .textSection1 .imgButt .imgButtA, .pseudoSlider .sliger .vertSlider3 div button, .pseudoSlider .sliger .vertSlider2 div button, .pseudoSlider .sliger .vertSlider1 div button, .pseudoSlider .sliger .vertSlider div button {
+.verPC .header .divButton .J_button, .verPC .header .divButton .C_button, .verPhone .section1 .butt2 button, .verPC .linksInfo .block1 .information .buttonLink button, .verPC .validation .forms form .button .InButt, .verPC .techno div:nth-child(2) button, .verPC .section2 .textSec2 button, .verPC .section1 .textSection1 .imgButt .imgButtA, .verPC .pseudoSlider .sliger .vertSlider3 div button, .verPC .pseudoSlider .sliger .vertSlider2 div button, .verPC .pseudoSlider .sliger .vertSlider1 div button, .verPC .pseudoSlider .sliger .vertSlider div button {
   border-radius: 40px;
   border: none;
   outline: none;
@@ -25,49 +25,49 @@
   line-height: 15px;
 }
 
-.linksInfo .block1 .information .buttonLink button, .validation .forms form .button .InButt, .techno div:nth-child(2) button, .section2 .textSec2 button, .section1 .textSection1 .imgButt .imgButtA, .pseudoSlider .sliger .vertSlider3 div button, .pseudoSlider .sliger .vertSlider2 div button, .pseudoSlider .sliger .vertSlider1 div button, .pseudoSlider .sliger .vertSlider div button {
+.verPhone .section1 .butt2 button, .verPC .linksInfo .block1 .information .buttonLink button, .verPC .validation .forms form .button .InButt, .verPC .techno div:nth-child(2) button, .verPC .section2 .textSec2 button, .verPC .section1 .textSection1 .imgButt .imgButtA, .verPC .pseudoSlider .sliger .vertSlider3 div button, .verPC .pseudoSlider .sliger .vertSlider2 div button, .verPC .pseudoSlider .sliger .vertSlider1 div button, .verPC .pseudoSlider .sliger .vertSlider div button {
   background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
   color: #343045;
   cursor: pointer;
 }
 
-.section1 .imgSectionR .Mask_girl_background {
+.verPC .section1 .imgSectionR .Mask_girl_background {
   position: absolute;
   z-index: 1;
-  width: 524px;
-  height: 455px;
-  left: 832px;
+  width: 474px;
+  height: 405px;
+  left: 862px;
   top: 256px;
   background: rgba(0, 0, 0, 0.13);
   border-radius: 100px 100px 100px 240px;
 }
 
-.section1 .imgSectionR .Mask_girl {
+.verPC .section1 .imgSectionR .Mask_girl {
   position: absolute;
-  width: 490px;
-  height: 426px;
-  left: 848px;
+  width: 440px;
+  height: 376px;
+  left: 878px;
   top: 270px;
   z-index: 2;
 }
 
-.section1 .imgSectionR .Vector1 {
+.verPhone .section1 .imgSectionR .Vector1, .verPC .section1 .imgSectionR .Vector1 {
   position: absolute;
   width: 414px;
   height: 669px;
-  left: 1023px;
+  left: 993px;
   top: 170px;
 }
 
-.section1 .imgSectionR .Vector2 {
+.verPhone .section1 .imgSectionR .Vector2, .verPC .section1 .imgSectionR .Vector2 {
   position: absolute;
   width: 377px;
   height: 845px;
-  left: 929px;
+  left: 899px;
   top: 0px;
 }
 
-.section1 .imgSectionR .Vector3 {
+.verPhone .section1 .imgSectionR .Vector3, .verPC .section1 .imgSectionR .Vector3 {
   position: absolute;
   width: 735.03px;
   height: 419.32px;
@@ -75,7 +75,7 @@
   top: 419.18px;
 }
 
-.section1 .imgSectionR .Vector4 {
+.verPhone .section1 .imgSectionR .Vector4, .verPC .section1 .imgSectionR .Vector4 {
   position: absolute;
   width: 238.07px;
   height: 561px;
@@ -83,40 +83,40 @@
   top: 274px;
 }
 
-.secInfo .secInfoLine2, .secInfo .secInfoLine1 {
+.verPC .secInfo .secInfoLine2, .verPC .secInfo .secInfoLine1 {
   width: 0px;
   height: 116.5px;
   border: 1px solid rgba(192, 183, 232, 0.33);
 }
 
-.secInfo .secInfoR .secInfoRtext, .secInfo .secInfoC .secInfoCtext, .secInfo .secInfoL .sectInfoLtext {
+.verPhone .secInfo .secInfoR .secInfoRtext, .verPhone .secInfo .secInfoC .secInfoCtext, .verPhone .secInfo .secInfoL .sectInfoLtext, .verPC .secInfo .secInfoR .secInfoRtext, .verPC .secInfo .secInfoC .secInfoCtext, .verPC .secInfo .secInfoL .sectInfoLtext {
   display: block;
   align-items: center;
   justify-content: center;
   text-align: left;
 }
 
-.secInfo .secInfoR .secInfoRtext .secInfoRtextU, .secInfo .secInfoC .secInfoCtext .secInfoCtextU, .secInfo .secInfoL .sectInfoLtext .secInfoLtextU {
+.verPhone .secInfo .secInfoR .secInfoRtext .secInfoRtextU, .verPhone .secInfo .secInfoC .secInfoCtext .secInfoCtextU, .verPhone .secInfo .secInfoL .sectInfoLtext .secInfoLtextU, .verPC .secInfo .secInfoR .secInfoRtext .secInfoRtextU, .verPC .secInfo .secInfoC .secInfoCtext .secInfoCtextU, .verPC .secInfo .secInfoL .sectInfoLtext .secInfoLtextU {
   font-size: 24px;
   line-height: 29px;
   margin: 0;
   color: #FFFFFF;
 }
 
-.secInfo .secInfoR .secInfoRtext .link .secInfoLtextD, .secInfo .secInfoC .secInfoCtext .link .secInfoLtextD, .secInfo .secInfoL .sectInfoLtext .link .secInfoLtextD {
+.verPhone .secInfo .secInfoR .secInfoRtext .link .secInfoLtextD, .verPhone .secInfo .secInfoC .secInfoCtext .link .secInfoLtextD, .verPhone .secInfo .secInfoL .sectInfoLtext .link .secInfoLtextD, .verPC .secInfo .secInfoR .secInfoRtext .link .secInfoLtextD, .verPC .secInfo .secInfoC .secInfoCtext .link .secInfoLtextD, .verPC .secInfo .secInfoL .sectInfoLtext .link .secInfoLtextD {
   font-size: 14px;
   line-height: 17px;
   margin: 0;
   color: #FFFFFF;
 }
 
-.pseudoSlider .sliger .vertSlider3, .pseudoSlider .sliger .vertSlider2, .pseudoSlider .sliger .vertSlider1, .pseudoSlider .sliger .vertSlider {
+.verPC .pseudoSlider .sliger .vertSlider3, .verPC .pseudoSlider .sliger .vertSlider2, .verPC .pseudoSlider .sliger .vertSlider1, .verPC .pseudoSlider .sliger .vertSlider {
   height: 511px;
   width: 310px;
   background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
   border-radius: 40px;
 }
-.pseudoSlider .sliger .vertSlider3 .img1, .pseudoSlider .sliger .vertSlider2 .img1, .pseudoSlider .sliger .vertSlider1 .img1, .pseudoSlider .sliger .vertSlider .img1 {
+.verPC .pseudoSlider .sliger .vertSlider3 .img1, .verPC .pseudoSlider .sliger .vertSlider2 .img1, .verPC .pseudoSlider .sliger .vertSlider1 .img1, .verPC .pseudoSlider .sliger .vertSlider .img1 {
   position: relative;
   margin-top: 23px;
   margin-left: auto;
@@ -129,24 +129,24 @@
   background-color: rgba(14, 14, 14, 0.32);
   border-radius: 50%;
 }
-.pseudoSlider .sliger .vertSlider3 .img1 img, .pseudoSlider .sliger .vertSlider2 .img1 img, .pseudoSlider .sliger .vertSlider1 .img1 img, .pseudoSlider .sliger .vertSlider .img1 img {
+.verPC .pseudoSlider .sliger .vertSlider3 .img1 img, .verPC .pseudoSlider .sliger .vertSlider2 .img1 img, .verPC .pseudoSlider .sliger .vertSlider1 .img1 img, .verPC .pseudoSlider .sliger .vertSlider .img1 img {
   width: 190.92px;
   height: 190.92px;
 }
-.pseudoSlider .sliger .vertSlider3 .mianText, .pseudoSlider .sliger .vertSlider2 .mianText, .pseudoSlider .sliger .vertSlider1 .mianText, .pseudoSlider .sliger .vertSlider .mianText {
+.verPC .pseudoSlider .sliger .vertSlider3 .mianText, .verPC .pseudoSlider .sliger .vertSlider2 .mianText, .verPC .pseudoSlider .sliger .vertSlider1 .mianText, .verPC .pseudoSlider .sliger .vertSlider .mianText {
   margin-left: auto;
   margin-right: auto;
   width: 160px;
   margin-top: 21px;
 }
-.pseudoSlider .sliger .vertSlider3 .mianText h2, .pseudoSlider .sliger .vertSlider2 .mianText h2, .pseudoSlider .sliger .vertSlider1 .mianText h2, .pseudoSlider .sliger .vertSlider .mianText h2 {
+.verPC .pseudoSlider .sliger .vertSlider3 .mianText h2, .verPC .pseudoSlider .sliger .vertSlider2 .mianText h2, .verPC .pseudoSlider .sliger .vertSlider1 .mianText h2, .verPC .pseudoSlider .sliger .vertSlider .mianText h2 {
   margin: 0;
   height: 29px;
   font-size: 24px;
   line-height: 29px;
   color: #FFFFFF;
 }
-.pseudoSlider .sliger .vertSlider3 .zeroDiv, .pseudoSlider .sliger .vertSlider2 .zeroDiv, .pseudoSlider .sliger .vertSlider1 .zeroDiv, .pseudoSlider .sliger .vertSlider .zeroDiv {
+.verPC .pseudoSlider .sliger .vertSlider3 .zeroDiv, .verPC .pseudoSlider .sliger .vertSlider2 .zeroDiv, .verPC .pseudoSlider .sliger .vertSlider1 .zeroDiv, .verPC .pseudoSlider .sliger .vertSlider .zeroDiv {
   margin-left: auto;
   margin-right: auto;
   width: 154px;
@@ -154,14 +154,14 @@
   border: 1px solid rgba(192, 183, 232, 0.33);
   margin-top: 17.5px;
 }
-.pseudoSlider .sliger .vertSlider3 .text, .pseudoSlider .sliger .vertSlider2 .text, .pseudoSlider .sliger .vertSlider1 .text, .pseudoSlider .sliger .vertSlider .text {
+.verPC .pseudoSlider .sliger .vertSlider3 .text, .verPC .pseudoSlider .sliger .vertSlider2 .text, .verPC .pseudoSlider .sliger .vertSlider1 .text, .verPC .pseudoSlider .sliger .vertSlider .text {
   margin-left: auto;
   margin-right: auto;
   width: 249px;
   height: 57px;
   margin-top: 21.5px;
 }
-.pseudoSlider .sliger .vertSlider3 .text p, .pseudoSlider .sliger .vertSlider2 .text p, .pseudoSlider .sliger .vertSlider1 .text p, .pseudoSlider .sliger .vertSlider .text p {
+.verPC .pseudoSlider .sliger .vertSlider3 .text p, .verPC .pseudoSlider .sliger .vertSlider2 .text p, .verPC .pseudoSlider .sliger .vertSlider1 .text p, .verPC .pseudoSlider .sliger .vertSlider .text p {
   margin: 0;
   width: 249px;
   height: 57px;
@@ -170,29 +170,29 @@
   color: #FFFFFF;
   text-align: left;
 }
-.pseudoSlider .sliger .vertSlider3 div, .pseudoSlider .sliger .vertSlider2 div, .pseudoSlider .sliger .vertSlider1 div, .pseudoSlider .sliger .vertSlider div {
+.verPC .pseudoSlider .sliger .vertSlider3 div, .verPC .pseudoSlider .sliger .vertSlider2 div, .verPC .pseudoSlider .sliger .vertSlider1 div, .verPC .pseudoSlider .sliger .vertSlider div {
   display: block;
   justify-content: center;
   text-align: center;
 }
-.pseudoSlider .sliger .vertSlider3 div button, .pseudoSlider .sliger .vertSlider2 div button, .pseudoSlider .sliger .vertSlider1 div button, .pseudoSlider .sliger .vertSlider div button {
+.verPC .pseudoSlider .sliger .vertSlider3 div button, .verPC .pseudoSlider .sliger .vertSlider2 div button, .verPC .pseudoSlider .sliger .vertSlider1 div button, .verPC .pseudoSlider .sliger .vertSlider div button {
   margin-top: 35px;
   margin-left: auto;
   margin-right: auto;
   width: 154px;
   height: 48px;
 }
-.pseudoSlider .sliger .vertSlider3 div button:hover, .pseudoSlider .sliger .vertSlider2 div button:hover, .pseudoSlider .sliger .vertSlider1 div button:hover, .pseudoSlider .sliger .vertSlider div button:hover {
+.verPC .pseudoSlider .sliger .vertSlider3 div button:hover, .verPC .pseudoSlider .sliger .vertSlider2 div button:hover, .verPC .pseudoSlider .sliger .vertSlider1 div button:hover, .verPC .pseudoSlider .sliger .vertSlider div button:hover {
   transition-duration: 1s;
   zoom: 1.1;
   background: linear-gradient(180deg, #C0B7E8 0%, #8176AF 100%);
 }
 
-.numbers .backG .b04, .numbers .backG .b03, .numbers .backG .b02, .numbers .backG .b01 {
+.verPC .numbers .backG .b04, .verPC .numbers .backG .b03, .verPC .numbers .backG .b02, .verPC .numbers .backG .b01 {
   display: block;
   position: relative;
 }
-.numbers .backG .b04 .INradius, .numbers .backG .b03 .INradius, .numbers .backG .b02 .INradius, .numbers .backG .b01 .INradius {
+.verPC .numbers .backG .b04 .INradius, .verPC .numbers .backG .b03 .INradius, .verPC .numbers .backG .b02 .INradius, .verPC .numbers .backG .b01 .INradius {
   display: flex;
   margin: 0 auto;
   width: 198px;
@@ -200,7 +200,7 @@
   background: rgba(13, 13, 13, 0.32);
   border-radius: 50%;
 }
-.numbers .backG .b04 .INradius .radius, .numbers .backG .b03 .INradius .radius, .numbers .backG .b02 .INradius .radius, .numbers .backG .b01 .INradius .radius {
+.verPC .numbers .backG .b04 .INradius .radius, .verPC .numbers .backG .b03 .INradius .radius, .verPC .numbers .backG .b02 .INradius .radius, .verPC .numbers .backG .b01 .INradius .radius {
   display: flex;
   margin: auto;
   justify-content: center;
@@ -210,20 +210,20 @@
   background: linear-gradient(251.27deg, #C0B7E8 12.87%, #8176AF 89.33%);
   border-radius: 50%;
 }
-.numbers .backG .b04 .INradius .radius h2, .numbers .backG .b03 .INradius .radius h2, .numbers .backG .b02 .INradius .radius h2, .numbers .backG .b01 .INradius .radius h2 {
+.verPC .numbers .backG .b04 .INradius .radius h2, .verPC .numbers .backG .b03 .INradius .radius h2, .verPC .numbers .backG .b02 .INradius .radius h2, .verPC .numbers .backG .b01 .INradius .radius h2 {
   margin: 0;
   font-size: 64px;
   line-height: 78px;
 }
-.numbers .backG .b04 .INcont, .numbers .backG .b03 .INcont, .numbers .backG .b02 .INcont, .numbers .backG .b01 .INcont {
+.verPC .numbers .backG .b04 .INcont, .verPC .numbers .backG .b03 .INcont, .verPC .numbers .backG .b02 .INcont, .verPC .numbers .backG .b01 .INcont {
   width: 254px;
   display: flex;
 }
-.numbers .backG .b04 .INcont img, .numbers .backG .b03 .INcont img, .numbers .backG .b02 .INcont img, .numbers .backG .b01 .INcont img {
+.verPC .numbers .backG .b04 .INcont img, .verPC .numbers .backG .b03 .INcont img, .verPC .numbers .backG .b02 .INcont img, .verPC .numbers .backG .b01 .INcont img {
   width: 67px;
   height: 67px;
 }
-.numbers .backG .b04 .INcont h2, .numbers .backG .b03 .INcont h2, .numbers .backG .b02 .INcont h2, .numbers .backG .b01 .INcont h2 {
+.verPC .numbers .backG .b04 .INcont h2, .verPC .numbers .backG .b03 .INcont h2, .verPC .numbers .backG .b02 .INcont h2, .verPC .numbers .backG .b01 .INcont h2 {
   width: 187px;
   height: 64px;
   font-size: 24px;
@@ -238,26 +238,50 @@
   max-width: 1278px;
 }
 
-.header {
+@media (max-width: 1290px) {
+  .verPC {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .verPhone {
+    opacity: 0;
+  }
+}
+@media (min-width: 1290px) {
+  .verPhone {
+    opacity: 0;
+    visibility: collapse;
+    width: 0;
+    height: 0;
+  }
+}
+@media (min-width: 390px) {
+  .verPhone {
+    opacity: 1;
+  }
+}
+.verPC .header {
   margin-top: 55px;
   height: 102px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.header .logoImg {
+.verPC .header .logoImg {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
-.header .logoImg .lodoUP {
+.verPC .header .logoImg .lodoUP {
   margin-right: 15px;
   top: 9px;
   position: relative;
   z-index: 1;
 }
-.header .logoImg .lodoUP:hover {
+.verPC .header .logoImg .lodoUP:hover {
   text-align: center;
   animation: 3s linear infinite rotate;
 }
@@ -269,14 +293,17 @@
     transform: rotate(360deg);
   }
 }
-.header .navigation {
+.verPC .header .navigation {
   width: 387px;
   display: flex;
   justify-content: space-between;
   position: relative;
   z-index: 1;
 }
-.header .navigation a {
+.verPC .header .navigation li {
+  list-style-type: none;
+}
+.verPC .header .navigation li a {
   color: #FFFFFF;
   outline: none;
   text-decoration: none;
@@ -284,18 +311,18 @@
   line-height: 15px;
   cursor: pointer;
 }
-.header .navigation a:hover {
+.verPC .header .navigation li a:hover {
   transition: 0.4s;
   color: #8176AF;
   text-shadow: 0px 4px 4px #211E2E;
   zoom: 1.8;
 }
-.header .divButton {
+.verPC .header .divButton {
   width: 347px;
   display: flex;
   justify-content: space-between;
 }
-.header .divButton .C_button {
+.verPC .header .divButton .C_button {
   width: 155px;
   height: 48px;
   border: 2px solid #FFFFFF;
@@ -304,14 +331,14 @@
   position: relative;
   z-index: 1;
 }
-.header .divButton .C_button:hover {
+.verPC .header .divButton .C_button:hover {
   transition: 0.5s;
   zoom: 1.1;
   border: 2px solid #343045;
   background-color: #FFFFFF;
   color: #343045;
 }
-.header .divButton .J_button {
+.verPC .header .divButton .J_button {
   width: 155px;
   height: 48px;
   background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
@@ -320,27 +347,26 @@
   position: relative;
   z-index: 1;
 }
-.header .divButton .J_button:hover {
+.verPC .header .divButton .J_button:hover {
   transition-duration: 1s;
   zoom: 1.2;
   background: linear-gradient(180deg, #C0B7E8 0%, #8176AF 100%);
 }
-
-.section1 {
+.verPC .section1 {
   display: flex;
   justify-content: space-between;
 }
-.section1 .textSection1 {
+.verPC .section1 .textSection1 {
   margin-top: 146px;
 }
-.section1 .textSection1 .textSection1_h1 {
+.verPC .section1 .textSection1 .textSection1_h1 {
   margin: 0;
   text-align: left;
   font-size: 40px;
   line-height: 49px;
   color: #FFFFFF;
 }
-.section1 .textSection1 .textSection1_h1 .textSection1_h1_s1 {
+.verPC .section1 .textSection1 .textSection1_h1 .textSection1_h1_s1 {
   font-size: 46px;
   line-height: 56px;
   background: linear-gradient(91.57deg, #C0B7E8 -1.02%, #8176AF 36.25%);
@@ -348,7 +374,7 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-.section1 .textSection1 .textSection1_h1 .textSection1_h1_s2 {
+.verPC .section1 .textSection1 .textSection1_h1 .textSection1_h1_s2 {
   font-size: 46px;
   line-height: 56px;
   background: linear-gradient(269deg, #C0B7E8 -3.72%, #8176AF 82.17%);
@@ -356,7 +382,7 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-.section1 .textSection1 .textSection1_h2 {
+.verPC .section1 .textSection1 .textSection1_h2 {
   margin-bottom: 0;
   margin-top: 36px;
   text-align: left;
@@ -364,14 +390,14 @@
   line-height: 20px;
   color: #FFFFFF;
 }
-.section1 .textSection1 .imgButt {
+.verPC .section1 .textSection1 .imgButt {
   margin-top: 40px;
   align-items: center;
   display: flex;
   justify-content: space-between;
   width: 325px;
 }
-.section1 .textSection1 .imgButt .imgButtA {
+.verPC .section1 .textSection1 .imgButt .imgButtA {
   position: relative;
   z-index: 1;
   width: 214px;
@@ -380,18 +406,18 @@
   align-items: center;
   text-decoration: none;
 }
-.section1 .textSection1 .imgButt .imgButtA:hover {
+.verPC .section1 .textSection1 .imgButt .imgButtA:hover {
   transition-duration: 1s;
   zoom: 1.2;
   background: linear-gradient(180deg, #C0B7E8 0%, #8176AF 100%);
 }
-.section1 .imgSectionR {
+.verPC .section1 .imgSectionR {
   position: relative;
   width: 816px;
   left: -558px;
   top: -195px;
 }
-.secInfo {
+.verPC .secInfo {
   width: 1272px;
   height: 167px;
   background: radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
@@ -402,94 +428,93 @@
   display: flex;
   align-items: center;
 }
-.secInfo .secInfoL {
+.verPC .secInfo .secInfoL {
   display: flex;
   margin: 0 42.5px 0 39px;
 }
-.secInfo .secInfoL .secInfoLimg {
+.verPC .secInfo .secInfoL .secInfoLimg {
   width: 70px;
   height: 70px;
 }
-.secInfo .secInfoL .secInfoLimg img {
+.verPC .secInfo .secInfoL .secInfoLimg img {
   width: 70px;
   height: 70px;
 }
-.secInfo .secInfoL .sectInfoLtext .link {
+.verPC .secInfo .secInfoL .sectInfoLtext .link {
   padding-top: 10px;
 }
-.secInfo .secInfoL .sectInfoLtext .link .secInfoLtextD {
+.verPC .secInfo .secInfoL .sectInfoLtext .link .secInfoLtextD {
   text-decoration: none;
 }
-.secInfo .secInfoL .sectInfoLtext .link .secInfoLtextD:hover {
+.verPC .secInfo .secInfoL .sectInfoLtext .link .secInfoLtextD:hover {
   transition-duration: 0.1s;
   box-shadow: 0px 0px 20px 5px #8176AF;
   background-color: #8176afaf;
   color: #ffff;
 }
-.secInfo .secInfoC {
+.verPC .secInfo .secInfoC {
   display: flex;
   margin: 0 66px 0 47.5px;
 }
-.secInfo .secInfoC .secInfoCimg {
+.verPC .secInfo .secInfoC .secInfoCimg {
   width: 59px;
   height: 59px;
   margin-right: 29px;
 }
-.secInfo .secInfoC .secInfoCimg img {
+.verPC .secInfo .secInfoC .secInfoCimg img {
   width: 59px;
   height: 59px;
 }
-.secInfo .secInfoC .secInfoCtext .link {
+.verPC .secInfo .secInfoC .secInfoCtext .link {
   padding-top: 9px;
 }
-.secInfo .secInfoC .secInfoCtext .link .secInfoLtextD {
+.verPC .secInfo .secInfoC .secInfoCtext .link .secInfoLtextD {
   text-decoration: none;
 }
-.secInfo .secInfoC .secInfoCtext .link .secInfoLtextD:hover {
+.verPC .secInfo .secInfoC .secInfoCtext .link .secInfoLtextD:hover {
   transition-duration: 0.1s;
   box-shadow: 0px 0px 20px 10px #8176AF;
   background-color: #8176AF;
   color: #ffff;
 }
-.secInfo .secInfoR {
+.verPC .secInfo .secInfoR {
   display: flex;
   margin-left: 50px;
 }
-.secInfo .secInfoR .secInfoRimg {
+.verPC .secInfo .secInfoR .secInfoRimg {
   width: 65px;
   height: 65px;
 }
-.secInfo .secInfoR .secInfoRimg img {
+.verPC .secInfo .secInfoR .secInfoRimg img {
   width: 65px;
   height: 65px;
 }
-.secInfo .secInfoR .secInfoRtext {
+.verPC .secInfo .secInfoR .secInfoRtext {
   margin-left: 23px;
 }
-.secInfo .secInfoR .secInfoRtext .link {
+.verPC .secInfo .secInfoR .secInfoRtext .link {
   padding-top: 9px;
 }
-.secInfo .secInfoR .secInfoRtext .link .secInfoLtextD {
+.verPC .secInfo .secInfoR .secInfoRtext .link .secInfoLtextD {
   text-decoration: none;
 }
-.secInfo .secInfoR .secInfoRtext .link .secInfoLtextD:hover {
+.verPC .secInfo .secInfoR .secInfoRtext .link .secInfoLtextD:hover {
   transition-duration: 0.1s;
   box-shadow: 0px 0px 20px 10px #8176AF;
   background-color: #8176AF;
   color: #ffff;
 }
-
-.introText {
+.verPC .introText {
   display: flex;
   margin-top: 85px;
 }
-.introText .intro h2 {
+.verPC .introText .intro h2 {
   margin: 0;
   color: #FFFFFF;
   font-size: 36px;
   line-height: 44px;
 }
-.introText .intro h3 {
+.verPC .introText .intro h3 {
   margin: 10px 0 0 0;
   padding-right: 30px;
   color: #FFFFFF;
@@ -497,46 +522,45 @@
   line-height: 44px;
   width: 251px;
 }
-.introText img {
+.verPC .introText img {
   width: 228px;
   height: 100px;
   padding-top: 20px;
   position: relative;
   left: -16px;
 }
-.introText .text {
+.verPC .introText .text {
   width: 650px;
   height: 98px;
   margin-left: auto;
 }
-.introText .text p {
+.verPC .introText .text p {
   color: #FFFFFF;
   text-align: left;
   margin: 0;
 }
-
-.section2 {
+.verPC .section2 {
   margin-top: 69px;
   display: flex;
   height: 557px;
 }
-.section2 .imgBack {
+.verPC .section2 .imgBack {
   position: relative;
 }
-.section2 .imgBack img:first-child {
+.verPC .section2 .imgBack img:first-child {
   position: absolute;
   width: 524px;
   height: 557px;
   z-index: 2;
 }
-.section2 .imgBack img:nth-child(2) {
+.verPC .section2 .imgBack img:nth-child(2) {
   position: relative;
   height: 256.68px;
   width: 1449px;
   left: -6.5px;
   z-index: 1;
 }
-.section2 .imgBack img:last-child {
+.verPC .section2 .imgBack img:last-child {
   margin-top: 28.82px;
   height: 211.75px;
   width: 1445px;
@@ -544,11 +568,11 @@
   left: -4.5px;
   z-index: 1;
 }
-.section2 .textSec2 {
+.verPC .section2 .textSec2 {
   position: relative;
   z-index: 1;
 }
-.section2 .textSec2 h2 {
+.verPC .section2 .textSec2 h2 {
   margin: 42px 0;
   position: relative;
   left: -725px;
@@ -557,11 +581,11 @@
   line-height: 44px;
   color: #FFFFFF;
 }
-.section2 .textSec2 h2 span {
+.verPC .section2 .textSec2 h2 span {
   font-size: 36px;
   line-height: 44px;
 }
-.section2 .textSec2 p {
+.verPC .section2 .textSec2 p {
   position: relative;
   left: -726px;
   z-index: 3;
@@ -572,67 +596,65 @@
   color: #FFFFFF;
   margin: 42px 0 28px 0;
 }
-.section2 .textSec2 button {
+.verPC .section2 .textSec2 button {
   position: relative;
   z-index: 2;
   left: -726px;
   width: 214px;
   height: 48px;
 }
-.section2 .textSec2 button:hover {
+.verPC .section2 .textSec2 button:hover {
   transition-duration: 0.2s;
   background: linear-gradient(180deg, #C0B7E8 0%, #8176AF 100%);
   box-shadow: 0px 0px 20px 10px #8176AF;
 }
-
-.introText1 {
+.verPC .introText1 {
   display: flex;
   margin-top: 85px;
 }
-.introText1 .intro {
+.verPC .introText1 .intro {
   width: 259px;
   margin-right: 16px;
 }
-.introText1 .intro h2 {
+.verPC .introText1 .intro h2 {
   margin: 0;
   color: #FFFFFF;
   font-size: 36px;
   line-height: 44px;
 }
-.introText1 .intro h3 {
+.verPC .introText1 .intro h3 {
   margin: 10px 0 0 0;
   color: #FFFFFF;
   font-size: 36px;
   line-height: 44px;
 }
-.introText1 img {
+.verPC .introText1 img {
   width: 228px;
   height: 100px;
   padding-top: 20px;
 }
-.introText1 .text {
+.verPC .introText1 .text {
   width: 650px;
   height: 98px;
   margin-left: auto;
 }
-.introText1 .text p {
+.verPC .introText1 .text p {
   color: #FFFFFF;
   text-align: left;
   margin: 0;
   font-size: 16px;
   line-height: 20px;
 }
-
-.pseudoSlider {
+.verPC .pseudoSlider {
   margin-top: 102px;
 }
-.pseudoSlider .sliger {
+.verPC .pseudoSlider .sliger {
   width: 1278px;
   height: 511px;
   display: flex;
   justify-content: space-between;
 }
-.pseudoSlider .lineBack {
+.verPC .pseudoSlider .lineBack {
   width: 0px;
   height: 0px;
   position: relative;
@@ -640,34 +662,33 @@
   top: -454px;
   left: -83px;
 }
-
-.techno {
+.verPC .techno {
   margin-top: 114px;
   width: 1278px;
   height: 303px;
   background: url("/public/img/4 block/pexels-rodnae-productions-8097332 1.svg");
   border-radius: 151.5PX;
 }
-.techno div:nth-child(1) {
+.verPC .techno div:nth-child(1) {
   padding-top: 108px;
   margin: 0 auto;
   width: 578px;
 }
-.techno div:nth-child(1) h2 {
+.verPC .techno div:nth-child(1) h2 {
   margin: 0;
   font-size: 36px;
   line-height: 44px;
   color: #FFFFFF;
   text-align: center;
 }
-.techno div:nth-child(1) h3 {
+.verPC .techno div:nth-child(1) h3 {
   margin-top: 11px;
   font-size: 36px;
   line-height: 44px;
   color: #FFFFFF;
   text-align: center;
 }
-.techno div:nth-child(2) {
+.verPC .techno div:nth-child(2) {
   display: flex;
   width: 100px;
   height: 100px;
@@ -675,7 +696,7 @@
   background: rgba(14, 14, 14, 0.32);
   border-radius: 50%;
 }
-.techno div:nth-child(2) button {
+.verPC .techno div:nth-child(2) button {
   cursor: pointer;
   margin: auto;
   width: 60px;
@@ -684,12 +705,11 @@
   font-size: 26px;
   color: #433D60;
 }
-.techno div:nth-child(2) button:hover {
+.verPC .techno div:nth-child(2) button:hover {
   background: linear-gradient(180deg, #C0B7E8 0%, #8176AF 100%);
   zoom: 1.3;
 }
-
-.technoImg {
+.verPC .technoImg {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -697,74 +717,72 @@
   padding: 0;
   height: 282px;
 }
-.technoImg img:nth-child(1) {
+.verPC .technoImg img:nth-child(1) {
   margin: auto;
   width: 174px;
   height: 174px;
 }
-.technoImg img:nth-child(2) {
+.verPC .technoImg img:nth-child(2) {
   margin: auto;
   width: 252px;
   height: 252px;
 }
-.technoImg img:nth-child(3) {
+.verPC .technoImg img:nth-child(3) {
   margin: auto;
   width: 263px;
   height: 263px;
 }
-.technoImg img:nth-child(4) {
+.verPC .technoImg img:nth-child(4) {
   margin: auto;
   width: 282px;
   height: 282px;
 }
-
-.introText2 {
+.verPC .introText2 {
   display: flex;
   margin-top: 64px;
 }
-.introText2 .intro {
+.verPC .introText2 .intro {
   width: 321px;
   margin-right: 16px;
 }
-.introText2 .intro h2 {
+.verPC .introText2 .intro h2 {
   margin: 0;
   color: #FFFFFF;
   font-size: 36px;
   line-height: 44px;
 }
-.introText2 .intro h3 {
+.verPC .introText2 .intro h3 {
   margin: 10px 0 0 0;
   color: #FFFFFF;
   font-size: 36px;
   line-height: 44px;
 }
-.introText2 img {
+.verPC .introText2 img {
   width: 228px;
   height: 100px;
   padding-top: 20px;
 }
-.introText2 .text {
+.verPC .introText2 .text {
   width: 650px;
   height: 98px;
   margin-left: auto;
 }
-.introText2 .text p {
+.verPC .introText2 .text p {
   color: #FFFFFF;
   text-align: left;
   margin: 0;
   font-size: 16px;
   line-height: 20px;
 }
-
-.numbers {
+.verPC .numbers {
   background: url("/public/img/5 block/Vector 15.svg");
   background-repeat: no-repeat;
 }
-.numbers .backG {
+.verPC .numbers .backG {
   display: flex;
   justify-content: space-around;
 }
-.validation {
+.verPC .validation {
   padding-top: 90px;
   margin-top: 112px;
   width: 1275px;
@@ -773,26 +791,26 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 100px;
 }
-.validation .textHead {
+.verPC .validation .textHead {
   margin-left: auto;
   margin-right: auto;
   width: 542px;
 }
-.validation .textHead .h2 {
+.verPC .validation .textHead .h2 {
   width: auto;
 }
-.validation .textHead .h2 h2 {
+.verPC .validation .textHead .h2 h2 {
   font-size: 36px;
   line-height: 44px;
   color: #FFFFFF;
   margin: 0;
   text-align: center;
 }
-.validation .textHead .img {
+.verPC .validation .textHead .img {
   width: 414px;
   margin: 30px auto 21px auto;
 }
-.validation .textHead .h3 h3 {
+.verPC .validation .textHead .h3 h3 {
   font-size: 36px;
   line-height: 44px;
   color: #FFFFFF;
@@ -800,23 +818,23 @@
   width: auto;
   text-align: center;
 }
-.validation .forms {
+.verPC .validation .forms {
   margin: 65px auto 0px auto;
   width: 1069px;
   height: auto;
   display: flex;
 }
-.validation .forms form {
+.verPC .validation .forms form {
   width: 1069px;
   display: block;
 }
-.validation .forms form .Qblock {
+.verPC .validation .forms form .Qblock {
   width: auto;
   display: flex;
   justify-content: space-between;
   margin-bottom: 39px;
 }
-.validation .forms form .Qblock input {
+.verPC .validation .forms form .Qblock input {
   margin: 0;
   display: flex;
   justify-content: space-around;
@@ -830,22 +848,22 @@
   color: #FFFFFF;
   padding-left: 43px;
 }
-.validation .forms form .Qblock input::placeholder {
+.verPC .validation .forms form .Qblock input::placeholder {
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
 }
-.validation .forms form .Qblock input.invalid {
+.verPC .validation .forms form .Qblock input.invalid {
   background-color: #920000;
   color: #FFFFFF;
 }
-.validation .forms form .Wblock {
+.verPC .validation .forms form .Wblock {
   width: auto;
   display: flex;
   justify-content: space-between;
   margin-bottom: 33px;
 }
-.validation .forms form .Wblock input {
+.verPC .validation .forms form .Wblock input {
   margin: 0;
   display: flex;
   justify-content: space-around;
@@ -859,16 +877,16 @@
   color: #FFFFFF;
   padding-left: 43px;
 }
-.validation .forms form .Wblock input::placeholder {
+.verPC .validation .forms form .Wblock input::placeholder {
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
 }
-.validation .forms form .Wblock input.invalid {
+.verPC .validation .forms form .Wblock input.invalid {
   background-color: #920000;
   color: #FFFFFF;
 }
-.validation .forms form .Eblock {
+.verPC .validation .forms form .Eblock {
   width: auto;
   display: flex;
   justify-content: space-between;
@@ -876,7 +894,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-.validation .forms form .Eblock input {
+.verPC .validation .forms form .Eblock input {
   margin: 0;
   display: flex;
   justify-content: center;
@@ -890,15 +908,15 @@
   color: #FFFFFF;
   padding-left: 43px;
 }
-.validation .forms form .Eblock input::placeholder {
+.verPC .validation .forms form .Eblock input::placeholder {
   font-size: 14px;
   color: #FFFFFF;
 }
-.validation .forms form .Eblock input.invalid {
+.verPC .validation .forms form .Eblock input.invalid {
   background-color: #920000;
   color: #FFFFFF;
 }
-.validation .forms form .Tblock {
+.verPC .validation .forms form .Tblock {
   width: auto;
   display: flex;
   justify-content: space-between;
@@ -906,7 +924,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-.validation .forms form .Tblock textarea {
+.verPC .validation .forms form .Tblock textarea {
   margin: 0;
   display: flex;
   justify-content: center;
@@ -924,54 +942,53 @@
   padding-left: 43px;
   padding-top: 27px;
 }
-.validation .forms form .Tblock textarea::placeholder {
+.verPC .validation .forms form .Tblock textarea::placeholder {
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
   position: absolute;
 }
-.validation .forms form .Tblock textarea[type=text] {
+.verPC .validation .forms form .Tblock textarea[type=text] {
   margin-top: 50px;
   padding-left: 43px;
   padding-top: 27px;
 }
-.validation .forms form .Tblock input.invalid {
+.verPC .validation .forms form .Tblock input.invalid {
   background-color: #920000;
   color: #FFFFFF;
 }
-.validation .forms form .button {
+.verPC .validation .forms form .button {
   width: 1069px;
   height: 48px;
   justify-content: center;
   display: flex;
   align-items: center;
 }
-.validation .forms form .button .InButt {
+.verPC .validation .forms form .button .InButt {
   width: 214px;
   height: 48px;
   padding: 0;
 }
-.validation .forms form .button .InButt:hover {
+.verPC .validation .forms form .button .InButt:hover {
   transition: 0.5s;
   zoom: 1.1;
   border: 2px solid #343045;
   background-color: #FFFFFF;
   color: #343045;
 }
-
-.linksInfo {
+.verPC .linksInfo {
   margin-top: 122.5px;
   margin-bottom: 59px;
 }
-.linksInfo .block1 {
+.verPC .linksInfo .block1 {
   display: flex;
   z-index: 2;
 }
-.linksInfo .block1 .imgLogo {
+.verPC .linksInfo .block1 .imgLogo {
   width: 185px;
   height: 187px;
 }
-.linksInfo .block1 .imgLogo .Logo:hover {
+.verPC .linksInfo .block1 .imgLogo .Logo:hover {
   text-align: center;
   animation: 3s linear infinite rotate;
 }
@@ -983,134 +1000,134 @@
     transform: rotate(360deg);
   }
 }
-.linksInfo .block1 .imgL {
+.verPC .linksInfo .block1 .imgL {
   margin-left: 100px;
   margin-right: 81px;
   width: 0px;
   height: 196px;
 }
-.linksInfo .block1 nav {
+.verPC .linksInfo .block1 nav {
   width: 134px;
   height: 192px;
 }
-.linksInfo .block1 nav li {
+.verPC .linksInfo .block1 nav li {
   list-style-type: none;
 }
-.linksInfo .block1 nav li a {
+.verPC .linksInfo .block1 nav li a {
   margin: 0;
   color: #FFFFFF;
   text-decoration: none;
 }
-.linksInfo .block1 nav li a:hover {
+.verPC .linksInfo .block1 nav li a:hover {
   transition: 0.4s;
   color: #8176AF;
   text-shadow: 0px 4px 4px #211E2E;
   zoom: 1.05;
 }
-.linksInfo .block1 nav li:nth-child(2n) {
+.verPC .linksInfo .block1 nav li:nth-child(2n) {
   margin: 25px 0;
 }
-.linksInfo .block1 div:nth-child(4) {
+.verPC .linksInfo .block1 div:nth-child(4) {
   margin-left: 104px;
   margin-right: 107px;
   width: 0px;
   height: 196px;
 }
-.linksInfo .block1 div:nth-child(6) {
+.verPC .linksInfo .block1 div:nth-child(6) {
   width: 0px;
   height: 196px;
   margin-left: 69px;
   margin-right: 71px;
 }
-.linksInfo .block1 .information .SOCIALIZE {
+.verPC .linksInfo .block1 .information .SOCIALIZE {
   width: 292px;
   height: 20px;
 }
-.linksInfo .block1 .information .SOCIALIZE h4 {
+.verPC .linksInfo .block1 .information .SOCIALIZE h4 {
   margin: 0;
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
 }
-.linksInfo .block1 .information .SOCIALIZE h4:hover {
+.verPC .linksInfo .block1 .information .SOCIALIZE h4:hover {
   zoom: 1.05;
   transition: 0.4s;
   color: #8176AF;
   text-shadow: 0px 4px 4px #211E2E;
 }
-.linksInfo .block1 .information .fotoLink {
+.verPC .linksInfo .block1 .information .fotoLink {
   width: 292px;
   height: 40px;
 }
-.linksInfo .block1 .information .fotoLink ul {
+.verPC .linksInfo .block1 .information .fotoLink ul {
   padding: 0;
   margin: 40px 0 0 0;
   display: flex;
 }
-.linksInfo .block1 .information .fotoLink ul li {
+.verPC .linksInfo .block1 .information .fotoLink ul li {
   margin: 0 20px 0 0;
   list-style-type: none;
   cursor: pointer;
 }
-.linksInfo .block1 .information .fotoLink ul li:hover {
+.verPC .linksInfo .block1 .information .fotoLink ul li:hover {
   border-radius: 50%;
   background: linear-gradient(180deg, #C0B7E8 0%, #8176af7c 100%);
   box-shadow: 0px 0px 10px 5px #8176AF;
 }
-.linksInfo .block1 .information .fotoLink ul li:nth-child(6) {
+.verPC .linksInfo .block1 .information .fotoLink ul li:nth-child(6) {
   margin: 0 0 0 0;
   list-style-type: none;
 }
-.linksInfo .block1 .information .buttonLink {
+.verPC .linksInfo .block1 .information .buttonLink {
   margin-top: 50px;
 }
-.linksInfo .block1 .information .buttonLink button {
+.verPC .linksInfo .block1 .information .buttonLink button {
   padding: 0;
   width: 214px;
   cursor: pointer;
   height: 48px;
 }
-.linksInfo .block1 .information .buttonLink button:hover {
+.verPC .linksInfo .block1 .information .buttonLink button:hover {
   transition-duration: 0.2s;
   background: linear-gradient(180deg, #C0B7E8 0%, #8176AF 100%);
   box-shadow: 0px 0px 20px 10px #8176AF;
 }
-.linksInfo .block1 .information .buttonLink button span {
+.verPC .linksInfo .block1 .information .buttonLink button span {
   font-size: 12px;
   line-height: 15px;
 }
-.linksInfo .block1 .information .buttonLink button:hover {
+.verPC .linksInfo .block1 .information .buttonLink button:hover {
   transition: 0.5s;
   border: 2px solid #343045;
   background-color: #FFFFFF;
   color: #343045;
 }
-.linksInfo .block2 {
+.verPC .linksInfo .block2 {
   position: relative;
   z-index: -1;
   top: 7px;
   width: 0;
   height: 0;
 }
-.linksInfo .block2 .img1 {
+.verPC .linksInfo .block2 .img1 {
   position: absolute;
   top: -532px;
   left: -58px;
 }
-.linksInfo .block2 .img2 {
+.verPC .linksInfo .block2 .img2 {
   position: absolute;
   top: -251px;
   left: -66px;
 }
-.linksInfo .downVector {
+.verPC .linksInfo .downVector {
   margin-top: 43px;
 }
-.linksInfo .lastText {
+.verPC .linksInfo .lastText {
   margin: 49px auto 59px auto;
   height: 17px;
   width: 693px;
 }
-.linksInfo .lastText .h3Text {
+.verPC .linksInfo .lastText .h3Text {
   height: 17px;
   left: 375px;
   margin: 0 auto;
@@ -1118,5 +1135,336 @@
   line-height: 17px;
   letter-spacing: 0.13em;
   color: #FFFFFF;
+  margin: 0;
+}
+
+.verPhone {
+  padding-left: auto;
+  padding-right: auto;
+}
+.verPhone .header1 {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 100%;
+  height: 69px;
+  display: flex;
+  justify-content: space-between;
+}
+.verPhone .header1 .logoImg1 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 69px;
+  top: -22px;
+}
+.verPhone .header1 .logoImg1 .lodoUP1 {
+  margin-right: 15px;
+  top: -4px;
+  position: relative;
+  z-index: 1;
+  height: 69px;
+  width: 60px;
+}
+.verPhone .header1 .logoImg1 .lodoUP1:hover {
+  text-align: center;
+  animation: 3s linear infinite rotate;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.verPhone .header1 .logoImg1 .hudra {
+  width: 46px;
+  height: 100%;
+}
+.verPhone .header1 .navigation1 {
+  align-items: center;
+  width: 46px;
+  height: 100%;
+}
+.verPhone .header1 .navigation1 .menu-btn {
+  margin-right: 20px;
+  margin-top: 53px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 5;
+  color: #C0B7E8;
+}
+.verPhone .header1 .navigation1 .menu-btn span {
+  width: 24px;
+}
+.verPhone .header1 .navigation1 .menu-btn > span,
+.verPhone .header1 .navigation1 .menu-btn > span::before,
+.verPhone .header1 .navigation1 .menu-btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #5C48B1;
+  transition-duration: 0.25s;
+}
+.verPhone .header1 .navigation1 .menu-btn > span::before {
+  content: "";
+  top: -8px;
+}
+.verPhone .header1 .navigation1 .menu-btn > span::after {
+  content: "";
+  top: 8px;
+}
+.verPhone .header1 .navigation1 .menubox {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: 100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #5b48b1e5;
+  box-shadow: 1px 0px 6px #3901d4;
+  transition-duration: 0.25s;
+  position: absolute;
+  z-index: 5;
+}
+.verPhone .header1 .navigation1 .menu-item {
+  display: block;
+  padding: 12px 24px;
+  color: #C0B7E8;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.25s;
+}
+.verPhone .header1 .navigation1 .menu-item:hover {
+  background-color: #8176AF;
+}
+.verPhone .header1 .navigation1 #menu-toggle {
+  opacity: 0;
+}
+.verPhone .header1 .navigation1 #menu-toggle:checked ~ .menu-btn > span {
+  transform: rotate(45deg);
+}
+.verPhone .header1 .navigation1 #menu-toggle:checked ~ .menu-btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+.verPhone .header1 .navigation1 #menu-toggle:checked ~ .menu-btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+.verPhone .header1 .navigation1 #menu-toggle:checked ~ .menubox {
+  visibility: visible;
+  left: 0;
+}
+.verPhone .section1 {
+  align-items: center;
+  justify-content: center;
+}
+.verPhone .section1 .imgSectionR {
+  width: 474px;
+  height: 405px;
+  position: relative;
+  left: -940px;
+  top: -195px;
+}
+.verPhone .section1 .imgSectionR .Mask_girl_background {
+  position: absolute;
+  z-index: 1;
+  width: 340px;
+  height: 296px;
+  left: 958px;
+  top: 270px;
+  background: rgba(0, 0, 0, 0.13);
+  border-radius: 100px 100px 100px 240px;
+}
+.verPhone .section1 .imgSectionR .Mask_girl {
+  position: absolute;
+  width: 318.67px;
+  height: 277.04px;
+  left: 958px;
+  top: 270px;
+  z-index: 2;
+}
+.verPhone .section1 .textSection1 {
+  margin-top: 40px;
+  position: relative;
+}
+.verPhone .section1 .textSection1 .textSection1_h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+.verPhone .section1 .textSection1 .textSection1_h1 .textSection1_h1_s1 {
+  font-size: 36px;
+  line-height: 44px;
+  background: linear-gradient(91.57deg, #C0B7E8 -1.02%, #8176AF 36.25%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.verPhone .section1 .textSection1 .textSection1_h1 .textSection1_h1_s2 {
+  font-size: 36px;
+  line-height: 44px;
+  background: linear-gradient(269deg, #C0B7E8 -3.72%, #8176AF 82.17%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.verPhone .section1 .butt2 {
+  width: 292px;
+  margin: 36px 46px 0 52px;
+  position: relative;
+}
+.verPhone .section1 .butt2 button {
+  width: 292px;
+  height: 52px;
+  text-decoration: none;
+}
+.verPhone .section1 .butt2 button:hover {
+  transition-duration: 1s;
+  zoom: 1.2;
+  background: linear-gradient(180deg, #C0B7E8 0%, #8176AF 100%);
+}
+.verPhone .secInfo {
+  padding: 30px 0 30px 0;
+  background: radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
+  box-shadow: 0px 4px 4px rgba(192, 183, 232, 0.01);
+  border-radius: 90px;
+  margin-top: 53px;
+  position: relative;
+  display: block;
+  align-items: center;
+}
+.verPhone .secInfo .secInfoL {
+  display: flex;
+  margin: 0 42.5px 0 39px;
+}
+.verPhone .secInfo .secInfoL .secInfoLimg {
+  width: 70px;
+  height: 70px;
+  margin-right: 23px;
+}
+.verPhone .secInfo .secInfoL .secInfoLimg img {
+  width: 70px;
+  height: 70px;
+}
+.verPhone .secInfo .secInfoL .sectInfoLtext .link {
+  padding-top: 10px;
+}
+.verPhone .secInfo .secInfoL .sectInfoLtext .link .secInfoLtextD {
+  text-decoration: none;
+}
+.verPhone .secInfo .secInfoL .sectInfoLtext .link .secInfoLtextD:hover {
+  transition-duration: 0.1s;
+  box-shadow: 0px 0px 20px 5px #8176AF;
+  background-color: #8176afaf;
+  color: #ffff;
+}
+.verPhone .secInfo .secInfoC {
+  display: flex;
+  margin: 50px 66px 0 47.5px;
+}
+.verPhone .secInfo .secInfoC .secInfoCimg {
+  width: 59px;
+  height: 59px;
+  margin-right: 29px;
+}
+.verPhone .secInfo .secInfoC .secInfoCimg img {
+  width: 59px;
+  height: 59px;
+}
+.verPhone .secInfo .secInfoC .secInfoCtext .link {
+  padding-top: 9px;
+}
+.verPhone .secInfo .secInfoC .secInfoCtext .link .secInfoLtextD {
+  text-decoration: none;
+}
+.verPhone .secInfo .secInfoC .secInfoCtext .link .secInfoLtextD:hover {
+  transition-duration: 0.1s;
+  box-shadow: 0px 0px 20px 10px #8176AF;
+  background-color: #8176AF;
+  color: #ffff;
+}
+.verPhone .secInfo .secInfoR {
+  display: flex;
+  margin: 50px 0 0 50px;
+}
+.verPhone .secInfo .secInfoR .secInfoRimg {
+  width: 65px;
+  height: 65px;
+}
+.verPhone .secInfo .secInfoR .secInfoRimg img {
+  width: 65px;
+  height: 65px;
+}
+.verPhone .secInfo .secInfoR .secInfoRtext {
+  margin-left: 23px;
+}
+.verPhone .secInfo .secInfoR .secInfoRtext .link {
+  padding-top: 9px;
+}
+.verPhone .secInfo .secInfoR .secInfoRtext .link .secInfoLtextD {
+  text-decoration: none;
+}
+.verPhone .secInfo .secInfoR .secInfoRtext .link .secInfoLtextD:hover {
+  transition-duration: 0.1s;
+  box-shadow: 0px 0px 20px 10px #8176AF;
+  background-color: #8176AF;
+  color: #ffff;
+}
+.verPhone .introText {
+  display: block;
+  margin-top: 59px;
+}
+.verPhone .introText .intro {
+  text-align: center;
+}
+.verPhone .introText .intro h2 {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 36px;
+  line-height: 44px;
+}
+.verPhone .introText .intro h3 {
+  margin: 10px 0 0 0;
+  padding-right: 30px;
+  color: #FFFFFF;
+  font-size: 36px;
+  line-height: 44px;
+  width: 251px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.verPhone .introText img {
+  height: 358px;
+  width: 336px;
+  margin-left: 23px;
+  position: relative;
+  left: -16px;
+}
+.verPhone .introText .text {
+  margin-top: 51px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.verPhone .introText .text p {
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  text-align: left;
   margin: 0;
 }
